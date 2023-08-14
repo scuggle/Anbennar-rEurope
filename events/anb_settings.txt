@@ -23,7 +23,7 @@ country_event = {
 		# set_global_flag = delete_deepwoods_region
 		# set_global_flag = delete_south_aelantir_region
 		# set_global_flag = delete_north_aelantir_region
-		# set_global_flag = delete_forbidden_plains_region
+		set_global_flag = delete_forbidden_plains_region
 		# set_global_flag = delete_south_sarhal_region
 		###MANUALLY SETTING THE FLAGS FOR WHICH REGIONS TO DELETE FOR CAMPAIGN
 	}
@@ -32,14 +32,14 @@ country_event = {
 	option = {
 		name = anb_settings.1.a
 		custom_tooltip = settings_regions_tt
-		hidden_effect = { country_event = { id = anb_settings.3 } }
+		hidden_effect = { country_event = { id = anb_settings.98 } }
 	}
 	#Great Conqueror
 	option = {
 		name = anb_settings.1.b
 		trigger = { has_dlc = "Rights of Man" }
 		custom_tooltip = settings_conquerors_tt
-		hidden_effect = { country_event = { id = anb_settings.2 } }
+		hidden_effect = { country_event = { id = anb_settings.98 } }
 	}
 	option = {
 		name = anb_settings.1.bx
@@ -163,7 +163,7 @@ country_event = {
 				shikenkhiin_area = { destroy_province_permanently = yes }
 				onrek_area = { destroy_province_permanently = yes }
 				shik_dozein_area = { destroy_province_permanently = yes }
-				shik_dazar_area = { destroy_province_permanently = yes } #needed to have working treasure fleet
+				#shik_dazar_area = { destroy_province_permanently = yes } #needed to have working treasure fleet
 
 			}
 			if = { limit = { has_global_flag = delete_haless_region }
