@@ -57,7 +57,7 @@ eur_centralization = {
 		}
 	}
     
-    autonomy_change_time = -0.05
+	global_autonomy = -0.05
 	
 	
 	ai_will_do = {

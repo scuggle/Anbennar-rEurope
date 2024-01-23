@@ -240,7 +240,7 @@ eur_good_bargaining = {
 		
 		}
 		NOT = {
-             has_active_policy = eur_autonomy_act
+             has_active_policy = eur_internal_trade
 
 		}
     }
