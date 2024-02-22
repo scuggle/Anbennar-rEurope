@@ -4,6 +4,7 @@ khozrugan_religious = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Z51
 		NOT = { map_setup = map_setup_random }
 	}
@@ -37,6 +38,7 @@ khozrugan_vassals = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Z51
 		NOT = { map_setup = map_setup_random }
 	}
@@ -75,6 +77,7 @@ khozrugan_gerudia = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Z51
 		NOT = { map_setup = map_setup_random }
 	}
@@ -105,6 +108,7 @@ khozrugan_western_campaign = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Z51
 		NOT = { map_setup = map_setup_random }
 	}
@@ -308,6 +312,7 @@ khozrugan_orc_subjugation = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Z51
 		NOT = { map_setup = map_setup_random }
 	}
@@ -565,6 +570,7 @@ khozrugan_dragon_coast = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Z51
 		NOT = { map_setup = map_setup_random }
 	}
@@ -626,6 +632,7 @@ khozrugan_wexkeep = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Z51
 		NOT = { map_setup = map_setup_random }
 	}
@@ -670,6 +677,7 @@ khozrugan_ascension_of_artug = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Z51
 		NOT = { map_setup = map_setup_random }
 	}
@@ -1151,6 +1159,7 @@ khozrugan_borderlands = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Z51
 		NOT = { map_setup = map_setup_random }
 	}
@@ -1191,6 +1200,7 @@ khozrugan_alenic_reach = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Z51
 		NOT = { map_setup = map_setup_random }
 	}
@@ -1225,6 +1235,7 @@ khozrugan_ibevar = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Z51
 		NOT = { map_setup = map_setup_random }
 	}
@@ -1272,6 +1283,7 @@ khozrugan_dameria = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Z51
 		NOT = { map_setup = map_setup_random }
 	}
@@ -1350,6 +1362,7 @@ khozrugan_army_tree = {
 	generic = no
 	ai = no
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Z51
 		NOT = { map_setup = map_setup_random }
 	}
@@ -1417,6 +1430,7 @@ khozrugan_corvuria = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Z51
 		NOT = { map_setup = map_setup_random }
 	}

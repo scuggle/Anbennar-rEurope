@@ -4,6 +4,7 @@ A17_branch_0 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A17
 		NOT = { has_country_flag = formed_enteben }
 	}
@@ -71,6 +72,7 @@ A17_branch_1 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A17
 		NOT = { has_country_flag = formed_enteben }
 	}
@@ -252,6 +254,7 @@ A17_branch_2 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A17
 		NOT = { has_country_flag = formed_enteben }
 	}
@@ -437,6 +440,7 @@ A17_branch_3 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A17
 		NOT = { has_country_flag = formed_enteben }
 	}
@@ -705,6 +709,7 @@ A17_branch_4 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A17
 		NOT = { has_country_flag = formed_enteben }
 	}
@@ -842,6 +847,7 @@ A17_enteben_0 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A17
 		has_country_flag = formed_enteben
 	}
@@ -1081,6 +1087,7 @@ A17_enteben_1 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A17
 		has_country_flag = formed_enteben
 	}
@@ -1307,6 +1314,7 @@ A17_enteben_2 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A17
 		has_country_flag = formed_enteben
 	}
@@ -1616,6 +1624,7 @@ A17_enteben_3 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A17
 		has_country_flag = formed_enteben
 	}
@@ -1921,6 +1930,7 @@ A17_enteben_4 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A17
 		has_country_flag = formed_enteben
 	}

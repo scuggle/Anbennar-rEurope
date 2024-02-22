@@ -8,7 +8,8 @@ greedy_grin_1 = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { tag = H82 }
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = H82 }
 	
 	greedy_grin_create_vault = {
 		icon = mission_early_game_buildings
@@ -230,7 +231,8 @@ greedy_grin_2 = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { tag = H82 }
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = H82 }
 	
 	greedy_grin_gate_to_east = {
 		icon = mission_conquer_50_development
@@ -350,9 +352,9 @@ greedy_grin_2 = {
 		
 		provinces_to_highlight = {
 			OR = {
-				province_id = 4350 #Tuwad-DhÃ»makon
-				province_id = 4311 #GrÃ´nstuand
-				province_id = 4313 #VÃ»driz-Ã‚ndriz
+				province_id = 4350 #Tuwad-Dhûmakon
+				province_id = 4311 #Grônstuand
+				province_id = 4313 #Vûdriz-Ândriz
 			}
 		}
 
@@ -391,7 +393,8 @@ greedy_grin_3 = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { tag = H82 }
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = H82 }
 	
 	greedy_grin_hold_of_gold = {
 		icon = mission_zambezi_gold
@@ -670,7 +673,8 @@ greedy_grin_4 = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { tag = H82 }
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = H82 }
 	
 	greedy_grin_secure_food = {
 		icon = mission_rice_field
@@ -1059,7 +1063,8 @@ greedy_grin_5 = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { tag = H82 }
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = H82 }
 	
 	greedy_grin_establish_levy_system = {
 		icon = mission_assemble_an_army

@@ -9,6 +9,7 @@ verkaldromak_11 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = I25
 	}
 	
@@ -111,6 +112,7 @@ verkaldromak_21 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = I25
 	}
 
@@ -146,6 +148,7 @@ verkaldromak_31 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = I25
 	}
 
@@ -228,6 +231,7 @@ verkaldromak_32 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = I25
 		has_country_flag = I25_want_to_throw_away_mages
 	}
@@ -271,6 +275,7 @@ verkaldromak_33 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = I25
 		mission_completed = I25_sort_out_problems
 	}
@@ -449,6 +454,7 @@ verkaldromak_41 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = I25
 	}
 
@@ -511,7 +517,7 @@ verkaldromak_41 = {
 	}
 
 	I25_architects_and_mages = {
-		icon = mission_magisterium_breakthrought
+		icon = mission_crystal_cave
 		position = 3
 		required_missions = {
 			I25_malachite_architects
@@ -583,6 +589,7 @@ verkaldromak_51 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = I25
 	}
 
@@ -594,13 +601,13 @@ verkaldromak_51 = {
 		}
 		
 		provinces_to_highlight = {
-			province_id = 4313
-			NOT = { has_dwarven_hold_5 = yes }
+			province_id = 4265
+			NOT = { has_dwarven_hold_4 = yes }
 		}
 		
 		trigger = {
-			4313 = {
-				has_dwarven_hold_5 = yes
+			4265 = {
+				has_dwarven_hold_4 = yes
 			}
 			treasury = 500
 		}
@@ -651,6 +658,7 @@ verkaldromak_52 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = I25
 		has_country_flag = I25_first_government_missions
 	}
@@ -767,6 +775,7 @@ verkaldromak_53 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = I25
 		mission_completed = I25_new_government
 		has_country_flag = I25_third_sleeper_research_completed
@@ -837,6 +846,7 @@ verkaldromak_12 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = I25
 		has_country_flag = I25_first_sleeper_research_completed
 	}
@@ -875,6 +885,7 @@ verkaldromak_22 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = I25
 		has_country_flag = I25_first_sleeper_research_completed
 	}
@@ -919,6 +930,7 @@ verkaldromak_13 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = I25
 		has_country_flag = I25_second_sleeper_research_completed
 	}
@@ -960,6 +972,7 @@ verkaldromak_23 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = I25
 		has_country_flag = I25_second_sleeper_research_completed
 	}
@@ -997,6 +1010,7 @@ verkaldromak_42 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = I25
 		has_country_flag = I25_second_sleeper_research_completed
 	}
@@ -1040,6 +1054,7 @@ verkaldromak_14 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = I25
 		has_country_flag = I25_third_sleeper_research_completed
 	}
@@ -1077,6 +1092,7 @@ verkaldromak_15 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = I25
 		mission_completed = I25_dream_about_other_dwarves
 	}
@@ -1156,6 +1172,7 @@ verkaldromak_24 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = I25
 		has_country_flag = I25_third_sleeper_research_completed
 	}
@@ -1193,6 +1210,7 @@ verkaldromak_25 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = I25
 		mission_completed = I25_dream_about_our_hold
 	}
@@ -1239,6 +1257,7 @@ verkaldromak_43 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = I25
 		has_country_flag = I25_third_sleeper_research_completed
 	}
@@ -1276,6 +1295,7 @@ verkaldromak_44 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = I25
 		mission_completed = I25_dream_about_our_ancestors
 	}
@@ -1329,6 +1349,7 @@ verkaldromak_16 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = I25
 		has_country_flag = I25_fourth_sleeper_research_completed
 	}
@@ -1366,12 +1387,13 @@ verkaldromak_26 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = I25
 		has_country_flag = I25_fourth_sleeper_research_completed
 	}
 
 	I25_dream_about_magic = {
-		icon = mission_magisterium_breakthrought
+		icon = mission_magical_forest
 		position = 13
 		required_missions = {
 			I25_sleeper_research_4
@@ -1403,6 +1425,7 @@ verkaldromak_27 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = I25
 		mission_completed = I25_dream_about_magic
 	}
@@ -1493,6 +1516,7 @@ verkaldromak_45 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = I25
 		has_country_flag = I25_fourth_sleeper_research_completed
 	}
@@ -1530,6 +1554,7 @@ verkaldromak_46 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = I25
 		mission_completed = I25_dream_about_immortality
 	}
@@ -1581,6 +1606,7 @@ verkaldromak_54 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = I25
 		has_country_flag = I25_fourth_sleeper_research_completed
 	}
@@ -1618,6 +1644,7 @@ verkaldromak_55 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = I25
 		mission_completed = I25_dream_about_the_world
 	}
@@ -1671,6 +1698,7 @@ verkaldromak_34 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = I25
 		has_country_flag = looking_for_special_relic
 	}

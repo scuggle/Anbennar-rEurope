@@ -77,7 +77,7 @@ temple_mindanan = {
 		}
 		country_modifiers = {
 			infantry_shock = 0.1
-			shock_damage = 0.025
+			#shock_damage = 0.025
 			max_absolutism = 10
 		}
 		on_upgraded = {
@@ -96,7 +96,7 @@ temple_mindanan = {
 		}
 		country_modifiers = {
 			infantry_shock = 0.15
-			shock_damage = 0.05
+			#shock_damage = 0.05
 			max_absolutism = 15
 		}
 		on_upgraded = {
@@ -318,7 +318,7 @@ temple_foresight = {
 			months = 480
 		}
 		cost_to_upgrade = {
-			factor = 5000
+			factor = 10000
 		}
 		province_modifiers = {
 		}
@@ -438,7 +438,7 @@ dhujati_headquarters = {
 		}
 		country_modifiers = {
 			trade_steering = 0.15
-			trade_efficiency = 0.1
+			trade_efficiency = 0.075
 			caravan_power = 0.2
 		}
 		on_upgraded = {
@@ -547,7 +547,7 @@ court_dhen = {
 			months = 480
 		}
 		cost_to_upgrade = {
-			factor = 5000
+			factor = 7500
 		}
 		province_modifiers = {
 		}
@@ -630,7 +630,7 @@ sarnihanpur_library = {
 		area_modifier = {
 		}
 		country_modifiers = {
-			innovativeness_gain = 0.1
+			innovativeness_gain = 0.075
 			adm_tech_cost_modifier = -0.025
 			dip_tech_cost_modifier = -0.025
 		}
@@ -653,7 +653,7 @@ sarnihanpur_library = {
 		area_modifier = {
 		}
 		country_modifiers = {
-			innovativeness_gain = 0.2
+			innovativeness_gain = 0.15
 			adm_tech_cost_modifier = -0.05
 			dip_tech_cost_modifier = -0.05
 		}
@@ -676,7 +676,7 @@ sarnihanpur_library = {
 		area_modifier = {
 		}
 		country_modifiers = {
-			innovativeness_gain = 0.33
+			innovativeness_gain = 0.25
 			adm_tech_cost_modifier = -0.1
 			dip_tech_cost_modifier = -0.1
 		}
@@ -754,7 +754,7 @@ khamayodi_camp = {
 		}
 		country_modifiers = {
 			infantry_cost = -0.05
-			infantry_fire = 0.05
+			#infantry_fire = 0.05
 			global_regiment_recruit_speed = -0.1
 		}
 		on_upgraded = {
@@ -773,7 +773,7 @@ khamayodi_camp = {
 		}
 		country_modifiers = {
 			infantry_cost = -0.1
-			infantry_fire = 0.1
+			infantry_fire = 0.05
 			global_regiment_recruit_speed = -0.2
 		}
 		on_upgraded = {
@@ -792,8 +792,8 @@ khamayodi_camp = {
 		}
 		country_modifiers = {
 			infantry_cost = -0.15
-			infantry_fire = 0.15
-			global_regiment_recruit_speed = -0.33
+			infantry_fire = 0.1
+			global_regiment_recruit_speed = -0.25
 		}
 		on_upgraded = {
 		}
@@ -858,7 +858,7 @@ sheramvi_foundry = {
 			months = 120
 		}
 		cost_to_upgrade = {
-			factor = 1000
+			factor = 1500
 		}
 		province_modifiers = {
 			local_development_cost = -0.05
@@ -879,7 +879,7 @@ sheramvi_foundry = {
 			months = 240
 		}
 		cost_to_upgrade = {
-			factor = 2500
+			factor = 3750
 		}
 		province_modifiers = {
 			local_development_cost = -0.1
@@ -900,13 +900,13 @@ sheramvi_foundry = {
 			months = 480
 		}
 		cost_to_upgrade = {
-			factor = 5000
+			factor = 7500
 		}
 		province_modifiers = {
 			local_development_cost = -0.15
 		}
 		area_modifier = {
-			trade_goods_size_modifier = 0.33
+			trade_goods_size_modifier = 0.25
 		}
 		country_modifiers = {
 			global_regiment_cost = -0.1
@@ -1016,14 +1016,14 @@ sardhasi_fields = {
 			months = 480
 		}
 		cost_to_upgrade = {
-			factor = 5000
+			factor = 7500
 		}
 		province_modifiers = {
 			local_development_cost = -0.15
 			trade_goods_size = 3
 		}
 		area_modifier = {
-			trade_goods_size_modifier = 0.33
+			trade_goods_size_modifier = 0.25
 		}
 		country_modifiers = {
 			global_own_trade_power = 0.15
@@ -1100,7 +1100,7 @@ great_market_sramaya = {
 		}
 		country_modifiers = {
 			global_trade_power = 0.05
-			trade_efficiency = 0.05
+			trade_efficiency = 0.025
 			center_of_trade_upgrade_cost = -0.1
 		}
 		on_upgraded = {
@@ -1125,7 +1125,7 @@ great_market_sramaya = {
 		}
 		country_modifiers = {
 			global_trade_power = 0.1
-			trade_efficiency = 0.075
+			trade_efficiency = 0.05
 			center_of_trade_upgrade_cost = -0.2
 		}
 		on_upgraded = {
@@ -1150,7 +1150,7 @@ great_market_sramaya = {
 		}
 		country_modifiers = {
 			global_trade_power = 0.15
-			trade_efficiency = 0.1
+			trade_efficiency = 0.075
 			center_of_trade_upgrade_cost = -0.33
 		}
 		on_upgraded = {
@@ -1224,7 +1224,7 @@ brass_palace = {
 			months = 120
 		}
 		cost_to_upgrade = {
-			factor = 1000
+			factor = 1500
 		}
 		province_modifiers = {
 			local_development_cost = -0.05
@@ -1243,7 +1243,7 @@ brass_palace = {
 			months = 240
 		}
 		cost_to_upgrade = {
-			factor = 2500
+			factor = 3500
 		}
 		province_modifiers = {
 			local_development_cost = -0.1
@@ -1263,7 +1263,7 @@ brass_palace = {
 			months = 480
 		}
 		cost_to_upgrade = {
-			factor = 5000
+			factor = 7000
 		}
 		province_modifiers = {
 			local_development_cost = -0.15

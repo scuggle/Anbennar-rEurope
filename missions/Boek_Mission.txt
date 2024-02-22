@@ -3,6 +3,7 @@ boek_1 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = G01
 		NOT = { map_setup = map_setup_random }
 	}
@@ -161,6 +162,7 @@ boek_2 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = G01
 		NOT = { map_setup = map_setup_random }
 	}
@@ -310,6 +312,7 @@ boek_3 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = G01
 		NOT = { map_setup = map_setup_random }
 	}
@@ -534,6 +537,7 @@ boek_4 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = G01
 		NOT = { map_setup = map_setup_random }
 	}

@@ -4,6 +4,7 @@ colonisation_efforts = {
 	generic = no
 	ai = yes
 	potential = {
+    	NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = V01
 			was_tag = V01
@@ -59,6 +60,7 @@ dragon_forge_branch = {
 	generic = no
 	ai = yes
 	potential = {
+    	NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = V01
 			was_tag = V01
@@ -196,6 +198,7 @@ becoming_a_country_branch = {
 	generic = no
 	ai = yes
 	potential = {
+    	NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = V01
 			was_tag = V01
@@ -360,6 +363,7 @@ early_conquests = {
 	generic = no
 	ai = yes
 	potential = {
+    	NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = V01
 			was_tag = V01
@@ -451,6 +455,7 @@ extras_branch = {
 	generic = no
 	ai = yes
 	potential = {
+    	NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = V01
 			was_tag = V01
@@ -489,6 +494,7 @@ ordstun_branch = {
 	generic = no
 	ai = yes
 	potential = {
+    	NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = V01
 			was_tag = V01
@@ -579,6 +585,7 @@ lodhum_branch = {
 	generic = no
 	ai = yes
 	potential = {
+    	NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = V01
 			was_tag = V01
@@ -671,6 +678,7 @@ skomdihr_branch = {
 	generic = no
 	ai = yes
 	potential = {
+    	NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = V01
 			was_tag = V01
@@ -762,6 +770,7 @@ shazstun_branch = {
 	generic = no
 	ai = yes
 	potential = {
+    	NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = V01
 			was_tag = V01
@@ -854,6 +863,7 @@ orghelo_branch = {
 	generic = no
 	ai = yes
 	potential = {
+    	NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = V01
 			was_tag = V01
@@ -946,6 +956,7 @@ kobold_reach_branch = {
 	generic = no
 	ai = yes
 	potential = {
+    	NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = V01
 			was_tag = V01
@@ -1038,6 +1049,7 @@ inward_perfection_route = {
 	generic = no
 	ai = yes
 	potential = {
+    	NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = V01
 			was_tag = V01
@@ -1118,6 +1130,7 @@ religious_branch = {
 	generic = no
 	ai = yes
 	potential = {
+    	NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = V01
 			was_tag = V01

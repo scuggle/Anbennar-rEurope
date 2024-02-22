@@ -4,7 +4,8 @@ moonhaven_regent_court_missions = {
 	generic = no
 	ai = yes
 	has_country_shield = yes
-	potential = { tag = A31 }
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = A31 }
 	
 	A31_varivar = {
 		icon = mission_luther_theses
@@ -401,7 +402,8 @@ moonhaven_corinite_missions = {
 	generic = no
 	ai = yes
 	has_country_shield = yes
-	potential = { tag = A31 }
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = A31 }
 	
 	A31_istralore = {
 		icon = mission_noble_council
@@ -661,7 +663,8 @@ moonhaven_development_missions = {
 	generic = no
 	ai = yes
 	has_country_shield = yes
-	potential = { tag = A31 }
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = A31 }
 
 	A31_redglades = {
 		icon = mission_princess_writing
@@ -1087,7 +1090,8 @@ moonhaven_colonial_missions = {
 	generic = no
 	ai = yes
 	has_country_shield = yes
-	potential = { tag = A31 }
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = A31 }
 
 	A31_venail = {
 		icon = mission_rb_grow_the_channel
@@ -1543,7 +1547,8 @@ moonhaven_exploration_missions = {
 	slot = 5
 	generic = no
 	ai = yes
-	potential = { tag = A31 }
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = A31 }
 	has_country_shield = yes
 	
 	A31_celmaldor = {
@@ -1610,16 +1615,19 @@ moonhaven_exploration_missions = {
 		effect = {
 			add_treasury = -250
 			add_adm_power = -150
-			random_subject_country = {
-				limit = { is_colonial_nation_of = A31 }
-				capital_scope = {
-					change_trade_goods = tea
-					add_base_production = 2
-				}
-				random_owned_province = {
-					limit = { NOT = { trade_goods = tea } }
-					change_trade_goods = tea
-					add_base_production = 2
+			custom_tooltip = A31_tea_plantations
+			hidden_effect = {
+				random_subject_country = {
+					limit = { is_colonial_nation_of = A31 }
+					capital_scope = {
+						change_trade_goods = tea
+						add_base_production = 2
+					}
+					random_owned_province = {
+						limit = { NOT = { trade_goods = tea } }
+						change_trade_goods = tea
+						add_base_production = 2
+					}
 				}
 			}
 		}

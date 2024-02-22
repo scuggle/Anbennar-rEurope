@@ -32,7 +32,7 @@ country_event = {
 		name = "flavor_estaire.1.a"
 		ai_chance = { factor = 40 }	
 		define_heir = {
-			dynasty = "síl Estaire"
+			dynasty = "síl Falconia"
 			age = 16
 			male = yes
 			change_adm = 1

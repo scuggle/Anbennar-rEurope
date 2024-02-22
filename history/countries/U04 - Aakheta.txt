@@ -1,36 +1,14 @@
-
 setup_vision = yes
-government = monarchy
-add_government_reform = autocracy_reform
+government = republic
+add_government_reform = noble_elite_reform
 government_rank = 1
-primary_culture = kheteratan
+primary_culture = hapremiti
 religion = aakhetist
 technology_group = tech_salahadesi
 
 capital = 466
 
-1000.1.1 = { set_estate_privilege = estate_mages_organization_state }
-
-1410.1.9 = {
-	monarch = {
-		name = "Kair I "
-		dynasty = "Akanos"
-		birth_date = 1399.9.1
-		adm = 2
-		dip = 4
-		mil = 3
-	}
-}
-
-1423.6.10 = {
-	heir = {
-		name = "Culos"
-		monarch_name = "Culos I"
-		dynasty = "Akanos"
-		birth_date = 1423.6.10
-		claim = 60
-		adm = 2
-		dip = 2
-		mil = 5
-	}
+1000.1.1 = { 
+	set_estate_privilege = estate_mages_organization_state
+	set_variable = { which = aakhet_approval value = 10 }
 }

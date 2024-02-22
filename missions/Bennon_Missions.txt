@@ -4,6 +4,7 @@ bennon_1 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = A39
 			tag = B66
@@ -166,6 +167,7 @@ bennon_2 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = A39
 			tag = B66
@@ -416,6 +418,7 @@ bennon_3 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = A39
 			tag = B66
@@ -525,6 +528,7 @@ bennon_4 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = A39
 			tag = B66
@@ -728,6 +732,7 @@ bennon_5 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = A39
 			tag = B66
@@ -804,6 +809,7 @@ havoral_havoric_vanguard_core_group = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = B66
 	}
 	has_country_shield = yes
@@ -838,6 +844,7 @@ bennon_divded_court_group = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = A39
 			tag = B66
@@ -884,6 +891,7 @@ havoral_tutors_of_corin_group = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = B66
 	}
 	has_country_shield = yes
@@ -911,6 +919,7 @@ havoral_1 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = B66
 	}
 	has_country_shield = yes
@@ -1158,6 +1167,7 @@ havoral_2 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = B66
 	}
 	has_country_shield = yes
@@ -1473,6 +1483,7 @@ havoral_3 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = B66
 	}
 	has_country_shield = yes
@@ -1819,6 +1830,7 @@ havoral_4 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = B66
 	}
 	has_country_shield = yes
@@ -1980,6 +1992,7 @@ havoral_5 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = B66
 	}
 	has_country_shield = yes

@@ -4,6 +4,7 @@ jiangdu1 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Y13
 	}
 	
@@ -242,6 +243,7 @@ jiangdu2 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Y13
 	}
 	
@@ -550,6 +552,7 @@ jiangdu3 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Y13
 	}
 	
@@ -982,6 +985,7 @@ jiangdu4 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Y13
 	}
 	
@@ -1188,6 +1192,7 @@ jiangdu5 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Y13
 	}
 	

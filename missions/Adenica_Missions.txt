@@ -4,7 +4,10 @@ adenica_1_missions = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { tag = B58 }
+	potential = { 
+		tag = B58 
+		NOT = { has_country_flag = chose_generic_mt }
+	}
 
 	adenica_chivalric_justice = {
 		icon = geneva_conventions
@@ -460,7 +463,7 @@ adenica_1_missions = {
 			}
 			every_country = {
 				limit = { has_personal_deity = adean }
-				change_personal_deity = adean_adenica_war
+				change_personal_deity = adean_upgraded_war
 			}
 		}
 	}
@@ -471,7 +474,10 @@ adenica_2_missions = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { tag = B58 }
+	potential = { 
+		tag = B58 
+		NOT = { has_country_flag = chose_generic_mt }
+	}
 
 	adenica_chivalric_conviction = {
 		icon = geneva_conventions
@@ -953,7 +959,10 @@ adenica_3_missions = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { tag = B58 }
+	potential = { 
+		tag = B58 
+		NOT = { has_country_flag = chose_generic_mt }
+	}
 
 	adenica_chivalric_duty = {
 		icon = geneva_conventions
@@ -1518,7 +1527,10 @@ adenica_4_missions = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { tag = B58 }
+	potential = { 
+		tag = B58 
+		NOT = { has_country_flag = chose_generic_mt }
+	}
 
 	adenica_chivalric_faith = {
 		icon = geneva_conventions
@@ -1936,7 +1948,10 @@ adenica_5_missions = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { tag = B58 }
+	potential = { 
+		tag = B58 
+		NOT = { has_country_flag = chose_generic_mt }
+	}
 
 	adenica_chivalric_valour = {
 		icon = geneva_conventions
@@ -2568,7 +2583,7 @@ adenica_5_missions = {
 			}
 			every_country = {
 				limit = { has_personal_deity = adean }
-				change_personal_deity = adean_adenica_admin
+				change_personal_deity = adean_upgraded_admin
 			}
 		}
 	}

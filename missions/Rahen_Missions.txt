@@ -6,12 +6,12 @@ rahen_prabhi = {
 	has_country_shield = no
 	
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		has_reform = prabhi_reform
 	}
 	
 	rahen_become_senapti = {
 		icon = mission_non-western_soldiers
-		ai = yes
 		position = 1
 		
 		trigger = {
@@ -28,7 +28,6 @@ rahen_prabhi = {
 	
 	rahen_become_raja_prabhi = {
 		icon = mission_gharbianss
-		ai = yes
 		position = 2
 		
 		required_missions = {
@@ -45,7 +44,7 @@ rahen_prabhi = {
 		
 		trigger = {
 			owns_core_province = 4411
-			has_reform = raja_reform
+			has_government_attribute = is_raja
 		}
 		
 		effect = {
@@ -64,12 +63,12 @@ rahen_senapti = {
 	has_country_shield = no
 	
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		has_reform = senapti_reform
 	}
 	
 	rahen_become_raja_senapti = {
 		icon = mission_gharbianss
-		ai = yes
 		position = 1
 		
 		provinces_to_highlight = {
@@ -82,7 +81,7 @@ rahen_senapti = {
 		
 		trigger = {
 			owns_core_province = 4411
-			has_reform = raja_reform
+			has_government_attribute = is_raja
 		}
 		
 		effect = {
@@ -101,12 +100,12 @@ rahen_resources = {
 	has_country_shield = no
 	
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		capital_scope = { superregion = rahen_superregion }
 	}
 	
 	rahen_raheni_fabrics = {
 		icon = mission_a_million_rice_fields
-		ai = yes
 		position = 1
 		
 		provinces_to_highlight = {
@@ -165,7 +164,6 @@ rahen_resources = {
 	
 	rahen_indigo_merchants = {
 		icon = mission_dominate_persian_gulf
-		ai = yes
 		position = 2
 		
 		provinces_to_highlight = {
@@ -213,12 +211,12 @@ rahen_high_philosophy = {
 	has_country_shield = no
 	
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		capital_scope = { religion = high_philosophy }
 	}
 	
 	rahen_philosopher_king = {
 		icon = mission_monarch_in_throne_room
-		ai = yes
 		position = 3
 		
 		trigger = {

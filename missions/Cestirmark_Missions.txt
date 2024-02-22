@@ -5,6 +5,7 @@ cestirmark_1 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H33
 	}
 	has_country_shield = yes
@@ -28,7 +29,7 @@ cestirmark_1 = {
 		}
 
 		trigger = {
-			#VenainÃ©
+			#Venainé
 			1031 = {
 				OR = {
 					controlled_by = ROOT
@@ -337,6 +338,7 @@ cestirmark_2 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H33
 	}
 	has_country_shield = yes
@@ -744,6 +746,7 @@ cestirmark_3 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H33
 	}
 	has_country_shield = yes
@@ -1039,6 +1042,7 @@ cestirmark_4 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H33
 	}
 	has_country_shield = yes
@@ -1641,6 +1645,7 @@ cestirmark_5 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H33
 	}
 	has_country_shield = yes
@@ -1923,17 +1928,18 @@ cestirmark_5 = {
 		}
 
 		trigger = {
-			1128 = { #Arbeloch
-				has_great_project = { type = arbeloch_ascensor }
-				has_trade_building_trigger = yes
+			OR = {
+				1128 = { has_great_project = { type = arbeloch_ascensor } }
+				1153 = { has_great_project = { type = arbeloch_ascensor } }
 			}
+			1128 = { has_trade_building_trigger = yes } #Arbeloch
 			1126 = { has_trade_building_trigger = yes } #Yanekin
 			1018 = { has_trade_building_trigger = yes } #Bushwall
 			1871 = { #Cestirmark (province)
 				has_trade_building_trigger = yes 
 				has_dock_building_trigger = yes
 			}
-			1517 = { is_strongest_trade_power = ROOT } #Sella node
+			1583 = { is_strongest_trade_power = ROOT } #Sella node
 		}
 
 		effect = {
@@ -2107,6 +2113,7 @@ united_concord_1 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H33
 		has_country_flag = united_concord
 	}
@@ -2132,7 +2139,7 @@ united_concord_1 = {
 				value = 500
 				region = trollsbay_region
 			}
-			1031 = { #VenainÃ©
+			1031 = { #Venainé
 				custom_trigger_tooltip = { #sigh for basic tooltips being broken
 					tooltip = H33_parliament_seat_tt
 					has_seat_in_parliament = yes
@@ -2160,7 +2167,7 @@ united_concord_1 = {
 
 		effect = {
 			set_capital = 1031
-			1031 = {  #VenainÃ©
+			1031 = {  #Venainé
 				if = { 
 					limit = { NOT = { 1031 = { trade_goods = gold } } }
 					change_trade_goods = paper
@@ -2387,7 +2394,7 @@ united_concord_1 = {
 					key = STRONG_MERCHANTS
 				}
 			}
-			1847 = { #Expanse
+			2855 = { #Expanse
 				add_trade_modifier = {
 					who = ROOT
 					duration = -1
@@ -2490,6 +2497,7 @@ united_concord_2 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H33
 		has_country_flag = united_concord
 	}
@@ -2616,7 +2624,7 @@ united_concord_2 = {
 				NOT = { nationalism = 1 }
 			}
 			trading_policy_in_node = {
-				node = 1517 #Sella node
+				node = 1583 #Sella node
 				policy = improve_inland_routes
 			}
 			trading_policy_in_node = {
@@ -2782,6 +2790,7 @@ united_concord_3 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H33
 		has_country_flag = united_concord
 	}
@@ -3206,6 +3215,7 @@ united_concord_3 = {
 					accepted_culture = dolindhan
 					accepted_culture = sarda
 					accepted_culture = malacnari
+					accepted_culture = brelari
 					accepted_culture = harafe
 					accepted_culture = kooras
 					accepted_culture = mayte
@@ -3425,6 +3435,7 @@ united_concord_4 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H33
 		has_country_flag = united_concord
 	}
@@ -3440,11 +3451,11 @@ united_concord_4 = {
 		trigger = {
 			OR = {
 				trading_policy_in_node = {
-					node = 1847 #Expanse
+					node = 2855 #Expanse
 					policy = establish_communities
 				}
 				trading_policy_in_node = {
-					node = 1847 #Expanse
+					node = 2855 #Expanse
 					policy = hostile_trading
 				}
 			}
@@ -3550,12 +3561,20 @@ united_concord_4 = {
 			2488 = { #Brelar (province)
 				add_permanent_claim = ROOT
 				if = {
-					limit = { NOT = { owner = { government = republic } } }
-					owner = {
-						reverse_add_casus_belli = {
-							type = cb_change_government
-							target = ROOT
-							months = 240
+					limit = {
+						owner = { is_colonial_nation = yes }
+					}
+					owner = { add_liberty_desire = 35 }
+				}
+				else = {
+					if = {
+						limit = { NOT = { owner = { government = republic } } }
+						owner = {
+							reverse_add_casus_belli = {
+								type = cb_change_government
+								target = ROOT
+								months = 240
+							}
 						}
 					}
 				}
@@ -3572,12 +3591,20 @@ united_concord_4 = {
 			1134 = { #Vels Domfan (province)
 				add_permanent_claim = ROOT
 				if = {
-					limit = { NOT = { owner = { government = republic } } }
-					owner = {
-						reverse_add_casus_belli = {
-							type = cb_change_government
-							target = ROOT
-							months = 240
+					limit = {
+						owner = { is_colonial_nation = yes }
+					}
+					owner = { add_liberty_desire = 35 }
+				}
+				else = {
+					if = {
+						limit = { NOT = { owner = { government = republic } } }
+						owner = {
+							reverse_add_casus_belli = {
+								type = cb_change_government
+								target = ROOT
+								months = 240
+							}
 						}
 					}
 				}
@@ -3594,12 +3621,20 @@ united_concord_4 = {
 			2854 = { #Cathfei
 				add_permanent_claim = ROOT
 				if = {
-					limit = { NOT = { owner = { government = republic } } }
-					owner = {
-						reverse_add_casus_belli = {
-							type = cb_change_government
-							target = ROOT
-							months = 240
+					limit = {
+						owner = { is_colonial_nation = yes }
+					}
+					owner = { add_liberty_desire = 35 }
+				}
+				else = {
+					if = {
+						limit = { NOT = { owner = { government = republic } } }
+						owner = {
+							reverse_add_casus_belli = {
+								type = cb_change_government
+								target = ROOT
+								months = 240
+							}
 						}
 					}
 				}
@@ -3916,6 +3951,7 @@ united_concord_5 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H33
 		has_country_flag = united_concord
 	}
@@ -3979,7 +4015,7 @@ united_concord_5 = {
 			1133 = { #Adbrabohvi
 				province_trade_power = 50
 			}
-			1031 = { #VenainÃ©
+			1031 = { #Venainé
 				province_trade_power = 50
 			}
 			1028 = { #Ynnsmouth
@@ -4256,6 +4292,7 @@ union_placeholder = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H33
 		NOT = { has_country_flag = united_concord }
 	}

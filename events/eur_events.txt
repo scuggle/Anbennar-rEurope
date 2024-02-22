@@ -1166,6 +1166,7 @@ country_event = {
 	picture = BIG_STAR_IN_SKY_eventPicture
 
 	hidden = yes
+	is_triggered_only = yes
 	trigger = {
 		NOT = {
 			has_idea = minority_ideas_07

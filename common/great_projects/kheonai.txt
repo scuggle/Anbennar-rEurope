@@ -220,7 +220,7 @@ warded_city_orm = {
 			months = 480
 		}
 		cost_to_upgrade = {
-			factor = 5000
+			factor = 6000
 		}
 		province_modifiers = {
 			local_defensiveness = 0.33
@@ -298,13 +298,13 @@ warded_city_khe = {
 			months = 120
 		}
 		cost_to_upgrade = {
-			factor = 1000
+			factor = 2500
 		}
 		province_modifiers = {
 			local_defensiveness = 0.1
 		}
 		area_modifier = {
-			local_development_cost = -0.1
+			local_development_cost = -0.05
 		}
 		country_modifiers = {
 			production_efficiency = 0.1
@@ -318,13 +318,13 @@ warded_city_khe = {
 			months = 240
 		}
 		cost_to_upgrade = {
-			factor = 2500
+			factor = 5000
 		}
 		province_modifiers = {
 			local_defensiveness = 0.15
 		}
 		area_modifier = {
-			local_development_cost = -0.15
+			local_development_cost = -0.075
 			trade_goods_size_modifier = 0.1
 		}
 		country_modifiers = {
@@ -340,13 +340,13 @@ warded_city_khe = {
 			months = 480
 		}
 		cost_to_upgrade = {
-			factor = 5000
+			factor = 10000
 		}
 		province_modifiers = {
 			local_defensiveness = 0.25
 		}
 		area_modifier = {
-			local_development_cost = -0.2
+			local_development_cost = -0.1
 			trade_goods_size_modifier = 0.2
 		}
 		country_modifiers = {
@@ -421,6 +421,7 @@ warded_city_lok = {
 		}
 		province_modifiers = {
 			local_defensiveness = 0.1
+			local_development_cost = -0.05
 		}
 		area_modifier = {
 			institution_growth = 0.05
@@ -442,6 +443,7 @@ warded_city_lok = {
 		}
 		province_modifiers = {
 			local_defensiveness = 0.15
+			local_development_cost = -0.1
 		}
 		area_modifier = {
 			institution_growth = 0.1
@@ -464,6 +466,7 @@ warded_city_lok = {
 		}
 		province_modifiers = {
 			local_defensiveness = 0.25
+			local_development_cost = -0.15
 		}
 		area_modifier = {
 			institution_growth = 0.15
@@ -537,7 +540,7 @@ warded_city_okt = {
 			months = 120
 		}
 		cost_to_upgrade = {
-			factor = 1000
+			factor = 1500
 		}
 		province_modifiers = {
 			local_defensiveness = 0.10
@@ -547,7 +550,7 @@ warded_city_okt = {
 			trade_goods_size_modifier = 0.10
 		}
 		country_modifiers = {
-			advisor_cost = -0.15
+			advisor_cost = -0.05
 			global_colonial_growth = 20
 		}
 		on_upgraded = {
@@ -558,7 +561,7 @@ warded_city_okt = {
 			months = 240
 		}
 		cost_to_upgrade = {
-			factor = 2500
+			factor = 3500
 		}
 		province_modifiers = {
 			local_defensiveness = 0.15
@@ -568,7 +571,7 @@ warded_city_okt = {
 			trade_goods_size_modifier = 0.20
 		}
 		country_modifiers = {
-			advisor_cost = -0.20
+			advisor_cost = -0.10
 			global_colonial_growth = 30
 		}
 		on_upgraded = {
@@ -579,7 +582,7 @@ warded_city_okt = {
 			months = 480
 		}
 		cost_to_upgrade = {
-			factor = 5000
+			factor = 7000
 		}
 		province_modifiers = {
 			local_defensiveness = 0.25
@@ -589,7 +592,7 @@ warded_city_okt = {
 			trade_goods_size_modifier = 0.35
 		}
 		country_modifiers = {
-			advisor_cost = -0.25
+			advisor_cost = -0.15
 			global_colonial_growth = 50
 		}
 		on_upgraded = {

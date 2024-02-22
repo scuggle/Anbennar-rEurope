@@ -1,0 +1,155 @@
+country_decisions = {
+	fal_goblin_casino = {
+		potential = {
+			tag = X20	#falahan
+			owns = 2942	#shazstundihr
+			NOT = {
+				2942 = { has_province_modifier = fal_goblin_casino_modifier }
+			}
+		}
+		allow = {
+			owns = 2942	#not actually needed but may make things clearer
+			mission_completed = fal_digging_our_holds
+			high_tolerance_goblin_race_trigger = yes
+			treasury = 500
+		}
+		provinces_to_highlight = {
+			province_id = 2942
+		}
+		effect = {
+			2942 = {
+				add_province_modifier = {
+					name = fal_goblin_casino_modifier	#modifier giving 5 local unrest and 20% local tax modifier
+					duration = -1	#permanent
+				}
+			}
+			add_treasury = -500
+		}
+	}
+	shaz_gambling = {
+		potential = {
+			owns = 2942
+			2942 = {
+				has_province_modifier = fal_goblin_casino_modifier
+			}
+			NOT = { has_country_flag = shaz_gambling_flag }
+			NOT = { has_country_flag = shaz_cooldown_flag }
+		}
+		allow = {
+			treasury = 100
+		}
+		provinces_to_highlight = {
+			province_id = 2942
+		}
+		effect = {
+			set_country_flag = shaz_gambling_flag
+			add_treasury = -100
+		}
+	}
+	fal_moving_goblins = {
+		potential = {
+			owns = 2942	#shazstundihr
+			owns = 526	#ovdal tungr
+			526 = { NOT = { has_goblin_majority_trigger = yes } }
+		}
+		allow = {
+			mission_completed = fal_closer_with_goblins
+			high_tolerance_goblin_race_trigger = yes 
+			NOT = { high_tolerance_dwarven_race_trigger = yes }
+			#526 = { NOT = { has_goblin_majority_trigger = yes } }
+			any_owned_province = {
+				has_goblin_majority_trigger = yes
+			}
+			treasury = 200
+		}
+		provinces_to_highlight = {
+			province_id = 526
+		}
+		effect = {
+			add_treasury = -200
+			526 = {
+				spawn_rebels = {
+					type = nationalist_rebels
+					size = 3
+					separatists_target  = F23	#Ovdal Tungr
+					win = yes
+				}
+				#add_goblin_majority_size_effect = yes
+				change_culture = exodus_goblin
+			}
+			medium_decrease_of_dwarven_tolerance_effect = yes
+		}
+	}
+	shaz_forcing_fairness = {
+		potential = {
+			any_owned_province = {
+				has_province_modifier = fal_goblin_casino_modifier
+			}
+			NOT = { has_country_flag = shaz_forcing_fairness }
+		}
+		allow = {
+			#2942 = { controller = ROOT }
+		}
+		provinces_to_highlight = {
+			province_id = 2942
+		}
+		effect = {
+			set_country_flag = shaz_forcing_fairness
+			2942 = {
+				add_unrest = 5
+			}
+			small_decrease_of_goblin_tolerance_effect = yes
+		}
+	}
+	fal_copper_hulls = {
+		potential = {
+			526 = { owned_by = ROOT is_core = ROOT }	#ovdal tungr
+			mission_completed = fal_tungr_naval_base
+		}
+		allow = {
+			#526 = { controller = ROOT }
+			num_of_owned_provinces_with = {
+				value = 10
+				trade_goods = copper
+			}
+			OR = {
+				AND = {
+					526 = { 
+						OR = {
+							has_dwarven_majority_trigger = yes
+							has_dwarven_minority_trigger = yes
+						}
+					}
+					high_tolerance_dwarven_race_trigger = yes
+				}
+				AND = {
+					526 = { 
+						has_goblin_majority_trigger = yes
+					}
+					high_tolerance_goblin_race_trigger = yes
+				}
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 526
+				trade_goods = copper
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = fal_copper_hulls_modifier	#modifier giving 7.5% ship durability
+				duration = -1	#permanent
+			}
+			every_owned_province = {
+				limit = {
+					trade_goods = copper 
+				}
+				add_province_modifier = {
+					name = fal_copper_hulls_province_modifier	#modifier giving -10% production effiency
+					duration = -1	#permanent
+				}
+			}
+		}
+	}
+}

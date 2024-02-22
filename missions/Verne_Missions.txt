@@ -4,6 +4,7 @@ A33_northern_missions_slot = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A33
 		
 	}
@@ -217,6 +218,7 @@ A33_western_missions_slot = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A33
 	}
 	has_country_shield = yes
@@ -445,6 +447,7 @@ A33_divenhal_missions_slot = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A33
 	}
 	has_country_shield = yes
@@ -666,6 +669,7 @@ A33_colonial_missions_slot = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A33
 	}
 	has_country_shield = yes

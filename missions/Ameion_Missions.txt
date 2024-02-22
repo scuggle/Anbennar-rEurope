@@ -9,6 +9,7 @@ G52_1 = {
 			tag = G52 #Ameion
 			tag = G00 #Civil War
 		}
+		NOT = { has_country_flag = chose_generic_mt }
 	}
 	has_country_shield = yes
 	
@@ -290,6 +291,7 @@ G52_2 = {
 			tag = G52 #Ameion
 			tag = G00 #Civil War
 		}
+		NOT = { has_country_flag = chose_generic_mt }
 	}
 	has_country_shield = yes
 	
@@ -1254,6 +1256,7 @@ G52_3 = {
 			tag = G52 #Ameion
 			tag = G00 #Civil War
 		}
+		NOT = { has_country_flag = chose_generic_mt }
 	}
 	has_country_shield = yes
 	
@@ -2102,6 +2105,7 @@ G52_4 = {
 			tag = G52 #Ameion
 			tag = G00 #Civil War
 		}
+		NOT = { has_country_flag = chose_generic_mt }
 	}
 	has_country_shield = yes
 	
@@ -2861,11 +2865,12 @@ G52_5 = {
 			tag = G52 #Ameion
 			tag = G00 #Civil War
 		}
+		NOT = { has_country_flag = chose_generic_mt }
 	}
 	has_country_shield = yes
 	
 	G52_renewed_invasion = {
-		icon = mission_embrace_our_destiny
+		icon = mission_aelnar_corps
 		required_missions = { }
 		position = 1
 		
@@ -3031,7 +3036,7 @@ G52_5 = {
 	}
 	
 	G52_stands_falls = {
-		icon = mission_sweat_fealty
+		icon = mission_approach_throne
 		required_missions = { G52_collision_destiny }
 		position = 8
 		

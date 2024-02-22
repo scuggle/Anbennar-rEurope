@@ -9,6 +9,7 @@ unification_of_akasik = {
 			tag = U08
 			tag = U06
 		}
+		NOT = { has_country_flag = chose_generic_mt }
 	}
 	has_country_shield = yes
 	

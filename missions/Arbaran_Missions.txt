@@ -3,7 +3,10 @@ arbaran_1 = {
 	slot = 1
 	generic = no
 	ai = yes
-	potential = { tag = A46 }
+	potential = {
+    	NOT = { has_country_flag = chose_generic_mt }
+		tag = A46 
+	}
 	has_country_shield = yes
 	
 	A46_horsemeat_delicacies = {
@@ -369,6 +372,7 @@ arbaran_2 = {
 	generic = no
 	ai = yes
 	potential = {
+    	NOT = { has_country_flag = chose_generic_mt }
 		tag = A46
 	}
 	has_country_shield = yes
@@ -807,6 +811,7 @@ arbaran_3 = {
 	generic = no
 	ai = yes
 	potential = {
+    	NOT = { has_country_flag = chose_generic_mt }
 		tag = A46
 	}
 	has_country_shield = yes
@@ -1225,6 +1230,7 @@ arbaran_4 = {
 	generic = no
 	ai = yes
 	potential = {
+    	NOT = { has_country_flag = chose_generic_mt }
 		tag = A46
 	}
 	has_country_shield = yes
@@ -1505,7 +1511,7 @@ arbaran_4 = {
 	}
 	
 	A46_defender_of_the_small_country = {
-		icon = mission_sweat_fealty
+		icon = mission_approach_throne
 		required_missions = { A46_reclaim_aelcandar }
 		position = 7
 		
@@ -1669,6 +1675,7 @@ arbaran_5 = {
 	generic = no
 	ai = yes
 	potential = {
+    	NOT = { has_country_flag = chose_generic_mt }
 		tag = A46
 	}
 	has_country_shield = yes

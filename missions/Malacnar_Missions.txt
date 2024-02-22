@@ -5,6 +5,7 @@ G32_internal = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = G32 #Malacnar
 			AND = {
@@ -94,7 +95,7 @@ G32_internal = {
 	}
 	
 	G32_rebirth_sword = {
-		icon = mission_embrace_our_destiny
+		icon = mission_new_dawn
 		required_missions = { G32_deep_breath }
 		position = 3
 		
@@ -285,6 +286,7 @@ G32_internal_part2 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = G32 #Malacnar
 	}
 	has_country_shield = yes
@@ -318,12 +320,7 @@ G32_internal_part2 = {
 		effect = {
 			add_adm_power = -100
 			add_dip_power = -150
-			change_primary_culture = malacnari
-			set_ruler_culture = malacnari
-			if = {
-				limit = { has_heir = yes }
-				set_heir_culture = malacnari
-			}
+			primary_and_ruler_culture_change = { race = ruinborn new_culture = malacnari }
 			1169 = { change_culture = malacnari }
 			if = {
 				limit = { owns_core_province = 1168 }
@@ -533,6 +530,7 @@ G32_western_expansion = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = G32 #Malacnar
 			AND = {
@@ -678,6 +676,7 @@ G32_western_expansion = {
 					OR = {
 						owned_by_companion = yes
 						NOT = { religion = drozma_tur }
+						province_id = 2821
 					}
 				}
 			}
@@ -701,6 +700,7 @@ G32_ynns_soldiers = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = G32 #Malacnar
 			AND = {
@@ -760,6 +760,7 @@ G32_ynns_soldiers_part2 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = G32 #Malacnar
 	}
 	has_country_shield = yes
@@ -850,6 +851,7 @@ G32_ynn_expansion = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = G32 #Malacnar
 			AND = {
@@ -871,7 +873,7 @@ G32_ynn_expansion = {
 		}
 		
 		effect = {
-			drevkenuc_area = {
+			drevonsred_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
@@ -896,7 +898,7 @@ G32_ynn_expansion = {
 		provinces_to_highlight = {
 			NOT = { owned_by_companion = yes }
 			OR = {
-				area = drevkenuc_area
+				area = drevonsred_area
 				area = bosancovac_area
 			}
 			NOT = { province_id = 2839 }
@@ -904,7 +906,7 @@ G32_ynn_expansion = {
 		}
 		
 		trigger = {
-			drevkenuc_area = {
+			drevonsred_area = {
 				type = all
 				owned_by_companion = yes
 			}
@@ -1137,6 +1139,7 @@ G32_ynn_expansion_part2 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = G32 #Malacnar
 	}
 	has_country_shield = yes
@@ -1251,6 +1254,7 @@ G32_glorious_warfare_harafe = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = G32 #Malacnar
 	}
 	has_country_shield = yes
@@ -1322,6 +1326,7 @@ G32_eastern_expansion = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = G32 #Malacnar
 			AND = {
@@ -1333,7 +1338,7 @@ G32_eastern_expansion = {
 	has_country_shield = yes
 	
 	G32_integrate_mage = {
-		icon = mission_sweat_fealty
+		icon = mission_approach_throne
 		required_missions = {  }
 		position = 1
 		
@@ -1520,6 +1525,7 @@ G32_eastern_expansion_part2 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = G32 #Malacnar
 	}
 	has_country_shield = yes
@@ -1565,6 +1571,7 @@ G32_glorious_warfare_outsiders = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = G32 #Malacnar
 	}
 	has_country_shield = yes
@@ -1725,6 +1732,7 @@ G32_companions = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = G32 #Malacnar
 			AND = {
@@ -1925,6 +1933,7 @@ G32_outsiders = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = G32 #Malacnar
 			AND = {
@@ -1995,6 +2004,7 @@ G32_outsiders_part2 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = G32 #Malacnar
 	}
 	has_country_shield = yes
@@ -2071,6 +2081,7 @@ G32_glorious_warfare_eordan = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = G32 #Malacnar
 	}
 	has_country_shield = yes

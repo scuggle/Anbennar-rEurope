@@ -4,6 +4,7 @@ varamhar_1 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = F42
 			AND = {
@@ -24,7 +25,7 @@ varamhar_1 = {
 		}
 		
 		effect = {
-			frenyantlen_area = {
+			kharfiraeri_area = {
 				limit = {
 					NOT = {
 						owned_by = ROOT
@@ -33,7 +34,7 @@ varamhar_1 = {
 				}
 				add_permanent_claim = ROOT
 			}
-			harpylen_area = {
+			siffiraeri_area = {
 				limit = {
 					NOT = {
 						owned_by = ROOT
@@ -42,7 +43,7 @@ varamhar_1 = {
 				}
 				add_permanent_claim = ROOT
 			}
-			invaders_pass_area = {
+			nanshalen_area = {
 				limit = {
 					NOT = {
 						owned_by = ROOT
@@ -255,6 +256,7 @@ varamhar_2 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = F42
 			AND = {
@@ -430,6 +432,7 @@ varamhar_3 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = F42
 			AND = {
@@ -576,6 +579,9 @@ varamhar_3 = {
 		}
 		
 		trigger = {
+			NOT = { has_ruler_flag = is_a_lich }
+			hidden_trigger = { NOT = { has_ruler_flag = magic_project_lichdom_started } }
+			NOT = { has_country_modifier = undead_military }
 			adm = 6
 			dip = 6
 			mil = 6
@@ -590,6 +596,7 @@ varamhar_3 = {
 			add_adm_power = -150
 			add_dip_power = -150
 			add_mil_power = -150
+			hidden_effect = { set_country_flag = magic_ruler_is_busy }
 			country_event = {
 				id = varamhar_flavour.10
 			}
@@ -603,6 +610,7 @@ varamhar_4 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = F42
 			AND = {
@@ -825,6 +833,7 @@ varamhar_5 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = F42
 			AND = {

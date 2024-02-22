@@ -3,6 +3,7 @@ nuugdan_tsarai_1 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = Y91
 			tag = Y96
@@ -181,6 +182,7 @@ nuugdan_tsarai_2 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = Y91
 			tag = Y96
@@ -245,11 +247,11 @@ nuugdan_tsarai_2 = {
 
 		effect = {
 			4842 = { add_core = Y90 }
+			4842 = { cede_province = Y90 } 
+			4845 = { cede_province = Y90 } 
 			jinqiu_area = {
 				cede_province = Y90
 			}
-			4842 = { cede_province = Y90 } 
-			4845 = { cede_province = Y90 } 
 			create_subject = {
 				subject_type = "autonomous_vassal"
 				subject = Y90
@@ -267,11 +269,9 @@ nuugdan_tsarai_2 = {
 					4843 = { change_culture = daxug change_religion = saanorgegh }
 					4844 = { change_culture = daxug change_religion = saanorgegh }
 				}
-				4842 = { center_of_trade = 1 }
+				4842 = { add_center_of_trade_level = 1 }
 				jinqiu_area = { add_permanent_claim = Y90 }
-				jiangszun_area = { add_permanent_claim = Y90 }	
-				jinqiu_area = { remove_claim = ROOT }
-				jiangszun_area = { remove_claim = ROOT }		
+				jiangszun_area = { add_permanent_claim = Y90 }			
 				bianfang_area = { add_permanent_claim = Y90 }
 				tianszi_area = { add_permanent_claim = Y90 }
 				anjiang_area = { add_permanent_claim = Y90 }
@@ -279,6 +279,8 @@ nuugdan_tsarai_2 = {
 				lamzung_area = { add_permanent_claim = Y90 }
 				4827 = { add_permanent_claim = Y90 }
 				4901 = { add_permanent_claim = Y90 }
+				jinqiu_area = { remove_claim = ROOT }
+				jiangszun_area = { remove_claim = ROOT }
 				clr_country_flag = Y91_jaal_horde
 				remove_country_modifier = Y91_jaal_horde_fl
 			}
@@ -295,8 +297,6 @@ nuugdan_tsarai_2 = {
 				4842 = { center_of_trade = 1 }
 				jinqiu_area = { add_permanent_claim = Y90 }
 				jiangszun_area = { add_permanent_claim = Y90 }	
-				jinqiu_area = { remove_claim = ROOT }
-				jiangszun_area = { remove_claim = ROOT }		
 				bianfang_area = { add_permanent_claim = Y90 }
 				tianszi_area = { add_permanent_claim = Y90 }
 				anjiang_area = { add_permanent_claim = Y90 }
@@ -304,6 +304,8 @@ nuugdan_tsarai_2 = {
 				lamzung_area = { add_permanent_claim = Y90 }
 				4827 = { add_permanent_claim = Y90 }
 				4901 = { add_permanent_claim = Y90 }
+				jinqiu_area = { remove_claim = ROOT }
+				jiangszun_area = { remove_claim = ROOT }		
 				clr_country_flag = Y91_jaal_horde
 				remove_country_modifier = Y91_jaal_horde_fl
 				hidden_effect = {
@@ -464,6 +466,7 @@ nuugdan_tsarai_3 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = Y91
 			tag = Y96
@@ -639,6 +642,7 @@ nuugdan_tsarai_98 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = Y91
 			tag = Y96
@@ -694,6 +698,7 @@ nuugdan_tsarai_97 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = Y91
 			tag = Y96
@@ -764,6 +769,7 @@ nuugdan_tsarai_96 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = Y91
 			tag = Y96
@@ -802,6 +808,7 @@ nuugdan_tsarai_95 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = Y91
 			tag = Y96
@@ -880,6 +887,7 @@ nuugdan_tsarai_94 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = Y91
 			tag = Y96
@@ -945,6 +953,7 @@ nuugdan_tsarai_93 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = Y91
 			tag = Y96
@@ -1038,6 +1047,7 @@ nuugdan_tsarai_92 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = Y91
 			tag = Y96
@@ -1163,6 +1173,7 @@ nuugdan_tsarai_91 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = Y91
 			tag = Y96
@@ -1227,6 +1238,7 @@ nuugdan_tsarai_4 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = Y91
 			tag = Y96
@@ -1549,6 +1561,7 @@ nuugdan_tsarai_5 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = Y91
 			tag = Y96
@@ -1821,6 +1834,7 @@ nuugdan_tsarai_99 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = Y96
 			tag = Y98
@@ -2162,6 +2176,7 @@ nuugdan_tsarai_6 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Y98
 	}
 	has_country_shield = yes
@@ -2328,6 +2343,7 @@ nuugdan_tsarai_7 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Y98
 		has_country_flag = daxugo_rebellions_started
 	}
@@ -2556,6 +2572,7 @@ nuugdan_tsarai_8 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Y98
 		has_country_flag = daxugo_rebellions_started
 	}
@@ -2824,6 +2841,7 @@ nuugdan_tsarai_9 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Y98
 		has_country_flag = daxugo_rebellions_started
 	}
@@ -3071,6 +3089,7 @@ nuugdan_tsarai_49 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Y98
 		has_country_flag = daxugo_rebellions_finished
 	}
@@ -3302,6 +3321,7 @@ nuugdan_tsarai_42 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Y98
 		has_country_flag = daxugo_rebellions_finished
 	}
@@ -3587,6 +3607,7 @@ nuugdan_tsarai_44 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Y98
 		has_country_flag = daxugo_rebellions_finished
 	}
@@ -3789,6 +3810,7 @@ nuugdan_tsarai_48 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Y98
 		has_country_flag = daxugo_rebellions_finished
 	}
@@ -4026,6 +4048,7 @@ nuugdan_tsarai_43 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Y98
 		has_country_flag = daxugo_rebellions_finished
 	}

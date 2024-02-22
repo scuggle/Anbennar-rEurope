@@ -3,6 +3,7 @@ skurkokli_gorgerlord_powerup_a_one = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = J47
 		has_country_flag = gorger_lord_influence_level_1
 	}
@@ -42,6 +43,7 @@ skurkokli_gorgerlord_powerup_b_one = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = J47
 		has_country_flag = gorger_lord_influence_level_2
 	}
@@ -81,6 +83,7 @@ skurkokli_gorgerlord_powerup_c_one = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = J47
 		has_country_flag = gorger_lord_influence_level_3
 	}
@@ -120,6 +123,7 @@ skurkokli_gorgerlord_powerup_d_one = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = J47
 		has_country_flag = gorger_lord_influence_level_4
 	}
@@ -157,6 +161,7 @@ skurkokli_ogrekind_a_one = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = J47
 	}
 	has_country_shield = yes
@@ -219,6 +224,7 @@ skurkokli_horde_marches_one = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = J47
 		has_country_flag = horde_marches_west
 	}
@@ -600,6 +606,7 @@ skurkokli_bottom_one = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 			tag = J47
 			has_country_flag = the_ogretide
 	}
@@ -720,6 +727,7 @@ ogre_tribe_two = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = J41
 			tag = J42
@@ -839,6 +847,7 @@ skurkokli_two = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = J47
 	}
 	has_country_shield = yes
@@ -1209,11 +1218,11 @@ skurkokli_two = {
 		position = 9
 		
 		provinces_to_highlight = { 
-				region = ogre_mountains_region
+				region = ogre_valley_region
 		}
 		
 		trigger = {
-			ogre_mountains_region = {
+			ogre_valley_region = {
 				type = all
 				is_core = ROOT 
 				owned_by = ROOT 
@@ -1247,6 +1256,7 @@ skurkokli_horde_marches_two = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = J47
 		has_country_flag = horde_marches_west
 	}
@@ -1723,6 +1733,7 @@ skurkokli_bottom_two = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 			tag = J47
 			has_country_flag = the_ogretide
 	}
@@ -1805,6 +1816,7 @@ ogre_tribe_three = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = J41
 			tag = J42
@@ -2049,6 +2061,7 @@ skurkokli_three = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 			tag = J47
 	}
 	has_country_shield = yes
@@ -2190,10 +2203,9 @@ skurkokli_three = {
 		
 		effect = {
 			add_treasury = -200
-			change_primary_culture = bloodtooth_ogre
+			primary_and_ruler_culture_change = { race = ogre new_culture = bloodtooth_ogre }
 			custom_tooltip = ogre_bloodtooth
-			hidden_effect = { 
-				set_ruler_culture = bloodtooth_ogre
+			hidden_effect = {
 				every_owned_province = {
 					limit = { culture = fathide_ogre }
 					change_culture = bloodtooth_ogre
@@ -2212,6 +2224,7 @@ skurkokli_horde_marches_three = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 			tag = J47
 			has_country_flag = horde_marches_west
 	}
@@ -3375,6 +3388,7 @@ skurkokli_bottom_three = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 			tag = J47
 			has_country_flag = the_ogretide
 	}
@@ -3411,6 +3425,7 @@ ogre_tribe_four = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = J41
 			tag = J42
@@ -3508,6 +3523,7 @@ skurkokli_dummy_four = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 			tag = J47
 	}
 	has_country_shield = yes
@@ -3518,6 +3534,7 @@ skurkokli_four = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 			tag = J47
 	}
 	has_country_shield = yes
@@ -3543,6 +3560,12 @@ skurkokli_four = {
 			add_country_modifier = {
 				name = skurkokli_ogre_settlers
 				duration = 18250 #50 years
+			}
+			5004 = {
+				add_permanent_claim = ROOT
+			}
+			5003 = {
+				add_permanent_claim = ROOT
 			}
 		}
 	}
@@ -3648,6 +3671,13 @@ skurkokli_four = {
 				name = skurkokli_wild_clan_colonist
 				duration = 18250 #50 years
 			}
+			yyl_moista_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 		}
 	}	
 	
@@ -3675,6 +3705,12 @@ skurkokli_four = {
 				name = skurkokli_settle_yyl_moitsa
 				duration = 9125 #25 years
 			}
+			4198 = {
+				add_permanent_claim = ROOT
+			}
+			4201 = {
+				add_permanent_claim = ROOT
+			}
 		}
 	}	
 }
@@ -3684,6 +3720,7 @@ skurkokli_horde_marches_four = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = J47
 		has_country_flag = horde_marches_west
 	}
@@ -4106,6 +4143,7 @@ skurkokli_fed_war_b_four = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = J47
 		has_country_flag = war_against_fed
 		has_country_flag = fed_war_completed
@@ -4219,6 +4257,7 @@ skurkokli_horde_c_four = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = J47
 		has_country_flag = horde_marches_west
 	}
@@ -4273,6 +4312,7 @@ skurkokli_bottom_four = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 			tag = J47
 			has_country_flag = the_ogretide
 	}
@@ -4369,6 +4409,7 @@ skurkokli_dummy_five = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 			tag = J47
 	}
 	has_country_shield = yes
@@ -4379,6 +4420,7 @@ skurkokli_fed_war_a_five = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = J47
 		has_country_flag = war_against_fed
 	}
@@ -4627,7 +4669,7 @@ skurkokli_fed_war_a_five = {
 						superregion = forbidden_lands_superregion
 						NOT = {
 							OR = {
-								region = ogre_mountains_region
+								region = ogre_valley_region
 								area = yyl_moitsa_west_area
 								area = far_moitsa_area
 							}
@@ -4659,6 +4701,7 @@ skurkokli_fed_war_b_five = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 			tag = J47
 			has_country_flag = war_against_fed
 			has_country_flag = fed_war_completed
@@ -4845,6 +4888,7 @@ skurkokli_horde_marches_five = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 			tag = J47
 			has_country_flag = horde_marches_west
 	}
@@ -5054,7 +5098,7 @@ skurkokli_horde_marches_five = {
 				development = 50
 				has_courthouse_building_trigger = yes
 			}
-			840 = { #Castonath Trade Node
+			833 = { #Castonath Trade Node
 				trade_share = {
 					country = ROOT
 					share = 50
@@ -5087,6 +5131,7 @@ skurkokli_bottom_five = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 			tag = J47
 			has_country_flag = the_ogretide
 	}

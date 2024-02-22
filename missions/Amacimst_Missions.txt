@@ -18,6 +18,7 @@ G26_kill_them_all_branch = {
 			}
 		}
 		NOT = { map_setup = map_setup_random }
+		NOT = { has_country_flag = chose_generic_mt }
 	}
 	has_country_shield = yes
 	
@@ -433,6 +434,7 @@ G26_amethyst_branch = {
 			}
 		}
 		NOT = { map_setup = map_setup_random }
+		NOT = { has_country_flag = chose_generic_mt }
 	}
 	has_country_shield = yes
 	
@@ -821,6 +823,7 @@ G26_protectors_of_the_ynn_branch = {
 			}
 		}
 		NOT = { map_setup = map_setup_random }
+		NOT = { has_country_flag = chose_generic_mt }
 	}
 	has_country_shield = yes
 	
@@ -1115,12 +1118,36 @@ G26_protectors_of_the_ynn_branch = {
 		}
 		position = 7
 		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
+			OR = {
+				AND = {
+					area = kaztakri_area
+					NOT = {
+						country_or_non_sovereign_subject_holds = ROOT
+						is_city = no
+					}
+				}
+				AND = {
+					area = hradavezl_area
+					NOT = {
+						country_or_non_sovereign_subject_holds = ROOT
+						is_city = no
+					}
+				}
+				AND = {
+					province_id = 1138	#Vels Bacar
+					NOT = {
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+				}
+			}
 		}
 		trigger = {
 			kaztakri_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				OR = {
+					is_city = no
+					country_or_non_sovereign_subject_holds = ROOT
+				}
 			}
 			hradavezl_area = {
 				type = all
@@ -1467,6 +1494,7 @@ G26_river_priests_branch = {
 			}
 		}
 		NOT = { map_setup = map_setup_random }
+		NOT = { has_country_flag = chose_generic_mt }
 	}
 	has_country_shield = yes
 	
@@ -1677,6 +1705,12 @@ G26_river_priests_branch = {
 		effect = {
 			custom_tooltip = G26_dolindhan_rzentur_nobility_tt
 			hidden_effect = {
+				U33 = {
+					every_core_province = {
+						cede_province = U33
+					}
+				}
+				create_iosahar = { tag = U33 }
 				every_known_country = {
 					limit = {
 						culture = rzentur
@@ -1716,7 +1750,6 @@ G26_river_priests_branch = {
 			}
 			G30 = { #Mocvare
 				is_subject_of = ROOT
-				is_subject_of_type = ynnic_iosahar
 			}
 			adm_power = 100
 			treasury = 200
@@ -1843,6 +1876,7 @@ G26_inquisition_branch = {
 			}
 		}
 		NOT = { map_setup = map_setup_random }
+		NOT = { has_country_flag = chose_generic_mt }
 	}
 	has_country_shield = yes
 	
@@ -1855,7 +1889,7 @@ G26_inquisition_branch = {
 		position = 3
 		provinces_to_highlight = {
 			OR = {
-				area = drevkenuc_area
+				area = drevonsred_area
 				is_capital_of = G29
 			}
 		}

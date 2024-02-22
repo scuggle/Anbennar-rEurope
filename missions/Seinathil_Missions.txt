@@ -4,6 +4,7 @@ seinathil_missions_column_0 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A90
 	}
 	has_country_shield = yes
@@ -214,6 +215,7 @@ seinathil_missions_column_2 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A90
 	}
 	has_country_shield = yes
@@ -470,6 +472,7 @@ seinathil_missions_column_3 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A90
 	}
 	has_country_shield = yes
@@ -617,6 +620,7 @@ seinathil_missions_column_4 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A90
 	}
 	has_country_shield = yes
@@ -922,6 +926,7 @@ seinathil_missions_column_5 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A90
 	}
 	has_country_shield = yes

@@ -4,6 +4,7 @@ xia_chi = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			has_reform = wulin
 			has_reform = xiaken
@@ -201,6 +202,7 @@ xia_heroes = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			has_reform = wulin
 			has_reform = xiaken
@@ -395,6 +397,7 @@ xia_legend = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			has_reform = wulin
 			has_reform = xiaken
@@ -552,6 +555,7 @@ xia_consolidation_1 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			has_reform = wulin
 			has_reform = xiaken
@@ -675,6 +679,7 @@ xia_consolidation_2 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			has_reform = wulin
 			has_reform = xiaken
@@ -836,6 +841,7 @@ xia_onexia_1 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Y99
 	}
 	
@@ -1164,6 +1170,7 @@ xia_onexia_2 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Y99
 	}
 	
@@ -1613,6 +1620,7 @@ xia_onexia_3 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Y99
 	}
 	
@@ -2422,6 +2430,7 @@ xia_onexia_4 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Y99
 	}
 	
@@ -2871,6 +2880,7 @@ xia_onexia_5 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Y99
 	}
 	

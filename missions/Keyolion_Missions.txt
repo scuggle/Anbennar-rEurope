@@ -7,7 +7,8 @@ G58_1_missions = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { tag = G58 }
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = G58 }
 
 	G58_1_1_the_new_plantations = {
 		icon = mission_sw_yucca_plants
@@ -317,7 +318,8 @@ G58_2_missions = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { tag = G58 }
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = G58 }
 
 	G58_2_1_collect_a_sample = {
 		icon = colonize_the_cape
@@ -606,8 +608,8 @@ G58_2_missions = {
 	}
 	
 
-	G58_2_5_reaching_new_heights = {
-		icon = mission_potosi_silver
+	G58_2_5_greenhouse_laboratories = {
+		icon = mission_plc_edict_education
 		position = 5
 		required_missions = {
 			G58_2_4_the_institute_of_agronomy
@@ -811,7 +813,7 @@ G58_2_missions = {
 		position = 6
 		required_missions = {
 			G58_1_5_the_sugar_must_flow
-			G58_2_5_reaching_new_heights
+			G58_2_5_greenhouse_laboratories
 		}
 
 		provinces_to_highlight = {
@@ -906,7 +908,8 @@ G58_3_missions = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { tag = G58 }
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = G58 }
 
 	G58_3_2_find_a_supporter = {
 		icon = mission_alliances
@@ -1301,7 +1304,8 @@ G58_4_missions = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { tag = G58 }
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = G58 }
 
 	G58_4_1_the_slave_trade = {
 		icon = mission_colonise_brazil
@@ -1341,6 +1345,9 @@ G58_4_missions = {
 			has_kheionist_philosophy_basic = {
 				type = dip
 			}
+			hidden_trigger = {
+				num_of_light_ship = 2
+			}
 			1712 = { #Axehead Gulf
 				custom_trigger_tooltip = {
 					tooltip = G58_slave_trade_tt
@@ -1376,8 +1383,9 @@ G58_4_missions = {
 				}
 				hidden_effect = {
 					country_event = {
-						id = keyolion_events.300
-						days = 1
+						id = keyolion_events.303
+						#SHOULD BE 1095. IF ITS 1 ITS FOR DEBUGGING
+						days = 1095
 					}
 				}
 			}
@@ -1878,7 +1886,8 @@ G58_5_missions = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { tag = G58 }
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = G58 }
 
 	G58_5_1_the_keyolioni_militia = {
 		icon = dom_ara_remensa_war

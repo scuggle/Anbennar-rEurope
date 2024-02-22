@@ -1,47 +1,49 @@
+
 marrhold = {
 	slot = 1
 	generic = no
 	ai = yes
-	has_country_shield = yes
 	potential = {
-		OR = {
-			tag = B36
-			AND = {
-				tag = M01
-				was_tag = B36
-			}
-		}
+    NOT = { has_country_flag = chose_generic_mt }
+		tag = B36
+		
 	}
-
+	has_country_shield = yes
+	
 	marrhold_griffon_prince = {
 		icon = mission_italian_condottiere
 		position = 1
-		provinces_to_highlight = {  } 
-
-		trigger = { mil = 4 } 
-
+		required_missions = { }
+		
+		trigger = {
+			mil = 4
+		}
+		
 		effect = {
 			add_country_modifier = {
 				name = "marrhold_griffon_heroes"
-				duration = 9125
+				duration = 9125 #25 years
 			}
 		}
 	}
-
+	
 	marrhold_griffon_knights = {
-		icon = mission_sweat_fealty
+		icon = mission_approach_throne
 		position = 3
-		required_missions = { marrhold_griffon_prince } 
+		required_missions = {
+			marrhold_griffon_prince
+		}
+		
 		provinces_to_highlight = {
 			province_id = 895
 			OR = {
-				NOT = { base_manpower = 8 } 
-				NOT = { has_manpower_building_trigger = yes } 
-				NOT = { owned_by = ROOT } 
-				NOT = { is_core = ROOT } 
+				NOT = { base_manpower = 8 }
+				NOT = { has_manpower_building_trigger = yes }
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
 			}
 		}
-
+		
 		trigger = {
 			895 = {
 				base_manpower = 8
@@ -50,11 +52,11 @@ marrhold = {
 				is_core = ROOT
 			}
 		}
-
+		
 		effect = {
 			add_country_modifier = {
 				name = "marrhold_knights_griffon"
-				duration = 27375
+				duration = 27375 #75 years
 			}
 			if = {
 				limit = { has_dlc = "Lions of the North" }
@@ -72,28 +74,32 @@ marrhold = {
 			}
 		}
 	}
-
+	
 	marrhold_revenge = {
 		icon = mission_thinking_king
 		position = 4
-		provinces_to_highlight = {  } 
-
+		required_missions = {  }
+		
 		trigger = {
 			any_neighbor_country = {
 				war_with = ROOT
 				culture_group = orcish
 			}
 		}
-
-		effect = { country_event = { id = flavor_marrhold.1 }  } 
+		
+		effect = {
+			country_event = { id = flavor_marrhold.1 }
+		}
 	}
-
+	
+	
 	marrhold_justice = {
 		icon = mission_skull
 		position = 5
-		required_missions = { marrhold_revenge } 
-		provinces_to_highlight = {  } 
-
+		required_missions = {
+			marrhold_revenge
+		}
+		
 		trigger = {
 			any_neighbor_country = {
 				war_with = ROOT
@@ -106,7 +112,7 @@ marrhold = {
 				}
 			}
 		}
-
+		
 		effect = {
 			country_event = {
 				id = flavor_marrhold.2
@@ -114,18 +120,19 @@ marrhold = {
 			}
 		}
 	}
-
+	
 	marrhold_rebirth = {
 		icon = mission_build_up_to_force_limit
 		position = 6
-		required_missions = { marrhold_justice } 
-		provinces_to_highlight = {  } 
-
+		required_missions = {
+			marrhold_justice
+		}
+		
 		trigger = {
 			heir_has_ruler_dynasty = yes
 			heir_age = 12
 		}
-
+		
 		effect = {
 			country_event = {
 				id = flavor_marrhold.3
@@ -135,19 +142,20 @@ marrhold = {
 			increase_heir_mil_effect = yes
 		}
 	}
-
+	
 	marrhold_auxiliaries = {
 		icon = mission_armor_choice
 		position = 10
-		required_missions = { marrhold_improvements } 
-		provinces_to_highlight = {  } 
-
-		trigger = { num_of_cavalry = 12 } 
-
+		required_missions = { marrhold_improvements }
+		
+		trigger = {
+			num_of_cavalry = 12
+		}
+		
 		effect = {
 			add_country_modifier = {
 				name = "marrhold_reestructure"
-				duration = 3650
+				duration = 3650 #10 years
 			}
 			add_estate_loyalty = {
 				estate = estate_nobles
@@ -159,79 +167,87 @@ marrhold = {
 			}
 		}
 	}
-
+	
 	marrhold_angels = {
 		icon = mission_brazilian_bandeirantes
 		position = 11
-		required_missions = { marrhold_auxiliaries } 
-		provinces_to_highlight = {  } 
-
-		trigger = { regimental_camp = 10 } 
-
+		required_missions = {
+			marrhold_auxiliaries
+		}
+		
+		trigger = {
+			regimental_camp = 10
+		}
+		
 		effect = {
 			add_country_modifier = {
 				name = "marrhold_salvation"
-				duration = 7300
+				duration = 7300 #20 years
 			}
 		}
 	}
-
+	
 	marrhold_crimson_deluge = {
 		icon = mission_star_comet
 		position = 12
-		provinces_to_highlight = {  } 
-
+		required_missions = {  }
+		
 		trigger = {
-			OR = {
-				has_global_flag = crimson_deluge_is_over
-				has_global_flag = crimson_deluge_is_actively_happening
+			custom_trigger_tooltip = {
+				tooltip = adenica_deluge_tt
+				OR = {
+					has_global_flag = crimson_deluge_is_over
+					has_global_flag = crimson_deluge_is_actively_happening
+	
+				}
 			}
 			OR = {
 				religion = regent_court
 				religion = corinite
 			}
 		}
-
+		
 		effect = {
 			if = {
 				limit = {
 					religion = regent_court
-					NOT = { religion = corinite } 
+					NOT = { religion = corinite }		
 				}
 				add_country_modifier = {
-					name = "marrhold_religious_regent"
-					duration = 7300
+					name = marrhold_religious_regent
+					duration = 7300 #20 years
 				}
 			}
 			else_if = {
 				limit = {
 					religion = corinite
-					NOT = { religion = regent_court } 
+					NOT = { religion = regent_court }
 				}
 				add_country_modifier = {
-					name = "marrhold_religious_corin"
-					duration = 7300
+					name = marrhold_religious_corin
+					duration = 7300 #20 years
 				}
 			}
 			else = {
 				add_country_modifier = {
-					name = "marrhold_religious_regent"
-					duration = 7300
+					name = marrhold_religious_regent
+					duration = 7300 #20 years
 				}
 				add_country_modifier = {
-					name = "marrhold_religious_corin"
-					duration = 7300
+					name = marrhold_religious_corin
+					duration = 7300 #20 years
 				}
 			}
 		}
 	}
-
+	
 	marrhold_religious_war = {
 		icon = mission_destroyed_city
 		position = 13
-		required_missions = { marrhold_crimson_deluge } 
-		provinces_to_highlight = {  } 
-
+		required_missions = {
+			marrhold_crimson_deluge
+		}
+		
 		trigger = {
 			hre_leagues_enabled = yes
 			OR = {
@@ -239,22 +255,23 @@ marrhold = {
 				in_or_leading_corinite_league = yes
 			}
 		}
-
+		
 		effect = {
 			add_yearly_manpower = 5
 			add_country_modifier = {
-				name = "marrhold_religious_war"
-				duration = 7300
+				name = marrhold_religious_war
+				duration = 7300 #20 years
 			}
 		}
 	}
-
+	
 	marrhold_Plan_B = {
 		icon = mission_artificier_experience
 		position = 16
-		required_missions = { marrhold_feather_academy } 
-		provinces_to_highlight = {  } 
-
+		required_missions = {
+			marrhold_feather_academy
+		}
+		
 		trigger = {
 			is_institution_enabled = manufactories
 			has_estate = estate_artificers
@@ -263,7 +280,7 @@ marrhold = {
 				loyalty = 60
 			}
 		}
-
+		
 		effect = {
 			if = {
 				limit = { has_dlc = "Lions of the North" }
@@ -281,50 +298,49 @@ marrhold = {
 		}
 	}
 }
+
 marrhold_two = {
 	slot = 2
 	generic = no
 	ai = yes
-	has_country_shield = yes
 	potential = {
-		OR = {
-			tag = B36
-			AND = {
-				tag = M01
-				was_tag = B36
-			}
-		}
+    NOT = { has_country_flag = chose_generic_mt }
+		tag = B36
 	}
-
+	has_country_shield = yes
+	
 	marrhold_valley = {
 		icon = mission_rb_conquer_wales
 		position = 2
-		required_missions = { marrhold_reclamation_day } 
+		required_missions = {
+			marrhold_reclamation_day
+		}
+		
 		provinces_to_highlight = {
 			area = dryadsdale_area
-			NOT = { country_or_non_sovereign_subject_holds = ROOT } 
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
-
+		
 		trigger = {
 			dryadsdale_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
-
+		
 		effect = {
 			add_country_modifier = {
-				name = "marrhold_reclaimed_land"
-				duration = 7300
+				name = marrhold_reclaimed_land
+				duration = 7300 #20 years
 			}
 			dryadsdale_area = {
-				limit = { NOT = { culture = marrodic }  } 
+				limit = { NOT = { culture = marrodic } }
 				change_religion = ROOT
 				change_culture = marrodic
-			}
+			}		
 		}
 	}
-
+	
 	marrhold_stables = {
 		icon = mission_novgorod_the_great
 		position = 4
@@ -332,15 +348,14 @@ marrhold_two = {
 			marrhold_griffon_knights
 			marrhold_valley
 		}
-		provinces_to_highlight = {  } 
-
+		
 		trigger = {
 			any_owned_province = {
 				development = 10
 				has_building = farm_estate
 			}
 		}
-
+		
 		effect = {
 			if = {
 				limit = { has_dlc = "Lions of the North" }
@@ -357,33 +372,35 @@ marrhold_two = {
 			}
 		}
 	}
-
+	
 	marrhold_winged_generals = {
 		icon = mission_protect_albania
 		position = 5
-		required_missions = { marrhold_stables } 
-		provinces_to_highlight = {  } 
-
+		required_missions = {
+			marrhold_stables
+		}
+		
 		trigger = {
 			army_tradition = 40
 			has_estate_privilege = estate_nobles_officer_corp
 			num_of_generals = 2
 		}
-
+		
 		effect = {
 			add_country_modifier = {
-				name = "marrhold_winged_generals"
+				name = marrhold_winged_generals
 				duration = -1
 			}
 		}
 	}
-
+	
 	marrhold_improvements = {
 		icon = mission_have_two_subjects
 		position = 9
-		required_missions = { marrhold_winged_generals } 
-		provinces_to_highlight = {  } 
-
+		required_missions = {
+			marrhold_winged_generals
+		}
+		
 		trigger = {
 			has_global_modifier_value = {
 				which = cavalry_power
@@ -391,19 +408,22 @@ marrhold_two = {
 			}
 			barracks = 5
 		}
-
+		
 		effect = {
 			add_country_modifier = {
-				name = "marrhold_imagination"
-				duration = 7300
+				name = marrhold_imagination
+				duration = 7300 #20 years
 			}
 		}
 	}
-
+	
 	marrhold_steel_bird = {
 		icon = mission_smith
 		position = 10
-		required_missions = { marrhold_improvements } 
+		required_missions = {
+			marrhold_improvements
+		}
+		
 		provinces_to_highlight = {
 			owned_by = ROOT
 			OR = {
@@ -411,11 +431,13 @@ marrhold_two = {
 				trade_goods = copper
 				trade_goods = mithril
 			}
-			NOT = { has_building = weapons } 
+			NOT = { has_building = weapons }
 		}
-
-		trigger = { weapons = 3 } 
-
+		
+		trigger = {
+			weapons = 3
+		}
+		
 		effect = {
 			if = {
 				limit = { has_dlc = "Lions of the North" }
@@ -434,23 +456,26 @@ marrhold_two = {
 			}
 		}
 	}
-
+	
 	marrhold_screaming_eagles = {
 		icon = mission_head_on_spike
 		position = 11
-		required_missions = { marrhold_steel_bird } 
-		provinces_to_highlight = {  } 
-
-		trigger = { army_tradition = 60 } 
-
+		required_missions = {
+			marrhold_steel_bird
+		}
+		
+		trigger = {
+			army_tradition = 60
+		}
+		
 		effect = {
 			add_country_modifier = {
-				name = "marrhold_no_surrender"
-				duration = 7300
+				name = marrhold_no_surrender
+				duration = 7300 #20 years
 			}
 		}
 	}
-
+	
 	marrhold_winged_army = {
 		icon = mission_assemble_an_army
 		position = 12
@@ -459,15 +484,14 @@ marrhold_two = {
 			marrhold_screaming_eagles
 			marrhold_freedom
 		}
-		provinces_to_highlight = {  } 
-
+		
 		trigger = {
 			OR = {
 				army_tradition = 60
 				army_professionalism = 0.4
 			}
 		}
-
+		
 		effect = {
 			if = {
 				limit = { has_dlc = "Lions of the North" }
@@ -483,28 +507,27 @@ marrhold_two = {
 					duration = -1
 				}
 			}
-			hidden_effect = { remove_country_modifier = marrhold_winged_generals } 
+			hidden_effect = {
+				remove_country_modifier = marrhold_winged_generals
+			}
 		}
 	}
-
+	
 	marrhold_feather_academy = {
 		icon = mission_rb_the_bank_of_scotland
 		position = 15
-		required_missions = { marrhold_winged_army } 
+		required_missions = {
+			marrhold_winged_army
+		}
+		
 		provinces_to_highlight = {
 			province_id = 895
-			NOT = { has_building = university } 
+			NOT = { has_building = university }
 		}
-
+		
 		trigger = {
 			895 = {
-				OR = {
-					has_building = university
-					has_great_project = {
-						type = marrhold_the_feather_academy
-						tier = 2
-					}
-				}
+				has_building = university
 			}
 			OR = {
 				army_organiser = 3
@@ -516,26 +539,26 @@ marrhold_two = {
 				quartermaster = 3
 			}
 		}
-
+		
 		effect = {
 			add_country_modifier = {
-				name = "marrhold_feather_academy"
-				duration = 9125
+				name = marrhold_feather_academy
+				duration = 9125 #25 years
 			}
 		}
 	}
-
+	
 	marrhold_sky_lancers = {
 		icon = mission_cossack_cavalry
 		position = 16
-		required_missions = { marrhold_feather_academy } 
-		provinces_to_highlight = {  } 
-
+		required_missions = {
+			marrhold_feather_academy
+		}
 		trigger = {
 			mil_power = 100
 			treasury = 1500
 		}
-
+		
 		effect = {
 			add_mil_power = -100
 			add_treasury = -1500
@@ -556,23 +579,23 @@ marrhold_two = {
 			}
 		}
 	}
-
+	
 	marrhold_aerial_supremacy = {
 		icon = army_reforms
 		position = 17
 		required_missions = {
+			marrhold_Plan_B
 			marrhold_sky_lancers
 			marrhold_grenadiers
 		}
-		provinces_to_highlight = {  } 
-
+		
 		trigger = {
 			OR = {
 				army_tradition = 90
 				army_professionalism = 0.6
 			}
 		}
-
+		
 		effect = {
 			if = {
 				limit = { has_dlc = "Lions of the North" }
@@ -596,96 +619,95 @@ marrhold_two = {
 		}
 	}
 }
+
 marrhold_three = {
 	slot = 3
 	generic = no
 	ai = yes
-	has_country_shield = yes
 	potential = {
-		OR = {
-			tag = B36
-			AND = {
-				tag = M01
-				was_tag = B36
-			}
-		}
+    NOT = { has_country_flag = chose_generic_mt }
+		tag = B36
 	}
-
+	has_country_shield = yes
+	
 	marrhold_reclamation_day = {
 		icon = mission_junnagadh_fort
 		position = 1
-		provinces_to_highlight = {  } 
-
+		required_missions = { }
+		
 		trigger = {
 			stability = 1
 			manpower_percentage = 0.75
 		}
-
+		
 		effect = {
 			add_country_modifier = {
 				name = "marrhold_reclamation"
-				duration = 36500
+				duration = 36500 #100 years
 			}
 			dryadsdale_area = {
 				limit = {
-					NOT = { is_core = ROOT } 
-					NOT = { owned_by = ROOT } 
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
 				}
 				add_permanent_claim = ROOT
 			}
 			doewood_area = {
 				limit = {
-					NOT = { is_core = ROOT } 
-					NOT = { owned_by = ROOT } 
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
 				}
 				add_permanent_claim = ROOT
 			}
 			hornwood_area = {
 				limit = {
-					NOT = { is_core = ROOT } 
-					NOT = { owned_by = ROOT } 
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
 				}
 				add_permanent_claim = ROOT
 			}
 			esshyl_area = {
 				limit = {
-					NOT = { is_core = ROOT } 
-					NOT = { owned_by = ROOT } 
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
 				}
 				add_permanent_claim = ROOT
 			}
 		}
 	}
-
+	
 	marrhold_hills = {
 		icon = fortress_switzerland
 		position = 2
-		required_missions = { marrhold_reclamation_day } 
+		required_missions = {
+			marrhold_reclamation_day
+		}
+		
 		provinces_to_highlight = {
 			area = esshyl_area
-			NOT = { country_or_non_sovereign_subject_holds = ROOT } 
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
-
+		
 		trigger = {
 			esshyl_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
-
+		
 		effect = {
 			add_country_modifier = {
 				name = "colonial_enthusiasm"
 				duration = 7300
 			}
 			esshyl_area = {
-				limit = { NOT = { culture = marrodic }  } 
+				limit = { NOT = { culture = marrodic } }
 				change_religion = ROOT
 				change_culture = marrodic
 			}
 		}
 	}
-
+	
 	marrhold_taking_off = {
 		icon = assert_our_sovereignty
 		position = 3
@@ -694,6 +716,7 @@ marrhold_three = {
 			marrhold_woods
 			marrhold_valley
 		}
+		
 		provinces_to_highlight = {
 			OR = {
 				area = dryadsdale_area
@@ -701,9 +724,9 @@ marrhold_three = {
 				area = hornwood_area
 				area = doewood_area
 			}
-			NOT = { culture = marrodic } 
+			NOT = { culture = marrodic }
 		}
-
+		
 		trigger = {
 			dryadsdale_area = {
 				type = all
@@ -721,21 +744,24 @@ marrhold_three = {
 				type = all
 				culture = marrodic
 			}
-		}
-
+        }
+		
 		effect = {
 			add_prestige = 25
 			add_country_modifier = {
-				name = "marrhold_last_realm"
-				duration = 9125
+				name = marrhold_last_realm
+				duration = 9125 #25 years
 			}
 		}
 	}
-
+	
 	marrhold_fresh_air = {
 		icon = mission_settlers_north_america
 		position = 4
-		required_missions = { marrhold_taking_off } 
+		required_missions = {
+			marrhold_taking_off
+		}
+		
 		provinces_to_highlight = {
 			OR = {
 				area = dryadsdale_area
@@ -743,9 +769,9 @@ marrhold_three = {
 				area = hornwood_area
 				area = doewood_area
 			}
-			NOT = { development = 6 } 
+			NOT = { development = 6 }
 		}
-
+		
 		trigger = {
 			dryadsdale_area = {
 				type = all
@@ -764,147 +790,148 @@ marrhold_three = {
 				development = 6
 			}
 		}
-
+		
 		effect = {
 			if = {
-				limit = { NOT = { has_dlc = "Mandate of Heaven" }  } 
+				limit = {
+					NOT = {
+						has_dlc = "Mandate of Heaven"
+					}
+				}
 				if = {
-					limit = { monthly_income = 50 } 
+					limit = { monthly_income = 50 }
 					add_years_of_income = 1
 				}
-				else = { add_treasury = 500 } 
+				else = {
+					add_treasury = 500
+				}
 			}
 			else = {
 				if = {
-					limit = {
-						dryadsdale_area = {
-							type = all
-							owned_by = root
-						}
+					limit = { dryadsdale_area = { type = all owned_by = root} }
+					dryadsdale_area = {
+						add_prosperity = 75
 					}
-					dryadsdale_area = { add_prosperity = 75 } 
 				}
 				if = {
-					limit = {
-						esshyl_area = {
-							type = all
-							owned_by = root
-						}
+					limit = { esshyl_area = { type = all owned_by = root} }
+					esshyl_area = {
+						add_prosperity = 75
 					}
-					esshyl_area = { add_prosperity = 75 } 
 				}
 				if = {
-					limit = {
-						hornwood_area = {
-							type = all
-							owned_by = root
-						}
+					limit = { hornwood_area = { type = all owned_by = root} }
+					hornwood_area = {
+						add_prosperity = 75
 					}
-					hornwood_area = { add_prosperity = 75 } 
 				}
 				if = {
-					limit = {
-						doewood_area = {
-							type = all
-							owned_by = root
-						}
+					limit = { doewood_area = { type = all owned_by = root} }
+					doewood_area = {
+						add_prosperity = 75
 					}
-					doewood_area = { add_prosperity = 75 } 
 				}
 			}
 			add_country_modifier = {
-				name = "marrhold_back_fields"
-				duration = 7300
+				name = marrhold_back_fields
+				duration = 7300 #20 years
 			}
 		}
 	}
-
+	
 	marrhold_chance = {
 		icon = prosper_in_piedmont
 		position = 5
-		required_missions = { marrhold_fresh_air } 
-		provinces_to_highlight = {  } 
-
+		required_missions = {
+			marrhold_fresh_air
+		}
+		
 		trigger = {
 			army_size = 25
 			cavalry_fraction = 0.25
 		}
-
+		
 		effect = {
 			swapstoke_area = {
 				limit = {
-					NOT = { is_core = ROOT } 
-					NOT = { owned_by = ROOT } 
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
 				}
 				add_permanent_claim = ROOT
 			}
 			nortessord_area = {
 				limit = {
-					NOT = { is_core = ROOT } 
-					NOT = { owned_by = ROOT } 
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
 				}
 				add_permanent_claim = ROOT
 			}
 			medirleigh_area = {
 				limit = {
-					NOT = { is_core = ROOT } 
-					NOT = { owned_by = ROOT } 
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
 				}
 				add_permanent_claim = ROOT
 			}
 		}
 	}
-
+	
 	marrhold_alenic_indeed = {
 		icon = mission_advance_to_the_dnieper
 		position = 6
-		required_missions = { marrhold_chance } 
+		required_missions = {
+			marrhold_chance
+		}
+		
 		provinces_to_highlight = {
 			area = nortessord_area
-			NOT = { country_or_non_sovereign_subject_holds = ROOT } 
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
-
+		
 		trigger = {
 			nortessord_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
-
+		
 		effect = {
 			oldhaven_area = {
 				limit = {
-					NOT = { is_core = ROOT } 
-					NOT = { owned_by = ROOT } 
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
 				}
 				add_permanent_claim = ROOT
 			}
 			sarwood_area = {
 				limit = {
-					NOT = { is_core = ROOT } 
-					NOT = { owned_by = ROOT } 
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
 				}
 				add_permanent_claim = ROOT
 			}
 			add_country_modifier = {
-				name = "marrhold_new_crowns"
-				duration = 7300
+				name = marrhold_new_crowns
+				duration = 7300 #20 years
 			}
 		}
 	}
-
+	
 	marrhold_dominance = {
 		icon = dreams_of_grandeur
 		position = 8
-		required_missions = { marrhold_alenic_indeed } 
+		required_missions = {
+			marrhold_alenic_indeed
+		}
+		
 		provinces_to_highlight = {
 			OR = {
 				area = oldhaven_area
 				area = sarwood_area
 			}
-			NOT = { country_or_non_sovereign_subject_holds = ROOT } 
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
-
+		
 		trigger = {
 			oldhaven_area = {
 				country_or_non_sovereign_subject_holds = ROOT
@@ -915,51 +942,54 @@ marrhold_three = {
 				type = all
 			}
 		}
-
+		
 		effect = {
 			coalwoud_area = {
 				limit = {
-					NOT = { is_core = ROOT } 
-					NOT = { owned_by = ROOT } 
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
 				}
 				add_permanent_claim = ROOT
 			}
 			ardent_glade_area = {
 				limit = {
-					NOT = { is_core = ROOT } 
-					NOT = { owned_by = ROOT } 
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
 				}
 				add_permanent_claim = ROOT
 			}
 			steelhyl_area = {
 				limit = {
-					NOT = { is_core = ROOT } 
-					NOT = { owned_by = ROOT } 
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
 				}
 				add_permanent_claim = ROOT
 			}
 			clouded_wood_area = {
 				limit = {
-					NOT = { is_core = ROOT } 
-					NOT = { owned_by = ROOT } 
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
 				}
 				add_permanent_claim = ROOT
 			}
 		}
 	}
-
+	
 	marrhold_survey_corps = {
 		icon = mission_alone_in_the_forest
 		position = 10
-		required_missions = { marrhold_improvements } 
+		required_missions = {
+			marrhold_improvements
+		}
+		
 		provinces_to_highlight = {
 			province_id = 880
 			OR = {
-				NOT = { owned_by = ROOT } 
-				NOT = { is_core = ROOT } 
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
 			}
 		}
-
+		
 		trigger = {
 			manpower = 10
 			880 = {
@@ -967,7 +997,7 @@ marrhold_three = {
 				is_core = ROOT
 			}
 		}
-
+		
 		effect = {
 			add_manpower = -5
 			if = {
@@ -985,13 +1015,14 @@ marrhold_three = {
 			}
 		}
 	}
-
+	
 	marrhold_freedom = {
 		icon = mission_alone_in_the_wood
 		position = 11
-		required_missions = { marrhold_survey_corps } 
-		provinces_to_highlight = {  } 
-
+		required_missions = {
+			marrhold_survey_corps
+		}
+		
 		trigger = {
 			mil_power = 100
 			years_of_income = 0.5
@@ -1001,29 +1032,32 @@ marrhold_three = {
 				grand_captain = 2
 			}
 		}
-
+		
 		effect = {
 			add_mil_power = -100
 			add_years_of_income = -0.5
 			add_country_modifier = {
-				name = "marrhold_glory"
-				duration = 7300
+				name = marrhold_glory
+				duration = 7300 #20 years
 			}
 		}
 	}
-
+	
 	marrhold_deepwoods_start = {
 		icon = mission_torch_fire
 		position = 12
-		required_missions = { marrhold_griffon_has_landed } 
+		required_missions = {
+			marrhold_griffon_has_landed
+		}
+		
 		provinces_to_highlight = {
 			OR = {
 				area = clirypriah_area
 				area = prehnryn_area
 			}
-			NOT = { country_or_non_sovereign_subject_holds = ROOT } 
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
-
+		
 		trigger = {
 			clirypriah_area = {
 				country_or_non_sovereign_subject_holds = ROOT
@@ -1034,41 +1068,44 @@ marrhold_three = {
 				type = all
 			}
 		}
-
+		
 		effect = {
 			add_country_modifier = {
-				name = "marrhold_vietnam"
-				duration = 7300
+				name = marrhold_vietnam
+				duration = 7300 #20 years
 			}
 			east_deepwoods_region = {
 				limit = {
-					NOT = { is_core = ROOT } 
-					NOT = { is_permanent_claim = ROOT } 
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
 				}
 				add_permanent_claim = ROOT
 			}
 			west_deepwoods_region = {
 				limit = {
-					NOT = { is_core = ROOT } 
-					NOT = { is_permanent_claim = ROOT } 
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
 				}
 				add_permanent_claim = ROOT
 			}
 		}
 	}
-
+	
 	marrhold_feybane = {
 		icon = mission_burning_castle
 		position = 13
-		required_missions = { marrhold_deepwoods_start } 
+		required_missions = {
+			marrhold_deepwoods_start
+		}
+		
 		provinces_to_highlight = {
 			OR = {
 				region = west_deepwoods_region
 				region = east_deepwoods_region
 			}
-			NOT = { country_or_non_sovereign_subject_holds = ROOT } 
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
-
+		
 		trigger = {
 			east_deepwoods_region = {
 				type = all
@@ -1079,19 +1116,22 @@ marrhold_three = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
-
+		
 		effect = {
 			add_country_modifier = {
-				name = "marrhold_woods"
-				duration = 9125
+				name = marrhold_woods
+				duration = 9125 #25 years
 			}
 		}
 	}
-
+	
 	marrhold_apex_predator = {
 		icon = mission_green_village
 		position = 14
-		required_missions = { marrhold_feybane } 
+		required_missions = {
+			marrhold_feybane
+		}
+		
 		provinces_to_highlight = {
 			OR = {
 				region = west_deepwoods_region
@@ -1102,9 +1142,9 @@ marrhold_three = {
 				nationalism = 1
 			}
 		}
-
+		
 		trigger = {
-			west_deepwoods_region = {
+			west_deepwoods_region= {
 				type = all
 				NOT = {
 					unrest = 1
@@ -1119,7 +1159,7 @@ marrhold_three = {
 				}
 			}
 		}
-
+		
 		effect = {
 			custom_tooltip = marrhold_deepwoods_dev
 			add_stability_or_adm_power = yes
@@ -1139,18 +1179,19 @@ marrhold_three = {
 			}
 		}
 	}
-
+	
 	marrhold_grenadiers = {
 		icon = mission_cannons_firing
 		position = 16
-		required_missions = { marrhold_feather_academy } 
-		provinces_to_highlight = {  } 
-
+		required_missions = {
+			marrhold_feather_academy
+		}
+		
 		trigger = {
 			mil_power = 100
 			treasury = 1500
 		}
-
+		
 		effect = {
 			add_mil_power = -100
 			add_treasury = -1500
@@ -1171,7 +1212,7 @@ marrhold_three = {
 			}
 		}
 	}
-
+	
 	marrhold_griffon_king = {
 		icon = mission_restore_faith_in_the_throne
 		position = 18
@@ -1179,8 +1220,7 @@ marrhold_three = {
 			marrhold_aerial_supremacy
 			marrhold_rags_to_riches
 		}
-		provinces_to_highlight = {  } 
-
+		
 		trigger = {
 			adm_power = 200
 			dip_power = 200
@@ -1188,51 +1228,48 @@ marrhold_three = {
 			prestige = 99
 			num_of_cavalry = 50
 		}
-
+		
 		effect = {
 			add_adm_power = -200
 			add_dip_power = -200
 			add_mil_power = -200
 			if = {
-				limit = { government = monarchy } 
+				limit = { government = monarchy }
 				add_government_reform = griffon_empire_reform
 			}
 			else = {
 				add_country_modifier = {
-					name = "marrhold_griffon_empire_alt"
+					name = marrhold_griffon_empire_alt
 					duration = -1
 				}
 			}
 		}
 	}
 }
+
 marrhold_four = {
 	slot = 4
 	generic = no
 	ai = yes
-	has_country_shield = yes
 	potential = {
-		OR = {
-			tag = B36
-			AND = {
-				tag = M01
-				was_tag = B36
-			}
-		}
+    NOT = { has_country_flag = chose_generic_mt }
+		tag = B36
 	}
-
+	has_country_shield = yes
+	
 	marrhold_woods = {
 		icon = mission_alone_in_the_wood
 		position = 2
-		required_missions = { marrhold_reclamation_day } 
+		required_missions = { marrhold_reclamation_day }
+		
 		provinces_to_highlight = {
 			OR = {
 				area = hornwood_area
 				area = doewood_area
 			}
-			NOT = { country_or_non_sovereign_subject_holds = ROOT } 
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
-
+		
 		trigger = {
 			hornwood_area = {
 				type = all
@@ -1243,7 +1280,7 @@ marrhold_four = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
-
+		
 		effect = {
 			doewood_area = {
 				add_base_production = 1
@@ -1251,50 +1288,60 @@ marrhold_four = {
 				add_base_manpower = 1
 			}
 			doewood_area = {
-				limit = { NOT = { culture = marrodic }  } 
+				limit = {
+					NOT = { culture = marrodic }
+				}
 				change_religion = ROOT
 				change_culture = marrodic
 			}
+			
 			hornwood_area = {
 				add_base_production = 1
 				add_base_tax = 1
 				add_base_manpower = 1
 			}
 			hornwood_area = {
-				limit = { NOT = { culture = marrodic }  } 
+				limit = {
+					NOT = { culture = marrodic }
+				}
 				change_religion = ROOT
 				change_culture = marrodic
 			}
 		}
 	}
-
+	
 	marrhold_dworfs = {
 		icon = mission_missive
 		position = 4
-		required_missions = { marrhold_taking_off } 
-		provinces_to_highlight = {  } 
-
+		required_missions = {
+			marrhold_taking_off
+		}
+		
 		trigger = {
 			OR = {
-				any_ally = { culture_group = dwarven } 
-				any_subject_country = { culture_group = dwarven } 
+				any_ally = {
+					culture_group = dwarven
+				}
+				any_subject_country = {
+					culture_group = dwarven
+				}
 			}
 		}
-
 		effect = {
 			add_country_modifier = {
-				name = "marrhold_adventurer_allies"
-				duration = 9125
+				name = marrhold_adventurer_allies
+				duration = 9125 #25 years
 			}
 		}
 	}
-
+	
 	marrhold_dworfs_2 = {
 		icon = mission_merchant_trip
 		position = 5
-		required_missions = { marrhold_dworfs } 
-		provinces_to_highlight = {  } 
-
+		required_missions = {
+			marrhold_dworfs
+		}
+		
 		trigger = {
 			any_country = {
 				culture_group = dwarven
@@ -1304,15 +1351,15 @@ marrhold_four = {
 				}
 			}
 		}
-
+		
 		effect = {
 			add_country_modifier = {
-				name = "marrhold_dwarven_lessons"
-				duration = 9125
+				name = marrhold_dwarven_lessons
+				duration = 9125 #25 years
 			}
 		}
 	}
-
+	
 	marrhold_grudge = {
 		icon = mission_duel_snow
 		position = 6
@@ -1320,14 +1367,15 @@ marrhold_four = {
 			marrhold_dworfs_2
 			marrhold_chance
 		}
+		
 		provinces_to_highlight = {
 			OR = {
 				area = medirleigh_area
 				area = swapstoke_area
 			}
-			NOT = { country_or_non_sovereign_subject_holds = ROOT } 
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
-
+		
 		trigger = {
 			medirleigh_area = {
 				country_or_non_sovereign_subject_holds = ROOT
@@ -1338,45 +1386,48 @@ marrhold_four = {
 				type = all
 			}
 		}
-
+		
 		effect = {
 			escerfork_area = {
 				limit = {
-					NOT = { is_core = ROOT } 
-					NOT = { is_permanent_claim = ROOT } 
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
 				}
 				add_permanent_claim = ROOT
 			}
 			humacvord_area = {
 				limit = {
-					NOT = { is_core = ROOT } 
-					NOT = { is_permanent_claim = ROOT } 
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
 				}
 				add_permanent_claim = ROOT
 			}
 			blademarch_area = {
 				limit = {
-					NOT = { is_core = ROOT } 
-					NOT = { is_permanent_claim = ROOT } 
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
 				}
 				add_permanent_claim = ROOT
 			}
 		}
 	}
-
+	
 	marrhold_marches = {
 		icon = alpine_fortifications
 		position = 7
-		required_missions = { marrhold_grudge } 
+		required_missions = {
+			marrhold_grudge
+		}
+		
 		provinces_to_highlight = {
 			OR = {
 				area = escerfork_area
 				area = humacvord_area
 				area = blademarch_area
 			}
-			NOT = { country_or_non_sovereign_subject_holds = ROOT } 
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
-
+		
 		trigger = {
 			escerfork_area = {
 				country_or_non_sovereign_subject_holds = ROOT
@@ -1391,26 +1442,26 @@ marrhold_four = {
 				type = all
 			}
 		}
-
+		
 		effect = {
 			burnoll_area = {
 				limit = {
-					NOT = { is_core = ROOT } 
-					NOT = { is_permanent_claim = ROOT } 
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
 				}
 				add_permanent_claim = ROOT
 			}
 			themin_area = {
 				limit = {
-					NOT = { is_core = ROOT } 
-					NOT = { is_permanent_claim = ROOT } 
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
 				}
 				add_permanent_claim = ROOT
 			}
 			oudeben_area = {
 				limit = {
-					NOT = { is_core = ROOT } 
-					NOT = { is_permanent_claim = ROOT } 
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
 				}
 				add_permanent_claim = ROOT
 			}
@@ -1424,15 +1475,16 @@ marrhold_four = {
 			marrhold_dominance
 			marrhold_marches
 		}
+		
 		provinces_to_highlight = {
 			OR = {
 				area = burnoll_area
 				area = themin_area
 				area = oudeben_area
 			}
-			NOT = { country_or_non_sovereign_subject_holds = ROOT } 
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
-
+		
 		trigger = {
 			burnoll_area = {
 				country_or_non_sovereign_subject_holds = ROOT
@@ -1447,38 +1499,41 @@ marrhold_four = {
 				type = all
 			}
 		}
-
+		
 		effect = {
 			southgate_area = {
 				limit = {
-					NOT = { is_core = ROOT } 
-					NOT = { is_permanent_claim = ROOT } 
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
 				}
 				add_permanent_claim = ROOT
 			}
 			south_castanor_region = {
 				limit = {
-					NOT = { is_core = ROOT } 
-					NOT = { is_permanent_claim = ROOT } 
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
 				}
 				add_permanent_claim = ROOT
 			}
 		}
 	}
-
+	
 	marrhold_finishing_marches = {
 		icon = mission_rb_conquer_the_highlands
 		position = 10
-		required_missions = { marrhold_silvermere } 
+		required_missions = {
+			marrhold_silvermere
+		}
+		
 		provinces_to_highlight = {
 			OR = {
 				area = beastgrave_area
 				area = clovenwood_area
 				area = vernham_area
 			}
-			NOT = { country_or_non_sovereign_subject_holds = ROOT } 
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
-
+		
 		trigger = {
 			burnoll_area = {
 				country_or_non_sovereign_subject_holds = ROOT
@@ -1493,51 +1548,54 @@ marrhold_four = {
 				type = all
 			}
 		}
-
+		
 		effect = {
 			add_country_modifier = {
-				name = "marrhold_trade_dominance"
-				duration = 9125
+				name = marrhold_trade_dominance
+				duration = 9125 #25 years
 			}
 		}
 	}
-
+	
 	marrhold_griffon_has_landed = {
 		icon = give_him_back_his_legions
 		position = 11
-		required_missions = { marrhold_finishing_marches } 
+		required_missions = {
+			marrhold_finishing_marches
+		}
+		
 		provinces_to_highlight = {
 			region = south_castanor_region
-			NOT = { country_or_non_sovereign_subject_holds = ROOT } 
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
-
+		
 		trigger = {
-			south_castanor_region = {
+		    south_castanor_region = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
-
+		
 		effect = {
 			add_prestige = 25
 			add_stability_or_adm_power = yes
 			clirypriah_area = {
 				limit = {
-					NOT = { is_core = ROOT } 
-					NOT = { is_permanent_claim = ROOT } 
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
 				}
 				add_permanent_claim = ROOT
 			}
 			prehnryn_area = {
 				limit = {
-					NOT = { is_core = ROOT } 
-					NOT = { is_permanent_claim = ROOT } 
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
 				}
 				add_permanent_claim = ROOT
 			}
 		}
-	}
-
+	}	
+	
 	marrhold_rags_to_riches = {
 		icon = a_real_roman_empire
 		position = 17
@@ -1545,8 +1603,7 @@ marrhold_four = {
 			marrhold_griffon_has_landed
 			marrhold_fallen_friend
 		}
-		provinces_to_highlight = {  } 
-
+		
 		trigger = {
 			monthly_income = 50
 			development_in_provinces = {
@@ -1554,7 +1611,7 @@ marrhold_four = {
 				culture = marrodic
 			}
 		}
-
+		
 		effect = {
 			add_prestige = 50
 			add_splendor = 200
@@ -1564,21 +1621,18 @@ marrhold_four = {
 		}
 	}
 }
+
 marrhold_five = {
 	slot = 5
 	generic = no
 	ai = yes
-	has_country_shield = yes
 	potential = {
-		OR = {
-			tag = B36
-			AND = {
-				tag = M01
-				was_tag = B36
-			}
-		}
+    NOT = { has_country_flag = chose_generic_mt }
+		tag = B36
+		
 	}
-
+	has_country_shield = yes
+	
 	marrhold_steel = {
 		icon = mission_rb_build_furnaces
 		position = 1
@@ -1588,11 +1642,11 @@ marrhold_five = {
 				province_id = 4097
 			}
 			OR = {
-				NOT = { owned_by = ROOT } 
-				NOT = { base_production = 8 } 
+				NOT = { owned_by = ROOT }
+				NOT = { base_production = 8 }
 			}
 		}
-
+		
 		trigger = {
 			896 = {
 				owned_by = ROOT
@@ -1603,37 +1657,40 @@ marrhold_five = {
 				base_production = 8
 			}
 		}
-
+		
 		effect = {
 			add_years_of_income = -0.5
 			896 = {
 				add_permanent_province_modifier = {
-					name = "adv_big_forge"
+					name = adv_big_forge
 					duration = 18250
 				}
 			}
 			4097 = {
 				add_permanent_province_modifier = {
-					name = "adv_big_forge"
+					name = adv_big_forge
 					duration = 18250
 				}
 			}
 		}
 	}
-
+	
 	marrhold_our_pride = {
 		icon = mission_magnificent_castle
 		position = 2
-		required_missions = { marrhold_steel } 
+		required_missions = {
+			marrhold_steel
+		}
+		
 		provinces_to_highlight = {
 			province_id = 4097
 			OR = {
-				NOT = { owned_by = ROOT } 
-				NOT = { has_tax_building_trigger = yes } 
-				NOT = { has_trade_building_trigger = yes } 
+				NOT = { owned_by = ROOT }
+				NOT = { has_tax_building_trigger = yes }
+				NOT = { has_trade_building_trigger = yes }
 			}
 		}
-
+		
 		trigger = {
 			4097 = {
 				owned_by = ROOT
@@ -1641,7 +1698,7 @@ marrhold_five = {
 				has_trade_building_trigger = yes
 			}
 		}
-
+		
 		effect = {
 			custom_tooltip = marrhold_hold_improvement_reward_tt
 			4097 = {
@@ -1652,36 +1709,41 @@ marrhold_five = {
 			}
 		}
 	}
-
+	
+	
 	marrhold_lift = {
 		icon = mission_early_game_buildings
 		position = 3
-		required_missions = { marrhold_our_pride } 
-		provinces_to_highlight = {  } 
-
-		trigger = { total_development = 150 } 
-
+		required_missions = {
+			marrhold_our_pride
+		}
+		
+		trigger = {
+			total_development = 150
+		}
+		
 		effect = {
 			add_country_modifier = {
-				name = "marrhold_improve_hold"
-				duration = 7300
+				name = marrhold_improve_hold
+				duration = 7300 #20 years
 			}
 		}
 	}
-
+	
 	marrhold_experts = {
 		icon = mission_diplomacy_missive
 		position = 4
-		required_missions = { marrhold_lift } 
-		provinces_to_highlight = {  } 
-
+		required_missions = {
+			marrhold_lift
+		}
+		
 		trigger = {
 			treasury = 300
 			adm_power = 50
 			dip_power = 50
 			mil_power = 50
 		}
-
+		
 		effect = {
 			add_treasury = -300
 			add_adm_power = -50
@@ -1689,7 +1751,7 @@ marrhold_five = {
 			add_mil_power = -50
 			custom_tooltip = marrhold_hold_improvement_2_reward_tt
 			4097 = {
-				hidden_effect = { remove_province_triggered_modifier = human_hold_1 } 
+				hidden_effect = { remove_province_triggered_modifier = human_hold_1 }
 				add_province_triggered_modifier = human_hold_2
 				add_base_tax = 2
 				add_base_production = 2
@@ -1697,24 +1759,24 @@ marrhold_five = {
 			}
 		}
 	}
-
+	
 	marrhold_hole = {
 		icon = the_alpine_wall
 		position = 6
 		required_missions = {
-			marrhold_experts
-			marrhold_dworfs_2
+			marrhold_experts marrhold_dworfs_2
 		}
-		provinces_to_highlight = {  } 
-
+		
 		trigger = {
 			treasury = 500
 			adm_power = 100
 			dip_power = 100
 			mil_power = 100
-			NOT = { has_country_modifier = marrhold_improve_hold } 
+			NOT = {
+				has_country_modifier = marrhold_improve_hold
+			}
 		}
-
+		
 		effect = {
 			custom_tooltip = marrhold_hold_improvement_3_reward_tt
 			add_treasury = -500
@@ -1722,7 +1784,7 @@ marrhold_five = {
 			add_dip_power = -100
 			add_mil_power = -100
 			4097 = {
-				hidden_effect = { remove_province_triggered_modifier = human_hold_2 } 
+				hidden_effect = { remove_province_triggered_modifier = human_hold_2 }
 				add_province_triggered_modifier = human_hold_3
 				add_base_tax = 3
 				add_base_production = 3
@@ -1730,7 +1792,7 @@ marrhold_five = {
 			}
 		}
 	}
-
+	
 	marrhold_reoppening = {
 		icon = feast_of_pheasants
 		position = 7
@@ -1748,8 +1810,8 @@ marrhold_five = {
 		
 		effect = {
 			add_country_modifier = {
-				name = "marrhold_diggy_trade"
-				duration = 3650
+				name = marrhold_diggy_trade
+				duration = 3650 #10 years
 			}
 			marrhold_area = {
 				add_base_tax = 3
@@ -1758,17 +1820,20 @@ marrhold_five = {
 			}
 		}
 	}
-
+	
 	marrhold_syphon = {
 		icon = mission_african_gold
 		position = 8
-		required_missions = { marrhold_reoppening } 
+		required_missions = {
+			marrhold_reoppening
+		}
+		
 		provinces_to_highlight = {
 			province_id = 4097
-			NOT = { has_building = trade_depot } 
-			NOT = { has_building = stock_exchange } 
+			NOT = { has_building = trade_depot }
+			NOT = { has_building = stock_exchange }
 		}
-
+		
 		trigger = {
 			4097 = {
 				OR = {
@@ -1776,33 +1841,38 @@ marrhold_five = {
 					has_building = stock_exchange
 				}
 				if = {
-					limit = { has_dlc = "Dharma" } 
+					limit = { has_dlc = "Dharma" }
 					province_has_center_of_trade_of_level = 2
 				}
-				else = { ROOT = { treasury = 200 }  } 
+				else = {
+					ROOT = { treasury = 200 }
+				}
 			}
 		}
-
+		
 		effect = {
 			custom_tooltip = marrhold_syphon_reward_tt
 			4097 = {
 				add_province_modifier = {
-					name = "marrhold_trade_syphon"
+					name = marrhold_trade_syphon
 					duration = -1
 				}
 				if = {
-					limit = { NOT = { has_dlc = "Dharma" }  } 
-					ROOT = { add_treasury = -200 } 
+					limit = { NOT = { has_dlc = "Dharma" } }
+					ROOT = { add_treasury = -200 }
 					add_center_of_trade_level = 1
 				}
 			}
 		}
 	}
-
+	
 	marrhold_death_ring = {
 		icon = mission_mechanical_mining
 		position = 9
-		required_missions = { marrhold_syphon } 
+		required_missions = {
+			marrhold_syphon
+		}
+		
 		provinces_to_highlight = {
 			OR = {
 				province_id = 4065
@@ -1815,7 +1885,7 @@ marrhold_five = {
 				}
 			}
 		}
-
+		
 		trigger = {
 			4065 = {
 				fort_level = 4
@@ -1826,83 +1896,93 @@ marrhold_five = {
 				owned_by = ROOT
 			}
 		}
-
+		
 		effect = {
 			4065 = {
 				add_province_modifier = {
-					name = "marrhold_death_ring"
+					name = marrhold_death_ring
 					duration = -1
 				}
 			}
 			896 = {
 				add_province_modifier = {
-					name = "marrhold_death_ring"
+					name = marrhold_death_ring
 					duration = -1
 				}
 			}
 		}
 	}
-
+	
 	marrhold_eyes_on_prize = {
 		icon = develop_naples
 		position = 10
-		required_missions = { marrhold_silvermere } 
+		required_missions = {
+			marrhold_silvermere
+		}
+		
 		provinces_to_highlight = {
 			area = southgate_area
-			NOT = { country_or_non_sovereign_subject_holds = ROOT } 
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
-
+		
 		trigger = {
 			southgate_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
-
+		
 		effect = {
 			castonath_area = {
 				limit = {
-					NOT = { is_core = ROOT } 
-					NOT = { owned_by = ROOT } 
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
 				}
 				add_permanent_claim = ROOT
 			}
+			
 		}
 	}
-
+	
 	marrhold_eagle_nest = {
 		icon = mission_rb_college_of_justice
 		position = 11
-		required_missions = { marrhold_eyes_on_prize } 
+		required_missions = {
+			marrhold_eyes_on_prize
+		}
+		
 		provinces_to_highlight = {
 			area = castonath_area
-			NOT = { country_or_non_sovereign_subject_holds = ROOT } 
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
-
+		
 		trigger = {
 			castonath_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
-
+		
 		effect = {
 			add_country_modifier = {
 				name = "marrhold_monuments"
-				duration = 9125
+				duration = 9125 #25 years
 			}
-		}
+		}	
 	}
-
+	
 	marrhold_fallen_friend = {
 		icon = mission_rb_trinity_college_dublin
 		position = 16
-		required_missions = { marrhold_eagle_nest } 
+		required_missions = {
+			marrhold_eagle_nest
+		}
+		
 		provinces_to_highlight = {
 			area = castonath_area
-			NOT = { owned_by = ROOT } 
+			NOT = { owned_by = ROOT }
 		}
-
+		
 		trigger = {
 			castonath_area = {
 				type = all
@@ -1911,7 +1991,7 @@ marrhold_five = {
 			treasury = 2000
 			adm_power = 200
 		}
-
+		
 		effect = {
 			country_event = {
 				id = flavor_marrhold.4
@@ -1922,584 +2002,9 @@ marrhold_five = {
 			add_adm_power = -200
 			831 = {
 				add_permanent_province_modifier = {
-					name = "marrhold_fallen_friend_memorial"
+					name = marrhold_fallen_friend_memorial
 					duration = -1
 				}
-			}
-		}
-	}
-}
-griffon_empire_mil_tech = {
-	slot = 1
-	generic = no
-	ai = yes
-	has_country_shield = yes
-	potential = {
-		tag = M01
-		was_tag = B36
-	}
-
-	ge_integrating_griffon_companies = {
-		icon = mission_conquer_5_states
-		position = 22
-		required_missions = {
-			ge_cheap_iron
-			marrhold_Plan_B
-		}
-		provinces_to_highlight = {  } 
-
-		trigger = {
-			army_professionalism = 1
-			army_tradition = 95
-			treasury = 3000
-		}
-
-		effect = {
-			add_country_modifier = {
-				name = "ge_integrate_griffon_mercs"
-				duration = -1
-			}
-			add_treasury = -3000
-		}
-	}
-
-	ge_feather_academy = {
-		icon = mission_develop_the_capital
-		position = 23
-		required_missions = { ge_integrating_griffon_companies } 
-		provinces_to_highlight = {  } 
-
-		trigger = {
-			895 = {
-				has_great_project = {
-					type = marrhold_feather_academy
-					tier = 3
-				}
-			}
-			num_of_owned_provinces_with = {
-				has_building = university
-				OR = {
-					has_building = courthouse
-					has_building = town_hall
-				}
-				value = 15
-			}
-		}
-
-		effect = {
-			add_country_modifier = {
-				name = "ge_new_tactics_and_admin"
-				duration = 5475
-			}
-		}
-	}
-
-	ge_new_chief_of_army = {
-		icon = mission_corin
-		position = 24
-		required_missions = { ge_feather_academy } 
-		provinces_to_highlight = {  } 
-
-		trigger = {
-			army_professionalism = 1
-		}
-
-		effect = {
-			define_general = {
-				shock = 8
-				fire = 6
-				manuever = 8
-				siege = 4
-				name = "Robyn Drakesford"
-				female = yes
-				trait = cannoneer_personality 
-			}
-		}
-	}
-}
-
-griffon_empire_industry = {
-	slot = 2
-	generic = no
-	ai = yes
-	has_country_shield = yes
-	potential = {
-		tag = M01
-		was_tag = B36
-	}
-
-	ge_cheap_iron = {
-		icon = mission_spoils_of_war
-		position = 21
-		required_missions = { ge_imperial_culture } 
-		provinces_to_highlight = { 
-		} 
-
-		trigger = {
-			OR = {
-				production_leader = { trade_goods = iron } 
-				all_owned_province = {
-					trade_goods = iron
-					has_building = weapons
-					development = 10
-				}
-			}
-		}
-
-		effect = {
-			add_country_modifier = {
-				name = "ge_cheap_regiment"
-				duration = 7300
-			}
-		}
-	}
-
-	ge_a_need_for_meat = {
-		icon = mission_thirsting_queen
-		position = 22
-		required_missions = { ge_cheap_iron } 
-		provinces_to_highlight = { 
-		} 
-
-		trigger = {
-			all_owned_province = {
-				trade_goods = livestock
-				has_building = farm_estate
-				development = 10
-			}
-		}
-
-		effect = {
-			add_country_modifier = {
-				name = "ge_fresh_supply"
-				duration = 3650
-			}
-		}
-	}
-
-	ge_reap_profit = {
-		icon = mission_establish_mint_towns
-		position = 23
-		required_missions = { ge_a_need_for_meat } 
-		provinces_to_highlight = {  } 
-
-		trigger = {
-			4097 = {
-				has_great_project = {
-					type = marrhold_tunnel
-					tier = 3
-				}
-			}
-		}
-
-		effect = {
-			add_dip_power = 100
-			add_years_of_income = 5
-		}
-	}
-}
-
-griffon_empire_events = {
-	slot = 3
-	generic = no
-	ai = yes
-	has_country_shield = yes
-	potential = {
-		tag = M01
-		was_tag = B36
-	}
-
-	ge_from_ashes = {
-		icon = mission_torch_fire
-		position = 19
-		required_missions = { marrhold_griffon_king } 
-		provinces_to_highlight = {  } 
-
-		trigger = { tag = M01 } 
-
-		effect = {
-			country_event = {
-				id = flavor_griffon_empire.1
-				days = 1
-			}
-		}
-	}
-
-	ge_imperial_culture = {
-		icon = la_marseillaise
-		position = 20
-		required_missions = { ge_from_ashes } 
-		provinces_to_highlight = {  } 
-
-		trigger = {
-			num_of_owned_provinces_with = {
-				value = 30
-				NOT = { culture = root } 
-				is_overseas = no
-			}
-		}
-
-		effect = {
-			country_event = {
-				id = flavor_griffon_empire.2
-				days = 1
-			}
-			inner_castanor_region = {
-				limit = {
-					NOT = { is_core = ROOT } 
-					NOT = { is_permanent_claim = ROOT } 
-				}
-				add_permanent_claim = ROOT
-			}
-		}
-	}
-
-	ge_biggest_human_capital = {
-		icon = mission_mechanical_mining
-		position = 21
-		required_missions = { ge_imperial_culture } 
-		provinces_to_highlight = {  } 
-
-		trigger = {
-			4097 = {
-				has_great_project = {
-					type = marrhold_gate_to_the_serpentspine
-					tier = 3
-				}
-				higher_development_than = 8
-			}
-		}
-
-		effect = {
-			add_country_modifier = {
-				name = "ge_abundance_of_stone"
-				duration = 7300
-			}
-		}
-	}
-
-	ge_the_new_death_ring = {
-		icon = mission_great_wall
-		position = 22
-		required_missions = {
-			ge_biggest_human_capital
-			ge_inner_castanor
-		}
-		provinces_to_highlight = {  } 
-
-		trigger = {
-			treasury = 15000
-			#ROOT = { defensiveness = 0.4 } 
-		}
-
-		effect = { 
-			add_treasury = -15000
-			every_owned_province = {
-				limit = {
-					province_group = white_walls
-				}
-				remove_province_modifier = white_walls_of_castanor
-			}
-			746 = {
-				add_province_modifier = {
-					name = ge_the_new_death_ring_mod
-					duration = -1
-				}
-			}
-			747 = {
-				add_province_modifier = {
-					name = ge_the_new_death_ring_mod
-					duration = -1
-				}
-			}
-			754 = {
-				add_province_modifier = {
-					name = ge_the_new_death_ring_mod
-					duration = -1
-				}
-			}
-			755 = {
-				add_province_modifier = {
-					name = ge_the_new_death_ring_mod
-					duration = -1
-				}
-			}
-			756 = {
-				add_province_modifier = {
-					name = ge_the_new_death_ring_mod
-					duration = -1
-				}
-			}
-			806 = {
-				add_province_modifier = {
-					name = ge_the_new_death_ring_mod
-					duration = -1
-				}
-			}
-			808 = {
-				add_province_modifier = {
-					name = ge_the_new_death_ring_mod
-					duration = -1
-				}
-			}
-			809 = {
-				add_province_modifier = {
-					name = ge_the_new_death_ring_mod
-					duration = -1
-				}
-			}
-			810 = {
-				add_province_modifier = {
-					name = ge_the_new_death_ring_mod
-					duration = -1
-				}
-			}
-			811 = {
-				add_province_modifier = {
-					name = ge_the_new_death_ring_mod
-					duration = -1
-				}
-			}
-			850 = {
-				add_province_modifier = {
-					name = ge_the_new_death_ring_mod
-					duration = -1
-				}
-			}
-		} 
-	}
-
-	ge_an_empire_forged = {
-		icon = give_him_back_his_legions
-		position = 25
-		required_missions = {
-			ge_the_new_death_ring
-			ge_new_chief_of_army
-			ge_west_castanor_finish
-		}
-		provinces_to_highlight = {  } 
-
-		trigger = { total_development = 2000 } 
-
-		effect = {
-			add_country_modifier = {
-				name = ge_admin_eff_empire
-				duration = -1
-			}
-		}
-	}
-}
-
-griffon_empire_expand = {
-	slot = 4
-	generic = no
-	ai = yes
-	has_country_shield = yes
-	potential = {
-		tag = M01
-		was_tag = B36
-	}
-
-	ge_inner_castanor = {
-		icon = mission_temple_patronage
-		position = 21
-		required_missions = { ge_imperial_culture } 
-		provinces_to_highlight = {  } 
-
-		trigger = {
-			inner_castanor_region = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-		}
-
-		effect = {
-			merescker_area = {
-				limit = {
-					NOT = { is_core = ROOT } 
-					NOT = { is_permanent_claim = ROOT } 
-				}
-				add_permanent_claim = ROOT
-			}
-			nortmerewood_area = {
-				limit = {
-					NOT = { is_core = ROOT } 
-					NOT = { is_permanent_claim = ROOT } 
-				}
-				add_permanent_claim = ROOT
-			}
-			upcreek_area = {
-				limit = {
-					NOT = { is_core = ROOT } 
-					NOT = { is_permanent_claim = ROOT } 
-				}
-				add_permanent_claim = ROOT
-			}
-			silvervord_area = {
-				limit = {
-					NOT = { is_core = ROOT } 
-					NOT = { is_permanent_claim = ROOT } 
-				}
-				add_permanent_claim = ROOT
-			}
-			westwall_approach_area = {
-				limit = {
-					NOT = { is_core = ROOT } 
-					NOT = { is_permanent_claim = ROOT } 
-				}
-				add_permanent_claim = ROOT
-			}
-			ebonmarck_area = {
-				limit = {
-					NOT = { is_core = ROOT } 
-					NOT = { is_permanent_claim = ROOT } 
-				}
-				add_permanent_claim = ROOT
-			}
-		}
-	}
-
-	ge_west_castanor_1 = {
-		icon = mission_cannons_firing
-		position = 22
-		required_missions = { ge_inner_castanor } 
-		provinces_to_highlight = {  } 
-
-		trigger = {
-			merescker_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			nortmerewood_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			upcreek_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-		}
-
-		effect = {
-			verteben_area = {
-				limit = {
-					NOT = { is_core = ROOT } 
-					NOT = { is_permanent_claim = ROOT } 
-				}
-				add_permanent_claim = ROOT
-			}
-			taran_plains_area = {
-				limit = {
-					NOT = { is_core = ROOT } 
-					NOT = { is_permanent_claim = ROOT } 
-				}
-				add_permanent_claim = ROOT
-			}
-			valefort_area = {
-				limit = {
-					NOT = { is_core = ROOT } 
-					NOT = { is_permanent_claim = ROOT } 
-				}
-				add_permanent_claim = ROOT
-			}
-			rohibon_area = {
-				limit = {
-					NOT = { is_core = ROOT } 
-					NOT = { is_permanent_claim = ROOT } 
-				}
-				add_permanent_claim = ROOT
-			}
-		}
-	}
-	ge_west_castanor_finish = {
-		icon = mission_crusade_for_varna
-		position = 24
-		required_missions = {
-			ge_west_castanor_1
-			ge_west_castanor_2
-		}
-		provinces_to_highlight = {  } 
-
-		trigger = {
-			west_castanor_region = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-		}
-
-		effect = {
-			add_country_modifier = {
-				name = ge_unifier_of_castanor
-				duration = 3650
-			}
-			country_event = {
-				id = flavor_griffon_empire.3
-				days = 1
-			}
-		}
-	}
-}
-
-griffon_empire_misc = {
-	slot = 5
-	generic = no
-	ai = yes
-	has_country_shield = yes
-	potential = {
-		tag = M01
-		was_tag = B36
-	}
-
-	ge_west_castanor_2 = {
-		icon = mission_cossack_cavalry
-		position = 23
-		required_missions = { } 
-		provinces_to_highlight = {  } 
-
-		trigger = {
-			mission_completed = ge_inner_castanor
-			silvervord_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			westwall_approach_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			ebonmarck_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-		}
-
-		effect = {
-			athfork_area = {
-				limit = {
-					NOT = { is_core = ROOT } 
-					NOT = { is_permanent_claim = ROOT } 
-				}
-				add_permanent_claim = ROOT
-			}
-			middle_alen_area = {
-				limit = {
-					NOT = { is_core = ROOT } 
-					NOT = { is_permanent_claim = ROOT } 
-				}
-				add_permanent_claim = ROOT
-			}
-			balmire_area = {
-				limit = {
-					NOT = { is_core = ROOT } 
-					NOT = { is_permanent_claim = ROOT } 
-				}
-				add_permanent_claim = ROOT
-			}
-			falsemire_area = {
-				limit = {
-					NOT = { is_core = ROOT } 
-					NOT = { is_permanent_claim = ROOT } 
-				}
-				add_permanent_claim = ROOT
 			}
 		}
 	}

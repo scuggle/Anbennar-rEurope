@@ -61,7 +61,7 @@ prukakhin_bazaar_of_blood_and_ivory = {
 		}
 		province_modifiers = {
 			local_development_cost = -0.05
-			province_trade_power_modifier = 0.1
+			province_trade_power_modifier = 0.25
 			local_sailors_modifier = 0.25
 		}
 		area_modifier = {
@@ -86,7 +86,7 @@ prukakhin_bazaar_of_blood_and_ivory = {
 		}
 		province_modifiers = {
 			local_development_cost = -0.1
-			province_trade_power_modifier = 0.2
+			province_trade_power_modifier = 0.5
 			local_sailors_modifier = 0.5
 		}
 		area_modifier = {
@@ -121,7 +121,7 @@ prukakhin_bazaar_of_blood_and_ivory = {
 		}
 		province_modifiers = {
 			local_development_cost = -0.15
-			province_trade_power_modifier = 0.33
+			province_trade_power_modifier = 0.75
 			local_sailors_modifier = 1
 		}
 		area_modifier = {
@@ -243,7 +243,7 @@ phaethmen_di_phaemruk_shipyard_district = {
 			months = 480
 		}
 		cost_to_upgrade = {
-			factor = 5000
+			factor = 7000
 		}
 		province_modifiers = {
 			local_development_cost = -0.15
@@ -341,7 +341,7 @@ phaethmen_di_the_saccharine_garden = {
 		area_modifier = {
 		}
 		country_modifiers = {
-			prestige_decay = -0.001
+			prestige_decay = -0.0025
 			recover_army_morale_speed = 0.05
 		}
 		on_upgraded = {
@@ -363,7 +363,7 @@ phaethmen_di_the_saccharine_garden = {
 		area_modifier = {
 		}
 		country_modifiers = {
-			prestige_decay = -0.003
+			prestige_decay = -0.005
 			recover_army_morale_speed = 0.1
 		}
 		on_upgraded = {
@@ -386,7 +386,7 @@ phaethmen_di_the_saccharine_garden = {
 		area_modifier = {
 		}
 		country_modifiers = {
-			prestige_decay = -0.005
+			prestige_decay = -0.0075
 			recover_army_morale_speed = 0.15
 			monthly_splendor = 1
 		}

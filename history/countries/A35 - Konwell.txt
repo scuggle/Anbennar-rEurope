@@ -9,7 +9,10 @@ technology_group = tech_cannorian
 
 capital = 275
 
-1000.1.1 = { set_estate_privilege = estate_mages_organization_magisterium }
+1000.1.1 = { 
+	set_estate_privilege = estate_mages_organization_magisterium 
+	set_country_flag = new_imperial_candidate_gain_magisterium
+}
 
 1422.1.1 = { set_country_flag = lilac_wars_moon_party }
 
@@ -18,8 +21,8 @@ capital = 275
 		name = "Henric II"
 		dynasty = "Konwell"
 		birth_date = 1406.11.16
-		adm = 3
-		dip = 0
-		mil = 0
+		adm = 2
+		dip = 4
+		mil = 4
 	}
 }

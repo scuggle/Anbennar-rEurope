@@ -13,13 +13,39 @@ historical_rival = B13 #Leaders don't like one another.
 
 1443.6.27 = {
 	monarch = {
-		name = "Maurise"
-		dynasty = "síl Varmas"
-		adm = 2
-		dip = 3
-		mil = 1
-		birth_date = 1398.6.3
+		name = "Griffith"
+		dynasty = "the White Falcon"
+		adm = 4
+		dip = 4
+		mil = 5
+		birth_date = 1420.6.3
 	}
-	add_ruler_personality = babbling_buffoon_personality
-	add_ruler_personality = well_advised_personality
+	add_ruler_personality = inspiring_leader_personality
+	add_ruler_personality = charismatic_negotiator_personality
+
+	heir = {
+		name = "Casca"
+		dynasty = "of the Band of the Hawk"
+		monarch_name = "Casca"
+		birth_date = 1422.7.3
+		death_date = 1481.3.2
+		claim = 95
+		adm = 4
+		dip = 2
+		mil = 4
+		culture = esmari
+		female = yes
+	}
+	add_heir_personality = bold_fighter_personality
+}
+1443.6.28 = {
+	leader = {
+		name = "Guts"
+		type = general
+
+		fire = 2
+		shock = 8
+		manuever = 3
+		siege = 0
+	}
 }

@@ -4,6 +4,7 @@ owner = R63
 controller = R63
 add_core = R63
 add_core = R11
+add_core = R84
 culture = khedarid
 religion = high_philosophy
 

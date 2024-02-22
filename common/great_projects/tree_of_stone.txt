@@ -85,7 +85,8 @@ earthseed = {
 			trade_goods_size = 0.5
 			allowed_num_of_buildings = 1
 		}
-		area_modifier = {		
+		area_modifier = {
+			local_development_cost = -0.1
 		}
 		country_modifiers = {
 			global_missionary_strength = 0.005
@@ -113,7 +114,8 @@ earthseed = {
 			trade_goods_size = 1
 			allowed_num_of_buildings = 1
 		}
-		area_modifier = {		
+		area_modifier = {
+			local_development_cost = -0.15
 		}
 		country_modifiers = {
 			global_missionary_strength = 0.01
@@ -140,11 +142,12 @@ earthseed = {
 			factor = 5000
 		}
 		province_modifiers = {
-			local_development_cost = -0.6
+			local_development_cost = -0.5
 			trade_goods_size = 1.5
 			allowed_num_of_buildings = 2
 		}
-		area_modifier = {		
+		area_modifier = {
+			local_development_cost = -0.2
 		}
 		country_modifiers = {
 			global_missionary_strength = 0.015
@@ -522,7 +525,7 @@ ovdal_az_an_grand_lake_ballroom = {
 			months = 120
 		}
 		cost_to_upgrade = {
-			factor = 1000
+			factor = 1500
 		}
 		province_modifiers = {
 			local_unrest = -3
@@ -574,7 +577,7 @@ ovdal_az_an_grand_lake_ballroom = {
 			months = 480
 		}
 		cost_to_upgrade = {
-			factor = 7000
+			factor = 10000
 		}
 		province_modifiers = {
 			local_unrest = -10
@@ -723,7 +726,7 @@ hul_as_krakazol_breweries = {
 			months = 480
 		}
 		cost_to_upgrade = {
-			factor = 7000
+			factor = 9000
 		}
 		province_modifiers = {
 			local_defensiveness = 0.33

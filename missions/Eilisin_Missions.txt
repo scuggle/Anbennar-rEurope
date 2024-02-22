@@ -5,6 +5,7 @@ lorent_conquest1 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A15
 	}
 	has_country_shield = yes
@@ -250,6 +251,7 @@ lorent_conquest2 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A15
 	}
 	has_country_shield = yes
@@ -549,6 +551,7 @@ wine_buildup = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A15
 	}
 	has_country_shield = yes
@@ -818,6 +821,7 @@ carneter_conquest1 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A15
 	}
 	has_country_shield = yes
@@ -1165,6 +1169,7 @@ carneter_conquest2 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A15
 	}
 	has_country_shield = yes

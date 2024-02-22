@@ -7,7 +7,10 @@ anisikheion_1_missions = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { tag = G59 }
+	potential = { 
+		tag = G59
+		NOT = { has_country_flag = chose_generic_mt }
+	}
 	
 	G59_hunting_pearls = {
 		icon = mission_treasure_room
@@ -185,7 +188,10 @@ anisikheion_2_missions = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { tag = G59 }
+	potential = { 
+		tag = G59 
+		NOT = { has_country_flag = chose_generic_mt }
+	}
 
 
 	
@@ -498,7 +504,10 @@ anisikheion_3_missions = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { tag = G59 }
+	potential = { 
+		tag = G59 
+		NOT = { has_country_flag = chose_generic_mt }
+	}
 
 	G59_kherkan_overreach = {
 		icon = mission_have_two_subjects
@@ -1055,7 +1064,10 @@ anisikheion_4_missions = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { tag = G59 }
+	potential = { 
+		tag = G59 
+		NOT = { has_country_flag = chose_generic_mt }
+	}
 
 	
 	G59_pirates_to_the_east = {
@@ -1357,7 +1369,10 @@ anisikheion_5_missions = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { tag = G59 }
+	potential = { 
+		tag = G59 
+		NOT = { has_country_flag = chose_generic_mt }
+	}
 
 	G59_the_treaty_of_anisoton = {
 		icon = mission_destroyed_city

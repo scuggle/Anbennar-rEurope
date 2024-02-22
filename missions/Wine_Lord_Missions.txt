@@ -4,6 +4,7 @@ wine_lord_missions = {
 	generic = yes
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		capital_scope = {
 			OR = {
 				area = upper_winebay_area

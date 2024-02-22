@@ -6,7 +6,8 @@ vazhatun_1 = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { tag = I03 }
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = I03 }
 
 	vazhatun_discovery_of_the_survivors = {
 		#icon = fight_bosnian_heresies
@@ -353,7 +354,8 @@ vazhatun_2 = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { tag = I03 }
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = I03 }
 	
 	vazhatun_fresh_air = {
 		icon = mission_develop_the_scandes
@@ -1009,7 +1011,8 @@ vazhatun_3 = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { tag = I03 }
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = I03 }
 
 	vazhatun_clearing_our_home = {
 		icon = alpine_defenses
@@ -1160,7 +1163,7 @@ vazhatun_3 = {
                 	}
             	}
 				AND = {
-                	region = ogre_mountains_region
+                	region = ogre_valley_region
                 	NOT = {
                 	    AND = {
                 	        owned_by = ROOT
@@ -1171,7 +1174,7 @@ vazhatun_3 = {
                     	ROOT = {
                         	num_of_owned_provinces_with = {
                             	value = 5
-                            	region = ogre_mountains_region
+                            	region = ogre_valley_region
                             	development = 6
                         	}
                     	}
@@ -1198,7 +1201,7 @@ vazhatun_3 = {
 			}
 			num_of_owned_provinces_with = {
 				value = 5
-				region = ogre_mountains_region
+				region = ogre_valley_region
 				development = 6
 			}
 		}
@@ -1567,7 +1570,8 @@ vazhatun_4 = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { tag = I03 }
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = I03 }
 	
 	vazhatun_repairing_the_setzunkhupa = {
 		icon = public_works
@@ -1826,7 +1830,8 @@ vazhatun_5 = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { tag = I03 }
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = I03 }
 
 	vazhatun_improving_the_lens = {
 		icon = mission_rb_inland_india

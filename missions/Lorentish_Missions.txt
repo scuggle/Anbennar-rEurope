@@ -4,12 +4,13 @@ lorent_colonial = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A01
 	}
 	has_country_shield = yes
 	
 	lorent_recover_from_lilac_wars = {
-		icon = mission_war_chest
+		icon = mission_new_dawn
 		required_missions = { }
 		position = 1
 		
@@ -258,7 +259,7 @@ lorent_colonial = {
 		
 		trigger = {
 			custom_trigger_tooltip = {
-				tooltip = miss_est_derannport
+				tooltip = miss_noruin_foothold
 				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 					value = 1
 					region = trollsbay_region
@@ -341,6 +342,7 @@ lorent_internal = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A01
 	}
 	has_country_shield = yes
@@ -587,6 +589,7 @@ lorent_unification_of_lencenor = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A01
 	}
 	has_country_shield = yes
@@ -985,6 +988,7 @@ lorent_wine = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A01
 	}
 	has_country_shield = yes
@@ -1661,6 +1665,7 @@ lorent_conflict_with_gawed_and_anbennar = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A01
 	}
 	has_country_shield = yes

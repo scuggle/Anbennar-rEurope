@@ -55,7 +55,7 @@ country_decisions = {
 		}
 		effect = {
 			adventurer_hold_formation = { tag = I02 culture = quartz capital_id = 4208 }
-			swap_non_generic_missions = yes
+			#no missions for reforming the hold
 		}
 		ai_will_do = {
 			factor = 1
@@ -272,7 +272,7 @@ country_decisions = {
 		}
 		effect = {
 			adventurer_hold_formation = { tag = I09 culture = opal capital_id = 4056 }
-			swap_non_generic_missions = yes
+			# swap_non_generic_missions = yes
 		}
 		ai_will_do = {
 			factor = 1
@@ -303,7 +303,7 @@ country_decisions = {
 		}
 		effect = {
 			adventurer_hold_formation = { tag = I10 culture = lead capital_id = 2963 }
-			swap_non_generic_missions = yes
+			# swap_non_generic_missions = yes
 		}
 		ai_will_do = {
 			factor = 1
@@ -427,7 +427,7 @@ country_decisions = {
 		}
 		effect = {
 			adventurer_hold_formation = { tag = I14 culture = titanium capital_id = 4217 }
-			swap_non_generic_missions = yes
+			# swap_non_generic_missions = yes
 		}
 		ai_will_do = {
 			factor = 1
@@ -458,7 +458,7 @@ country_decisions = {
 		}
 		effect = {
 			adventurer_hold_formation = { tag = I15 culture = pyrite capital_id = 4078 }
-			swap_non_generic_missions = yes
+			# swap_non_generic_missions = yes
 		}
 		ai_will_do = {
 			factor = 1
@@ -490,6 +490,14 @@ country_decisions = {
 		effect = {
 			adventurer_hold_formation = { tag = I16 culture = basalt capital_id = 4039 }
 			swap_non_generic_missions = yes
+			
+			hidden_effect = {
+				set_country_flag = gor_burad_rage_untamed
+				set_variable = {
+					which = gor_burad_var_basalt_rage_event_num
+					value = 0
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 1
@@ -520,7 +528,7 @@ country_decisions = {
 		}
 		effect = {
 			adventurer_hold_formation = { tag = I17 culture = topaz capital_id = 4218 }
-			swap_non_generic_missions = yes
+			# swap_non_generic_missions = yes
 		}
 		ai_will_do = {
 			factor = 1
@@ -551,7 +559,7 @@ country_decisions = {
 		}
 		effect = {
 			adventurer_hold_formation = { tag = I18 culture = peridot capital_id = 4265 }
-			swap_non_generic_missions = yes
+			# swap_non_generic_missions = yes
 		}
 		ai_will_do = {
 			factor = 1
@@ -582,7 +590,7 @@ country_decisions = {
 		}
 		effect = {
 			adventurer_hold_formation = { tag = I19 culture = granite capital_id = 4284 }
-			swap_non_generic_missions = yes
+			# swap_non_generic_missions = yes
 		}
 		ai_will_do = {
 			factor = 1
@@ -659,7 +667,7 @@ country_decisions = {
 		}
 		effect = {
 			adventurer_hold_formation = { tag = I21 culture = emerald capital_id = 4350 }
-			swap_non_generic_missions = yes
+			# swap_non_generic_missions = yes
 		}
 		ai_will_do = {
 			factor = 1
@@ -690,7 +698,7 @@ country_decisions = {
 		}
 		effect = {
 			adventurer_hold_formation = { tag = I22 culture = jade capital_id = 4311 }
-			swap_non_generic_missions = yes
+			# swap_non_generic_missions = yes
 		}
 		ai_will_do = {
 			factor = 1
@@ -768,13 +776,18 @@ country_decisions = {
 	I24_nation = {
 		major = yes
 		potential = {
-			has_country_modifier = dwarven_administration
 			culture_group = dwarven
 			capital_scope = { continent = serpentspine }
-			NOT = { exists = I24 }
-			NOT = { tag = I23 }
-			NOT = { tag = H94 }
+			NOT = { 
+				exists = I24
+				tag = I23 
+				tag = H94 
+			}
 			NOT = { has_reform = dwarovar_adventurer_reform }
+			if = {
+				limit = { ai = yes }
+				is_year = 1600
+			}
 		}
 		provinces_to_highlight = {
 			OR = {
@@ -784,6 +797,13 @@ country_decisions = {
 			continent = serpentspine
 		}
 		allow = {
+			hidden_trigger = {
+				culture_group = dwarven
+			}
+			if = {
+				limit = { ai = yes }
+				is_year = 1600
+			}
 			is_free_or_tributary_trigger = yes
 			is_at_war = no				
 			has_country_modifier = dwarovkron_full
@@ -806,6 +826,7 @@ country_decisions = {
 			}
 			
 			if = { #astronomy disabled
+				limit = { tag = I03 }
 				custom_tooltip = vazhatun_disable_astronomy_completely_tt
 				hidden_effect = {
 					remove_country_modifier = vazhatun_astronomy_enabled
@@ -1019,7 +1040,7 @@ country_decisions = {
 		}
 		effect = {
 			adventurer_hold_formation = { tag = H76 culture = diamond capital_id = 4093 }
-			swap_non_generic_missions = yes
+			#no missions for reforming the hold
 		}
 		ai_will_do = {
 			factor = 1

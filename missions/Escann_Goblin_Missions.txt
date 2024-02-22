@@ -4,6 +4,7 @@ EscannGob0 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		culture_group = goblin
 		NOT = {
 			OR = {
@@ -140,6 +141,7 @@ EscannGob1 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		culture_group = goblin
 		NOT = {
 			OR = {
@@ -206,7 +208,7 @@ EscannGob1 = {
 			OR = {
 				has_adopted_cult = cannorian_cult
 				religion_group = cannorian
-				religion_group = kheteratan
+				religion_group = khetist
 			}
 		}
 		effect = {
@@ -302,6 +304,7 @@ EscannGob2 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		culture_group = goblin
 		NOT = {
 			OR = {
@@ -510,6 +513,7 @@ EscannGob3 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		culture_group = goblin
 		NOT = {
 			OR = {
@@ -629,6 +633,7 @@ EscannGob4 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		culture_group = goblin
 		NOT = {
 			OR = {
@@ -770,7 +775,7 @@ EscannGob4 = {
 		trigger = {
 			OR = {
 				811 = { is_strongest_trade_power = ROOT }
-				840 = { is_strongest_trade_power = ROOT }
+				833 = { is_strongest_trade_power = ROOT }
 				785 = { is_strongest_trade_power = ROOT }
 				229 = { is_strongest_trade_power = ROOT }
 				872 = { is_strongest_trade_power = ROOT }

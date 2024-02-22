@@ -5,6 +5,7 @@ esthil_missions_1v = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = B54
 	}
 	
@@ -313,6 +314,7 @@ esthil_missions_2v = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = B54
 	} #These are triggers for the entire series
 	
@@ -797,6 +799,7 @@ esthil_missions_3v = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = B54
 	} #These are triggers for the entire series
 	
@@ -1646,6 +1649,7 @@ esthil_missions_4v = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = B54
 	} #These are triggers for the entire series
 	
@@ -2262,6 +2266,7 @@ esthil_missions_5v = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = B54
 	} #These are triggers for the entire series
 	

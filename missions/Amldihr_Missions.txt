@@ -4,6 +4,7 @@ amldihr_1 = {
 	generic = no
 	ai = yes
 	potential = {
+    	NOT = { has_country_flag = chose_generic_mt }
 		tag = I01
 	}
 	
@@ -303,6 +304,7 @@ amldihr_2 = {
 	generic = no
 	ai = yes
 	potential = {
+    	NOT = { has_country_flag = chose_generic_mt }
 		tag = I01
 	}
 	
@@ -610,6 +612,7 @@ amldihr_3 = {
 	generic = no
 	ai = yes
 	potential = {
+    	NOT = { has_country_flag = chose_generic_mt }
 		tag = I01
 	}
 	
@@ -940,6 +943,7 @@ amldihr_4 = {
 	generic = no
 	ai = yes
 	potential = {
+    	NOT = { has_country_flag = chose_generic_mt }
 		tag = I01
 	}
 	
@@ -1270,6 +1274,7 @@ amldihr_5 = {
 	generic = no
 	ai = yes
 	potential = {
+    	NOT = { has_country_flag = chose_generic_mt }
 		tag = I01
 	}
 	

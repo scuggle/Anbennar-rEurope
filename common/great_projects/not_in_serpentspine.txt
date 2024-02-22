@@ -98,7 +98,7 @@ rubyhold_academy = {
 			months = 240
 		}
 		cost_to_upgrade = {
-			factor = 3500
+			factor = 2500
 		}
 		province_modifiers = {
 		}
@@ -221,7 +221,7 @@ ovdal_tungr_port_hold = {
 		area_modifier = {		
 		}
 		country_modifiers = {
-		navy_tradition_decay = -0.001
+		navy_tradition_decay = -0.005
 		}
 		on_upgraded = {
 		}
@@ -231,7 +231,7 @@ ovdal_tungr_port_hold = {
 			months = 240
 		}
 		cost_to_upgrade = {
-			factor = 3500
+			factor = 3000
 		}
 		province_modifiers = {
 		local_ship_repair = 0.25
@@ -242,7 +242,7 @@ ovdal_tungr_port_hold = {
 		}
 		country_modifiers = {
 		ship_durability = 0.025
-		navy_tradition_decay = -0.003
+		navy_tradition_decay = -0.0075
 		}
 		on_upgraded = {
 			owner = {
@@ -262,7 +262,7 @@ ovdal_tungr_port_hold = {
 			months = 480
 		}
 		cost_to_upgrade = {
-			factor = 7000
+			factor = 6000
 		}
 		province_modifiers = {
 		local_ship_repair = 0.5
@@ -273,7 +273,7 @@ ovdal_tungr_port_hold = {
 		}
 		country_modifiers = {
 		ship_durability = 0.05
-		navy_tradition_decay = -0.005
+		navy_tradition_decay = -0.01
 		flagship_durability = 0.5
 		}
 		on_upgraded = {
@@ -385,7 +385,7 @@ marrhold_gate_to_the_serpentspine = {
 			months = 240
 		}
 		cost_to_upgrade = {
-			factor = 3500
+			factor = 2500
 		}
 		province_modifiers = {
 			local_defensiveness = 0.25
@@ -698,7 +698,7 @@ silverforge_strongbellow_academy = {
 			months = 240
 		}
 		cost_to_upgrade = {
-			factor = 3500
+			factor = 4000
 		}
 		province_modifiers = {
 			local_defensiveness = 0.2
@@ -722,7 +722,7 @@ silverforge_strongbellow_academy = {
 			months = 480
 		}
 		cost_to_upgrade = {
-			factor = 7000
+			factor = 8000
 		}
 		province_modifiers = {
 			local_defensiveness = 0.33

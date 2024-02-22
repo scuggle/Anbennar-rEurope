@@ -3,12 +3,12 @@ jiantsiang = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Y16
 	}
 	has_country_shield = yes
 	jiantsiang_strike = {
 		icon = mission_steppe_warriors
-		ai = yes
 		position = 2
 		required_missions = {
 			jiantsiang_will
@@ -65,7 +65,6 @@ jiantsiang = {
 	
 	jiantsiang_incompetence = {
 		icon = mission_great_wall
-		ai = yes
 		position = 3
 		required_missions = {
 			jiantsiang_strike
@@ -94,7 +93,6 @@ jiantsiang = {
 	
 	jiantsiang_swords = {
 		icon = mission_warrior_gold
-		ai = yes
 		position = 4
 		required_missions = {
 			jiantsiang_loyalty
@@ -143,7 +141,6 @@ jiantsiang = {
 	
 	jiantsiang_peasants = {
 		icon = mission_rice_field
-		ai = yes
 		position = 5
 		required_missions = {
 			jiantsiang_swords
@@ -181,7 +178,6 @@ jiantsiang = {
 	
 	jiantsiang_lords = {
 		icon = mission_kowtow
-		ai = yes
 		position = 6
 		required_missions = {
 			jiantsiang_peasants
@@ -213,7 +209,6 @@ jiantsiang = {
 	
 	jiantsiang_kindling = {
 		icon = mission_torch_fire
-		ai = yes
 		position = 7
 		required_missions = {
 			jiantsiang_lords
@@ -245,7 +240,6 @@ jiantsiang = {
 	
 	jiantsiang_blazing = {
 		icon = mission_burning_man
-		ai = yes
 		position = 8
 		required_missions = {
 			jiantsiang_kindling
@@ -269,7 +263,6 @@ jiantsiang = {
 	
 	jiantsiang_undying = {
 		icon = mission_horse_siege
-		ai = yes
 		position = 9
 		required_missions = {
 			jiantsiang_sons
@@ -311,7 +304,6 @@ jiantsiang = {
 	
 	jiantsiang_league = {
 		icon = mission_asian_city
-		ai = yes
 		position = 10
 		required_missions = {
 			jiantsiang_undying
@@ -354,13 +346,13 @@ jiantsiang_two = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Y16
 	}
 	has_country_shield = yes
 	
 	jiantsiang_will = {
 		icon = mission_moon_moon
-		ai = yes
 		position = 1
 		required_missions = {
 		}
@@ -385,8 +377,7 @@ jiantsiang_two = {
 	}
 	
 	jiantsiang_loyalty = {
-		icon = mission_sweat_fealty
-		ai = yes
+		icon = mission_approach_throne
 		position = 3
 		required_missions = {
 			jiantsiang_strike
@@ -427,7 +418,6 @@ jiantsiang_two = {
 	}
 	jiantsiang_spears = {
 		icon = mission_open_up_china
-		ai = yes
 		position = 5
 		required_missions = {
 			jiantsiang_loyalty
@@ -477,7 +467,6 @@ jiantsiang_two = {
 	
 	jiantsiang_crossing = {
 		icon = mission_clear_the_delta
-		ai = yes
 		position = 7
 		required_missions = {
 			jiantsiang_spears
@@ -508,7 +497,6 @@ jiantsiang_two = {
 	
 	jiantsiang_sons = {
 		icon = mission_conquer_bengal_tau
-		ai = yes
 		position = 8
 		required_missions = {
 			jiantsiang_kindling
@@ -552,7 +540,6 @@ jiantsiang_two = {
 	
 	jiantsiang_lucky = {
 		icon = mission_sun_temple
-		ai = yes
 		position = 9
 		required_missions = {
 			jiantsiang_sons
@@ -604,13 +591,13 @@ jiantsiang_three = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Y16
 	}
 	has_country_shield = yes
 	
 	jiantsiang_protector = {
 		icon = mission_discussion_arch
-		ai = yes
 		position = 1
 		required_missions = {
 		}
@@ -626,7 +613,6 @@ jiantsiang_three = {
 	
 	jiantsiang_men = {
 		icon = mission_manchu_warrior
-		ai = yes
 		position = 2
 		required_missions = {
 			jiantsiang_will
@@ -648,7 +634,6 @@ jiantsiang_three = {
 	
 	jiantsiang_paw = {
 		icon = mission_seize_the_dragon_throne
-		ai = yes
 		position = 4
 		required_missions = {
 			jiantsiang_men
@@ -672,7 +657,6 @@ jiantsiang_three = {
 	
 	jiantsiang_tianlou = {
 		icon = mission_door_trade
-		ai = yes
 		position = 6
 		required_missions = {
 			jiantsiang_spears
@@ -703,7 +687,6 @@ jiantsiang_three = {
 	}
 	jiantsiang_purge = {
 		icon = mission_destroyed_city
-		ai = yes
 		position = 7
 		required_missions = {
 			jiantsiang_tianlou
@@ -738,7 +721,6 @@ jiantsiang_three = {
 	
 	jiantsiang_ancients = {
 		icon = mission_sunset
-		ai = yes
 		position = 8
 		required_missions = {
 			jiantsiang_purge
@@ -771,7 +753,6 @@ jiantsiang_three = {
 	
 	jiantsiang_sanctum = {
 		icon = mission_kanbawzathadi_palace
-		ai = yes
 		position = 10
 		required_missions = {
 			jiantsiang_lucky
@@ -817,13 +798,13 @@ jiantsiang_four = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Y16
 	}
 	has_country_shield = yes
 	
 	jiantsiang_defenders = {
 		icon = mission_non-western_cavalry_raid
-		ai = yes
 		position = 1
 		required_missions = {
 		}
@@ -858,7 +839,6 @@ jiantsiang_four = {
 	
 	jiantsiang_wilds = {
 		icon = mission_protect_white_sea_trade
-		ai = yes
 		position = 3
 		required_missions = {
 			jiantsiang_raids
@@ -922,7 +902,6 @@ jiantsiang_four = {
 	
 	jiantsiang_shattering = {
 		icon = mission_merchant_trip
-		ai = yes
 		position = 5
 		
 		required_missions = {
@@ -959,7 +938,6 @@ jiantsiang_four = {
 	
 	jiantsiang_bay = {
 		icon = mission_to_the_south_china_sea
-		ai = yes
 		position = 7
 		required_missions = {
 			jiantsiang_tianlou
@@ -984,7 +962,7 @@ jiantsiang_four = {
 		}
 		
 		trigger = {
-			4871 = { #tianlou
+			1372 = { #tianlou
 				trade_share = {
 					country = ROOT
 					share = 50
@@ -1010,7 +988,6 @@ jiantsiang_four = {
 	
 	jiantsiang_prosperity = {
 		icon = mission_dominate_persian_gulf
-		ai = yes
 		position = 8
 		required_missions = {
 			jiantsiang_bay
@@ -1084,7 +1061,6 @@ jiantsiang_four = {
 	}
 	jiantsiang_divinity = {
 		icon = mission_empowerment
-		ai = yes
 		position = 9
 		
 		required_missions = {
@@ -1118,13 +1094,13 @@ jiantsiang_five = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Y16
 	}
 	has_country_shield = yes
 	
 	jiantsiang_raids = {
 		icon = mission_hanged_tree
-		ai = yes
 		position = 2
 		required_missions = {
 			jiantsiang_defenders
@@ -1176,7 +1152,6 @@ jiantsiang_five = {
 	
 	jiantsiang_steppe = {
 		icon = mission_head_on_spike
-		ai = yes
 		position = 3
 		required_missions = {
 			jiantsiang_raids
@@ -1225,7 +1200,6 @@ jiantsiang_five = {
 	
 	jiantsiang_east = {
 		icon = mission_nomad
-		ai = yes
 		position = 4
 		required_missions = {
 			jiantsiang_wilds
@@ -1268,7 +1242,6 @@ jiantsiang_five = {
 	
 	jiantsiang_kingdom = {
 		icon = mission_collect_yasak
-		ai = yes
 		position = 5
 		required_missions = {
 			jiantsiang_east
@@ -1296,7 +1269,6 @@ jiantsiang_five = {
 	
 	jiantsiang_gate = {
 		icon = mission_burning_parthenon
-		ai = yes
 		position = 6
 		required_missions = {
 			jiantsiang_shattering
@@ -1320,7 +1292,6 @@ jiantsiang_five = {
 	
 	jiantsiang_tumbling = {
 		icon = mission_steppe_warriors
-		ai = yes
 		position = 7
 		required_missions = {
 			jiantsiang_gate
@@ -1352,7 +1323,6 @@ jiantsiang_five = {
 	
 	jiantsiang_treasure = {
 		icon = mission_treasure_room
-		ai = yes
 		position = 8
 		required_missions = {
 			jiantsiang_tumbling

@@ -4,6 +4,7 @@ orc_rivals = {
 	generic = yes
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		culture_group = orcish
 		capital_scope = {
 			OR = {
@@ -17,7 +18,6 @@ orc_rivals = {
 	
 	orc_successors_of_dookanson = {
 		icon = mission_subdue_rajputana
-		ai = yes
 		position = 1
 		trigger = {
 			any_rival_country = {
@@ -31,7 +31,6 @@ orc_rivals = {
 	
 	orc_subjugation_war = {
 		icon = mission_control_the_ganges_delta
-		ai = yes
 		position = 2
 		required_missions = {
 			orc_successors_of_dookanson
@@ -52,7 +51,6 @@ orc_rivals = {
 	
 	orc_spoils_of_war = {
 		icon = mission_spoils_of_war
-		ai = yes
 		position = 3
 		required_missions = {
 			orc_subjugation_war
@@ -77,6 +75,7 @@ orc_pillage_2 = {
 	generic = yes
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		culture_group = orcish
 		capital_scope = {
 			OR = {
@@ -89,7 +88,6 @@ orc_pillage_2 = {
 	}
 	orc_raiding_parties = {
 		icon = mission_abu_saids_dream
-		ai = yes
 		position = 5
 		trigger = {
 			if = {
@@ -112,7 +110,6 @@ orc_pillage_2 = {
 	}
 	orc_axe_is_stronger_than_bullet = {
 		icon = mission_control_the_ganges_delta
-		ai = yes
 		position = 6
 		trigger = {
 			any_rival_country = {
@@ -128,7 +125,6 @@ orc_pillage_2 = {
 	}
 	orc_woe_to_the_defeated = {
 		icon = mission_native_reductions
-		ai = yes
 		position = 7
 		trigger = {
 			num_of_owned_provinces_with = {
@@ -216,6 +212,7 @@ orc_trade = {
 	generic = yes
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		culture_group = orcish
 		capital_scope = {
 			OR = {
@@ -229,7 +226,6 @@ orc_trade = {
 
 	orc_rules_of_exchange = {
 		icon = mission_hanseatic_city
-		ai = yes
 		position = 8
 		required_missions = {
 			orc_rising_power
@@ -268,6 +264,7 @@ orc_domination = {
 	generic = yes
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		culture_group = orcish
 		capital_scope = {
 			OR = {
@@ -281,7 +278,6 @@ orc_domination = {
 	
 	orc_clans_reputation = {
 		icon = mission_restore_trade_superiority
-		ai = yes
 		position = 1
 		trigger = {
 			prestige = 50
@@ -296,7 +292,6 @@ orc_domination = {
 	
 	orc_contribution_of_other_clans = {
 		icon = mission_restore_caliphate_of_cordoba
-		ai = yes
 		position = 2
 		required_missions = {
 			orc_clans_reputation
@@ -338,6 +333,7 @@ orc_pillage = {
 	generic = yes
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		culture_group = orcish
 		capital_scope = {
 			OR = {
@@ -350,7 +346,6 @@ orc_pillage = {
 	}
 	orc_pillage_enemy_capital = {
 		icon = mission_spoils_of_war
-		ai = yes
 		position = 4
 		trigger = {
 			any_neighbor_country = {
@@ -371,7 +366,6 @@ orc_pillage = {
 	}
 	orc_war_chest = {
 		icon = mission_war_chest
-		ai = yes
 		position = 5
 		required_missions = {
 			orc_pillage_enemy_capital
@@ -394,6 +388,7 @@ orc_production = {
 	generic = yes
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		culture_group = orcish
 		capital_scope = {
 			OR = {
@@ -406,7 +401,6 @@ orc_production = {
 	}
 	orc_rising_power = {
 		icon = mission_high_income
-		ai = yes
 		position = 7
 		required_missions = {
 			orc_age_of_power 
@@ -425,7 +419,6 @@ orc_production = {
 	}
 	orc_war_craft = {
 		icon = mission_have_manufactories
-		ai = yes
 		position = 8
 		required_missions = {
 			orc_rising_power
@@ -462,6 +455,7 @@ orc_aftermath_of_the_greentide_branch = {
 	generic = yes
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		culture_group = orcish
 		capital_scope = {
 			OR = {
@@ -474,7 +468,6 @@ orc_aftermath_of_the_greentide_branch = {
 	}
 	orc_aftermath_of_the_greentide = {
 		icon = mission_rb_unite_the_clans
-		ai = yes
 		position = 1
 		trigger = {
 			manpower_percentage = 1
@@ -488,7 +481,6 @@ orc_aftermath_of_the_greentide_branch = {
 	}
 	orc_conquer_surrounding_tribes = {
 		icon = mission_rb_colonise_canada
-		ai = yes
 		position = 2
 		required_missions = {
 			orc_aftermath_of_the_greentide 
@@ -508,7 +500,6 @@ orc_aftermath_of_the_greentide_branch = {
 	}
 	orc_new_generation_of_warriors = {
 		icon = mission_levantine_restoration
-		ai = yes
 		position = 3
 		required_missions = {
 			orc_conquer_surrounding_tribes 
@@ -554,7 +545,6 @@ orc_aftermath_of_the_greentide_branch = {
 	}
 	orc_warlords_of_the_greentide = {
 		icon = mission_fatimid_caliphate
-		ai = yes
 		position = 4
 		required_missions = {
 			orc_new_generation_of_warriors
@@ -583,7 +573,6 @@ orc_aftermath_of_the_greentide_branch = {
 	}
 	orc_conflict_with_adventurers = {
 		icon = mission_mayan_conquest
-		ai = yes
 		position = 5
 		required_missions = {
 			orc_warlords_of_the_greentide
@@ -612,6 +601,7 @@ orc_success_branch = {
 	generic = yes
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		culture_group = orcish
 		capital_scope = {
 			OR = {
@@ -624,7 +614,6 @@ orc_success_branch = {
 	}
 	orc_age_of_power = {
 		icon = mission_subdue_rajputana
-		ai = yes
 		position = 6
 		required_missions = {
 			orc_conflict_with_adventurers
@@ -680,7 +669,6 @@ orc_success_branch = {
 	}
 	orc_army_of_conquerors = {
 		icon = mission_assemble_an_army
-		ai = yes
 		position = 8
 		required_missions = {
 			orc_age_of_power
@@ -723,7 +711,6 @@ orc_success_branch = {
 	}
 	orc_on_the_path_to_civilization = {
 		icon = mission_early_game_buildings
-		ai = yes
 		position = 9
 		required_missions = {
 			orc_war_craft
@@ -774,6 +761,7 @@ orc_stability = {
 	generic = yes
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		culture_group = orcish
 		capital_scope = {
 			OR = {
@@ -786,7 +774,6 @@ orc_stability = {
 	}
 	orc_stabilize_situation_in_the_clan = {
 		icon = mission_cope_with_refugees
-		ai = yes
 		position = 1
 		trigger = {
 			stability = 2
@@ -803,6 +790,7 @@ orc_diplomacy = {
 	generic = yes
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		culture_group = orcish
 		capital_scope = {
 			OR = {
@@ -815,7 +803,6 @@ orc_diplomacy = {
 	}
 	orc_orcish_alliances = {
 		icon = mission_alliances
-		ai = yes
 		position = 4
 		required_missions = {
 			orc_new_generation_of_warriors
@@ -865,6 +852,7 @@ orc_capital = {
 	generic = yes
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		culture_group = orcish
 		capital_scope = {
 			OR = {
@@ -878,7 +866,6 @@ orc_capital = {
 	
 	orc_base_of_operations = {
 		icon = mission_control_the_desh
-		ai = yes
 		position = 7
 		trigger = {
 			total_development = 40
@@ -913,7 +900,6 @@ orc_capital = {
 	
 	orc_foundation_of_capital = {
 		icon = mission_develop_the_capital
-		ai = yes
 		position = 8
 		required_missions = {
 			orc_base_of_operations 
@@ -950,6 +936,7 @@ orc_development = {
 	generic = yes
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		culture_group = orcish
 		capital_scope = {
 			OR = {
@@ -1046,7 +1033,6 @@ orc_development = {
 	
 	orc_fur_production = {
 		icon = mission_rb_colonise_canada
-		ai = yes
 		position = 3
 		trigger = {
 			num_of_provinces_in_states = 5

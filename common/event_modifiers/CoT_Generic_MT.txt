@@ -1,176 +1,176 @@
-army_1_mission {
+army_1_mission = {
 	land_morale = 0.10
 }
 
-expansion_1_mission {
+expansion_1_mission = {
 	build_cost = -0.1
 }
 
-trade_1_mission {
+trade_1_mission = {
 	trade_efficiency = 0.15
 }
 
-economic_1_mission {
+economic_1_mission = {
 	advisor_cost = -0.1
 }
 
-government_1_mission {
+government_1_mission = {
 	idea_cost = -0.1
 }
 
-conquest_1_mission {
+conquest_1_mission = {
 	global_autonomy = -0.1
 }
 
-expansion_1_capital {
+expansion_1_capital = {
 	local_build_cost = -0.2
 	local_development_cost = -0.1
 }
 
-national_focus_tellum_1 {
+national_focus_tellum_1 = {
 	local_build_cost = -0.2
 	local_development_cost = -0.15
 }
 
-exotic_trading_post_1 {
+exotic_trading_post_1 = {
 	trade_goods_size = -0.25
 }
 
-exotic_trading_post_2 {
+exotic_trading_post_2 = {
 	local_development_cost = -0.10
 	local_manpower_modifier = 0.5
 }
 
-exotic_trading_post_3 {
+exotic_trading_post_3 = {
 	local_manpower_modifier = 0.5
 }
 
-exotic_trading_post_4 {
+exotic_trading_post_4 = {
 	local_institution_spread = 1
 	trade_value_modifier = 0.5
 }
 
-front_lines_tellumm_1 {
+front_lines_tellumm_1 = {
 	infantry_power = 0.10
 	cavalry_power = 0.10
 }
 
-front_lines_tellumm_2 {
+front_lines_tellumm_2 = {
 	shock_damage = 0.10
 }
 
-front_lines_tellumm_3 {
+front_lines_tellumm_3 = {
 	cavalry_shock = 0.25
 	infantry_shock = 0.25
 }
 
-support_tellumm_1 {
+support_tellumm_1 = {
 	artillery_power = 0.075
 }
 
-support_tellumm_2 {
+support_tellumm_2 = {
 	fire_damage = 0.075
 }
 
-support_tellumm_3 {
+support_tellumm_3 = {
 	artillery_fire = 0.25
 }
 
-artificers_tellumm_2 {
+artificers_tellumm_2 = {
 	special_unit_forcelimit= 0.05
 }
 
-artificers_tellumm_3 {
+artificers_tellumm_3 = {
 	is_rajput_modifier = yes 
 	infantry_fire = 0.25 
 	fire_damage_received = -0.10
-	infantry_power = 0.10 
+	infantry_power = 0.05 
 }
 
-economic_tellumm_1 {
+economic_tellumm_1 = {
 	global_allowed_num_of_buildings = 1
 }
 
-economic_tellumm_2 {
+economic_tellumm_2 = {
 	development_cost = -0.075
 }
 
-economic_tellumm_3 {
+economic_tellumm_3 = {
 	development_cost_modifier = -0.05
 }
 
-trade_tellumm_1 {
+trade_tellumm_1 = {
 	global_sailors_modifier = 0.5
 	global_ship_trade_power = 0.25
 	privateer_efficiency = 0.25
 }
 
-trade_tellumm_2 {
+trade_tellumm_2 = {
 	ship_durability = 0.15
 }
 
-trade_tellumm_3 {
+trade_tellumm_3 = {
 	trade_steering = 0.1
 }
 
-conquered_hold_tellum {
+conquered_hold_tellum = {
 	local_development_cost = -0.10
 }
 
-rebuilding_efforts_tellum {
+rebuilding_efforts_tellum = {
 	local_development_cost = -0.10
 }
 
-capital_management_1 {
+capital_management_1 = {
 	local_development_cost = -0.05
 	supply_limit_modifier = 0.50
 	governing_capacity = 25
 }
 
-capital_management_2 {
+capital_management_2 = {
 	local_development_cost = -0.10
 	supply_limit_modifier = 1
 	governing_capacity = 50
 }
 
-capital_management_3 {
+capital_management_3 = {
 	local_development_cost = -0.15
 	supply_limit_modifier = 2
 	governing_capacity = 100
 }
 
-oasis_capital_tellum {
+oasis_capital_tellum = {
 	local_development_cost = -0.15
 	attrition = 1
 }
 
-port_capital_tellum {
+port_capital_tellum = {
 	local_development_cost = -0.10
 	province_trade_power_modifier = 0.25
 	province_trade_power_value = 5
 }
 
-natural_capital_tellum {
+natural_capital_tellum = {
 	local_development_cost = -0.05
 	trade_goods_size = 0.5
 }
 
-fortress_capital_tellum {
+fortress_capital_tellum = {
 	local_development_cost = -0.10
 	local_defensiveness = 0.66
 }
 
-frozen_capital_tellum {
+frozen_capital_tellum = {
 	local_development_cost = -0.10
 	attrition = 1
 }
 
-prosperous_capital_tellum {
+prosperous_capital_tellum = {
 	local_development_cost = -0.10
 	trade_value_modifier = 0.25
 }
 
-arid_arctic_balance {
+arid_arctic_balance = {
 	local_development_cost = -0.2
 }
 

@@ -5,7 +5,8 @@ krakdhumvror_1 = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { tag = I02 }
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = I02 }
 	
 	krak_clear_view = {
 		icon = mission_rb_rein_in_the_highland_clans
@@ -113,7 +114,8 @@ krakdhumvror_1b = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } 
 		tag = I02 
 		has_country_flag = krak_missions_part2
 	}
@@ -400,7 +402,8 @@ krakdhumvror_1c = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } 
 		tag = I02 
 		has_country_flag = krak_missions_part2
 		has_country_flag = krak_missions_part3
@@ -481,7 +484,7 @@ krakdhumvror_1c = {
 	}
 
 	krak_molten_core = {
-		icon = mission_arise_ashes
+		icon = mission_burning_parthenon
 		position = 18
 		required_missions = { 
 			krak_damestear_casing
@@ -548,7 +551,8 @@ krakdhumvror_2 = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { tag = I02 }
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = I02 }
 
 	krak_towards_surface = {
 		icon = mission_tree_fishing
@@ -708,7 +712,8 @@ krakdhumvror_2b = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } 
 		tag = I02 
 		has_country_flag = krak_missions_part2
 	}
@@ -1092,7 +1097,8 @@ krakdhumvror_3 = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { tag = I02 }
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = I02 }
 
 	krak_relighting_forges = {
 		icon = mission_smith
@@ -1267,6 +1273,7 @@ krakdhumvror_3b = {
 	ai = yes 
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = I02 
 		has_country_flag = krak_missions_part2
 	}
@@ -1751,7 +1758,8 @@ krakdhumvror_4 = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { tag = I02 }
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = I02 }
 
 	krak_restore_hold = {
 		icon = mission_early_game_buildings
@@ -1948,7 +1956,8 @@ krakdhumvror_4b = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } 
 		tag = I02 
 		has_country_flag = krak_missions_part2
 	}
@@ -2415,8 +2424,8 @@ krakdhumvror_4b = {
 					province_id = 678
 					NOT = { has_fort_building_trigger = yes }
 				}
-				province_id = 677 #ferone
-				province_id = 675 #uemerna
+				province_id = 677 #Ijenmyfor
+				province_id = 675 #Qarvetarqan
 			}
 		}
 		
@@ -2433,7 +2442,7 @@ krakdhumvror_4b = {
 			676 = {	#firanyalen
 				has_fort_building_trigger = yes
 			}
-			678 = { #hystara
+			678 = { #Kotierontol
 				has_fort_building_trigger = yes
 			}
 		}
@@ -2566,7 +2575,8 @@ krakdhumvror_5 = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { tag = I02 }
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = I02 }
 
 	krak_end_no_longer = {
 		icon = mission_ghost_town
@@ -2715,7 +2725,8 @@ krakdhumvror_5b = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } 
 		tag = I02 
 		has_country_flag = krak_missions_part2
 	}
@@ -3230,7 +3241,7 @@ krakdhumvror_5b = {
 	}
 
 	krak_freezing_history = {
-		icon = mission_magisterium_breakthrought
+		icon = mission_crystal_cave
 		position = 18
 		required_missions = {
 			krak_third_expedition

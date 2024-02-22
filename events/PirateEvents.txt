@@ -133,19 +133,22 @@ country_event = {
 				add_mil_power = 50
 			}
 		}
-		add_church_power = -5
+		add_karma = -5
 	}
 	option = { # Buccaneer candidate
 		name = "pirates.1.a"
 		ai_chance = { factor = 20 }
 		if = {
-			limit = { 
-				OR = {
-					has_active_policy = vass_a_melting_pot_1
-					has_active_policy = vass_a_melting_pot_2
-					has_active_policy = vass_a_melting_pot_3
-				}
+			limit = { has_country_modifier = harpy_administration }
+			define_ruler = {
+				mil = 1
+				adm = 4
+				dip = 1
+				female = yes
 			}
+		}
+		else_if = {
+			limit = { has_active_policy = mandatory_service }
 			define_ruler = {
 				mil = 1
 				adm = 4
@@ -166,19 +169,22 @@ country_event = {
 				influence = 20
 			}
 		}
-		add_church_power = 10
+		add_karma = 10
 	}
 	option = { # Smugglers candidate
 		name = "pirates.1.b"
 		ai_chance = { factor = 20 }
 		if = {
-			limit = { 
-				OR = {
-					has_active_policy = vass_a_melting_pot_1
-					has_active_policy = vass_a_melting_pot_2
-					has_active_policy = vass_a_melting_pot_3
-				}
+			limit = { has_country_modifier = harpy_administration }
+			define_ruler = {
+				dip = 4
+				adm = 1
+				mil = 1
+				female = yes
 			}
+		}
+		else_if = {
+			limit = { has_active_policy = mandatory_service }
 			define_ruler = {
 				dip = 4
 				adm = 1
@@ -199,19 +205,22 @@ country_event = {
 				influence = 20
 			}
 		}
-		add_church_power = 10
+		add_karma = 10
 	}
 	option = { # Captains candidate
 		name = "pirates.1.c"
 		ai_chance = { factor = 20 }
 		if = {
-			limit = { 
-				OR = {
-					has_active_policy = vass_a_melting_pot_1
-					has_active_policy = vass_a_melting_pot_2
-					has_active_policy = vass_a_melting_pot_3
-				}
+			limit = { has_country_modifier = harpy_administration }
+			define_ruler = {
+				mil = 4
+				adm = 1
+				dip = 1
+				female = yes
 			}
+		}
+		else_if = {
+			limit = { has_active_policy = mandatory_service }
 			define_ruler = {
 				mil = 4
 				adm = 1
@@ -232,7 +241,7 @@ country_event = {
 				influence = 20
 			}
 		}
-		add_church_power = 10
+		add_karma = 10
 	}
 	option = { # Blackbeard!
 		name = "pirates.1.d"
@@ -779,13 +788,7 @@ country_event = {
 		ai_chance = { factor = 20 }
 		trigger = { has_faction = mykx_xhazobkult }
 		if = {
-			limit = { 
-				OR = {
-					has_active_policy = vass_a_melting_pot_1
-					has_active_policy = vass_a_melting_pot_2
-					has_active_policy = vass_a_melting_pot_3
-				}
-			}
+			limit = { has_active_policy = mandatory_service }
 			define_ruler = {
 				mil = 4
 				adm = 1
@@ -809,6 +812,35 @@ country_event = {
 				influence = 20
 			}				
 		}
+	}
+
+	option = { #Heir candidate
+		name = "pirates.1.r"
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 0
+				NOT = { republican_tradition = 70 }
+			}
+		}
+		trigger = { has_reform = matriarchal_pirate_republic NOT = { has_country_flag = pirate_death_election } }
+
+		add_scaled_republican_tradition = -15
+	}
+
+	option = { #Heir ruler death candidate
+		name = "pirates.1.s"
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 0
+				NOT = { republican_tradition = 70 }
+			}
+		}
+		trigger = { has_reform = matriarchal_pirate_republic has_country_flag = pirate_death_election has_ruler_flag = matriarchal_pirate_republic_heir }
+
+		add_scaled_republican_tradition = -15
+		hidden_effect = { clr_ruler_flag = matriarchal_pirate_republic_heir }
 	}
 	
 	after = {

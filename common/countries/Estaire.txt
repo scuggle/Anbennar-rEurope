@@ -235,9 +235,9 @@ ship_names = {
 }
 
 army_names = {
-	"Estairey Army" "Friends" "Army of $PROVINCE$"
+	"Falconian Army" "Friends" "Army of $PROVINCE$"
 }
 
 fleet_names = {
-	"Estairey Fleet" "Friend Squadron" "Love Squadron" "Companion Squadron"
+	"Falconian Fleet" "Friend Squadron" "Love Squadron" "Companion Squadron"
 }

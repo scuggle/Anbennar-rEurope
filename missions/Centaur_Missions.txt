@@ -5,7 +5,9 @@ CENTAUR_3 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		culture_group = centaur
+		always = no
 		NOT = { tag = I89 }
 		NOT = { tag = I91 }
 		NOT = { tag = I92 }

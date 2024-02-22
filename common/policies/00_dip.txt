@@ -1,30 +1,13 @@
-vass_an_underdog_1 = {
+eur_diplomatic_corp = {
 	monarch_power = DIP
 
 	potential = {
 		dip_tech = 3
-		NOT = {
-			is_great_power = yes
-		}
-		NOT = {
-			calc_true_if = {
-				full_idea_group = minority_ideas
-				full_idea_group = diplomatic_ideas
-				full_idea_group = spy_ideas
-				full_idea_group = maritime_ideas
-				full_idea_group = naval_ideas
-				full_idea_group = trade_ideas
-				full_idea_group = exploration_ideas
-				full_idea_group = influence_ideas
-				full_idea_group = the_great_game
-				full_idea_group = shadows_and_daggers
-				amount = 2
-			}
-		}
+
 	}
 	
 	allow = {
-		calc_true_if = {
+		OR = {
 		full_idea_group = minority_ideas
 		full_idea_group = diplomatic_ideas
 		full_idea_group = spy_ideas
@@ -35,589 +18,28 @@ vass_an_underdog_1 = {
 		full_idea_group = influence_ideas
 		full_idea_group = the_great_game
 		full_idea_group = shadows_and_daggers
-		amount = 1
+		
 		}
-		NOT = {
-        calc_true_if = {
-            amount = 1
-            has_active_policy = vass_an_underdog_2
-            has_active_policy = vass_an_underdog_3
-            }
-        }
     }
 
-	ae_impact = -0.10
-	province_warscore_cost = -0.10
-	
-	ai_will_do = {
-		factor = 0.8		
-	}
-}
-vass_glorious_armada_1 = {
-	monarch_power = DIP
-
-	potential = {
-		dip_tech = 2
-		NOT = {
-			calc_true_if = {
-				full_idea_group = minority_ideas
-				full_idea_group = diplomatic_ideas
-				full_idea_group = spy_ideas
-				full_idea_group = maritime_ideas
-				full_idea_group = naval_ideas
-				full_idea_group = trade_ideas
-				full_idea_group = exploration_ideas
-				full_idea_group = influence_ideas
-				full_idea_group = the_great_game
-				full_idea_group = shadows_and_daggers
-				amount = 2
-			}
-		}
-	}
-	
-	allow = {
-		calc_true_if = {
-		full_idea_group = minority_ideas
-		full_idea_group = diplomatic_ideas
-		full_idea_group = spy_ideas
-		full_idea_group = maritime_ideas
-		full_idea_group = naval_ideas
-		full_idea_group = trade_ideas
-		full_idea_group = exploration_ideas
-		full_idea_group = influence_ideas
-		full_idea_group = the_great_game
-		full_idea_group = shadows_and_daggers
-		amount = 1
-		}
-		NOT = {
-        calc_true_if = {
-            amount = 1
-            has_active_policy = vass_glorious_armada_2
-            has_active_policy = vass_glorious_armada_3
-            }
-        }
-    }
-
-	naval_morale = 0.10
-	
-	ai_will_do = {
-		factor = 0.8		
-	}
-}
-vass_gold_and_lies_1 = {
-	monarch_power = DIP
-
-	potential = {
-		dip_tech = 2
-		NOT = {
-			calc_true_if = {
-				full_idea_group = minority_ideas
-				full_idea_group = diplomatic_ideas
-				full_idea_group = spy_ideas
-				full_idea_group = maritime_ideas
-				full_idea_group = naval_ideas
-				full_idea_group = trade_ideas
-				full_idea_group = exploration_ideas
-				full_idea_group = influence_ideas
-				full_idea_group = the_great_game
-				full_idea_group = shadows_and_daggers
-				amount = 2
-			}
-		}
-	}
-	
-	allow = {
-		calc_true_if = {
-		full_idea_group = minority_ideas
-		full_idea_group = diplomatic_ideas
-		full_idea_group = spy_ideas
-		full_idea_group = maritime_ideas
-		full_idea_group = naval_ideas
-		full_idea_group = trade_ideas
-		full_idea_group = exploration_ideas
-		full_idea_group = influence_ideas
-		full_idea_group = the_great_game
-		full_idea_group = shadows_and_daggers
-		amount = 1
-		}
-		NOT = {
-        calc_true_if = {
-            amount = 1
-            has_active_policy = vass_gold_and_lies_2
-            has_active_policy = vass_gold_and_lies_3
-            }
-        }
-    }
-
-	merchants = 1
-	spy_offence = 0.15
-	
-	ai_will_do = {
-		factor = 0.8		
-	}
-}
-vass_a_grand_court_1 = {
-	monarch_power = DIP
-
-	potential = {
-		dip_tech = 2
-		NOT = {
-			calc_true_if = {
-				full_idea_group = minority_ideas
-				full_idea_group = diplomatic_ideas
-				full_idea_group = spy_ideas
-				full_idea_group = maritime_ideas
-				full_idea_group = naval_ideas
-				full_idea_group = trade_ideas
-				full_idea_group = exploration_ideas
-				full_idea_group = influence_ideas
-				full_idea_group = the_great_game
-				full_idea_group = shadows_and_daggers
-				amount = 2
-			}
-		}
-	}
-	
-	allow = {
-		calc_true_if = {
-		full_idea_group = minority_ideas
-		full_idea_group = diplomatic_ideas
-		full_idea_group = spy_ideas
-		full_idea_group = maritime_ideas
-		full_idea_group = naval_ideas
-		full_idea_group = trade_ideas
-		full_idea_group = exploration_ideas
-		full_idea_group = influence_ideas
-		full_idea_group = the_great_game
-		full_idea_group = shadows_and_daggers
-		amount = 1
-		}
-		NOT = {
-        calc_true_if = {
-            amount = 1
-            has_active_policy = vass_a_grand_court_2
-            has_active_policy = vass_a_grand_court_3
-            }
-        }
-    }
-
-	diplomatic_reputation = 1
-	diplomatic_upkeep = 1
-	
-	ai_will_do = {
-		factor = 0.8		
-	}
-}
-vass_a_melting_pot_1 = {
-	monarch_power = DIP
-
-	potential = {
-		dip_tech = 2
-		NOT = {
-			calc_true_if = {
-				full_idea_group = minority_ideas
-				full_idea_group = diplomatic_ideas
-				full_idea_group = spy_ideas
-				full_idea_group = maritime_ideas
-				full_idea_group = naval_ideas
-				full_idea_group = trade_ideas
-				full_idea_group = exploration_ideas
-				full_idea_group = influence_ideas
-				full_idea_group = the_great_game
-				full_idea_group = shadows_and_daggers
-				amount = 2
-			}
-		}
-	}
-	
-	allow = {
-		calc_true_if = {
-		full_idea_group = minority_ideas
-		full_idea_group = diplomatic_ideas
-		full_idea_group = spy_ideas
-		full_idea_group = maritime_ideas
-		full_idea_group = naval_ideas
-		full_idea_group = trade_ideas
-		full_idea_group = exploration_ideas
-		full_idea_group = influence_ideas
-		full_idea_group = the_great_game
-		full_idea_group = shadows_and_daggers
-		amount = 1
-		}
-		NOT = {
-			calc_true_if = {
-				amount = 1
-				has_active_policy = vass_a_melting_pot_2
-				has_active_policy = vass_a_melting_pot_3
-				has_active_policy = vass_unity_strength_1
-				has_active_policy = vass_unity_strength_2
-				has_active_policy = vass_unity_strength_3
-			}
-		}
-	}
-
-	advisor_pool = 1
-	advisor_cost = -0.05
-	num_accepted_cultures = 1
-	
-	ai_will_do = {
-		factor = 0.8		
-	}
-}
-vass_unity_strength_1 = {
-	monarch_power = DIP
-
-	potential = {
-		dip_tech = 2
-		NOT = {
-			calc_true_if = {
-				full_idea_group = minority_ideas
-				full_idea_group = diplomatic_ideas
-				full_idea_group = spy_ideas
-				full_idea_group = maritime_ideas
-				full_idea_group = naval_ideas
-				full_idea_group = trade_ideas
-				full_idea_group = exploration_ideas
-				full_idea_group = influence_ideas
-				full_idea_group = the_great_game
-				full_idea_group = shadows_and_daggers
-				amount = 2
-			}
-		}
-	}
-	
-	allow = {
-		calc_true_if = {
-		full_idea_group = minority_ideas
-		full_idea_group = diplomatic_ideas
-		full_idea_group = spy_ideas
-		full_idea_group = maritime_ideas
-		full_idea_group = naval_ideas
-		full_idea_group = trade_ideas
-		full_idea_group = exploration_ideas
-		full_idea_group = influence_ideas
-		full_idea_group = the_great_game
-		full_idea_group = shadows_and_daggers
-		amount = 1
-		}
-		NOT = {
-			calc_true_if = {
-				amount = 1
-				has_active_policy = vass_a_melting_pot_1
-				has_active_policy = vass_a_melting_pot_2
-				has_active_policy = vass_a_melting_pot_3
-				has_active_policy = vass_unity_strength_2
-				has_active_policy = vass_unity_strength_3
-			}
-		}
-	}
-
-	culture_conversion_cost = -0.10
-	same_culture_advisor_cost = -0.20
-	advisor_cost = 0.10
-	
-	ai_will_do = {
-		factor = 0.8		
-	}
-}
-#
-#Tier 2
-#
-vass_an_underdog_2 = {
-	monarch_power = DIP
-
-	potential = {
-		NOT = {
-			calc_true_if = {
-				full_idea_group = minority_ideas
-				full_idea_group = diplomatic_ideas
-				full_idea_group = spy_ideas
-				full_idea_group = maritime_ideas
-				full_idea_group = naval_ideas
-				full_idea_group = trade_ideas
-				full_idea_group = exploration_ideas
-				full_idea_group = influence_ideas
-				full_idea_group = the_great_game
-				full_idea_group = shadows_and_daggers
-				amount = 3
-			}
-		}
-		calc_true_if = {
-				has_idea_group = minority_ideas
-				has_idea_group = diplomatic_ideas
-				has_idea_group = spy_ideas
-				has_idea_group = maritime_ideas
-				has_idea_group = naval_ideas
-				has_idea_group = trade_ideas
-				has_idea_group = exploration_ideas
-				has_idea_group = influence_ideas
-				has_idea_group = the_great_game
-				has_idea_group = shadows_and_daggers
-				amount = 2
-		}
-		NOT = {
-			is_great_power = yes
-		}
-	}
-	
-	allow = {
-		calc_true_if = {
-		full_idea_group = minority_ideas
-		full_idea_group = diplomatic_ideas
-		full_idea_group = spy_ideas
-		full_idea_group = maritime_ideas
-		full_idea_group = naval_ideas
-		full_idea_group = trade_ideas
-		full_idea_group = exploration_ideas
-		full_idea_group = influence_ideas
-		full_idea_group = the_great_game
-		full_idea_group = shadows_and_daggers
-		amount = 2
-		}
-		NOT = {
-        calc_true_if = {
-            amount = 1
-            has_active_policy = vass_an_underdog_1
-            has_active_policy = vass_an_underdog_3
-            }
-        }
-
-    }
-
-	ae_impact = -0.15
-	province_warscore_cost = -0.15
-	
-	ai_will_do = {
-		factor = 0.8		
-	}
-}
-vass_glorious_armada_2 = {
-	monarch_power = DIP
-
-	potential = {
-		NOT = {
-			calc_true_if = {
-				full_idea_group = minority_ideas
-				full_idea_group = diplomatic_ideas
-				full_idea_group = spy_ideas
-				full_idea_group = maritime_ideas
-				full_idea_group = naval_ideas
-				full_idea_group = trade_ideas
-				full_idea_group = exploration_ideas
-				full_idea_group = influence_ideas
-				full_idea_group = the_great_game
-				full_idea_group = shadows_and_daggers
-				amount = 3
-			}
-		}
-		calc_true_if = {
-				has_idea_group = minority_ideas
-				has_idea_group = diplomatic_ideas
-				has_idea_group = spy_ideas
-				has_idea_group = maritime_ideas
-				has_idea_group = naval_ideas
-				has_idea_group = trade_ideas
-				has_idea_group = exploration_ideas
-				has_idea_group = influence_ideas
-				has_idea_group = the_great_game
-				has_idea_group = shadows_and_daggers
-				amount = 2
-		}
-	}
-	
-	allow = {
-		calc_true_if = {
-		full_idea_group = minority_ideas
-		full_idea_group = diplomatic_ideas
-		full_idea_group = spy_ideas
-		full_idea_group = maritime_ideas
-		full_idea_group = naval_ideas
-		full_idea_group = trade_ideas
-		full_idea_group = exploration_ideas
-		full_idea_group = influence_ideas
-		full_idea_group = the_great_game
-		full_idea_group = shadows_and_daggers
-		amount = 2
-		}
-		NOT = {
-        calc_true_if = {
-            amount = 1
-            has_active_policy = vass_glorious_armada_1
-            has_active_policy = vass_glorious_armada_3
-            }
-        }
-    }
-
-	naval_morale = 0.15
-	
-	ai_will_do = {
-		factor = 0.8		
-	}
-}
-vass_gold_and_lies_2 = {
-	monarch_power = DIP
-
-	potential = {
-		NOT = {
-			calc_true_if = {
-				full_idea_group = minority_ideas
-				full_idea_group = diplomatic_ideas
-				full_idea_group = spy_ideas
-				full_idea_group = maritime_ideas
-				full_idea_group = naval_ideas
-				full_idea_group = trade_ideas
-				full_idea_group = exploration_ideas
-				full_idea_group = influence_ideas
-				full_idea_group = the_great_game
-				full_idea_group = shadows_and_daggers
-				amount = 3
-			}
-		}
-		calc_true_if = {
-				has_idea_group = minority_ideas
-				has_idea_group = diplomatic_ideas
-				has_idea_group = spy_ideas
-				has_idea_group = maritime_ideas
-				has_idea_group = naval_ideas
-				has_idea_group = trade_ideas
-				has_idea_group = exploration_ideas
-				has_idea_group = influence_ideas
-				has_idea_group = the_great_game
-				has_idea_group = shadows_and_daggers
-				amount = 2
-		}
-	}
-	
-	allow = {
-		calc_true_if = {
-		full_idea_group = minority_ideas
-		full_idea_group = diplomatic_ideas
-		full_idea_group = spy_ideas
-		full_idea_group = maritime_ideas
-		full_idea_group = naval_ideas
-		full_idea_group = trade_ideas
-		full_idea_group = exploration_ideas
-		full_idea_group = influence_ideas
-		full_idea_group = the_great_game
-		full_idea_group = shadows_and_daggers
-		amount = 2
-		}
-		NOT = {
-        calc_true_if = {
-            amount = 1
-            has_active_policy = vass_gold_and_lies_1
-            has_active_policy = vass_gold_and_lies_3
-            }
-        }
-    }
-
-	merchants = 2
-	spy_offence = 0.30
-	
-	ai_will_do = {
-		factor = 0.8		
-	}
-}
-vass_a_grand_court_2 = {
-	monarch_power = DIP
-
-	potential = {
-		NOT = {
-			calc_true_if = {
-				full_idea_group = minority_ideas
-				full_idea_group = diplomatic_ideas
-				full_idea_group = spy_ideas
-				full_idea_group = maritime_ideas
-				full_idea_group = naval_ideas
-				full_idea_group = trade_ideas
-				full_idea_group = exploration_ideas
-				full_idea_group = influence_ideas
-				full_idea_group = the_great_game
-				full_idea_group = shadows_and_daggers
-				amount = 3
-			}
-		}
-		calc_true_if = {
-				has_idea_group = minority_ideas
-				has_idea_group = diplomatic_ideas
-				has_idea_group = spy_ideas
-				has_idea_group = maritime_ideas
-				has_idea_group = naval_ideas
-				has_idea_group = trade_ideas
-				has_idea_group = exploration_ideas
-				has_idea_group = influence_ideas
-				has_idea_group = the_great_game
-				has_idea_group = shadows_and_daggers
-				amount = 2
-		}
-	}
-	
-	allow = {
-		calc_true_if = {
-		full_idea_group = minority_ideas
-		full_idea_group = diplomatic_ideas
-		full_idea_group = spy_ideas
-		full_idea_group = maritime_ideas
-		full_idea_group = naval_ideas
-		full_idea_group = trade_ideas
-		full_idea_group = exploration_ideas
-		full_idea_group = influence_ideas
-		full_idea_group = the_great_game
-		full_idea_group = shadows_and_daggers
-		amount = 2
-		}
-		NOT = {
-        calc_true_if = {
-            amount = 1
-            has_active_policy = vass_a_grand_court_1
-            has_active_policy = vass_a_grand_court_3
-            }
-        }
-    }
-
-	diplomatic_reputation = 2
+	diplomats = 1
 	diplomatic_upkeep = 2
-	
+	envoy_travel_time = -0.2
+
 	ai_will_do = {
 		factor = 0.8		
 	}
 }
-vass_a_melting_pot_2 = {
+eur_naval_armament_act = {
 	monarch_power = DIP
 
 	potential = {
-		NOT = {
-			calc_true_if = {
-				full_idea_group = minority_ideas
-				full_idea_group = diplomatic_ideas
-				full_idea_group = spy_ideas
-				full_idea_group = maritime_ideas
-				full_idea_group = naval_ideas
-				full_idea_group = trade_ideas
-				full_idea_group = exploration_ideas
-				full_idea_group = influence_ideas
-				full_idea_group = the_great_game
-				full_idea_group = shadows_and_daggers
-				amount = 3
-			}
-		}
-		calc_true_if = {
-				has_idea_group = minority_ideas
-				has_idea_group = diplomatic_ideas
-				has_idea_group = spy_ideas
-				has_idea_group = maritime_ideas
-				has_idea_group = naval_ideas
-				has_idea_group = trade_ideas
-				has_idea_group = exploration_ideas
-				has_idea_group = influence_ideas
-				has_idea_group = the_great_game
-				has_idea_group = shadows_and_daggers
-				amount = 2
-		}
+		dip_tech = 3
+
 	}
 	
 	allow = {
-		calc_true_if = {
+		OR = {
 		full_idea_group = minority_ideas
 		full_idea_group = diplomatic_ideas
 		full_idea_group = spy_ideas
@@ -628,172 +50,27 @@ vass_a_melting_pot_2 = {
 		full_idea_group = influence_ideas
 		full_idea_group = the_great_game
 		full_idea_group = shadows_and_daggers
-		amount = 2
+		
 		}
-		NOT = {
-			calc_true_if = {
-				amount = 1
-				has_active_policy = vass_a_melting_pot_1
-				has_active_policy = vass_a_melting_pot_3
-				has_active_policy = vass_unity_strength_1
-				has_active_policy = vass_unity_strength_2
-				has_active_policy = vass_unity_strength_3
-			}
-		}
-	}
-
-	advisor_pool = 2
-	advisor_cost = -0.10
-	num_accepted_cultures = 2
-	
-	ai_will_do = {
-		factor = 0.8		
-	}
-}
-vass_unity_strength_2 = {
-	monarch_power = DIP
-
-	potential = {
-		NOT = {
-			calc_true_if = {
-				full_idea_group = minority_ideas
-				full_idea_group = diplomatic_ideas
-				full_idea_group = spy_ideas
-				full_idea_group = maritime_ideas
-				full_idea_group = naval_ideas
-				full_idea_group = trade_ideas
-				full_idea_group = exploration_ideas
-				full_idea_group = influence_ideas
-				full_idea_group = the_great_game
-				full_idea_group = shadows_and_daggers
-				amount = 3
-			}
-		}
-		calc_true_if = {
-				has_idea_group = minority_ideas
-				has_idea_group = diplomatic_ideas
-				has_idea_group = spy_ideas
-				has_idea_group = maritime_ideas
-				has_idea_group = naval_ideas
-				has_idea_group = trade_ideas
-				has_idea_group = exploration_ideas
-				has_idea_group = influence_ideas
-				has_idea_group = the_great_game
-				has_idea_group = shadows_and_daggers
-				amount = 2
-		}
-	}
-	
-	allow = {
-		calc_true_if = {
-		full_idea_group = minority_ideas
-		full_idea_group = diplomatic_ideas
-		full_idea_group = spy_ideas
-		full_idea_group = maritime_ideas
-		full_idea_group = naval_ideas
-		full_idea_group = trade_ideas
-		full_idea_group = exploration_ideas
-		full_idea_group = influence_ideas
-		full_idea_group = the_great_game
-		full_idea_group = shadows_and_daggers
-		amount = 2
-		}
-		NOT = {
-			calc_true_if = {
-				amount = 1
-				has_active_policy = vass_a_melting_pot_1
-				has_active_policy = vass_a_melting_pot_2
-				has_active_policy = vass_a_melting_pot_3
-				has_active_policy = vass_unity_strength_1
-				has_active_policy = vass_unity_strength_3
-			}
-		}
-	}
-
-	culture_conversion_cost = -0.20
-	same_culture_advisor_cost = -0.30
-	advisor_cost = 0.15
-	
-	ai_will_do = {
-		factor = 0.8		
-	}
-}
-#
-#Tier 3
-#
-vass_an_underdog_3 = {
-	monarch_power = DIP
-
-	potential = {
-		calc_true_if = {
-				has_idea_group = minority_ideas
-				has_idea_group = diplomatic_ideas
-				has_idea_group = spy_ideas
-				has_idea_group = maritime_ideas
-				has_idea_group = naval_ideas
-				has_idea_group = trade_ideas
-				has_idea_group = exploration_ideas
-				has_idea_group = influence_ideas
-				has_idea_group = the_great_game
-				has_idea_group = shadows_and_daggers
-				amount = 3
-		}
-		NOT = {
-			is_great_power = yes
-		}
-	}
-	
-	allow = {
-		calc_true_if = {
-		full_idea_group = minority_ideas
-		full_idea_group = diplomatic_ideas
-		full_idea_group = spy_ideas
-		full_idea_group = maritime_ideas
-		full_idea_group = naval_ideas
-		full_idea_group = trade_ideas
-		full_idea_group = exploration_ideas
-		full_idea_group = influence_ideas
-		full_idea_group = the_great_game
-		full_idea_group = shadows_and_daggers
-		amount = 3
-		}
-		NOT = {
-        calc_true_if = {
-            amount = 1
-            has_active_policy = vass_an_underdog_1
-            has_active_policy = vass_an_underdog_2
-            }
-        }
     }
 
-	ae_impact = -0.20
-	province_warscore_cost = -0.20
+	global_ship_cost = -0.1
+	global_ship_recruit_speed = -0.25
 	
 	ai_will_do = {
 		factor = 0.8		
 	}
 }
-vass_glorious_armada_3 = {
+eur_international_trade = {
 	monarch_power = DIP
 
 	potential = {
-		calc_true_if = {
-				has_idea_group = minority_ideas
-				has_idea_group = diplomatic_ideas
-				has_idea_group = spy_ideas
-				has_idea_group = maritime_ideas
-				has_idea_group = naval_ideas
-				has_idea_group = trade_ideas
-				has_idea_group = exploration_ideas
-				has_idea_group = influence_ideas
-				has_idea_group = the_great_game
-				has_idea_group = shadows_and_daggers
-				amount = 3
-		}
+		dip_tech = 3
+
 	}
 	
 	allow = {
-		calc_true_if = {
+		OR = {
 		full_idea_group = minority_ideas
 		full_idea_group = diplomatic_ideas
 		full_idea_group = spy_ideas
@@ -804,93 +81,26 @@ vass_glorious_armada_3 = {
 		full_idea_group = influence_ideas
 		full_idea_group = the_great_game
 		full_idea_group = shadows_and_daggers
-		amount = 3
+		
 		}
-		NOT = {
-        calc_true_if = {
-            amount = 1
-            has_active_policy = vass_glorious_armada_1
-            has_active_policy = vass_glorious_armada_2
-            }
-        }
     }
-
-	naval_morale = 0.20
+	merchants = 1
+	placed_merchant_power = 5
 	
 	ai_will_do = {
 		factor = 0.8		
 	}
 }
-vass_gold_and_lies_3 = {
+eur_espionage_act = {
 	monarch_power = DIP
 
 	potential = {
-		calc_true_if = {
-				has_idea_group = minority_ideas
-				has_idea_group = diplomatic_ideas
-				has_idea_group = spy_ideas
-				has_idea_group = maritime_ideas
-				has_idea_group = naval_ideas
-				has_idea_group = trade_ideas
-				has_idea_group = exploration_ideas
-				has_idea_group = influence_ideas
-				has_idea_group = the_great_game
-				has_idea_group = shadows_and_daggers
-				amount = 3
-		}
+		dip_tech = 3
+
 	}
 	
 	allow = {
-		calc_true_if = {
-		full_idea_group = minority_ideas	
-		full_idea_group = diplomatic_ideas
-		full_idea_group = spy_ideas
-		full_idea_group = maritime_ideas
-		full_idea_group = naval_ideas
-		full_idea_group = trade_ideas
-		full_idea_group = exploration_ideas
-		full_idea_group = influence_ideas
-		full_idea_group = the_great_game
-		full_idea_group = shadows_and_daggers
-		amount = 3
-		}
-		NOT = {
-        calc_true_if = {
-            amount = 1
-            has_active_policy = vass_gold_and_lies_1
-            has_active_policy = vass_gold_and_lies_2
-            }
-        }
-    }
-
-	merchants = 2
-	spy_offence = 0.4
-	
-	ai_will_do = {
-		factor = 0.8		
-	}
-}
-vass_a_grand_court_3 = {
-	monarch_power = DIP
-
-	potential = {
-		calc_true_if = {
-				has_idea_group = minority_ideas
-				has_idea_group = diplomatic_ideas
-				has_idea_group = spy_ideas
-				has_idea_group = maritime_ideas
-				has_idea_group = naval_ideas
-				has_idea_group = trade_ideas
-				has_idea_group = exploration_ideas
-				has_idea_group = influence_ideas
-				has_idea_group = the_great_game
-				has_idea_group = shadows_and_daggers
-				amount = 3
-		}
-	}
-	
-	allow = {
-		calc_true_if = {
+		OR = {
 		full_idea_group = minority_ideas
 		full_idea_group = diplomatic_ideas
 		full_idea_group = spy_ideas
@@ -901,44 +111,27 @@ vass_a_grand_court_3 = {
 		full_idea_group = influence_ideas
 		full_idea_group = the_great_game
 		full_idea_group = shadows_and_daggers
-		amount = 3
+		
 		}
-		NOT = {
-        calc_true_if = {
-            amount = 1
-            has_active_policy = vass_a_grand_court_1
-            has_active_policy = vass_a_grand_court_2
-            }
-        }
     }
-
-	diplomatic_reputation = 3
-	diplomatic_upkeep = 3
+	spy_offence = 0.25
+	global_spy_defence = 0.25
+	global_unrest = -2
 	
 	ai_will_do = {
 		factor = 0.8		
 	}
 }
-vass_a_melting_pot_3 = {
+eur_colonial_act = {
 	monarch_power = DIP
 
 	potential = {
-		calc_true_if = {
-				has_idea_group = minority_ideas
-				has_idea_group = diplomatic_ideas
-				has_idea_group = spy_ideas
-				has_idea_group = maritime_ideas
-				has_idea_group = naval_ideas
-				has_idea_group = trade_ideas
-				has_idea_group = exploration_ideas
-				has_idea_group = influence_ideas
-				has_idea_group = the_great_game
-				has_idea_group = shadows_and_daggers
-				amount = 3
-		}
+		dip_tech = 3
+
 	}
+	
 	allow = {
-		calc_true_if = {
+		OR = {
 		full_idea_group = minority_ideas
 		full_idea_group = diplomatic_ideas
 		full_idea_group = spy_ideas
@@ -949,77 +142,315 @@ vass_a_melting_pot_3 = {
 		full_idea_group = influence_ideas
 		full_idea_group = the_great_game
 		full_idea_group = shadows_and_daggers
-		amount = 3
+		
+		}
+    }
+	colonist_placement_chance = 0.15
+	global_colonial_growth = 25
+	global_tariffs = 0.1
+	
+	ai_will_do = {
+		factor = 0.8		
+	}
+}
+eur_sailor_training = {
+	monarch_power = DIP
+
+	potential = {
+		dip_tech = 3
+
+	}
+	
+	allow = {
+		OR = {
+		full_idea_group = minority_ideas
+		full_idea_group = diplomatic_ideas
+		full_idea_group = spy_ideas
+		full_idea_group = maritime_ideas
+		full_idea_group = naval_ideas
+		full_idea_group = trade_ideas
+		full_idea_group = exploration_ideas
+		full_idea_group = influence_ideas
+		full_idea_group = the_great_game
+		full_idea_group = shadows_and_daggers
+		
+		}
+    }
+	sailor_maintenance_modifer = -0.15
+	naval_attrition = -0.15
+	
+	ai_will_do = {
+		factor = 0.8		
+	}
+}
+
+eur_internal_trade = {
+	monarch_power = DIP
+
+	potential = {
+		dip_tech = 3
+
+	}
+	
+	allow = {
+		OR = {
+		full_idea_group = minority_ideas
+		full_idea_group = diplomatic_ideas
+		full_idea_group = spy_ideas
+		full_idea_group = maritime_ideas
+		full_idea_group = naval_ideas
+		full_idea_group = trade_ideas
+		full_idea_group = exploration_ideas
+		full_idea_group = influence_ideas
+		full_idea_group = the_great_game
+		full_idea_group = shadows_and_daggers
+		
 		}
 		NOT = {
-			calc_true_if = {
-				amount = 1
-				has_active_policy = vass_a_melting_pot_1
-				has_active_policy = vass_a_melting_pot_2
-				has_active_policy = vass_unity_strength_1
-				has_active_policy = vass_unity_strength_2
-				has_active_policy = vass_unity_strength_3
-			}
-		}
-	}
+             has_active_policy = eur_good_bargaining
 
-	advisor_pool = 3
+		}
+    }
+	global_trade_goods_size_modifier = 0.1
+	
+	ai_will_do = {
+		factor = 0.8		
+	}
+}
+eur_good_bargaining = {
+	monarch_power = DIP
+
+	potential = {
+		dip_tech = 3
+
+	}
+	
+	allow = {
+		OR = {
+		full_idea_group = minority_ideas
+		full_idea_group = diplomatic_ideas
+		full_idea_group = spy_ideas
+		full_idea_group = maritime_ideas
+		full_idea_group = naval_ideas
+		full_idea_group = trade_ideas
+		full_idea_group = exploration_ideas
+		full_idea_group = influence_ideas
+		full_idea_group = the_great_game
+		full_idea_group = shadows_and_daggers
+		
+		}
+		NOT = {
+             has_active_policy = eur_autonomy_act
+
+		}
+    }
+	trade_efficiency = 0.1
+	
+	ai_will_do = {
+		factor = 0.8		
+	}
+}
+eur_autonomy_act = {
+	monarch_power = DIP
+
+	potential = {
+		dip_tech = 3
+
+	}
+	
+	allow = {
+		OR = {
+		full_idea_group = minority_ideas
+		full_idea_group = diplomatic_ideas
+		full_idea_group = spy_ideas
+		full_idea_group = maritime_ideas
+		full_idea_group = naval_ideas
+		full_idea_group = trade_ideas
+		full_idea_group = exploration_ideas
+		full_idea_group = influence_ideas
+		full_idea_group = the_great_game
+		full_idea_group = shadows_and_daggers
+		
+		}
+		NOT = {
+             has_active_policy = eur_integration_act
+
+		}
+    }
+	liberty_desire = -20
+	vassal_forcelimit_bonus = 0.25
+	vassal_income = 0.25
+	
+	ai_will_do = {
+		factor = 0.8		
+	}
+}
+eur_integration_act = {
+	monarch_power = DIP
+
+	potential = {
+		dip_tech = 3
+
+	}
+	
+	allow = {
+		OR = {
+		full_idea_group = minority_ideas
+		full_idea_group = diplomatic_ideas
+		full_idea_group = spy_ideas
+		full_idea_group = maritime_ideas
+		full_idea_group = naval_ideas
+		full_idea_group = trade_ideas
+		full_idea_group = exploration_ideas
+		full_idea_group = influence_ideas
+		full_idea_group = the_great_game
+		full_idea_group = shadows_and_daggers
+		
+		}
+		NOT = {
+             has_active_policy = eur_autonomy_act
+
+		}
+    }
+	diplomatic_annexation_cost = -0.2
+	diplomatic_reputation = 2
+	
+	ai_will_do = {
+		factor = 0.8		
+	}
+}
+eur_careful_diplomacy = {
+	monarch_power = DIP
+
+	potential = {
+		dip_tech = 3
+
+	}
+	
+	allow = {
+		OR = {
+		full_idea_group = minority_ideas
+		full_idea_group = diplomatic_ideas
+		full_idea_group = spy_ideas
+		full_idea_group = maritime_ideas
+		full_idea_group = naval_ideas
+		full_idea_group = trade_ideas
+		full_idea_group = exploration_ideas
+		full_idea_group = influence_ideas
+		full_idea_group = the_great_game
+		full_idea_group = shadows_and_daggers
+		
+		}
+		NOT = {
+             has_active_policy = eur_agressive_warfare
+
+		}
+    }
+	improve_relation_modifier = 0.1
+	ae_impact = -0.1
+	
+	ai_will_do = {
+		factor = 0.8		
+	}
+}
+eur_agressive_warfare = {
+	monarch_power = DIP
+
+	potential = {
+		dip_tech = 3
+
+	}
+	
+	allow = {
+		OR = {
+		full_idea_group = minority_ideas
+		full_idea_group = diplomatic_ideas
+		full_idea_group = spy_ideas
+		full_idea_group = maritime_ideas
+		full_idea_group = naval_ideas
+		full_idea_group = trade_ideas
+		full_idea_group = exploration_ideas
+		full_idea_group = influence_ideas
+		full_idea_group = the_great_game
+		full_idea_group = shadows_and_daggers
+		
+		}
+		NOT = {
+             has_active_policy = eur_careful_diplomacy
+
+		}
+    }
+	province_warscore_cost = -0.1
+	
+	ai_will_do = {
+		factor = 0.8		
+	}
+}
+
+eur_one_nation_act = {
+	monarch_power = DIP
+
+	potential = {
+		dip_tech = 3
+
+	}
+	
+	allow = {
+		OR = {
+		full_idea_group = minority_ideas
+		full_idea_group = diplomatic_ideas
+		full_idea_group = spy_ideas
+		full_idea_group = maritime_ideas
+		full_idea_group = naval_ideas
+		full_idea_group = trade_ideas
+		full_idea_group = exploration_ideas
+		full_idea_group = influence_ideas
+		full_idea_group = the_great_game
+		full_idea_group = shadows_and_daggers
+		
+		}
+		NOT = {
+             has_active_policy = eur_melting_pot
+
+		}
+    }
+	culture_conversion_cost = -0.15
+	same_culture_advisor_cost = -0.25
+	
+	ai_will_do = {
+		factor = 0.8		
+	}
+}
+eur_melting_pot = {
+	monarch_power = DIP
+
+	potential = {
+		dip_tech = 3
+
+	}
+	
+	allow = {
+		OR = {
+		full_idea_group = minority_ideas
+		full_idea_group = diplomatic_ideas
+		full_idea_group = spy_ideas
+		full_idea_group = maritime_ideas
+		full_idea_group = naval_ideas
+		full_idea_group = trade_ideas
+		full_idea_group = exploration_ideas
+		full_idea_group = influence_ideas
+		full_idea_group = the_great_game
+		full_idea_group = shadows_and_daggers
+		
+		}
+		NOT = {
+             has_active_policy = eur_one_nation_act
+
+		}
+    }
 	advisor_cost = -0.15
+	advisor_pool = 1
 	num_accepted_cultures = 2
-	
-	ai_will_do = {
-		factor = 0.8		
-	}
-}
-vass_unity_strength_3 = {
-	monarch_power = DIP
-
-	potential = {
-		calc_true_if = {
-				has_idea_group = minority_ideas
-				has_idea_group = diplomatic_ideas
-				has_idea_group = spy_ideas
-				has_idea_group = maritime_ideas
-				has_idea_group = naval_ideas
-				has_idea_group = trade_ideas
-				has_idea_group = exploration_ideas
-				has_idea_group = influence_ideas
-				has_idea_group = the_great_game
-				has_idea_group = shadows_and_daggers
-				amount = 3
-		}
-	}
-	
-	allow = {
-		calc_true_if = {
-		full_idea_group = minority_ideas
-		full_idea_group = diplomatic_ideas
-		full_idea_group = spy_ideas
-		full_idea_group = maritime_ideas
-		full_idea_group = naval_ideas
-		full_idea_group = trade_ideas
-		full_idea_group = exploration_ideas
-		full_idea_group = influence_ideas
-		full_idea_group = the_great_game
-		full_idea_group = shadows_and_daggers
-		amount = 3
-		}
-		NOT = {
-			calc_true_if = {
-				amount = 1
-				has_active_policy = vass_a_melting_pot_1
-				has_active_policy = vass_a_melting_pot_2
-				has_active_policy = vass_a_melting_pot_3
-				has_active_policy = vass_unity_strength_1
-				has_active_policy = vass_unity_strength_2
-			}
-		}
-	}
-
-	culture_conversion_cost = -0.40
-	same_culture_advisor_cost = -0.30
-	advisor_cost = 0.20
-	
 	ai_will_do = {
 		factor = 0.8		
 	}

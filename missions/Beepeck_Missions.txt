@@ -4,12 +4,13 @@ A12_small_country = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A12
 	}
 	has_country_shield = yes
 	
 	A12_petition_the_emperor = {
-		icon = mission_sweat_fealty
+		icon = mission_approach_throne
 		required_missions = { }
 		position = 1
 		
@@ -214,6 +215,7 @@ A12_misc = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A12
 	}
 	has_country_shield = yes
@@ -365,6 +367,7 @@ A12_trade = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A12
 	}
 	has_country_shield = yes
@@ -603,6 +606,7 @@ A12_development = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A12
 	}
 	has_country_shield = yes
@@ -858,6 +862,7 @@ generic_elector_empire = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = A12
 			AND = {

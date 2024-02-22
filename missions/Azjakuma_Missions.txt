@@ -3,6 +3,7 @@ azjakuma_missiontree_1_pt_1 = {
 	generic = no
 	ai = yes
 	potential = {
+    	NOT = { has_country_flag = chose_generic_mt }
 		tag = Y01
 	}
 	has_country_shield = yes
@@ -140,6 +141,7 @@ azjakuma_missiontree_2_pt_1 = {
 	generic = no
 	ai = yes
 	potential = {
+    	NOT = { has_country_flag = chose_generic_mt }
 		tag = Y01
 	}
 	has_country_shield = yes
@@ -286,6 +288,7 @@ azjakuma_missiontree_3_pt_1 = {
 	generic = no
 	ai = yes
 	potential = {
+    	NOT = { has_country_flag = chose_generic_mt }
 		tag = Y01
 	}
 	has_country_shield = yes
@@ -520,6 +523,7 @@ azjakuma_missiontree_4_pt_1 = {
 	generic = no
 	ai = yes
 	potential = {
+    	NOT = { has_country_flag = chose_generic_mt }
 		tag = Y01
 	}
 	has_country_shield = yes
@@ -534,8 +538,11 @@ azjakuma_missiontree_4_pt_1 = {
 
 		trigger = {
 			5409 = {
-				infantry_in_province = 1
-				infantry_in_province = Y01
+				num_of_units_in_province = {
+					who = ROOT
+					type = infantry
+					amount = 1
+				}
 			}
 		}
 
@@ -611,6 +618,7 @@ azjakuma_missiontree_5_pt_1 = {
 	generic = no
 	ai = yes
 	potential = {
+    	NOT = { has_country_flag = chose_generic_mt }
 		tag = Y01
 	}
 	has_country_shield = yes
@@ -786,6 +794,7 @@ azjakuma_missiontree_1_pt_2 = {
 	generic = no
 	ai = yes
 	potential = {
+    	NOT = { has_country_flag = chose_generic_mt }
 		tag = Y01
 		has_country_flag = oni_demon_empire_mission_unlock
 	}
@@ -1234,6 +1243,7 @@ azjakuma_missiontree_2_pt_2 = {
 	generic = no
 	ai = yes
 	potential = {
+    	NOT = { has_country_flag = chose_generic_mt }
 		tag = Y01
 		has_country_flag = oni_demon_empire_mission_unlock
 	}
@@ -1729,6 +1739,7 @@ azjakuma_missiontree_3_pt_2 = {
 	generic = no
 	ai = yes
 	potential = {
+    	NOT = { has_country_flag = chose_generic_mt }
 		tag = Y01
 		has_country_flag = oni_demon_empire_mission_unlock
 	}
@@ -2102,6 +2113,7 @@ azjakuma_missiontree_4_pt_2 = {
 	generic = no
 	ai = yes
 	potential = {
+    	NOT = { has_country_flag = chose_generic_mt }
 		tag = Y01
 		has_country_flag = oni_demon_empire_mission_unlock
 	}
@@ -2293,7 +2305,7 @@ azjakuma_missiontree_4_pt_2 = {
 		
 		provinces_to_highlight = {
 			OR = {
-				area = fengling_area
+				area = pevyirer_area
 				area = dekaipnam_area
 				area = zhonglin_area
 				area = jilin_anb_area
@@ -2308,7 +2320,7 @@ azjakuma_missiontree_4_pt_2 = {
 		trigger = {
 			owns_all_provinces = {
 				OR = {
-					area = fengling_area
+					area = pevyirer_area
 					area = dekaipnam_area
 					area = zhonglin_area
 					area = jilin_anb_area
@@ -2516,6 +2528,7 @@ azjakuma_missiontree_5_pt_2 = {
 	generic = no
 	ai = yes
 	potential = {
+    	NOT = { has_country_flag = chose_generic_mt }
 		tag = Y01
 		has_country_flag = oni_demon_empire_mission_unlock
 	}

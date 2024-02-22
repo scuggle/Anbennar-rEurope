@@ -4,6 +4,7 @@ tuathak1_missions = {
 	generic = no
 	ai = yes 
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		primary_culture = tuathak
 		NOT = { tag = H21 }
 	}
@@ -143,6 +144,7 @@ tuathak2_missions = {
 	generic = no
 	ai = yes 
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		primary_culture = tuathak
 		NOT = { tag = H21 }
 	}
@@ -384,6 +386,7 @@ tuathak3_missions = {
 	generic = no
 	ai = yes 
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		primary_culture = tuathak
 		NOT = { tag = H21 }
 	}
@@ -449,6 +452,7 @@ tuathak4_missions = {
 	generic = no
 	ai = yes 
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		primary_culture = tuathak
 		NOT = { tag = H21 }
 	}
@@ -689,6 +693,7 @@ tuathak5_missions = {
 	generic = no
 	ai = yes 
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		primary_culture = tuathak
 		NOT = { tag = H21 }
 	}

@@ -236,6 +236,7 @@
  goblinic_shamanism_flavor.134.t:0 "The Hunt: See the Prey"
  goblinic_shamanism_flavor.134.d:0 ""It is in the nature of the goblin to be small and minuscule, their eyesight undesirable and their field of vision smaller than Surbur the Small’s smallest spoon. They lack any skill in detecting intruders until it is far too late." Those were the words of Drak Ironbone, a dwarven "scholar", but things have changed since then. The magpies have wings, their eyes pierce the air from heights that were unreachable to us before. We can now see our enemies from far away, and prepare accordingly."
  goblinic_shamanism_flavor.134.a:0 "They cannot escape our hunter's eyes!"
+
  goblinic_shamanism_flavor.135.t:0 "Fey Cult: The Feywild Expedition"
  goblinic_shamanism_flavor.135.d:0 "One of the more prominent Feykeepers have managed to make a deal with a Fey that they claim would be beneficial to our realm, should we give them sufficient resources. The Feykeeper in question claims that they have been offered passage deep into the Feywild, where they will be able to find great riches, and be bestowed with great wisdom. Naturally, such an expedition comes with significant risk, and will require us to finance the expedition with both manpower and equipment."
  goblinic_shamanism_flavor.135.a:0 "We will finance this expedition!"
@@ -513,7 +514,7 @@
  tooltip_zvaika_kirba_cult:0 "This cult has the following benefits when selected:\nGlobal Unrest: §G-1.0§!\nReligious Unity: §G+5.0%§!"
  tooltip_vortzo_liezmo_cult:0 "This cult has the following benefits when selected:\nProduction Efficiency §G+15.0%§!"
  tooltip_cannorian_cult:0 "This cult has the following benefits when selected:\nYearly Prestige: §G+0.5§!\nLeader(s) without Upkeep: §G+1§!"
- tooltip_ancestor_worship_cult:0 "This cult has the following benefits when selected:\nYearly Legitimacy: §G+0.5§!\nYearly Devotion: §G+0.50§!\nYearly Horde Unity: §G+0.50§!\nYearly Republican Tradition: §G+0.50§!\nTolerance of True Faith: §G+2.00§!"
+ tooltip_ancestor_worship_cult:0 "This cult has the following benefits when selected:\nYearly Legitimacy: §G+0.5§!\nYearly Devotion: §G+0.50§!\nYearly Horde Unity: §G+0.50§!\nYearly Republican Tradition: §G+0.15§!\nTolerance of True Faith: §G+2.00§!"
  tooltip_gnomish_cult:0 "This cult has the following benefits when selected:\nTechnology Cost: §G-10.0%§!"
  tooltip_godlost_cult:0 "This cult has the following benefits when selected:\nRegiment Drill Loss: §G-10.00§!\nNational Manpower Modifier: §G+10.0%§!"
  tooltip_khetist_cult:0 "This cult has the following benefits when selected:\nBuild Cost: §G-10.0%§!\nGlobal Unrest: §G-1.0§!"

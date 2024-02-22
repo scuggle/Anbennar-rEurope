@@ -4,6 +4,7 @@ dobondotist_generic_missions = {
 	ai = yes
 	has_country_shield = no
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		religion = dotimism
 		has_dlc = "Origins"
 	}

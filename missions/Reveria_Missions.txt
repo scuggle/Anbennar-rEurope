@@ -4,6 +4,7 @@ reveria_1 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A05
 	}
 	has_country_shield = yes
@@ -684,6 +685,7 @@ reveria_2 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A05
 	}
 	has_country_shield = yes
@@ -1421,6 +1423,7 @@ reveria_3 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A05
 	}
 	has_country_shield = yes
@@ -1527,10 +1530,13 @@ reveria_3 = {
 					is_core = ROOT
 				}
 			}
-			NOT = {
-				Z08 = {
-					has_country_modifier = reveria_recently_hosted_feast
+			OR = {
+				NOT = {
+					Z08 = {
+						has_country_modifier = reveria_recently_hosted_feast
+					}
 				}
+				NOT = { exists = Z08 }
 			}
 		}
 		
@@ -2151,6 +2157,7 @@ reveria_4 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A05
 	}
 	has_country_shield = yes
@@ -2703,6 +2710,7 @@ reveria_5 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A05
 	}
 	has_country_shield = yes

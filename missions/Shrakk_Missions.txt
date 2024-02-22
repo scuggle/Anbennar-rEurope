@@ -4,6 +4,7 @@ shrakk_one = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = J32
 			tag = J48
@@ -172,6 +173,7 @@ shrakk_two = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = J32
 			tag = J48
@@ -365,6 +367,7 @@ shrakk_three = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = J32
 			tag = J48
@@ -575,6 +578,7 @@ vrilbesh_one = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = J48
 	}
 	has_country_shield = yes
@@ -650,6 +654,7 @@ vrilbesh_two = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = J48
 	}
 	has_country_shield = yes
@@ -791,6 +796,7 @@ vrilbesh_three = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = J48
 	}
 	has_country_shield = yes
@@ -921,6 +927,7 @@ vrilbesh_four = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = J48
 	}
 	has_country_shield = yes
@@ -1070,6 +1077,7 @@ vrilbesh_five = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = J48
 	}
 	has_country_shield = yes

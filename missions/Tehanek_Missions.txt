@@ -4,6 +4,7 @@ G40_1 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = G40
 	}
 	has_country_shield = yes
@@ -168,6 +169,7 @@ G40_2 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = G40
 	}
 	has_country_shield = yes
@@ -370,6 +372,7 @@ G40_3 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = G40
 	}
 	has_country_shield = yes
@@ -523,6 +526,7 @@ G40_4 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = G40
 	}
 	has_country_shield = yes

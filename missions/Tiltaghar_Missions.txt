@@ -2,7 +2,8 @@ tiltaghar_slot_1 = {
 	slot = 1
 	generic = no
 	ai = yes
-	potential = { tag = R08 }
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = R08 }
 	has_country_shield = yes
 	
 	#Prepare the Army
@@ -432,7 +433,8 @@ tiltaghar_slot_2 = {
 	slot = 2
 	generic = no
 	ai = yes
-	potential = { tag = R08 }
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = R08 }
 	has_country_shield = yes
 
 	#Request Rights to Expansion
@@ -448,7 +450,7 @@ tiltaghar_slot_2 = {
 		trigger = {
 			OR = {
 				has_country_modifier = raj_mandate_right_to_expansion
-				has_estate_privilege = estate_nobles_right_of_counsel
+				has_estate_privilege = estate_uppercastes_right_of_counsel
 			}
 		}
 		
@@ -563,7 +565,7 @@ tiltaghar_slot_2 = {
 
 	#Finish Rajnadhaga
 	tiltaghar_finish_rajnadhaga ={
-		icon = mission_sweat_fealty
+		icon = mission_approach_throne
 		required_missions = { tiltaghar_subdue_khadisrapur }
 		position = 4
 		
@@ -794,7 +796,8 @@ tiltaghar_slot_3 = {
 	slot = 3
 	generic = no
 	ai = yes
-	potential = { tag = R08 }
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = R08 }
 	has_country_shield = yes
 
 	#Unite the Ruin Kingdoms
@@ -1262,11 +1265,11 @@ tiltaghar_slot_3 = {
 				limit = {
 					any_known_country = {
 						NOT = { tag = R08 } #Tiltaghar
-						has_reform = raja_reform
+						has_government_attribute = is_raja
 					}
 				}
 				any_known_country = {
-					has_reform = raja_reform
+					has_government_attribute = is_raja
 					overlord_of = ROOT
 					has_opinion = { 
 						who = ROOT
@@ -1291,7 +1294,7 @@ tiltaghar_slot_3 = {
 					NOT = { has_country_flag = raj_vizier }
 					any_known_country = {
 						NOT = { tag = R08 } #Tiltaghar
-						has_reform = raja_reform
+						has_government_attribute = is_raja
 					}
 				}
 				custom_tooltip = tiltaghar_most_loyal_subject_tooltip
@@ -1352,7 +1355,7 @@ tiltaghar_slot_3 = {
 				}
 			}
 			else = {
-				has_reform = raja_reform
+				has_government_attribute = is_raja
 				adm_power = 100
 				dip_power = 100
 			}
@@ -1426,7 +1429,8 @@ tiltaghar_slot_4 = {
 	slot = 4
 	generic = no
 	ai = yes
-	potential = { tag = R08 }
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = R08 }
 	has_country_shield = yes
 
 	#Humans in the Administration
@@ -1722,7 +1726,8 @@ tiltaghar_slot_5 = {
 	slot = 5
 	generic = no
 	ai = yes
-	potential = { tag = R08 }
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = R08 }
 	has_country_shield = yes
 
 	#Humans in the Military
@@ -1822,7 +1827,7 @@ tiltaghar_slot_5 = {
 			war_with = R62 #The Command
 			adm_power = 100
 			any_known_country = {
-				has_reform = raja_reform
+				has_government_attribute = is_raja
 				has_opinion = { 
 					who = ROOT
 					value = 150

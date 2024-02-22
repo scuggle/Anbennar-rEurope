@@ -151,7 +151,7 @@ koroshesh_grain_port = {
 				tooltip = cannorian_monuments_can_use_tooltip_north_salahad
 					OR = {
 						culture_group = divenori
-						culture_group = akani
+						culture_group = akasi
 						culture = delta_gnome
 						culture = sun_elf
 						culture = castanorian
@@ -166,7 +166,7 @@ koroshesh_grain_port = {
 				tooltip = cannorian_monuments_can_use_tooltip_north_salahad
 					OR = {
 						culture_group = divenori
-						culture_group = akani
+						culture_group = akasi
 						culture = delta_gnome
 						culture = sun_elf
 						culture = castanorian
@@ -239,7 +239,7 @@ koroshesh_grain_port = {
 			months = 480
 		}
 		cost_to_upgrade = {
-			factor = 5000
+			factor = 6000
 		}
 		province_modifiers = {
 			province_trade_power_modifier = 0.33
@@ -287,7 +287,7 @@ zornartakel_naval_harbor = {
 				tooltip = cannorian_monuments_can_use_tooltip_north_salahad
 					OR = {
 						culture_group = divenori
-						culture_group = akani
+						culture_group = akasi
 						culture = delta_gnome
 						culture = sun_elf
 						culture = castanorian
@@ -303,7 +303,7 @@ zornartakel_naval_harbor = {
 				tooltip = cannorian_monuments_can_use_tooltip_north_salahad
 					OR = {
 						culture_group = divenori
-						culture_group = akani
+						culture_group = akasi
 						culture = delta_gnome
 						culture = sun_elf
 						culture = castanorian
@@ -335,7 +335,7 @@ zornartakel_naval_harbor = {
 			months = 120
 		}
 		cost_to_upgrade = {
-			factor = 1000
+			factor = 750
 		}
 		province_modifiers = {
 			local_sailors_modifier = 0.25
@@ -357,7 +357,7 @@ zornartakel_naval_harbor = {
 			months = 240
 		}
 		cost_to_upgrade = {
-			factor = 2500
+			factor = 2000
 		}
 		province_modifiers = {
 			local_sailors_modifier = 0.5
@@ -379,7 +379,7 @@ zornartakel_naval_harbor = {
 			months = 480
 		}
 		cost_to_upgrade = {
-			factor = 5000
+			factor = 4500
 		}
 		province_modifiers = {
 			local_sailors_modifier = 1
@@ -418,12 +418,12 @@ deshak_temple_of_the_elements = {
 	can_use_modifiers_trigger = {
 		AND = {
 			has_owner_religion = yes
-			religion_group = kheteratan
+			religion_group = khetist
 			custom_trigger_tooltip = {
 				tooltip = cannorian_monuments_can_use_tooltip_north_salahad
 					OR = {
 						culture_group = divenori
-						culture_group = akani
+						culture_group = akasi
 						culture = delta_gnome
 						culture = sun_elf
 						culture = castanorian
@@ -435,12 +435,12 @@ deshak_temple_of_the_elements = {
 	can_upgrade_trigger = {
 		AND = {
 			has_owner_religion = yes
-			religion_group = kheteratan
+			religion_group = khetist
 			custom_trigger_tooltip = {
 				tooltip = cannorian_monuments_can_use_tooltip_north_salahad
 					OR = {
 						culture_group = divenori
-						culture_group = akani
+						culture_group = akasi
 						culture = delta_gnome
 						culture = sun_elf
 						culture = castanorian
@@ -476,8 +476,10 @@ deshak_temple_of_the_elements = {
 		}
 		province_modifiers = {
 			local_tax_modifier = 0.1
+			local_development_cost = -0.025
 		}
 		area_modifier = {
+			local_tax_modifier = 0.1
 		}
 		country_modifiers = {
 			global_missionary_strength = 0.01
@@ -494,8 +496,10 @@ deshak_temple_of_the_elements = {
 		}
 		province_modifiers = {
 			local_tax_modifier = 0.15
+			local_development_cost = -0.05
 		}
 		area_modifier = {
+			local_tax_modifier = 0.1
 		}
 		country_modifiers = {
 			global_missionary_strength = 0.02
@@ -518,8 +522,10 @@ deshak_temple_of_the_elements = {
 		}
 		province_modifiers = {
 			local_tax_modifier = 0.25
+			local_development_cost = -0.075
 		}
 		area_modifier = {
+			local_tax_modifier = 0.1
 		}
 		country_modifiers = {
 			global_missionary_strength = 0.03
@@ -554,7 +560,7 @@ ekha_harbor = {
 				tooltip = cannorian_monuments_can_use_tooltip_north_salahad
 					OR = {
 						culture_group = divenori
-						culture_group = akani
+						culture_group = akasi
 						culture = delta_gnome
 						culture = sun_elf
 						culture = castanorian
@@ -569,7 +575,7 @@ ekha_harbor = {
 				tooltip = cannorian_monuments_can_use_tooltip_north_salahad
 					OR = {
 						culture_group = divenori
-						culture_group = akani
+						culture_group = akasi
 						culture = delta_gnome
 						culture = sun_elf
 						culture = castanorian
@@ -601,10 +607,10 @@ ekha_harbor = {
 			months = 120
 		}
 		cost_to_upgrade = {
-			factor = 1000
+			factor = 500
 		}
 		province_modifiers = {
-			local_sailors_modifier = 0.25
+			local_sailors_modifier = 0.5
 			ship_recruit_speed = -0.1
 		}
 		area_modifier = {
@@ -622,7 +628,7 @@ ekha_harbor = {
 			factor = 2500
 		}
 		province_modifiers = {
-			local_sailors_modifier = 0.5
+			local_sailors_modifier = 0.75
 			ship_recruit_speed = -0.2
 		}
 		area_modifier = {
@@ -823,7 +829,7 @@ dasmati_halls_of_reverence = {
 				tooltip = cannorian_monuments_can_use_tooltip_halls_of_reverence
 					OR = {
 						culture_group = bulwari
-				religion = old_bulwari_sun_cult
+						religion = old_bulwari_sun_cult
 					}
 			}
 			province_is_or_accepts_culture = yes
@@ -836,7 +842,7 @@ dasmati_halls_of_reverence = {
 				tooltip = cannorian_monuments_can_use_tooltip_halls_of_reverence
 					OR = {
 						culture_group = bulwari
-				religion = old_bulwari_sun_cult
+						religion = old_bulwari_sun_cult
 					}
 			}
 			province_is_or_accepts_culture = yes

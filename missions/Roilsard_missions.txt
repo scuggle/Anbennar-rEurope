@@ -4,6 +4,7 @@ roilsard_vivin = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A78
 	}
 	has_country_shield = yes
@@ -187,6 +188,7 @@ roilsard_saloren = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A78
 	}
 	has_country_shield = yes
@@ -555,6 +557,7 @@ roilsard_shared = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A78
 	}
 	has_country_shield = yes
@@ -818,6 +821,7 @@ roilsard_roilsard = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A78
 	}
 	has_country_shield = yes
@@ -978,7 +982,7 @@ roilsard_roilsard = {
 	
 	roilsard_thorn_in_lorent = {
 		icon = mission_mountain_castle
-		required_missions = { roilsard_end_ties }
+		required_missions = { roilsard_end_ties roilsard_reclaim_carnteria }
 		position = 7
 		
 		provinces_to_highlight = {
@@ -1217,6 +1221,7 @@ roilsard_loop = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A78
 	}
 	has_country_shield = yes

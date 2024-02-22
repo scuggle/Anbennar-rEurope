@@ -1,0 +1,841 @@
+falahan_left_branch = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		tag = X20
+		NOT = { map_setup = map_setup_random }
+	}
+	
+	fal_the_west = {
+		position = 2
+		icon = mission_conquer_five_states
+		required_missions = { fal_form_our_swarm }
+		trigger = {
+			517 = { #eloan
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			516 = {	#westend
+				owned_by = ROOT
+				is_core = ROOT
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 517
+				province_id = 516
+			}
+			NOT = { 
+				owned_by = ROOT 
+				is_core = ROOT
+			}
+		}
+		effect = {
+			452 = {
+				add_permanent_claim = ROOT
+			}
+			south_overmarch_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			west_overmarch_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			east_overmarch_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	fal_gems = {
+		position = 4
+		icon = mission_crystal_focus
+		required_missions = { fal_the_west }
+		trigger = {
+			452 = {	#gem isle
+				owned_by = ROOT 
+				is_core = ROOT 
+				development = 15
+			}
+		}
+		provinces_to_highlight = {
+			province_id = 452
+			OR = {
+				NOT = { owned_by = ROOT is_core = ROOT }
+				NOT = { development = 15 }
+			}
+		}
+		effect = {
+			533 = {	#pir ail
+				add_permanent_claim = ROOT
+			}
+			451 = {	#nathailre
+				add_permanent_claim = ROOT
+			}
+			452 = {	#gem isle
+				add_harpy_minority_size_effect = yes
+				add_province_modifier = {
+					name = fal_harpy_saphire_town_modifier #modifier giving -5% dev cost, 50% supply limit modifier, yet to be descriped
+					duration = -1 	#permanent
+				}
+			}
+		}
+	}
+	fal_pir_ail = {
+		position = 7
+		icon = mission_invade_island
+		required_missions = { fal_gems }
+		trigger = {
+			533 = {	#pir ail
+				owned_by = ROOT 
+				is_core = ROOT
+			}
+		}
+		provinces_to_highlight = {
+			province_id = 533
+			NOT = { owned_by = ROOT is_core = ROOT }
+		}
+		effect = {
+			533 = {
+				add_harpy_minority_size_effect = yes
+				add_province_modifier = {
+					name = fal_pirate_nest_modifier 	#modifier giving +1 hostile fleet attrition, +25% local sailors modifier
+					duration = -1	#permanent
+				}
+			}
+			elizna_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			542 = { #fajabahar
+				add_permanent_claim = ROOT
+			}
+			582 = { #glas isles
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	fal_glas_isles = {
+		position = 8
+		icon = mission_invade_island
+		required_missions = { fal_pir_ail }
+		trigger = {
+			582 = {	#glas isles
+				owned_by = ROOT 
+				is_core = ROOT
+			}
+			6761 = {	#annailsub
+				owned_by = ROOT 
+				is_core = ROOT
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 582	#glas isles
+				province_id = 6761	#annailsub
+			}
+			NOT = { owned_by = ROOT is_core = ROOT }
+		}
+		effect = {
+			582 = {
+				add_harpy_minority_size_effect = yes
+				add_province_modifier = {
+					name = fal_pirate_nest_modifier
+					duration = -1 #permanent
+				}
+			}
+			6761 = {
+				add_harpy_minority_size_effect = yes
+				add_province_modifier = {
+					name = fal_pirate_nest_modifier
+					duration = -1 #permanent
+				}
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+			}	
+			inner_drolas_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT 
+			}
+			outer_drolas_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT 
+			}
+		}
+	}
+	fal_drollakand = {
+		position = 9
+		icon = mission_establish_high_seas_navy
+		required_missions = { fal_glas_isles }
+		trigger = {
+			inner_drolas_area = {
+				type = all 
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			outer_drolas_area = {
+				type = all 
+				owned_by = ROOT
+				is_core = ROOT
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = inner_drolas_area
+				area = outer_drolas_area
+			}
+			NOT = { owned_by = ROOt is_core = ROOT }
+		}
+		effect = {
+			add_country_modifier = {
+				name = fal_a_drift_wood_fleet_modifier #modifier giving 10% chance to capture ships
+				duration = -1	#permanent
+			}
+			577 = {	#betelis
+				add_province_modifier = {
+					name = fal_pirate_nest_modifier
+					duration = -1 #permanent
+				}
+			}
+			578 = {	#kurmod
+				add_province_modifier = {
+					name = fal_pirate_nest_modifier
+					duration = -1 #permanent
+				}
+			}
+		}
+	}
+}
+falahan_left_inner_branch = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		tag = X20
+		NOT = { map_setup = map_setup_random }
+	}
+	fal_the_marches = {
+		position = 3
+		icon = mission_rice_farming
+		required_missions= { fal_the_west }
+		trigger = {
+			south_overmarch_area = {
+				type = all 
+				owned_by = ROOT 
+				is_core = ROOT
+			}
+			east_overmarch_area = {
+				type = all 
+				owned_by = ROOT 
+				is_core = ROOT
+			}
+			west_overmarch_area = {
+				type = all 
+				owned_by = ROOT 
+				is_core = ROOT
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = south_overmarch_area
+				area = west_overmarch_area
+				area = east_overmarch_area
+			}
+			NOT = { owned_by = ROOT is_core = ROOT }
+		}
+		effect = {
+			add_country_modifier = {
+				name = fal_plentiful_food_production_modifier #modifier giving -5% dev cost and 25% manpower recovery speed
+				duration = 7300	#20 years
+			}
+		}
+	}
+	fal_bal_ouord = {
+		position = 4
+		icon = mission_white_tower
+		required_missions = { fal_the_marches }
+		trigger = {
+			510 = { #bal ouord
+				NOT = { has_province_modifier = ruined_castanorian_citadel }
+			}
+		}
+		provinces_to_highlight = {
+			province_id = 510
+			NOT = { has_province_modifier = ruined_castanorian_citadel }
+		}
+		effect = {
+			510 = {
+				add_harpy_minority_size_effect = yes
+				add_province_modifier = {
+					name = fal_harpy_raiding_contingent_modifier	#modifier giving +1 local hostile attrition
+					duration = -1	#permanent
+				}
+			}
+		}
+	}
+	fal_nathalaire = {
+		position = 5
+		icon = mission_galleys_in_port
+		required_missions = { fal_gems }
+		trigger = {
+			451 = {	#nathalaire
+				owned_by = ROOT 
+				is_core = ROOT
+			}
+		}
+		provinces_to_highlight = {
+			province_id = 451 
+			NOT = { owned_by = ROOT is_core = ROOT }
+		}
+		effect = {
+			451 = {
+				add_harpy_minority_size_effect = yes
+				add_province_modifier = {
+					name = fal_pirate_nest_modifier	
+					duration = -1	#permanent
+				}
+			}
+		}
+	}
+	fal_raiding_araren = {
+		position = 6
+		icon = mission_burning_castle
+		required_missions = { fal_nathalaire }
+		trigger = {
+			OR = {
+				1303 = { #flooded coast
+					has_privateer_share_in_trade_node = {
+						who = ROOT 
+						share = 0.80
+					}
+				}	
+				AND = {
+					highcliff_area= {
+						type = all
+						devastation = 25
+						owner = {
+							is_in_war = {
+								participants = ROOT	
+							}
+						}
+					}
+					411 = {	#irmathas
+						devastation = 25
+						owner = {
+							is_in_war = {
+								participants = ROOT	
+							}
+						}
+					}
+				}
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = highcliff_area
+				province_id = 411
+			}
+			NOT = { 
+				devastation = 25
+				owner = {
+					is_in_war = {
+						participants = ROOT	
+					}
+				}
+			}
+		}
+		effect = {
+			add_prestige = 10
+			add_country_modifier = {
+				name = fal_major_raiding_modifier	#modifier giving 20% manpower recovery speed, 10% manpower modifier
+				duration = 182500	#50 years
+			}
+			every_province = {
+				limit = {
+					OR = {
+						area = highcliff_area
+						province_id = 411
+					}
+				}
+				add_province_modifier = {
+					name = fal_getting_majorly_raided_modifier	#modifier giving -50% local manpower modifier, +0.2 monthly devastation
+					duration = 18250	#50years
+				}
+			}
+		}
+	}
+	fal_pillaging_eborthill = {
+		position = 7
+		icon = mission_destroyed_city
+		required_missions = { fal_raiding_araren }
+		trigger = {
+			OR = {
+				isle_of_tef_area = {
+					type = all
+					controlled_by = ROOT
+					devastation = 10
+				}
+				isle_of_tef_area = {
+					type = all
+					owned_by = ROOT 
+					controlled_by = ROOT
+				}
+			}
+		}
+		provinces_to_highlight = {
+			area = isle_of_tef_area
+			NOT = { owned_by = ROOT }
+			NOT = { controlled_by = ROOT }
+		}
+		effect = {
+			add_prestige = 20
+			every_province = {
+				limit = {
+					area = isle_of_tef_area
+				}
+				add_base_tax = -2
+				add_base_production = -2
+				add_base_manpower = -2
+			}
+			every_province= {
+				limit = {
+					OR = {
+						has_province_modifier = harpy_roost
+						has_province_modifier = fal_pirate_nest_modifier
+					}
+					owned_by = ROOT
+				}
+				add_province_modifier = {
+					name = fal_growth_using_pillage_modifier #modifier giving -10% local dev cost, -10% local construction cost
+					duration = 18250	#50 years
+				}
+			}
+		}
+	}
+	fal_elizna = {
+		position = 8
+		icon = mission_city_prosperity
+		required_missions = { fal_pir_ail }
+		trigger = {
+			elizna_area = {
+				type = all 
+				owned_by = ROOT
+				is_core = ROOT 
+			}
+		}
+		provinces_to_highlight = {
+			area = elizna_area 
+			NOT = { owned_by = ROOT is_core = ROOT }
+		}
+		effect = {
+			496 = {	#elizna
+				add_harpy_minority_size_effect = yes
+				add_province_modifier = {
+					name = fal_restoration_of_elizna_modifier	#modifier giving -20% dev cost, -10% construction cost modifier
+					duration = 7300	#20 years
+				}
+			}
+		}
+	}
+	
+}
+falahan_inner_branch = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		tag = X20
+		NOT = { map_setup = map_setup_random }
+	}
+	fal_form_our_swarm = {
+		position = 1
+		icon = mission_assemble_an_army
+		required_missions = { }
+		trigger = {
+			army_size_percentage = 1
+		}
+	
+		effect = {
+			add_country_modifier = {
+				name = fal_swarm_formed_modifier #modifier giving 10% morale of armies, 5% movement speed
+				duration = 3650	#10 years
+			}
+		}
+	}
+	fal_reyuel_low_lands = {
+		position = 2
+		icon = mission_unite_home_region
+		required_missions = { fal_form_our_swarm }
+		trigger = {
+			reuyel_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+		}
+		provinces_to_highlight = {
+			area = reuyel_area
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		effect = {
+			tungr_mountains_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			519 = {	#falahanpeak
+				add_province_modifier = {
+					name = fal_plentiful_men_modifier	#modifier giving -5% dev cost, +20% manpower
+					duration = 18250	#50 years
+				}
+			}
+		}
+	}
+	fal_tungr_mountains = {
+		position = 3
+		icon = mission_unite_home_region
+		required_missions = { fal_reyuel_low_lands }
+		trigger = {
+			tungr_mountains_area = {
+				type = all 
+				owned_by = ROOT
+				is_core = ROOT
+			}
+		}
+		provinces_to_highlight = {
+			area = tungr_mountains_area
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		effect = {
+			527 = {	#zlatikou
+				add_harpy_minority_size_effect = yes
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+			}
+		}
+	}
+	fal_tungr_naval_base = {
+		position = 7
+		icon = mission_establish_high_seas_navy
+		required_missions = { fal_tungr_mountains fal_digging_our_holds }
+		trigger = {
+			526 = {	#tungr
+				development = 50
+			}
+			naval_forcelimit = 100
+		}
+		effect = {
+			526 = {	#tungr
+				add_province_modifier = {
+					name = tungr_naval_yards_modifier	#modifier giving -50% ship building time and -20% local ship cost, yet to be localized
+					duration = -1 #permanent
+				}
+			}
+			add_country_modifier = {
+				name = fal_tungr_naval_yards_modifier	#modifier giving -5% naval maintenance, yet to be localized
+				duration = -1	#permanent
+			}
+		}
+	}
+	fal_fajabahar = {
+		position = 8
+		icon = mission_arabian_fort
+		required_missions = { fal_pir_ail }
+		trigger = {
+			542	= {	#fajabahar
+				owned_by = ROOT 
+				is_core = ROOT 
+			}
+		}
+		provinces_to_highlight = {
+			province_id = 542
+			NOT = { owned_by = ROOT is_core = ROOT }
+		}
+		effect = {
+			542 = {
+				add_harpy_minority_size_effect = yes
+				add_province_modifier = {
+					name = fal_harpy_land_base_modifier	#modifier giving 25% local defensivness, +1 local attrition, +5 local trade power, yet to be localized
+					duration = -1
+				}
+			}
+		}
+	}
+}
+falahan_inner_right_branch = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		tag = X20
+		NOT = { map_setup = map_setup_random }
+	}
+	through_medbahar = {
+		position = 2
+		icon = mission_unite_home_region
+		required_missions = { fal_form_our_swarm }
+		trigger = {
+			medbahar_area = {
+				type = all
+				owned_by = ROOT 
+				is_core = ROOT
+			}
+			zagnabad_area = {	
+				type = all 
+				owned_by = ROOT
+				is_core = ROOT
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = medbahar_area
+				area = zagnabad_area
+			}
+			OR = {
+				NOT = { is_core = ROOT }
+				NOT = { owned_by = ROOT }
+			}
+		}
+		effect = {
+			set_country_flag = fal_at_gates_of_serpentspine_flag
+			add_prestige = 10
+		}
+	}
+	fal_goblin_allies = {
+		position = 3
+		icon = mission_missive
+		required_missions = { through_medbahar }
+		trigger = {
+			#any_country = {
+			#	OR = {
+			#		alliance_with = ROOT
+			#		is_subject_of = ROOT
+			#	}
+			#	has_country_modifier = goblin_administration
+			#	THIS = {
+			#		capital_scope = {
+			#			superregion = serpentspine_superregion
+			#		}
+			#	}
+			#}
+			H87 = {
+				OR = {
+					alliance_with = ROOT
+					is_subject_of = ROOT
+				}
+				has_country_modifier = goblin_administration
+			}
+		}
+		effect = {
+			hidden_effect = {
+				#random_country = {
+					#limit = {
+						#has_country_modifier = goblin_administration
+						#THIS = {
+							#capital_scope = {
+								#superregion = serpentspine_superregion
+							#}
+						#}
+						#alliance_with = X22
+					#}
+					#save_event_target_as = fal_goblin_fren
+					#add_country_flag = fal_goblin_fren
+					#add_historical_friend = X20
+				#}
+				H87 = {	#thieving arrow
+					add_historical_friend = x20	#falahan
+				}
+			}
+			if = {
+				limit = {
+					2942 = {	#shazstundihr
+						is_city = no
+					}
+				}
+				2942 = {	#shazstundihr
+					create_colony = 200
+				}
+			}
+			if = {
+				limit = {
+					2942 = {	#shazstundihr
+						is_city = yes
+					}
+				}
+				2942 = {	#shazstundihr
+					add_claim = ROOT
+				}
+			}
+		}
+	}
+	fal_enter_the_serpentspine = {
+		position = 4
+		icon = mission_treasure_room
+		required_missions = { fal_goblin_allies }
+		trigger = {
+			2942 = {	#shazstundihr
+				owned_by = ROOT 
+				is_core = ROOT
+			}
+		}
+		provinces_to_highlight = {
+			province_id = 2942	#shazstundihr
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		effect = {
+			2942 = {
+				add_harpy_minority_size_effect = yes
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+			}
+		}
+	}
+	fal_closer_with_goblins = {
+		position = 5
+		icon = mission_missive
+		required_missions = { fal_enter_the_serpentspine }
+		trigger = {
+			H87 = {	#thieving arrow
+				is_subject_of = ROOT 
+			}
+			#any_country = {
+				#is_subject_of = ROOT
+				#has_country_flag = fal_goblin_fren
+			#}
+			high_tolerance_goblin_race_trigger = yes
+		}
+		effect = {
+			2942 = {	#shazstundihr
+				if = {
+					limit = {
+						NOT = {
+							OR = {
+								#has_goblin_majority_trigger = yes
+								has_goblin_minority_trigger = yes
+							}
+						}
+					}
+					add_goblin_minority_size_effect = yes
+					add_goblin_minority_size_effect = yes
+				}
+				if = {
+					limit = {
+						has_goblin_minority_trigger = yes
+						NOT = { has_goblin_majority_trigger = yes }
+					}
+					#add_goblin_majority_size_effect = yes
+					change_culture = exodus_goblin
+				}
+			}
+			H87 = {	#thieving arrow
+				random_owned_province = {
+					limit = {
+						is_capital = yes
+					}
+					add_harpy_minority_size_effect = yes
+				}
+			}
+		}	
+	}
+	fal_digging_our_holds = {
+		position = 6
+		icon = mission_forge
+		required_missions = { fal_closer_with_goblins }
+		trigger = {
+			2942 = {	#shazstundihr
+				development = 35
+				OR = {
+					has_goblin_minority_trigger = yes
+					has_goblin_majority_trigger = yes					
+				}
+			}
+			526 = {	#tungr
+				OR = {
+					has_goblin_minority_trigger = yes
+					has_goblin_majority_trigger = yes					
+					}
+				development = 40
+			}
+			high_tolerance_goblin_race_trigger = yes
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 526
+				province_id = 2942
+			}
+		}
+		effect = {
+			2942 = {
+				add_province_modifier = {
+					name = fal_hold_digging_modifier #modifier giving -20% local dev cost, yet to be localized
+					duration = -1	#permanent
+				}
+			}
+			526 = {
+				add_province_modifier = {
+					name = fal_hold_digging_modifier 
+					duration = -1	#permanent
+				}
+			}
+		}
+	}
+}
+falahan_right_branch = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		tag = X20
+		NOT = { map_setup = map_setup_random }
+	}
+	
+	fal_cave_harpy_warriors = {
+		position = 6
+		icon = mission_assemble_an_army
+		required_missions = { fal_closer_with_goblins }
+		trigger = {
+			#fal_goblin_fren = {
+			#	high_tolerance_harpy_race_trigger = yes
+			#}
+			H87 = {
+				high_tolerance_harpy_race_trigger = yes
+			}
+		}
+		effect = {
+				#fal_goblin_fren = {
+				#	set_country_flag = fal_cave_harpy_mercs_flag	
+				#}
+				H87 = {	#thieving arrow
+					set_country_flag = fal_cave_harpy_mercs_flag
+				}
+				set_country_flag = fal_cave_harpy_mercs_flag
+		}
+	}
+}

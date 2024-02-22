@@ -6,7 +6,8 @@ krakazol_1 = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { tag = I20 }
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = I20 }
 	
 	krakazol_block_passage = {
 		icon = mission_unite_home_region
@@ -93,7 +94,8 @@ krakazol_2 = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { tag = I20 }
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = I20 }
 
 	krakazol_mining_ale = {
 		icon = mission_industria_sedera
@@ -171,7 +173,8 @@ krakazol_3 = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { tag = I20 }
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = I20 }
 
 	krakazol_other_home = {
 		icon = mission_invade_the_deccan_dlh
@@ -389,7 +392,8 @@ krakazol_4 = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { tag = I20 }
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = I20 }
 
 	krakazol_find_key = {
 		icon = mission_dha_thatchil
@@ -500,7 +504,8 @@ krakazol_5 = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { tag = I20 }
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = I20 }
 
 	krakazol_borrowed_thumbs = {
 		icon = mission_rb_conquer_the_isles
@@ -576,7 +581,8 @@ krakazol_1b = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } 
 		tag = I20 
 		has_country_flag = krakazol_part2
 	}
@@ -666,7 +672,8 @@ krakazol_2b = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } 
 		tag = I20 
 		has_country_flag = krakazol_part2
 	}
@@ -702,7 +709,8 @@ krakazol_2b_succession = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } 
 		tag = I20 
 		has_country_flag = krakazol_partsuccession
 	}
@@ -745,7 +753,8 @@ krakazol_3b = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } 
 		tag = I20 
 		has_country_flag = krakazol_part2
 	}
@@ -912,7 +921,8 @@ krakazol_4b = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } 
 		tag = I20 
 		has_country_flag = krakazol_part2
 	}
@@ -952,7 +962,8 @@ krakazol_4b_succession = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } 
 		tag = I20 
 		has_country_flag = krakazol_partsuccession
 	}
@@ -988,7 +999,8 @@ krakazol_5b = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } 
 		tag = I20 
 		has_country_flag = krakazol_part2
 	}
@@ -1117,7 +1129,8 @@ krakazol_1c = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } 
 		tag = I20 
 		has_country_flag = krakazol_part3
 	}
@@ -1398,7 +1411,8 @@ krakazol_2c = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } 
 		tag = I20 
 		has_country_flag = krakazol_part3
 	}
@@ -1704,7 +1718,7 @@ krakazol_2c = {
 	}
 
 	krakazol_deepest_dark = {
-		icon = mission_make_it_fall
+		icon = mission_crystal_cave
 		position = 17
 		required_missions = { 
 			krakazol_cant_be_serious
@@ -1757,6 +1771,7 @@ krakazol_3c = {
 	ai = yes 
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = I20 
 		has_country_flag = krakazol_part3
 	}
@@ -2139,7 +2154,8 @@ krakazol_4c = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } 
 		tag = I20 
 		has_country_flag = krakazol_part3
 	}
@@ -2524,7 +2540,8 @@ krakazol_5c = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } 
 		tag = I20 
 		has_country_flag = krakazol_part3
 	}
@@ -3039,7 +3056,8 @@ krakazol_1d = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } 
 		tag = I20 
 		has_country_flag = krakazol_part4
 	}
@@ -3194,7 +3212,8 @@ krakazol_2d = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } 
 		tag = I20 
 		has_country_flag = krakazol_part4
 	}
@@ -3271,7 +3290,8 @@ krakazol_3d = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } 
 		tag = I20 
 		has_country_flag = krakazol_part4
 	}
@@ -3522,7 +3542,8 @@ krakazol_4d = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } 
 		tag = I20 
 		has_country_flag = krakazol_part4
 	}
@@ -3663,7 +3684,8 @@ krakazol_5d = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } 
 		tag = I20 
 		has_country_flag = krakazol_part4
 	}
@@ -3796,7 +3818,8 @@ krakazol_3_epilogue_1 = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } 
 		tag = I20 
 		has_country_flag = krakazol_epilogue_1
 	}
@@ -3825,7 +3848,8 @@ krakazol_2_epilogue_2 = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } 
 		tag = I20 
 		has_country_flag = krakazol_epilogue_2
 	}
@@ -3889,7 +3913,8 @@ krakazol_3_epilogue_2 = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } 
 		tag = I20 
 		has_country_flag = krakazol_epilogue_2
 	}
@@ -3953,7 +3978,8 @@ krakazol_4_epilogue_2 = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } 
 		tag = I20 
 		has_country_flag = krakazol_epilogue_2
 	}
@@ -3982,7 +4008,8 @@ krakazol_3_epilogue_3 = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } 
 		tag = I20 
 		has_country_flag = krakazol_epilogue_3
 	}

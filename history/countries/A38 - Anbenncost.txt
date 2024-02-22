@@ -11,7 +11,10 @@ technology_group = tech_cannorian
 capital = 8 #its Anbenncost
 fixed_capital = 8 # Cannot move capital away from this province & no power cost to move to it
 
-1000.1.1 = { set_estate_privilege = estate_mages_organization_magisterium }
+1000.1.1 = { 
+	set_estate_privilege = estate_mages_organization_magisterium 
+	set_country_flag = new_imperial_candidate_gain_magisterium
+}
 1000.1.1 = { set_estate_privilege = estate_adventurers_organization_chronicler_grants }
 
 1422.1.1 = { set_country_flag = lilac_wars_moon_party }
@@ -19,11 +22,11 @@ fixed_capital = 8 # Cannot move capital away from this province & no power cost 
 
 1440.1.1 = {
 	monarch = {
-		name = "Feliz The Flat"
-		birth_date = 1413.1.1
-		adm = 3
-		dip = 5
-		mil = 1
+		name = "Volarn Seapike"
+		birth_date = 1419.2.9
+		adm = 2
+		dip = 4
+		mil = 2
 	}
-	add_ruler_personality = charismatic_negotiator_personality
+	add_ruler_personality = navigator_personality
 }

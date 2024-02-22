@@ -82,7 +82,7 @@ bal_vertesk = {
 
 		country_modifiers = {
 			prestige = 0.1
-			spy_offence = 0.05
+			spy_offence = 0.10
 		}
 
 		on_upgraded = {
@@ -118,7 +118,7 @@ bal_vertesk = {
 
 		country_modifiers = {
 			prestige = 0.25
-			spy_offence = 0.05
+			spy_offence = 0.10
 			global_spy_defence = 0.10
 		}
 
@@ -157,7 +157,7 @@ bal_vertesk = {
 		country_modifiers = {
 			prestige = 0.5
 			global_unrest = -1 #maybe nerf this to local?
-			spy_offence = 0.15
+			spy_offence = 0.2
 			global_spy_defence = 0.20
 		}
 
@@ -424,7 +424,7 @@ bal_dostan = {
 
 		province_modifiers = {
 			local_defensiveness = 0.05
-				hostile_attrition = 1
+			hostile_attrition = 1
 		}
 
 		area_modifier = {
@@ -473,7 +473,7 @@ bal_dostan = {
 
 		province_modifiers = {
 			local_defensiveness = 0.1
-				hostile_attrition = 2
+			hostile_attrition = 2
 		}
 
 		area_modifier = {
@@ -525,7 +525,7 @@ bal_dostan = {
 
 		province_modifiers = {
 			local_defensiveness = 0.10
-				hostile_attrition = 3
+			hostile_attrition = 3
 		}
 
 		area_modifier = {
@@ -627,7 +627,7 @@ bal_vroren = {
 
 		province_modifiers = {
 			local_defensiveness = 0.05
-			# garrison_size = 0.05 # Paradox pls fix
+			local_garrison_size = 0.05 
 		}
 
 		area_modifier = {
@@ -664,7 +664,7 @@ bal_vroren = {
 
 		province_modifiers = {
 			local_defensiveness = 0.1
-			# garrison_size = 0.10 # Paradox pls fix
+			local_garrison_size = 0.10
 		}
 
 		area_modifier = {
@@ -702,7 +702,7 @@ bal_vroren = {
 
 		province_modifiers = {
 			local_defensiveness = 0.10
-			# garrison_size = 0.15 # Paradox pls fix
+			local_garrison_size = 0.15 
 		}
 
 		area_modifier = {
@@ -835,7 +835,7 @@ bal_hyl = {
 		}
 
 		cost_to_upgrade = {
-			factor = 2500
+			factor = 1500
 		}
 
 		province_modifiers = {
@@ -873,7 +873,7 @@ bal_hyl = {
 		}
 
 		cost_to_upgrade = {
-			factor = 5000
+			factor = 6000
 		}
 
 		province_modifiers = {
@@ -1056,7 +1056,7 @@ bal_mire = {
 		}
 
 		province_modifiers = {
-			local_defensiveness = 0.10
+			local_defensiveness = 0.20
 			local_manpower_modifier = 0.50
 		}
 
@@ -1328,7 +1328,7 @@ aelcandar = {
 		country_modifiers = {
 		    prestige = 0.1
 			harsh_treatment_cost = -0.1
-			merc_maintenance_modifier = -0.05
+			merc_maintenance_modifier = -0.1
 		}
 
 		on_upgraded = {
@@ -1354,7 +1354,7 @@ aelcandar = {
 		country_modifiers = {
 		    prestige = 0.25
 			harsh_treatment_cost = -0.2
-			merc_maintenance_modifier = -0.1
+			merc_maintenance_modifier = -0.15
 		}
 
 		on_upgraded = {
@@ -1382,7 +1382,7 @@ aelcandar = {
 		country_modifiers = {
 		    prestige = 0.5
 			harsh_treatment_cost = -0.3
-			merc_maintenance_modifier = -0.15
+			merc_maintenance_modifier = -0.25
 		}
 
 		on_upgraded = {
@@ -1469,6 +1469,7 @@ escandar = {
 		    prestige = 0.1
 			imperial_mercenary_cost = -0.05
 			general_cost = -0.05
+			improve_relation_modifier = 0.05
 		}
 
 		on_upgraded = {
@@ -1492,9 +1493,10 @@ escandar = {
 		}
 
 		country_modifiers = {
-		    prestige = 0.25
+		    	prestige = 0.25
 			imperial_mercenary_cost = -0.1
 			general_cost = -0.10
+			improve_relation_modifier = 0.1
 		}
 
 		on_upgraded = {
@@ -1524,6 +1526,7 @@ escandar = {
 			imperial_mercenary_cost = -0.15
 			general_cost = -0.15
 			may_recruit_female_generals = yes
+			improve_relation_modifier = 0.15
 		}
 
 		on_upgraded = {
@@ -1608,7 +1611,7 @@ calascandar = {
 		}
 
 		country_modifiers = {
-		    prestige = 0.1
+		    	prestige = 0.1
 			heir_chance = 0.25
 			dip_advisor_cost = -0.05
 			power_projection_from_insults = 0.05
@@ -1664,7 +1667,7 @@ calascandar = {
 		}
 
 		country_modifiers = {
-		    prestige = 0.5
+		    	prestige = 0.5
 			heir_chance = 1
 			dip_advisor_cost = -0.15
 			power_projection_from_insults = 0.15
@@ -1755,7 +1758,7 @@ the_necropolis = {
 
 		area_modifier = {
 			local_autonomy = -0.025
-			local_tax_modifier = 0.05
+			local_tax_modifier = 0.1
 		}
 
 		country_modifiers = {
@@ -1790,7 +1793,7 @@ the_necropolis = {
 
 		
 		area_modifier = {
-			local_tax_modifier = 0.10
+			local_tax_modifier = 0.20
 		}
 
 		
@@ -1830,7 +1833,7 @@ the_necropolis = {
 
 		
 		area_modifier = {
-			local_tax_modifier = 0.15
+			local_tax_modifier = 0.30
 		}
 
 		

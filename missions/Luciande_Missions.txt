@@ -3,7 +3,8 @@ luciande_1_missions = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } 
 		tag = B34
 		has_country_flag = B34_lucian
 	}	
@@ -165,7 +166,6 @@ luciande_1_missions = {
 			add_country_modifier = {
 				name = B34_busy_researchers
 				duration = -1
-				hidden = no
 			}
 			country_event = {
 				id = flavor_luciande.5
@@ -179,7 +179,8 @@ luciande_2_missions = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } 
 		tag = B34
 		has_country_flag = B34_lucian
 	}
@@ -233,7 +234,6 @@ luciande_2_missions = {
 						has_manpower_building_trigger = yes
 						num_of_units_in_province = {
 							who = ROOT
-							type = any
 							amount = 2
 						}
 					}
@@ -243,7 +243,6 @@ luciande_2_missions = {
 						has_manpower_building_trigger = yes
 						num_of_units_in_province = {
 							who = ROOT
-							type = any
 							amount = 2
 						}
 					}
@@ -256,7 +255,6 @@ luciande_2_missions = {
 				add_province_modifier = {
 					name = B34_west_camp
 					duration = -1
-					hidden = no
 				}
 				kill_units = {
 					who = owner
@@ -269,7 +267,6 @@ luciande_2_missions = {
 				add_province_modifier = {
 					name = B34_west_camp
 					duration = -1
-					hidden = no
 				}
 				kill_units = {
 					who = owner
@@ -427,7 +424,8 @@ luciande_2_ending_missions = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } 
 		tag = B34 
 		has_country_flag = B34_deadest_quiet
 		has_country_flag = B34_lucian
@@ -527,7 +525,6 @@ luciande_2_ending_missions = {
 			add_country_modifier = {
 				name = B34_an_iron_fist
 				duration = -1
-				hidden = no
 			}
 		
 			random_owned_province = {
@@ -598,7 +595,6 @@ luciande_2_ending_missions = {
 				add_province_modifier = {
 					name = B34_cardesti_camp
 					duration = -1
-					hidden = no
 				}
 			}
 			random_owned_province = {
@@ -611,7 +607,6 @@ luciande_2_ending_missions = {
 				add_province_modifier = {
 					name = B34_cardesti_camp
 					duration = -1
-					hidden = no
 				}
 			}
 			random_owned_province = {
@@ -624,7 +619,6 @@ luciande_2_ending_missions = {
 				add_province_modifier = {
 					name = B34_cardesti_camp
 					duration = -1
-					hidden = no
 				}
 			}
 		}
@@ -636,7 +630,8 @@ luciande_3_missions = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } 
 		tag = B34
 		has_country_flag = B34_lucian
 	}
@@ -757,8 +752,7 @@ luciande_3_missions = {
 			}
 			add_country_modifier = {
 				name = B34_dark_ambitions
-				duration = 7300		
-				hidden = no
+				duration = 7300
 			}
 		}
 	}
@@ -800,7 +794,6 @@ luciande_3_missions = {
 				add_province_modifier = {
 					name = B34_looming_citadel
 					duration = -1
-					hidden = no
 				}
 			}
 			merescker_area = {
@@ -840,7 +833,6 @@ luciande_3_missions = {
 				add_country_modifier = {
 					name = B34_masterful_planning
 					duration = -1
-					hidden = no
 				}
 				clr_country_flag = luciande_fow
 			}
@@ -945,7 +937,8 @@ luciande_3_middle_missions_1 = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } 
 		tag = B34
 		has_country_flag = B34_forever_silent
 		has_country_flag = B34_lucian
@@ -994,7 +987,8 @@ luciande_3_middle_missions_2 = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } 
 		tag = B34
 		has_country_flag = B34_making_preparations
 		has_country_flag = B34_lucian
@@ -1038,7 +1032,8 @@ luciande_3_ending_missions_1 = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } 
 		tag = B34 
 		has_country_flag = luciande_finished_war
 		has_country_flag = B34_lucian
@@ -1084,7 +1079,8 @@ luciande_3_ending_missions_2 = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } 
 		tag = B34 
 		has_country_flag = B34_deadest_quiet
 		has_country_flag = B34_lucian
@@ -1149,7 +1145,8 @@ luciande_3_ending_missions_3 = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } 
 		tag = B34 
 		has_country_flag = B34_on_the_hunt
 		has_country_flag = B34_lucian
@@ -1188,7 +1185,8 @@ luciande_3_ending_missions_4 = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } 
 		tag = B34 
 		has_country_flag = B34_end_of_hunt
 		has_country_flag = B34_lucian
@@ -1238,7 +1236,8 @@ luciande_4_missions = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } 
 		tag = B34 
 		has_country_flag = B34_lucian
 	} #luciande
@@ -1413,7 +1412,6 @@ luciande_4_missions = {
 				add_province_modifier = {
 					name = B34_east_camp
 					duration = -1
-					hidden = no
 				}
 				add_base_manpower = 1
 				kill_units = {
@@ -1514,6 +1512,7 @@ luciande_4_ending_missions = {
 	ai = yes 
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = B34
 		has_country_flag = B34_deadest_quiet
 		has_country_flag = B34_lucian
@@ -1600,11 +1599,16 @@ luciande_4_ending_missions = {
 				change_trade_goods = paper 
 			}
 			custom_tooltip = luciande_upgraded_board_2_tt
-			set_country_flag = luciande_tier3_slaves_flag
+			set_country_flag = luciande_tier2_slaves_flag
 			hidden_effect = {
-				country_event = {
-					id = flavor_luciande.52
-					days = 1
+				every_owned_province = {
+					limit = { trade_goods = slaves }
+					remove_province_modifier = B34_board_of_chains_boost
+					add_province_modifier = {
+						name = B34_board_of_chains_boost_upgraded
+						duration = -1
+						hidden = yes
+					}
 				}
 			}
 		}
@@ -1676,12 +1680,17 @@ luciande_4_ending_missions = {
 				}
 			}
 			custom_tooltip = luciande_upgraded_board_3_tt
-			set_country_flag = luciande_tier4_slaves_flag
+			set_country_flag = luciande_tier3_slaves_flag
 			
 			hidden_effect = {
-				country_event = {
-					id = flavor_luciande.53
-					days = 1
+				every_owned_province = {
+					limit = { trade_goods = slaves }
+					remove_province_modifier = B34_board_of_chains_boost_upgraded
+					add_province_modifier = {
+						name = B34_board_of_chains_boost_upgraded_2
+						duration = -1
+						hidden = yes
+					}
 				}
 			}
 		}
@@ -1693,6 +1702,7 @@ luciande_slot_5_blank = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = B34 #luciande
 		has_country_flag = B34_lucian
 	}
@@ -1704,7 +1714,8 @@ luciande_5_missions = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } 
 		tag = B34
 		has_country_flag = B34_lucian
 	}
@@ -1772,7 +1783,6 @@ luciande_5_missions = {
 		}
 
 		effect = {
-			custom_tooltip = luciande_upgraded_board_tt
 			if = {
 				limit = {
 					NOT = { has_dlc = "Dharma" }
@@ -1781,22 +1791,16 @@ luciande_5_missions = {
 					add_center_of_trade_level = 1
 				}
 			}
-			set_country_flag = luciande_tier2_slaves_flag
-			
-			every_owned_province = {
-				limit = {
-					trade_goods = slaves
-				}
-				add_province_modifier = {
-					name = B34_board_of_chains_boost
-					duration = -1
-					hidden = yes
-				}
-			}
+			custom_tooltip = luciande_upgraded_board_tt
+			set_country_flag = luciande_tier1_slaves_flag
 			hidden_effect = {
-				country_event = {
-					id = flavor_luciande.51
-					days = 1
+				every_owned_province = {
+					limit = { trade_goods = slaves }
+					add_province_modifier = {
+						name = B34_board_of_chains_boost
+						duration = -1
+						hidden = yes
+					}
 				}
 			}
 		}

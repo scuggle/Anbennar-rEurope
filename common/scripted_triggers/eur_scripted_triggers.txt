@@ -1,0 +1,35 @@
+#TBD could be added to choosing the generic MT
+has_custom_MT = {
+	OR = {
+		tag = A30
+		tag = A38
+		tag = B58
+		tag = G26
+		tag = G52
+		tag = G59
+		tag = G62
+		tag = U06
+		tag = U08
+		tag = Y04
+		tag = Z26
+		tag = Z43
+		AND = {
+			culture_group = dwarven
+			OR = {
+				has_reform = dwarovar_adventurer_reform
+				have_had_reform = dwarovar_adventurer_reform
+			}
+			capital_scope = { continent = serpentspine }
+		}
+		AND = {
+			capital_scope = {
+				OR = {
+					region = forlorn_vale_region
+					superregion = escann_superregion
+				}
+			}
+			is_adventurer = yes
+			NOT = { has_country_flag = formed_corintar_flag }
+		}
+	}
+}

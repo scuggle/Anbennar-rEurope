@@ -1,14 +1,11 @@
 
 #463 - Circassia
 
-#owner = U05
-#controller = U05
-owner = L28
-controller = L28
+owner = U05
+controller = U05
 add_core = L28
-#add_core = U05
-#add_core = U01
-culture = delta_gnome
+add_core = U01
+culture = korosheshi
 religion = elikhetist
 
 hre = no

@@ -6,6 +6,7 @@ selphergi1_missions = {
 	generic = no
 	ai = yes 
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		primary_culture = selphereg
 		NOT = {
 			tag = H01
@@ -163,6 +164,7 @@ selpheregi3_missions = {
 	generic = no
 	ai = yes 
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		primary_culture = selphereg
 		NOT = {
 			tag = H01
@@ -228,6 +230,7 @@ selpheregi4_missions = {
 	generic = no
 	ai = yes 
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		primary_culture = selphereg
 		NOT = {
 			tag = H01
@@ -322,6 +325,7 @@ selpheregi5_missions = {
 	generic = no
 	ai = yes 
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		primary_culture = selphereg
 		NOT = {
 			tag = H01

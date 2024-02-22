@@ -4,6 +4,7 @@ A97_conquering = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A97
 	}
 	has_country_shield = yes
@@ -298,6 +299,7 @@ A97_misc = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A97
 	}
 	has_country_shield = yes
@@ -585,6 +587,7 @@ A97_something = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A97
 	}
 	has_country_shield = yes
@@ -840,6 +843,7 @@ A97_development = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A97
 	}
 	has_country_shield = yes
@@ -1208,6 +1212,7 @@ A97_empire = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A97
 		NOT = { was_tag = A12 }
 	}

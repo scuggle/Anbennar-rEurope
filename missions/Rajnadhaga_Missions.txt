@@ -3,6 +3,7 @@ rajnadhaga_conquest_1 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = R07
 	}
 	has_country_shield = yes
@@ -118,6 +119,7 @@ rajnadhaga_slaves = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = R07
 	}
 	has_country_shield = yes
@@ -218,6 +220,7 @@ rajnadhaga_ghankedhen = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = R07
 	}
 	has_country_shield = yes
@@ -267,6 +270,7 @@ rajnadhaga_conquest_2 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = R07
 	}
 	has_country_shield = yes
@@ -450,6 +454,7 @@ rajnadhaga_conquest_4 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = R07
 	}
 	has_country_shield = yes
@@ -702,6 +707,7 @@ rajnadhaga_conquest_3 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = R07
 	}
 	has_country_shield = yes
@@ -827,6 +833,7 @@ rajnadhaga_economy_1 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = R07
 	}
 	has_country_shield = yes
@@ -967,6 +974,7 @@ rajnadhaga_libraries = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = R07
 	}
 	has_country_shield = yes
@@ -1102,6 +1110,7 @@ rajnadaghi_university_2 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = R07
 	}
 	
@@ -1179,6 +1188,7 @@ rajnadhaga_economy_2 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = R07
 	}
 	
@@ -1357,6 +1367,7 @@ rajnadaghi_reconquest_2 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = R07
 	}
 	has_country_shield = yes

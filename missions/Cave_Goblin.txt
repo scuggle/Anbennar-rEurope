@@ -4,6 +4,7 @@ cave_goblin_column_5 = {
 	generic = yes
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		dwarovar_goblin_culture_primary = yes
 		NOT = { primary_culture = undergrowth_goblin }
 		NOT = {
@@ -262,6 +263,7 @@ cave_goblin_warband_column_1 = {
 	generic = yes
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		dwarovar_goblin_culture_primary = yes
 		NOT = { primary_culture = undergrowth_goblin }
 		NOT = {
@@ -414,6 +416,7 @@ cave_goblin_warband_column_2 = {
 	generic = yes
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		dwarovar_goblin_culture_primary = yes
 		NOT = { primary_culture = undergrowth_goblin }
 		NOT = {
@@ -616,6 +619,7 @@ cave_goblin_warband_column_3 = {
 	generic = yes
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		dwarovar_goblin_culture_primary = yes
 		NOT = { primary_culture = undergrowth_goblin }
 		NOT = {

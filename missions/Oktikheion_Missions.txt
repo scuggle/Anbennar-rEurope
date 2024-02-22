@@ -4,6 +4,7 @@ G47_north = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = G47
 	}
 	has_country_shield = yes
@@ -92,7 +93,7 @@ G47_north = {
 	}
 	
 	G47_a_job_well_done = {
-		icon = mission_sweat_fealty
+		icon = mission_approach_throne
 		required_missions = { G47_move_against_degakheion }
 		position = 4
 		
@@ -115,6 +116,7 @@ G47_south = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = G47
 	}
 	has_country_shield = yes
@@ -211,6 +213,7 @@ G47_south_2 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = G47
 	}
 	has_country_shield = yes
@@ -314,6 +317,7 @@ G47_internal = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = G47
 	}
 	has_country_shield = yes
@@ -431,6 +435,7 @@ G47_isles = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = G47
 	}
 	has_country_shield = yes

@@ -3,7 +3,8 @@ yangcheng_1 = {
 	generic = no
 	ai = yes
 	has_country_shield = yes
-	potential = { tag = Y06 } 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = Y06 } 
 
 	yangcheng_yanzhong_proposal = {
 		icon = mission_candide_letter
@@ -127,7 +128,8 @@ yangcheng_2 = {
 	generic = no
 	ai = yes
 	has_country_shield = yes
-	potential = { tag = Y06 } 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = Y06 } 
 
 	yangcheng_reunion = {
 		icon = mission_discussion_arch
@@ -309,7 +311,8 @@ yangcheng_3 = {
 	generic = no
 	ai = yes
 	has_country_shield = yes
-	potential = { tag = Y06 } 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = Y06 } 
 
 	yangcheng_bookends = {
 		icon = mission_dark_book
@@ -413,7 +416,8 @@ yangcheng_4 = {
 	generic = no
 	ai = yes
 	has_country_shield = yes
-	potential = { tag = Y06 } 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = Y06 } 
 
 	yangcheng_debate = {
 		icon = mission_confrontation
@@ -477,7 +481,8 @@ yangcheng_5 = {
 	generic = no
 	ai = yes
 	has_country_shield = yes
-	potential = { tag = Y06 } 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = Y06 } 
 
 	yangcheng_dusty_tomes = {
 		icon = mission_priest_church

@@ -31,5 +31,6 @@ economic_hegemon = {
 		all_power_cost = -0.05
 		trade_efficiency = 0.15
 	}
-	
+	#effect = {} # When a country picks the hegemon
+	#removed_effect = {} # When a country loses the hegemon
 }

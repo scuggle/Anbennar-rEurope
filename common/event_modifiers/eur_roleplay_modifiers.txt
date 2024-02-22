@@ -16,9 +16,13 @@ corinite_purim_teachings_aspect_modifier = {
 	land_morale = 0.10 
 }
 
-#Privateer debuff
-eur_privateer_debuff = {
+#Startup Events
+eur_balancing_modifier = {
 	privateer_efficiency = -0.4
+	diplomats = 1
+}
+eur_spy_buff = {
+	spy_offence = 0.2
 }
 
 #Skewered Drake colony buff
@@ -27,36 +31,11 @@ skewered_drake_colony = {
 	global_colonial_growth = 25
 }
 
-#Witch-Kings
-1_relations_removed = {
-	diplomatic_upkeep = -1
-}
-2_relations_removed = {
-	diplomatic_upkeep = -2
-}
-3_relations_removed = {
-	diplomatic_upkeep = -3
-}
-4_relations_removed = {
-	diplomatic_upkeep = -4
-}
-5_relations_removed = {
-	diplomatic_upkeep = -5
-}
-6_relations_removed = {
-	diplomatic_upkeep = -6
-}
-7_relations_removed = {
-	diplomatic_upkeep = -7
-}
-8_relations_removed = {
-	diplomatic_upkeep = -8
-}
-9_relations_removed = {
-	diplomatic_upkeep = -9
-}
-10_relations_removed = {
-	diplomatic_upkeep = -10
+#Chaingrasper buff
+chaingrasper_initial_buff = {
+	global_tax_income = 36
+	colonist_placement_chance = 0.1
+	global_colonial_growth = 25
 }
 
 #roleplay modifiers

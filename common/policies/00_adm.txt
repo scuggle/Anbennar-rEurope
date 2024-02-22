@@ -1,1115 +1,382 @@
-#Tier 1
-vass_reform_the_goverment_1 = {
+eur_one_nation_under_one = {
 	monarch_power = ADM
 
 	potential = {
-		adm_tech = 2
-		NOT = {
-			calc_true_if = {
-				full_idea_group = innovativeness_ideas
-				full_idea_group = religious_ideas
-				full_idea_group = humanist_ideas
-				full_idea_group = focus_inwards
-				full_idea_group = administrative_ideas
-				full_idea_group = plutocracy_ideas
-				full_idea_group = theocracy_gov_ideas
-				full_idea_group = horde_gov_ideas
-				full_idea_group = economic_ideas
-				full_idea_group = logistical_ideas
-				full_idea_group = expansion_ideas
-				amount = 2
-			}
-		}
+		adm_tech = 3
+
 	}
 	
-	allow = {
-		calc_true_if = {
-		full_idea_group = innovativeness_ideas
-		full_idea_group = religious_ideas
-		full_idea_group = humanist_ideas
-		full_idea_group = focus_inwards
-		full_idea_group = administrative_ideas
-		full_idea_group = plutocracy_ideas
-		full_idea_group = theocracy_gov_ideas
-		full_idea_group = horde_gov_ideas
-		full_idea_group = economic_ideas
-		full_idea_group = logistical_ideas
-		full_idea_group = expansion_ideas
-		amount = 1
+	allow = {	
+		OR = {
+			full_idea_group = innovativeness_ideas
+			full_idea_group = religious_ideas
+			full_idea_group = humanist_ideas
+			full_idea_group = focus_inwards
+			full_idea_group = administrative_ideas
+			full_idea_group = plutocracy_ideas
+			full_idea_group = theocracy_gov_ideas
+			full_idea_group = horde_gov_ideas
+			full_idea_group = economic_ideas
+			full_idea_group = logistical_ideas
+			full_idea_group = expansion_ideas
+		
 		}
-		NOT = {
-        calc_true_if = {
-            amount = 1
-            has_active_policy = vass_reform_the_goverment_2
-            has_active_policy = vass_reform_the_goverment_3
-            }
-        }
-    }
-
-	monthly_reform_progress_modifier = 0.20
+	}
+    
+    max_absolutism = 15
+	yearly_absolutism = 1
+	
 	
 	ai_will_do = {
 		factor = 0.8		
 	}
 }
-vass_increased_taxes_1 = {
+
+eur_centralization = {
 	monarch_power = ADM
 
 	potential = {
-		adm_tech = 2
-		NOT = {
-			calc_true_if = {
-				full_idea_group = innovativeness_ideas
-				full_idea_group = religious_ideas
-				full_idea_group = humanist_ideas
-				full_idea_group = focus_inwards
-				full_idea_group = administrative_ideas
-				full_idea_group = plutocracy_ideas
-				full_idea_group = theocracy_gov_ideas
-				full_idea_group = horde_gov_ideas
-				full_idea_group = economic_ideas
-				full_idea_group = logistical_ideas
-				full_idea_group = expansion_ideas
-				amount = 2
-			}
-		}
+		adm_tech = 3
+
 	}
 	
-	allow = {
-		calc_true_if = {
-		full_idea_group = innovativeness_ideas
-		full_idea_group = religious_ideas
-		full_idea_group = humanist_ideas
-		full_idea_group = focus_inwards
-		full_idea_group = administrative_ideas
-		full_idea_group = plutocracy_ideas
-		full_idea_group = theocracy_gov_ideas
-		full_idea_group = horde_gov_ideas
-		full_idea_group = economic_ideas
-		full_idea_group = logistical_ideas
-		full_idea_group = expansion_ideas
-		amount = 1
-		}
-		NOT = {
-        calc_true_if = {
-            amount = 1
-            has_active_policy = vass_increased_taxes_2
-            has_active_policy = vass_increased_taxes_3
-            }
-        }
-    }
-
-	global_tax_modifier = 0.15
-	production_efficiency = 0.075
-	
-	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 0
-			NOT = { tax_income_percentage = 0.1 }
-		}			
-		modifier = {
-			factor = 1.5
-			tax_income_percentage = 0.2
-		}
-		modifier = {
-			factor = 1.5
-			tax_income_percentage = 0.3
-		}
-		modifier = {
-			factor = 1.5
-			tax_income_percentage = 0.4
-		}
-		modifier = {
-			factor = 1.5
-			tax_income_percentage = 0.5
-		}		
-	}
-}
-vass_building_spree_1 = {
-	monarch_power = ADM
-
-	potential = {
-		adm_tech = 2
-		NOT = {
-			calc_true_if = {
-				full_idea_group = innovativeness_ideas
-				full_idea_group = religious_ideas
-				full_idea_group = humanist_ideas
-				full_idea_group = focus_inwards
-				full_idea_group = administrative_ideas
-				full_idea_group = plutocracy_ideas
-				full_idea_group = theocracy_gov_ideas
-				full_idea_group = horde_gov_ideas
-				full_idea_group = economic_ideas
-				full_idea_group = logistical_ideas
-				full_idea_group = expansion_ideas
-				amount = 2
-			}
+	allow = {	
+		OR = {
+			full_idea_group = innovativeness_ideas
+			full_idea_group = religious_ideas
+			full_idea_group = humanist_ideas
+			full_idea_group = focus_inwards
+			full_idea_group = administrative_ideas
+			full_idea_group = plutocracy_ideas
+			full_idea_group = theocracy_gov_ideas
+			full_idea_group = horde_gov_ideas
+			full_idea_group = economic_ideas
+			full_idea_group = logistical_ideas
+			full_idea_group = expansion_ideas
+		
 		}
 	}
+    
+    autonomy_change_time = -0.05
 	
-	allow = {
-		calc_true_if = {
-		full_idea_group = innovativeness_ideas
-		full_idea_group = religious_ideas
-		full_idea_group = humanist_ideas
-		full_idea_group = focus_inwards
-		full_idea_group = administrative_ideas
-		full_idea_group = plutocracy_ideas
-		full_idea_group = theocracy_gov_ideas
-		full_idea_group = horde_gov_ideas
-		full_idea_group = economic_ideas
-		full_idea_group = logistical_ideas
-		full_idea_group = expansion_ideas
-		amount = 1
-		}
-		NOT = {
-        calc_true_if = {
-            amount = 1
-            has_active_policy = vass_building_spree_2
-            has_active_policy = vass_building_spree_3
-            }
-        }
-    }
-
-	build_cost = 0.05
-	build_time = -0.10
 	
 	ai_will_do = {
 		factor = 0.8		
 	}
 }
-vass_centralization_effort_1 = {
+
+eur_expand_the_administration = {
 	monarch_power = ADM
 
 	potential = {
-		adm_tech = 2
-		NOT = {
-			calc_true_if = {
-				full_idea_group = innovativeness_ideas
-				full_idea_group = religious_ideas
-				full_idea_group = humanist_ideas
-				full_idea_group = focus_inwards
-				full_idea_group = administrative_ideas
-				full_idea_group = plutocracy_ideas
-				full_idea_group = theocracy_gov_ideas
-				full_idea_group = horde_gov_ideas
-				full_idea_group = economic_ideas
-				full_idea_group = logistical_ideas
-				full_idea_group = expansion_ideas
-				amount = 2
-			}
-		}
+		adm_tech = 3
+
 	}
 	
-	allow = {
-		calc_true_if = {
-		full_idea_group = innovativeness_ideas
-		full_idea_group = religious_ideas
-		full_idea_group = humanist_ideas
-		full_idea_group = focus_inwards
-		full_idea_group = administrative_ideas
-		full_idea_group = plutocracy_ideas
-		full_idea_group = theocracy_gov_ideas
-		full_idea_group = horde_gov_ideas
-		full_idea_group = economic_ideas
-		full_idea_group = logistical_ideas
-		full_idea_group = expansion_ideas
-		amount = 1
+	allow = {	
+		OR = {
+			full_idea_group = innovativeness_ideas
+			full_idea_group = religious_ideas
+			full_idea_group = humanist_ideas
+			full_idea_group = focus_inwards
+			full_idea_group = administrative_ideas
+			full_idea_group = plutocracy_ideas
+			full_idea_group = theocracy_gov_ideas
+			full_idea_group = horde_gov_ideas
+			full_idea_group = economic_ideas
+			full_idea_group = logistical_ideas
+			full_idea_group = expansion_ideas
+		
 		}
-		NOT = {
-        calc_true_if = {
-            amount = 1
-            has_active_policy = vass_centralization_effort_2
-            has_active_policy = vass_centralization_effort_3
-            }
-        }
-    }
-
-	global_autonomy = -0.05
+	}
+    
+    governing_capacity_modifier = 0.2
+	
 	
 	ai_will_do = {
 		factor = 0.8		
 	}
 }
-vass_reduce_inflation_1 = {
+
+eur_embrace_the_new_ideas = {
 	monarch_power = ADM
 
 	potential = {
-		adm_tech = 2
-		NOT = {
-			calc_true_if = {
-				full_idea_group = innovativeness_ideas
-				full_idea_group = religious_ideas
-				full_idea_group = humanist_ideas
-				full_idea_group = focus_inwards
-				full_idea_group = administrative_ideas
-				full_idea_group = plutocracy_ideas
-				full_idea_group = theocracy_gov_ideas
-				full_idea_group = horde_gov_ideas
-				full_idea_group = economic_ideas
-				full_idea_group = logistical_ideas
-				full_idea_group = expansion_ideas
-				amount = 2
-			}
-		}
+		adm_tech = 3
+
 	}
 	
-	allow = {
-		calc_true_if = {
-		full_idea_group = innovativeness_ideas
-		full_idea_group = religious_ideas
-		full_idea_group = humanist_ideas
-		full_idea_group = focus_inwards
-		full_idea_group = administrative_ideas
-		full_idea_group = plutocracy_ideas
-		full_idea_group = theocracy_gov_ideas
-		full_idea_group = horde_gov_ideas
-		full_idea_group = economic_ideas
-		full_idea_group = logistical_ideas
-		full_idea_group = expansion_ideas
-		amount = 1
+	allow = {	
+		OR = {
+			full_idea_group = innovativeness_ideas
+			full_idea_group = religious_ideas
+			full_idea_group = humanist_ideas
+			full_idea_group = focus_inwards
+			full_idea_group = administrative_ideas
+			full_idea_group = plutocracy_ideas
+			full_idea_group = theocracy_gov_ideas
+			full_idea_group = horde_gov_ideas
+			full_idea_group = economic_ideas
+			full_idea_group = logistical_ideas
+			full_idea_group = expansion_ideas
+		
+		}
+	}
+    
+    embracement_cost = -0.1
+	global_institution_spread = 0.25
+	
+	
+	ai_will_do = {
+		factor = 0.8		
+	}
+}
+
+eur_wartime_measures = {
+	monarch_power = ADM
+
+	potential = {
+		adm_tech = 3
+
+	}
+	
+	allow = {	
+		OR = {
+			full_idea_group = innovativeness_ideas
+			full_idea_group = religious_ideas
+			full_idea_group = humanist_ideas
+			full_idea_group = focus_inwards
+			full_idea_group = administrative_ideas
+			full_idea_group = plutocracy_ideas
+			full_idea_group = theocracy_gov_ideas
+			full_idea_group = horde_gov_ideas
+			full_idea_group = economic_ideas
+			full_idea_group = logistical_ideas
+			full_idea_group = expansion_ideas
+		
+		}
+	}
+    
+    war_taxes_cost_modifier = -1
+	war_exhaustion = -0.01
+	
+	
+	ai_will_do = {
+		factor = 0.8		
+	}
+}
+
+eur_support_the_stonemason_guilds = {
+	monarch_power = ADM
+
+	potential = {
+		adm_tech = 3
+
+	}
+	
+	allow = {	
+		OR = {
+			full_idea_group = innovativeness_ideas
+			full_idea_group = religious_ideas
+			full_idea_group = humanist_ideas
+			full_idea_group = focus_inwards
+			full_idea_group = administrative_ideas
+			full_idea_group = plutocracy_ideas
+			full_idea_group = theocracy_gov_ideas
+			full_idea_group = horde_gov_ideas
+			full_idea_group = economic_ideas
+			full_idea_group = logistical_ideas
+			full_idea_group = expansion_ideas
+		
+		}
+	}
+    
+    great_project_upgrade_cost = -0.2
+	build_time = -0.1
+	
+	
+	ai_will_do = {
+		factor = 0.8		
+	}
+}
+
+eur_support_the_artists = {
+	monarch_power = ADM
+
+	potential = {
+		adm_tech = 3
+
+	}
+	
+	allow = {	
+		OR = {
+			full_idea_group = innovativeness_ideas
+			full_idea_group = religious_ideas
+			full_idea_group = humanist_ideas
+			full_idea_group = focus_inwards
+			full_idea_group = administrative_ideas
+			full_idea_group = plutocracy_ideas
+			full_idea_group = theocracy_gov_ideas
+			full_idea_group = horde_gov_ideas
+			full_idea_group = economic_ideas
+			full_idea_group = logistical_ideas
+			full_idea_group = expansion_ideas
+		
+		}
+	}
+    
+    prestige = 1
+	devotion = 1
+	legitimacy = 1
+	republican_tradition = 0.3
+	horde_unity = 1
+	
+	
+	ai_will_do = {
+		factor = 0.8		
+	}
+}
+eur_religious_tolerance = {
+	monarch_power = ADM
+
+	potential = {
+		adm_tech = 3
+
+	}
+	
+	allow = {	
+		OR = {
+			full_idea_group = innovativeness_ideas
+			full_idea_group = religious_ideas
+			full_idea_group = humanist_ideas
+			full_idea_group = focus_inwards
+			full_idea_group = administrative_ideas
+			full_idea_group = plutocracy_ideas
+			full_idea_group = theocracy_gov_ideas
+			full_idea_group = horde_gov_ideas
+			full_idea_group = economic_ideas
+			full_idea_group = logistical_ideas
+			full_idea_group = expansion_ideas
+		
+		}
+	}
+    
+    tolerance_heretic = 1
+	tolerance_heathen = 1
+	religious_unity = 0.25
+	
+	
+	ai_will_do = {
+		factor = 0.8		
+	}
+}
+eur_reform_the_administration = {
+	monarch_power = ADM
+
+	potential = {
+		adm_tech = 3
+
+	}
+	
+	allow = {	
+		OR = {
+			full_idea_group = innovativeness_ideas
+			full_idea_group = religious_ideas
+			full_idea_group = humanist_ideas
+			full_idea_group = focus_inwards
+			full_idea_group = administrative_ideas
+			full_idea_group = plutocracy_ideas
+			full_idea_group = theocracy_gov_ideas
+			full_idea_group = horde_gov_ideas
+			full_idea_group = economic_ideas
+			full_idea_group = logistical_ideas
+			full_idea_group = expansion_ideas
+		
+		}
+	}
+    
+    yearly_corruption = -0.01
+	monthly_reform_progress_modifier = 0.25
+	
+	
+	ai_will_do = {
+		factor = 0.8		
+	}
+}
+eur_monetary_control = {
+	monarch_power = ADM
+
+	potential = {
+		adm_tech = 3
+
+	}
+	
+	allow = {	
+		OR = {
+			full_idea_group = innovativeness_ideas
+			full_idea_group = religious_ideas
+			full_idea_group = humanist_ideas
+			full_idea_group = focus_inwards
+			full_idea_group = administrative_ideas
+			full_idea_group = plutocracy_ideas
+			full_idea_group = theocracy_gov_ideas
+			full_idea_group = horde_gov_ideas
+			full_idea_group = economic_ideas
+			full_idea_group = logistical_ideas
+			full_idea_group = expansion_ideas
+		
 		}
 		NOT = {
-        calc_true_if = {
-            amount = 1
-            has_active_policy = vass_reduce_inflation_2
-            has_active_policy = vass_reduce_inflation_3
-			has_active_policy = vass_tighten_the_belt_1
-			has_active_policy = vass_tighten_the_belt_2
-			has_active_policy = vass_tighten_the_belt_3
+        	OR = {
+            	
+            	has_active_policy = eur_loose_market_control
+
             }
         }
-    }
-
+	}
+    
+    global_tax_modifier = 0.15
 	inflation_reduction = 0.1
-	interest = 0.10
+	
 	
 	ai_will_do = {
 		factor = 0.8		
 	}
 }
-vass_tighten_the_belt_1 = {
+eur_loose_market_control = {
 	monarch_power = ADM
 
 	potential = {
-		adm_tech = 2
-		NOT = {
-			calc_true_if = {
-				full_idea_group = innovativeness_ideas
-				full_idea_group = religious_ideas
-				full_idea_group = humanist_ideas
-				full_idea_group = focus_inwards
-				full_idea_group = administrative_ideas
-				full_idea_group = plutocracy_ideas
-				full_idea_group = theocracy_gov_ideas
-				full_idea_group = horde_gov_ideas
-				full_idea_group = economic_ideas
-				full_idea_group = logistical_ideas
-				full_idea_group = expansion_ideas
-				amount = 2
-			}
-		}
+		adm_tech = 3
+
 	}
 	
-	allow = {
-		calc_true_if = {
-		full_idea_group = innovativeness_ideas
-		full_idea_group = religious_ideas
-		full_idea_group = humanist_ideas
-		full_idea_group = focus_inwards
-		full_idea_group = administrative_ideas
-		full_idea_group = plutocracy_ideas
-		full_idea_group = theocracy_gov_ideas
-		full_idea_group = horde_gov_ideas
-		full_idea_group = economic_ideas
-		full_idea_group = logistical_ideas
-		full_idea_group = expansion_ideas
-		amount = 1
+	allow = {	
+		OR = {
+			full_idea_group = innovativeness_ideas
+			full_idea_group = religious_ideas
+			full_idea_group = humanist_ideas
+			full_idea_group = focus_inwards
+			full_idea_group = administrative_ideas
+			full_idea_group = plutocracy_ideas
+			full_idea_group = theocracy_gov_ideas
+			full_idea_group = horde_gov_ideas
+			full_idea_group = economic_ideas
+			full_idea_group = logistical_ideas
+			full_idea_group = expansion_ideas
+		
 		}
 		NOT = {
-        calc_true_if = {
-            amount = 1
-			has_active_policy = vass_reduce_inflation_1
-            has_active_policy = vass_reduce_inflation_2
-            has_active_policy = vass_reduce_inflation_3
-			has_active_policy = vass_tighten_the_belt_2
-			has_active_policy = vass_tighten_the_belt_3
+        	OR = {
+            	
+            	has_active_policy = eur_monetary_control
+
             }
         }
-    }
-
-	inflation_reduction = -0.10
-	interest = -0.10
-	
-	ai_will_do = {
-		factor = 0.8		
 	}
-}
-#
-#Tier 2
-#
-vass_reform_the_goverment_2 = {
-	monarch_power = ADM
-
-	potential = {
-		NOT = {
-			calc_true_if = {
-				full_idea_group = innovativeness_ideas
-				full_idea_group = religious_ideas
-				full_idea_group = humanist_ideas
-				full_idea_group = focus_inwards
-				full_idea_group = administrative_ideas
-				full_idea_group = plutocracy_ideas
-				full_idea_group = theocracy_gov_ideas
-				full_idea_group = horde_gov_ideas
-				full_idea_group = economic_ideas
-				full_idea_group = logistical_ideas
-				full_idea_group = expansion_ideas
-				amount = 3
-			}
-		}
-		calc_true_if = {
-				has_idea_group = innovativeness_ideas
-				has_idea_group = religious_ideas
-				has_idea_group = humanist_ideas
-				has_idea_group = focus_inwards
-				has_idea_group = administrative_ideas
-				has_idea_group = plutocracy_ideas
-				has_idea_group = theocracy_gov_ideas
-				has_idea_group = horde_gov_ideas
-				has_idea_group = economic_ideas
-				has_idea_group = logistical_ideas
-				has_idea_group = expansion_ideas
-				amount = 2
-		}
-	}
+    
+    production_efficiency = 0.1
 	
-	allow = {
-		calc_true_if = {
-		full_idea_group = innovativeness_ideas
-		full_idea_group = religious_ideas
-		full_idea_group = humanist_ideas
-		full_idea_group = focus_inwards
-		full_idea_group = administrative_ideas
-		full_idea_group = plutocracy_ideas
-		full_idea_group = theocracy_gov_ideas
-		full_idea_group = horde_gov_ideas
-		full_idea_group = economic_ideas
-		full_idea_group = logistical_ideas
-		full_idea_group = expansion_ideas
-		amount = 2
-		}
-		NOT = {
-        calc_true_if = {
-            amount = 1
-            has_active_policy = vass_reform_the_goverment_1
-            has_active_policy = vass_reform_the_goverment_3
-            }
-        }
-    }
-
-	monthly_reform_progress_modifier = 0.33
-	
-	ai_will_do = {
-		factor = 0.8		
-	}
-}
-vass_increased_taxes_2 = {
-	monarch_power = ADM
-
-	potential = {
-		NOT = {
-			calc_true_if = {
-				full_idea_group = innovativeness_ideas
-				full_idea_group = religious_ideas
-				full_idea_group = humanist_ideas
-				full_idea_group = focus_inwards
-				full_idea_group = administrative_ideas
-				full_idea_group = plutocracy_ideas
-				full_idea_group = theocracy_gov_ideas
-				full_idea_group = horde_gov_ideas
-				full_idea_group = economic_ideas
-				full_idea_group = logistical_ideas
-				full_idea_group = expansion_ideas
-				amount = 3
-			}
-		}
-		calc_true_if = {
-				has_idea_group = innovativeness_ideas
-				has_idea_group = religious_ideas
-				has_idea_group = humanist_ideas
-				has_idea_group = focus_inwards
-				has_idea_group = administrative_ideas
-				has_idea_group = plutocracy_ideas
-				has_idea_group = theocracy_gov_ideas
-				has_idea_group = horde_gov_ideas
-				has_idea_group = economic_ideas
-				has_idea_group = logistical_ideas
-				has_idea_group = expansion_ideas
-				amount = 2
-		}
-	}
-	
-	allow = {
-		calc_true_if = {
-		full_idea_group = innovativeness_ideas
-		full_idea_group = religious_ideas
-		full_idea_group = humanist_ideas
-		full_idea_group = focus_inwards
-		full_idea_group = administrative_ideas
-		full_idea_group = plutocracy_ideas
-		full_idea_group = theocracy_gov_ideas
-		full_idea_group = horde_gov_ideas
-		full_idea_group = economic_ideas
-		full_idea_group = logistical_ideas
-		full_idea_group = expansion_ideas
-		amount = 2
-		}
-		NOT = {
-        calc_true_if = {
-            amount = 1
-            has_active_policy = vass_increased_taxes_1
-            has_active_policy = vass_increased_taxes_3
-            }
-        }
-    }
-
-	global_tax_modifier = 0.20
-	production_efficiency = 0.10
-	
-	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 0
-			NOT = { tax_income_percentage = 0.1 }
-		}			
-		modifier = {
-			factor = 1.5
-			tax_income_percentage = 0.2
-		}
-		modifier = {
-			factor = 1.5
-			tax_income_percentage = 0.3
-		}
-		modifier = {
-			factor = 1.5
-			tax_income_percentage = 0.4
-		}
-		modifier = {
-			factor = 1.5
-			tax_income_percentage = 0.5
-		}		
-	}
-}
-vass_building_spree_2 = {
-	monarch_power = ADM
-
-	potential = {
-		NOT = {
-			calc_true_if = {
-				full_idea_group = innovativeness_ideas
-				full_idea_group = religious_ideas
-				full_idea_group = humanist_ideas
-				full_idea_group = focus_inwards
-				full_idea_group = administrative_ideas
-				full_idea_group = plutocracy_ideas
-				full_idea_group = theocracy_gov_ideas
-				full_idea_group = horde_gov_ideas
-				full_idea_group = economic_ideas
-				full_idea_group = logistical_ideas
-				full_idea_group = expansion_ideas
-				amount = 3
-			}
-		}
-		calc_true_if = {
-				has_idea_group = innovativeness_ideas
-				has_idea_group = religious_ideas
-				has_idea_group = humanist_ideas
-				has_idea_group = focus_inwards
-				has_idea_group = administrative_ideas
-				has_idea_group = plutocracy_ideas
-				has_idea_group = theocracy_gov_ideas
-				has_idea_group = horde_gov_ideas
-				has_idea_group = economic_ideas
-				has_idea_group = logistical_ideas
-				has_idea_group = expansion_ideas
-				amount = 2
-		}
-	}
-	
-	allow = {
-		calc_true_if = {
-		full_idea_group = innovativeness_ideas
-		full_idea_group = religious_ideas
-		full_idea_group = humanist_ideas
-		full_idea_group = focus_inwards
-		full_idea_group = administrative_ideas
-		full_idea_group = plutocracy_ideas
-		full_idea_group = theocracy_gov_ideas
-		full_idea_group = horde_gov_ideas
-		full_idea_group = economic_ideas
-		full_idea_group = logistical_ideas
-		full_idea_group = expansion_ideas
-		amount = 2
-		}
-		NOT = {
-        calc_true_if = {
-            amount = 1
-            has_active_policy = vass_building_spree_1
-            has_active_policy = vass_building_spree_3
-            }
-        }
-    }
-
-	build_cost =  0.075
-	build_time = -0.15
-
-	
-	ai_will_do = {
-		factor = 0.8		
-	}
-}
-vass_centralization_effort_2 = {
-	monarch_power = ADM
-
-	potential = {
-		NOT = {
-			calc_true_if = {
-				full_idea_group = innovativeness_ideas
-				full_idea_group = religious_ideas
-				full_idea_group = humanist_ideas
-				full_idea_group = focus_inwards
-				full_idea_group = administrative_ideas
-				full_idea_group = plutocracy_ideas
-				full_idea_group = theocracy_gov_ideas
-				full_idea_group = horde_gov_ideas
-				full_idea_group = economic_ideas
-				full_idea_group = logistical_ideas
-				full_idea_group = expansion_ideas
-				amount = 3
-			}
-		}
-		calc_true_if = {
-				has_idea_group = innovativeness_ideas
-				has_idea_group = religious_ideas
-				has_idea_group = humanist_ideas
-				has_idea_group = focus_inwards
-				has_idea_group = administrative_ideas
-				has_idea_group = plutocracy_ideas
-				has_idea_group = theocracy_gov_ideas
-				has_idea_group = horde_gov_ideas
-				has_idea_group = economic_ideas
-				has_idea_group = logistical_ideas
-				has_idea_group = expansion_ideas
-				amount = 2
-		}
-	}
-	
-	allow = {
-		calc_true_if = {
-		full_idea_group = innovativeness_ideas
-		full_idea_group = religious_ideas
-		full_idea_group = humanist_ideas
-		full_idea_group = focus_inwards
-		full_idea_group = administrative_ideas
-		full_idea_group = plutocracy_ideas
-		full_idea_group = theocracy_gov_ideas
-		full_idea_group = horde_gov_ideas
-		full_idea_group = economic_ideas
-		full_idea_group = logistical_ideas
-		full_idea_group = expansion_ideas
-		amount = 2
-		}
-		NOT = {
-        calc_true_if = {
-            amount = 1
-            has_active_policy = vass_centralization_effort_1
-            has_active_policy = vass_centralization_effort_3
-            }
-        }
-    }
-
-	global_autonomy = -0.075
-	
-	ai_will_do = {
-		factor = 0.8		
-	}
-}
-vass_reduce_inflation_2 = {
-	monarch_power = ADM
-
-	potential = {
-		NOT = {
-			calc_true_if = {
-				full_idea_group = innovativeness_ideas
-				full_idea_group = religious_ideas
-				full_idea_group = humanist_ideas
-				full_idea_group = focus_inwards
-				full_idea_group = administrative_ideas
-				full_idea_group = plutocracy_ideas
-				full_idea_group = theocracy_gov_ideas
-				full_idea_group = horde_gov_ideas
-				full_idea_group = economic_ideas
-				full_idea_group = logistical_ideas
-				full_idea_group = expansion_ideas
-				amount = 3
-			}
-		}
-		calc_true_if = {
-				has_idea_group = innovativeness_ideas
-				has_idea_group = religious_ideas
-				has_idea_group = humanist_ideas
-				has_idea_group = focus_inwards
-				has_idea_group = administrative_ideas
-				has_idea_group = plutocracy_ideas
-				has_idea_group = theocracy_gov_ideas
-				has_idea_group = horde_gov_ideas
-				has_idea_group = economic_ideas
-				has_idea_group = logistical_ideas
-				has_idea_group = expansion_ideas
-				amount = 2
-		}
-	}
-	
-	allow = {
-		calc_true_if = {
-		full_idea_group = innovativeness_ideas
-		full_idea_group = religious_ideas
-		full_idea_group = humanist_ideas
-		full_idea_group = focus_inwards
-		full_idea_group = administrative_ideas
-		full_idea_group = plutocracy_ideas
-		full_idea_group = theocracy_gov_ideas
-		full_idea_group = horde_gov_ideas
-		full_idea_group = economic_ideas
-		full_idea_group = logistical_ideas
-		full_idea_group = expansion_ideas
-		amount = 2
-		}
-		NOT = {
-        calc_true_if = {
-            amount = 1
-            has_active_policy = vass_reduce_inflation_1
-            has_active_policy = vass_reduce_inflation_3
-			has_active_policy = vass_tighten_the_belt_1
-			has_active_policy = vass_tighten_the_belt_2
-			has_active_policy = vass_tighten_the_belt_3
-            }
-        }
-    }
-
-	inflation_reduction = 0.20
-	interest = 0.20
-	
-	ai_will_do = {
-		factor = 0.8		
-	}
-}
-vass_tighten_the_belt_2 = {
-	monarch_power = ADM
-
-	potential = {
-		NOT = {
-			calc_true_if = {
-				full_idea_group = innovativeness_ideas
-				full_idea_group = religious_ideas
-				full_idea_group = humanist_ideas
-				full_idea_group = focus_inwards
-				full_idea_group = administrative_ideas
-				full_idea_group = plutocracy_ideas
-				full_idea_group = theocracy_gov_ideas
-				full_idea_group = horde_gov_ideas
-				full_idea_group = economic_ideas
-				full_idea_group = logistical_ideas
-				full_idea_group = expansion_ideas
-				amount = 3
-			}
-		}
-		calc_true_if = {
-				has_idea_group = innovativeness_ideas
-				has_idea_group = religious_ideas
-				has_idea_group = humanist_ideas
-				has_idea_group = focus_inwards
-				has_idea_group = administrative_ideas
-				has_idea_group = plutocracy_ideas
-				has_idea_group = theocracy_gov_ideas
-				has_idea_group = horde_gov_ideas
-				has_idea_group = economic_ideas
-				has_idea_group = logistical_ideas
-				has_idea_group = expansion_ideas
-				amount = 2
-		}
-	}
-	
-	allow = {
-		calc_true_if = {
-		full_idea_group = innovativeness_ideas
-		full_idea_group = religious_ideas
-		full_idea_group = humanist_ideas
-		full_idea_group = focus_inwards
-		full_idea_group = administrative_ideas
-		full_idea_group = plutocracy_ideas
-		full_idea_group = theocracy_gov_ideas
-		full_idea_group = horde_gov_ideas
-		full_idea_group = economic_ideas
-		full_idea_group = logistical_ideas
-		full_idea_group = expansion_ideas
-		amount = 2
-		}
-		NOT = {
-        calc_true_if = {
-            amount = 1
-			has_active_policy = vass_reduce_inflation_1
-            has_active_policy = vass_reduce_inflation_2
-            has_active_policy = vass_reduce_inflation_3
-			has_active_policy = vass_tighten_the_belt_1
-			has_active_policy = vass_tighten_the_belt_3
-            }
-        }
-    }
-
-	inflation_reduction = -0.20
-	interest = -0.20
-	
-	ai_will_do = {
-		factor = 0.8		
-	}
-}
-#
-#Tier 3
-#
-
-vass_reform_the_goverment_3 = {
-	monarch_power = ADM
-
-	potential = {
-		calc_true_if = {
-				has_idea_group = innovativeness_ideas
-				has_idea_group = religious_ideas
-				has_idea_group = humanist_ideas
-				has_idea_group = focus_inwards
-				has_idea_group = administrative_ideas
-				has_idea_group = plutocracy_ideas
-				has_idea_group = theocracy_gov_ideas
-				has_idea_group = horde_gov_ideas
-				has_idea_group = economic_ideas
-				has_idea_group = logistical_ideas
-				has_idea_group = expansion_ideas
-				amount = 3
-		}
-	}
-	
-	allow = {
-		calc_true_if = {
-		full_idea_group = innovativeness_ideas
-		full_idea_group = religious_ideas
-		full_idea_group = humanist_ideas
-		full_idea_group = focus_inwards
-		full_idea_group = administrative_ideas
-		full_idea_group = plutocracy_ideas
-		full_idea_group = theocracy_gov_ideas
-		full_idea_group = horde_gov_ideas
-		full_idea_group = economic_ideas
-		full_idea_group = logistical_ideas
-		full_idea_group = expansion_ideas
-		amount = 3
-		}
-		NOT = {
-        calc_true_if = {
-            amount = 1
-            has_active_policy = vass_reform_the_goverment_1
-            has_active_policy = vass_reform_the_goverment_2
-            }
-        }
-    }
-
-	monthly_reform_progress_modifier = 0.50
-	
-	ai_will_do = {
-		factor = 0.8		
-	}
-}
-
-vass_increased_taxes_3 = {
-	monarch_power = ADM
-
-	potential = {
-		calc_true_if = {
-				has_idea_group = innovativeness_ideas
-				has_idea_group = religious_ideas
-				has_idea_group = humanist_ideas
-				has_idea_group = focus_inwards
-				has_idea_group = administrative_ideas
-				has_idea_group = plutocracy_ideas
-				has_idea_group = theocracy_gov_ideas
-				has_idea_group = horde_gov_ideas
-				has_idea_group = economic_ideas
-				has_idea_group = logistical_ideas
-				has_idea_group = expansion_ideas
-				amount = 3
-		}
-	}
-	
-	allow = {
-		calc_true_if = {
-		full_idea_group = innovativeness_ideas
-		full_idea_group = religious_ideas
-		full_idea_group = humanist_ideas
-		full_idea_group = focus_inwards
-		full_idea_group = administrative_ideas
-		full_idea_group = plutocracy_ideas
-		full_idea_group = theocracy_gov_ideas
-		full_idea_group = horde_gov_ideas
-		full_idea_group = economic_ideas
-		full_idea_group = logistical_ideas
-		full_idea_group = expansion_ideas
-		amount = 3
-		}
-		NOT = {
-        calc_true_if = {
-            amount = 1
-            has_active_policy = vass_increased_taxes_1
-            has_active_policy = vass_increased_taxes_2
-            }
-        }
-    }
-
-	global_tax_modifier = 0.33
-	production_efficiency = 0.15
-	
-	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 0
-			NOT = { tax_income_percentage = 0.1 }
-		}			
-		modifier = {
-			factor = 1.5
-			tax_income_percentage = 0.2
-		}
-		modifier = {
-			factor = 1.5
-			tax_income_percentage = 0.3
-		}
-		modifier = {
-			factor = 1.5
-			tax_income_percentage = 0.4
-		}
-		modifier = {
-			factor = 1.5
-			tax_income_percentage = 0.5
-		}		
-	}
-}
-vass_building_spree_3 = {
-	monarch_power = ADM
-
-	potential = {
-		calc_true_if = {
-				has_idea_group = innovativeness_ideas
-				has_idea_group = religious_ideas
-				has_idea_group = humanist_ideas
-				has_idea_group = focus_inwards
-				has_idea_group = administrative_ideas
-				has_idea_group = plutocracy_ideas
-				has_idea_group = theocracy_gov_ideas
-				has_idea_group = horde_gov_ideas
-				has_idea_group = economic_ideas
-				has_idea_group = logistical_ideas
-				has_idea_group = expansion_ideas
-				amount = 3
-		}
-	}
-	
-	allow = {
-		calc_true_if = {
-		full_idea_group = innovativeness_ideas
-		full_idea_group = religious_ideas
-		full_idea_group = humanist_ideas
-		full_idea_group = focus_inwards
-		full_idea_group = administrative_ideas
-		full_idea_group = plutocracy_ideas
-		full_idea_group = theocracy_gov_ideas
-		full_idea_group = horde_gov_ideas
-		full_idea_group = economic_ideas
-		full_idea_group = logistical_ideas
-		full_idea_group = expansion_ideas
-		amount = 3
-		}
-		NOT = {
-        calc_true_if = {
-            amount = 1
-            has_active_policy = vass_building_spree_1
-            has_active_policy = vass_building_spree_2
-            }
-        }
-    }
-
-	build_cost = 0.10
-	build_time = -0.20
-	
-	ai_will_do = {
-		factor = 0.8		
-	}
-}
-vass_centralization_effort_3 = {
-	monarch_power = ADM
-
-	potential = {
-		calc_true_if = {
-				has_idea_group = innovativeness_ideas
-				has_idea_group = religious_ideas
-				has_idea_group = humanist_ideas
-				has_idea_group = focus_inwards
-				has_idea_group = administrative_ideas
-				has_idea_group = plutocracy_ideas
-				has_idea_group = theocracy_gov_ideas
-				has_idea_group = horde_gov_ideas
-				has_idea_group = economic_ideas
-				has_idea_group = logistical_ideas
-				has_idea_group = expansion_ideas
-				amount = 3
-		}
-	}
-	
-	allow = {
-		calc_true_if = {
-		full_idea_group = innovativeness_ideas
-		full_idea_group = religious_ideas
-		full_idea_group = humanist_ideas
-		full_idea_group = focus_inwards
-		full_idea_group = administrative_ideas
-		full_idea_group = plutocracy_ideas
-		full_idea_group = theocracy_gov_ideas
-		full_idea_group = horde_gov_ideas
-		full_idea_group = economic_ideas
-		full_idea_group = logistical_ideas
-		full_idea_group = expansion_ideas
-		amount = 3
-		}
-		NOT = {
-        calc_true_if = {
-            amount = 1
-            has_active_policy = vass_centralization_effort_1
-            has_active_policy = vass_centralization_effort_2
-            has_active_policy = vass_building_spree_1
-            has_active_policy = vass_building_spree_2
-            has_active_policy = vass_building_spree_3
-            }
-        }
-    }
-
-	global_autonomy = -0.10
-	
-	ai_will_do = {
-		factor = 0.8		
-	}
-}
-vass_reduce_inflation_3 = {
-	monarch_power = ADM
-
-	potential = {
-		calc_true_if = {
-				has_idea_group = innovativeness_ideas
-				has_idea_group = religious_ideas
-				has_idea_group = humanist_ideas
-				has_idea_group = focus_inwards
-				has_idea_group = administrative_ideas
-				has_idea_group = plutocracy_ideas
-				has_idea_group = theocracy_gov_ideas
-				has_idea_group = horde_gov_ideas
-				has_idea_group = economic_ideas
-				has_idea_group = logistical_ideas
-				has_idea_group = expansion_ideas
-				amount = 3
-		}
-	}
-	
-	allow = {
-		calc_true_if = {
-		full_idea_group = innovativeness_ideas
-		full_idea_group = religious_ideas
-		full_idea_group = humanist_ideas
-		full_idea_group = focus_inwards
-		full_idea_group = administrative_ideas
-		full_idea_group = plutocracy_ideas
-		full_idea_group = theocracy_gov_ideas
-		full_idea_group = horde_gov_ideas
-		full_idea_group = economic_ideas
-		full_idea_group = logistical_ideas
-		full_idea_group = expansion_ideas
-		amount = 3
-		}
-		NOT = {
-        calc_true_if = {
-            amount = 1
-            has_active_policy = vass_reduce_inflation_1
-            has_active_policy = vass_reduce_inflation_2
-			has_active_policy = vass_tighten_the_belt_1
-			has_active_policy = vass_tighten_the_belt_2
-			has_active_policy = vass_tighten_the_belt_3
-            }
-        }
-    }
-
-	inflation_reduction = 0.30
-	interest = 0.30
-	
-	ai_will_do = {
-		factor = 0.8		
-	}
-}
-vass_tighten_the_belt_3 = {
-	monarch_power = ADM
-
-	potential = {
-		calc_true_if = {
-				has_idea_group = innovativeness_ideas
-				has_idea_group = religious_ideas
-				has_idea_group = humanist_ideas
-				has_idea_group = focus_inwards
-				has_idea_group = administrative_ideas
-				has_idea_group = plutocracy_ideas
-				has_idea_group = theocracy_gov_ideas
-				has_idea_group = horde_gov_ideas
-				has_idea_group = economic_ideas
-				has_idea_group = logistical_ideas
-				has_idea_group = expansion_ideas
-				amount = 3
-		}
-	}
-	
-	allow = {
-		calc_true_if = {
-		full_idea_group = innovativeness_ideas
-		full_idea_group = religious_ideas
-		full_idea_group = humanist_ideas
-		full_idea_group = focus_inwards
-		full_idea_group = administrative_ideas
-		full_idea_group = plutocracy_ideas
-		full_idea_group = theocracy_gov_ideas
-		full_idea_group = horde_gov_ideas
-		full_idea_group = economic_ideas
-		full_idea_group = logistical_ideas
-		full_idea_group = expansion_ideas
-		amount = 3
-		}
-		NOT = {
-        calc_true_if = {
-            amount = 1
-			has_active_policy = vass_reduce_inflation_1
-            has_active_policy = vass_reduce_inflation_2
-            has_active_policy = vass_reduce_inflation_3
-			has_active_policy = vass_tighten_the_belt_1
-			has_active_policy = vass_tighten_the_belt_2
-            }
-        }
-    }
-
-	inflation_reduction = -0.30
-	interest = -0.30
 	
 	ai_will_do = {
 		factor = 0.8		

@@ -3,6 +3,7 @@ anjiang_0 = {
 	generic = no
 	ai = yes
 	potential = {
+    	NOT = { has_country_flag = chose_generic_mt }
 		tag = Y04
 	}
 	has_country_shield = yes
@@ -14,6 +15,7 @@ anjiang_1 = {
 	generic = no
 	ai = yes
 	potential = {
+    	NOT = { has_country_flag = chose_generic_mt }
 		tag = Y04
 	}
 	has_country_shield = yes
@@ -117,6 +119,7 @@ anjiang_2 = {
 	generic = no
 	ai = yes
 	potential = {
+    	NOT = { has_country_flag = chose_generic_mt }
 		tag = Y04
 	}
 	has_country_shield = yes
@@ -204,7 +207,6 @@ anjiang_2 = {
 					name = anjiang_eyes_wrath
 					duration = 3650
 					# desc = anjiang_eyes_wrath_desc
-					hidden = no
 				}
 			}
 		}
@@ -212,7 +214,7 @@ anjiang_2 = {
 	
 	##Mission Start
 	anjiang_summit_river = {
-		icon = mission_sweat_fealty
+		icon = mission_approach_throne
 		required_missions = {
 			anjiang_strike_first
 		}
@@ -312,6 +314,7 @@ anjiang_3 = {
 	generic = no
 	ai = yes
 	potential = {
+    	NOT = { has_country_flag = chose_generic_mt }
 		tag = Y04
 	}
 	has_country_shield = yes
@@ -431,6 +434,7 @@ anjiang_5 = {
 	generic = no
 	ai = yes
 	potential = {
+    	NOT = { has_country_flag = chose_generic_mt }
 		tag = Y04
 	}
 	has_country_shield = yes

@@ -84,4 +84,4 @@ Gommoport, Zurzumexia and Mestikardu spawn at the same time as Vanbury Guild now
 ----------------------------------------------------------------------------
 All Countries now start with Feudalism (i.e. Monsters mostly)
 ----------------------------------------------------------------------------
-Added Triggered Modifier for being in a "War against evil" (i.e. Vanilla Crusade Buff)
+Added Triggered Modifier for being in a "War against evil" (i.e. Vanilla Crusade Buff).

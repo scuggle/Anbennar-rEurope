@@ -59,11 +59,11 @@ corinite_communities_aspect = {	#DIP aspect
 		factor = 15
 		modifier = {
 			factor = 10
-			dominant_religion = jewish
+			dominant_religion = corinite
 		}
 		modifier = {
 			factor = 0.01
-			NOT = { dominant_religion = jewish }
+			NOT = { dominant_religion = corinite }
 		}
 	}
 }
@@ -92,11 +92,11 @@ corinite_abrahamic_aspect = {	#DIP aspect
 		factor = 15
 		modifier = {
 			factor = 0
-			dominant_religion = jewish
+			dominant_religion = corinite
 		}
 		modifier = {
 			factor = 10
-			NOT = { dominant_religion = jewish }
+			NOT = { dominant_religion = corinite }
 		}
 	}
 }

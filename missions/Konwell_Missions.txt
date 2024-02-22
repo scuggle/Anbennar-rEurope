@@ -4,7 +4,8 @@ konwell_1_institute = {
 	generic = no
 	ai = yes
 	has_country_shield = yes
-	potential = { tag = A35 }
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = A35 }
 	
 	konwell_invite_dwarves = {
 		icon = mission_smith
@@ -206,7 +207,8 @@ konwell_2_institute = {
 	generic = no
 	ai = yes
 	has_country_shield = yes
-	potential = { tag = A35 }
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = A35 }
 	
 	konwell_institute_investment = {
 		icon = leiden_university
@@ -334,7 +336,8 @@ konwell_2_faith = {
 	generic = no
 	ai = yes
 	has_country_shield = yes
-	potential = { tag = A35 }
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = A35 }
 
 	konwell_host_the_ravelian_society = {
 		icon = all_bases_covered
@@ -441,7 +444,8 @@ konwell_3_paper_dev = {
 	generic = no
 	ai = yes
 	has_country_shield = yes
-	potential = { tag = A35 }
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = A35 }
 	
 	konwell_paper_production = {
 		icon = mission_state_manufactories
@@ -524,7 +528,8 @@ konwell_3_archives = {
 	generic = no
 	ai = yes
 	has_country_shield = yes
-	potential = { tag = A35 }
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = A35 }
 	
 	konwell_expand_imperial_archives = {
 		icon = found_the_vatican_library
@@ -607,7 +612,8 @@ konwell_3_magic = {
 	generic = no
 	ai = yes
 	has_country_shield = yes
-	potential = { tag = A35 }
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = A35 }
 	
 	konwell_konwell_education = {
 		icon = mission_diplomacy_missive
@@ -735,7 +741,8 @@ konwell_4_security = {
 	generic = no
 	ai = yes
 	has_country_shield = yes
-	potential = { tag = A35 }
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = A35 }
 	
 	konwell_secure_esmarian_ally = {
 		icon = mission_alliances
@@ -900,7 +907,8 @@ konwell_4_ryalan_temple = {
 	generic = no
 	ai = yes
 	has_country_shield = yes
-	potential = { tag = A35 }
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = A35 }
 	
 	konwell_ryalan_temple_relations = {
 		icon = fund_the_monasteries
@@ -1008,7 +1016,8 @@ konwell_5_conquest = {
 	generic = no
 	ai = yes
 	has_country_shield = yes
-	potential = { tag = A35 }
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = A35 }
 	
 	konwell_prepare_army = {
 		icon = neapolitan_govenance

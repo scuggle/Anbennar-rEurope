@@ -3,6 +3,7 @@ roadwarrior_intro_2 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H91
 		NOT = { map_setup = map_setup_random }
 	}
@@ -31,6 +32,7 @@ roadwarrior_intro_3 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H91
 		NOT = { map_setup = map_setup_random }
 	}
@@ -127,6 +129,7 @@ roadwarrior_intro_4 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H91
 		NOT = { map_setup = map_setup_random }
 	}
@@ -153,6 +156,7 @@ roadwarrior_main_1 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H91
 		has_reform = roadwarrior_great_convoy
 		NOT = { map_setup = map_setup_random }
@@ -238,6 +242,7 @@ roadwarrior_main_2 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H91
 		NOT = { map_setup = map_setup_random }
 		has_reform = roadwarrior_great_convoy
@@ -314,7 +319,7 @@ roadwarrior_main_2 = {
 		effect = {
 			custom_tooltip = roadwarrior_overdrive_tt
 			add_country_modifier = {
-				name = roadwarrior_kugdihr
+				name = roadwarrior_khugdihr
 				duration = -1
 			}
 		}
@@ -379,6 +384,7 @@ roadwarrior_main_3 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H91
 		NOT = { map_setup = map_setup_random }
 		has_reform = roadwarrior_great_convoy
@@ -615,6 +621,7 @@ roadwarrior_main_4 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H91
 		NOT = { map_setup = map_setup_random }
 		has_reform = roadwarrior_great_convoy
@@ -786,6 +793,7 @@ roadwarrior_main_5 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H91
 		NOT = { map_setup = map_setup_random }
 		has_reform = roadwarrior_great_convoy

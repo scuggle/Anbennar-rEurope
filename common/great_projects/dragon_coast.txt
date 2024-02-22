@@ -503,10 +503,12 @@ the_dragonhoard = {
 			trade_goods_size_modifier = 0.05
 		}
 		area_modifier = {
+			local_tax_modifier = 0.05
 		}
 		country_modifiers = {
 			loot_amount = 0.33
 			tolerance_own = 0.25
+			prestige = 0.25
 		}
 		on_upgraded = {
 		}
@@ -523,10 +525,12 @@ the_dragonhoard = {
 			trade_goods_size_modifier = 0.1
 		}
 		area_modifier = {
+			local_tax_modifier = 0.1
 		}
 		country_modifiers = {
 			loot_amount = 0.66
 			tolerance_own = 0.5
+			prestige = 0.5
 		}
 		on_upgraded = {
 		}
@@ -543,10 +547,12 @@ the_dragonhoard = {
 			trade_goods_size_modifier = 0.15
 		}
 		area_modifier = {
+			local_tax_modifier = 0.15
 		}
 		country_modifiers = {
 			loot_amount = 1
 			tolerance_own = 1
+			prestige = 1
 		}
 		on_upgraded = {
 		}

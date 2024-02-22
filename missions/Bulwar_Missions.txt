@@ -6,6 +6,7 @@ bulwar_incident_1 = {
 	generic = no
 	ai = yes 
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = F39
 		NOT = { is_incident_happened = incident_naqtazan }
 	}
@@ -81,6 +82,7 @@ bulwar_incident_2 = {
 	generic = no
 	ai = yes 
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = F39
 		NOT = { is_incident_happened = incident_naqtazan }
 	}
@@ -171,6 +173,7 @@ bulwar_incident_3 = {
 	generic = no
 	ai = yes 
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = F39
 		NOT = { is_incident_happened = incident_naqtazan }
 	}
@@ -327,6 +330,7 @@ bulwar_incident_4 = {
 	generic = no
 	ai = yes 
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = F39
 		NOT = { is_incident_happened = incident_naqtazan }
 	}
@@ -400,6 +404,7 @@ bulwar_incident_5 = {
 	generic = no
 	ai = yes 
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = F39
 		NOT = { is_incident_happened = incident_naqtazan }
 	}
@@ -437,11 +442,11 @@ bulwar_incident_5 = {
 			add_treasury = -50
 			U09 = {
 				add_opinion = { who = F28 modifier = nsc_suspicious_behaviour_big }
-				add_trust = { who = F28 value = -35 mutual = no }
+				add_trust = { who = F28 value = -35 }
 			}
 			F29 = {
 				add_opinion = { who = F28 modifier = nsc_suspicious_behaviour_big }
-				add_trust = { who = F28 value = -35 mutual = no }
+				add_trust = { who = F28 value = -35 }
 			}
 			custom_tooltip = bulwar_rebels_in_tluukt_tt
 		}
@@ -475,6 +480,7 @@ bulwar_quarters_1 = {
 	generic = no
 	ai = yes 
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = F39
 			AND = {
@@ -613,6 +619,7 @@ bulwar_quarters_2 = {
 	generic = no
 	ai = yes 
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = F39
 			AND = {
@@ -651,7 +658,7 @@ bulwar_quarters_2 = {
 	}
 	
 	bulwar_through_red_coloured_glass = {
-		icon = mission_sweat_fealty
+		icon = mission_approach_throne
 		required_missions = {
 			bulwar_temple_district
 		}
@@ -747,6 +754,7 @@ bulwar_quarters_3 = {
 	generic = no
 	ai = yes 
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = F39
 			AND = {
@@ -956,6 +964,7 @@ bulwar_quarters_4 = {
 	generic = no
 	ai = yes 
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = F39
 			AND = {
@@ -1091,6 +1100,7 @@ bulwar_quarters_5 = {
 	generic = no
 	ai = yes 
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = F39
 			AND = {
@@ -1220,6 +1230,7 @@ bulwar_1 = {
 	generic = no
 	ai = yes 
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = F39
 			AND = {
@@ -1488,6 +1499,7 @@ bulwar_2 = {
 	generic = no
 	ai = yes 
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = F39
 			AND = {
@@ -1722,6 +1734,7 @@ bulwar_3 = {
 	generic = no
 	ai = yes 
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = F39
 			AND = {
@@ -1994,6 +2007,7 @@ bulwar_4 = {
 	generic = no
 	ai = yes 
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = F39
 			AND = {
@@ -2321,6 +2335,7 @@ bulwar_5 = {
 	generic = no
 	ai = yes 
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = F39
 			AND = {

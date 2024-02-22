@@ -5,6 +5,7 @@ A59_anti_Asheniande = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A59 #Corvuria
 	}
 	has_country_shield = yes
@@ -199,6 +200,7 @@ A59_Imperial_Meddling = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A59 #Corvuria
 	}
 	has_country_shield = yes
@@ -331,6 +333,7 @@ A59_general_development = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A59 #Corvuria
 	}
 	has_country_shield = yes
@@ -496,6 +499,7 @@ A59_specific_development = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A59 #Corvuria
 	}
 	has_country_shield = yes
@@ -713,6 +717,7 @@ A59_centralize = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A59 #Corvuria
 	}
 	has_country_shield = yes
@@ -1013,6 +1018,7 @@ A59_resettle_swamps = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A59 #Corvuria
 	}
 	has_country_shield = yes
@@ -1171,6 +1177,7 @@ A59_Nathalire = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A59 #Corvuria
 	}
 	has_country_shield = yes
@@ -1281,6 +1288,7 @@ A59_Ravenbanner = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A59 #Corvuria
 	}
 	has_country_shield = yes
@@ -1350,6 +1358,7 @@ A59_Dostanor = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A59 #Corvuria
 	}
 	has_country_shield = yes
@@ -1564,6 +1573,7 @@ A59_Undeath = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A59 #Corvuria
 	}
 	has_country_shield = yes
@@ -1591,6 +1601,7 @@ A59_Dark_Lord = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A59 #Corvuria
 	}
 	has_country_shield = yes
@@ -1628,6 +1639,7 @@ A59_Army = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A59 #Corvuria
 	}
 	has_country_shield = yes
@@ -1685,6 +1697,7 @@ A59_Destroy_Empire = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A59 #Corvuria
 	}
 	has_country_shield = yes
@@ -1976,6 +1989,7 @@ A59_Invade_Vale = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A59 #Corvuria
 	}
 	has_country_shield = yes
@@ -2054,6 +2068,7 @@ A59_Castanor = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A59 #Corvuria
 	}
 	has_country_shield = yes
@@ -2450,6 +2465,7 @@ A59_Corvuria_dev = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A59 #Corvuria
 	}
 	has_country_shield = yes
@@ -2708,12 +2724,13 @@ A59_Wider_dev = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A59 #Corvuria
 	}
 	has_country_shield = yes
 	
 	A59_investigate_curse = {
-		icon = mission_magisterium_breakthrought
+		icon = mission_magical_forest
 		required_missions = { A59_unite_folly }
 		position = 9
 		
@@ -3038,6 +3055,7 @@ A59_Deepwoods = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A59 #Corvuria
 	}
 	has_country_shield = yes
@@ -3180,6 +3198,7 @@ A59_Artifier = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A59 #Corvuria
 	}
 	has_country_shield = yes
@@ -3278,6 +3297,7 @@ A59_Coal = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A59 #Corvuria
 	}
 	has_country_shield = yes

@@ -4,6 +4,7 @@ nathalaire_missions = {
 	generic = no
 	ai = yes 
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A74
 	}
 	

@@ -4,7 +4,8 @@ ramsteel_1_cavalry = {
 	generic = no
 	ai = yes
 	has_country_shield = yes
-	potential = { tag = I04 }
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = I04 }
 	
 	ramsteel_old_flocks = {
 		icon = mission_secure_khandesh
@@ -163,7 +164,8 @@ ramsteel_2_reclaim_the_range = {
 	generic = no
 	ai = yes
 	has_country_shield = yes
-	potential = { tag = I04 }
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = I04 }
 	
 	ramsteel_small_step = {
 		icon = alpine_defenses
@@ -563,7 +565,8 @@ ramsteel_2_cavalry = {
 	generic = no
 	ai = yes
 	has_country_shield = yes
-	potential = { tag = I04 }
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = I04 }
 	
 	ramsteel_gelkalis_breed = {
 		icon = hispaniae
@@ -688,7 +691,8 @@ ramsteel_3_misc = {
 	generic = no
 	ai = yes
 	has_country_shield = yes
-	potential = { tag = I04 }
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = I04 }
 	
 	ramsteel_home_on_the_range = {
 		icon = mission_ramsteel_crest
@@ -842,7 +846,8 @@ ramsteel_3_cavalry = {
 	generic = no
 	ai = yes
 	has_country_shield = yes
-	potential = { tag = I04 }
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = I04 }
 	
 	ramsteel_retooling_corps = {
 		icon = continue_the_renaissance
@@ -1041,7 +1046,8 @@ ramsteel_4_ramsteel_production = {
 	generic = no
 	ai = yes
 	has_country_shield = yes
-	potential = { tag = I04 }
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = I04 }
 	
 	ramsteel_reclaim_ramvault = {
 		icon = mission_conquer_andhra_vij
@@ -1360,7 +1366,8 @@ ramsteel_4_cavalry = {
 	generic = no
 	ai = yes
 	has_country_shield = yes
-	potential = { tag = I04 }
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = I04 }
 	
 	ramsteel_mithril_ramsteel = {
 		icon = mission_armoury
@@ -1463,7 +1470,8 @@ ramsteel_5_ramsteel_production = {
 	generic = no
 	ai = yes
 	has_country_shield = yes
-	potential = { tag = I04 }
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = I04 }
 	
 	ramsteel_rediscover = {
 		icon = mission_treasure_room
@@ -1566,7 +1574,8 @@ ramsteel_5_cavalry = {
 	generic = no
 	ai = yes
 	has_country_shield = yes
-	potential = { tag = I04 }
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = I04 }
 	
 	ramsteel_powder_kits = {
 		icon = mission_ramsteel_gunpowder

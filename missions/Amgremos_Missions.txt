@@ -12,6 +12,7 @@ amgremos_1_tng = {
 				was_tag = G62
 			}
 		}
+		NOT = { has_country_flag = chose_generic_mt }
 	}
 
 	G62_pirate_talk = {
@@ -178,6 +179,7 @@ amgremos_2_tng = {
 				was_tag = G62
 			}
 		}
+		NOT = { has_country_flag = chose_generic_mt }
 	}
 
 	G62_wood_for_everyone = {
@@ -308,6 +310,7 @@ amgremos_3_tng = {
 				was_tag = G62
 			}
 		}
+		NOT = { has_country_flag = chose_generic_mt }
 	}
 
 	G62_a_new_beginning = {
@@ -559,6 +562,7 @@ amgremos_4_tng = {
 				was_tag = G62
 			}
 		}
+		NOT = { has_country_flag = chose_generic_mt }
 	}
 
 	G62_freeing_deyeion = {
@@ -671,6 +675,7 @@ amgremos_5_tng = {
 				was_tag = G62
 			}
 		}
+		NOT = { has_country_flag = chose_generic_mt }
 	}
 
 	G62_gathering_army = {

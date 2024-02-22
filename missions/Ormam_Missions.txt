@@ -4,6 +4,7 @@ G50_silk = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = G50
 	}
 	has_country_shield = yes
@@ -92,6 +93,7 @@ G50_harbour = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = G50
 	}
 	has_country_shield = yes
@@ -296,6 +298,7 @@ G50_east = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = G50
 	}
 	has_country_shield = yes
@@ -402,6 +405,7 @@ G50_mercantilism = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = G50
 	}
 	has_country_shield = yes
@@ -496,6 +500,7 @@ G50_alecand = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = G50
 	}
 	has_country_shield = yes

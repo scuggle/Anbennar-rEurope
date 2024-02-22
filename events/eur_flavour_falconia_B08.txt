@@ -1,0 +1,26 @@
+country_event = { #Griffith comes back
+	id = falconia.1
+	title = falconia.1.t
+	desc = falconia.1.d
+	picture = ECLIPSE_eventPicture
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = falconia.1.a
+		define_ruler = {
+			name = "Griffith"
+			dynasty = "Falcon of Darkness"
+			adm = 5
+			dip = 1
+			mil = 6
+			age = 40
+			claim = 100
+			culture = falconian
+		}
+		add_ruler_personality = immortal_personality
+		add_ruler_personality =  cruel_personality
+		add_ruler_personality = inspiring_leader_personality
+	}
+}

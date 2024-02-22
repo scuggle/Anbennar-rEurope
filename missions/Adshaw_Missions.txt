@@ -4,7 +4,10 @@ adshaw_1_missions_s = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { tag = Z26 }
+	potential = { 
+		tag = Z26 
+		NOT = { has_country_flag = chose_generic_mt }
+	}
 	
 	adshaw_the_huntsman = {
 		icon = mission_rb_conquer_the_highlands
@@ -288,6 +291,7 @@ adshaw_1_missions_m = {
 	potential = { 
 		tag = Z26
 		has_country_flag = adshaw_king_of_the_reach
+		NOT = { has_country_flag = chose_generic_mt }
 	}
 	
 	adshaw_reachfleet = {
@@ -325,6 +329,7 @@ adshaw_1_missions_nc = {
 		tag = Z26
 		has_country_flag = adshaw_king_of_the_reach
 		has_country_flag = adshaw_northern_crusade
+		NOT = { has_country_flag = chose_generic_mt }
 	}
 	
 	adshaw_lone_spire = {
@@ -634,6 +639,7 @@ adshaw_1_missions_e = {
 	potential = { 
 		tag = Z26
 		has_country_flag = adshaw_empire_of_the_reach
+		NOT = { has_country_flag = chose_generic_mt }
 	}
 	
 	adshaw_cradle_of_the_reach = {
@@ -729,7 +735,10 @@ adshaw_2_missions_s = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { tag = Z26 }
+	potential = { 
+		tag = Z26 
+		NOT = { has_country_flag = chose_generic_mt }
+	}
 	
 	adshaw_frosty_reception = {
 		icon = mission_candide_letter
@@ -1093,6 +1102,7 @@ adshaw_2_missions_nc = {
 		tag = Z26
 		has_country_flag = adshaw_king_of_the_reach
 		has_country_flag = adshaw_northern_crusade
+		NOT = { has_country_flag = chose_generic_mt }
 	}
 	
 	adshaw_knights_of_the_serpent = {
@@ -1339,6 +1349,7 @@ adshaw_2_missions_nce = {
 		tag = Z26
 		has_country_flag = adshaw_empire_of_the_reach
 		has_country_flag = adshaw_northern_crusade
+		NOT = { has_country_flag = chose_generic_mt }
 	}
 	
 	adshaw_silver_palace = {
@@ -1419,7 +1430,10 @@ adshaw_3_missions_s = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { tag = Z26 }
+	potential = { 
+		tag = Z26 
+		NOT = { has_country_flag = chose_generic_mt }
+	}
 	
 	adshaw_viper_of_rycastle = {
 		icon = mission_thinking_king
@@ -1645,7 +1659,7 @@ adshaw_3_missions_s = {
 				add_base_manpower = -5
 				add_devastation = 100
 				change_trade_goods = fish
-				add_center_of_trade_level = -3
+				add_center_of_trade_level = -2
 				hidden_effect = {
 					remove_building = fort_15th
 					remove_building = fort_16th
@@ -1752,6 +1766,7 @@ adshaw_3_missions_m = {
 	potential = { 
 		tag = Z26
 		has_country_flag = adshaw_king_of_the_reach
+		NOT = { has_country_flag = chose_generic_mt }
 	}
 	
 	adshaw_storming_the_heights = {
@@ -2044,6 +2059,7 @@ adshaw_3_missions_e = {
 	potential = { 
 		tag = Z26
 		has_country_flag = adshaw_empire_of_the_reach
+		NOT = { has_country_flag = chose_generic_mt }
 	}
 	
 	adshaw_high_clans = {
@@ -2205,7 +2221,10 @@ adshaw_4_missions_s = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { tag = Z26 }
+	potential = { 
+		tag = Z26 
+		NOT = { has_country_flag = chose_generic_mt }
+	}
 	
 	adshaw_rycastle_renovations = {
 		icon = mission_sinister_castle
@@ -2353,7 +2372,7 @@ adshaw_4_missions_s = {
 				add_base_manpower = -6
 				add_devastation = 100
 				change_trade_goods = fish
-				add_center_of_trade_level = -3
+				add_center_of_trade_level = -2
 				change_culture = blue_reachman
 				hidden_effect = {
 					remove_building = fort_15th
@@ -2419,6 +2438,7 @@ adshaw_4_missions_m = {
 	potential = { 
 		tag = Z26
 		has_country_flag = adshaw_king_of_the_reach
+		NOT = { has_country_flag = chose_generic_mt }
 	}
 	
 	adshaw_loose_ends = {
@@ -2743,7 +2763,7 @@ adshaw_4_missions_m = {
 	}
 	
 	adshaw_empire_of_the_reach_m = {
-		icon = mission_sweat_fealty
+		icon = mission_approach_throne
 		position = 13
 		required_missions = {
 			adshaw_restore_clan_wight
@@ -2881,6 +2901,7 @@ adshaw_4_missions_e = {
 	potential = { 
 		tag = Z26
 		has_country_flag = adshaw_empire_of_the_reach
+		NOT = { has_country_flag = chose_generic_mt }
 	}
 	
 	adshaw_settling_the_ashes = {
@@ -3042,7 +3063,10 @@ adshaw_5_missions_s = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { tag = Z26 }
+	potential = { 
+		tag = Z26 
+		NOT = { has_country_flag = chose_generic_mt }
+	}
 	
 	adshaw_crovis_quest = {
 		icon = mission_warrior_gold
@@ -3189,6 +3213,7 @@ adshaw_5_missions_scv = {
 	potential = { 
 		tag = Z26 
 		has_country_flag = crovis_victory_adshaw
+		NOT = { has_country_flag = chose_generic_mt }
 	}
 	
 	adshaw_prince_of_vrorenmarch = {
@@ -3262,6 +3287,7 @@ adshaw_5_missions_mcv = {
 		tag = Z26
 		has_country_flag = adshaw_king_of_the_reach
 		has_country_flag = crovis_victory_adshaw
+		NOT = { has_country_flag = chose_generic_mt }
 	}
 	
 	adshaw_house_of_the_reach = {
@@ -3415,7 +3441,10 @@ adshaw_5_missions_mcv = {
 		
 		effect = {
 			add_dip_power = -250
-			create_union = Z45
+			if = {
+				limit = { NOT = { senior_union_with = Z45  } }
+				create_union = Z45
+			}
 		}
 	}
 	
@@ -3457,6 +3486,7 @@ adshaw_5_missions_scd = {
 	potential = { 
 		tag = Z26 
 		has_country_flag = crovis_defeat_adshaw
+		NOT = { has_country_flag = chose_generic_mt }
 	}
 	
 	adshaw_prodigal_son = {
@@ -3518,6 +3548,7 @@ adshaw_5_missions_mcd = {
 		tag = Z26
 		has_country_flag = adshaw_king_of_the_reach
 		has_country_flag = crovis_defeat_adshaw
+		NOT = { has_country_flag = chose_generic_mt }
 	}
 	
 	adshaw_battle_of_the_chills = {
@@ -3711,6 +3742,7 @@ adshaw_5_missions_m = {
 	potential = { 
 		tag = Z26
 		has_country_flag = adshaw_king_of_the_reach
+		NOT = { has_country_flag = chose_generic_mt }
 	}
 	
 	adshaw_the_reach_united = {
@@ -3963,6 +3995,7 @@ adshaw_5_missions_e = {
 	potential = { 
 		tag = Z26
 		has_country_flag = adshaw_empire_of_the_reach
+		NOT = { has_country_flag = chose_generic_mt }
 	}
 	
 	adshaw_crown_of_the_mire = {

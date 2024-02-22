@@ -1,0 +1,29 @@
+country_decisions = {
+    #TODO: Seems to be bugged, if you at any point become a subject
+    X25_form_Griffon_Empire = {
+        major = yes
+        potential = {
+            tag = B36
+            OR = {
+                government_rank = 2
+                government_rank = 3
+            }
+            government = monarchy
+            is_subject = no
+        }
+
+        allow = {
+            government_rank = 3
+            is_at_war = no
+            prestige = 50
+            mission_completed = marrhold_griffon_king
+        }
+
+        effect = {
+            change_tag = X25
+            country_event = { id = ideagroups.1 }
+            swap_non_generic_missions = yes
+        }
+
+    }
+}

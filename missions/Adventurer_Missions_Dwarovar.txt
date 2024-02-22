@@ -10,6 +10,7 @@ DADV_1 = {
 			have_had_reform = dwarovar_adventurer_reform
 		}
 		capital_scope = { continent = serpentspine }
+		NOT = { has_country_flag = chose_generic_mt }
 	}
 	
 	DADV_mapping_the_dwarovar = {
@@ -64,7 +65,6 @@ DADV_1 = {
 
 	DADV_fungal_farm = {
 		icon = mission_rice_field
-		ai = yes
 		position = 5
 		required_missions = {
 			DADV_expanding_the_hold
@@ -139,7 +139,6 @@ DADV_1 = {
 	
 	DADV_beer_hall = {
 		icon = mission_modernize_production
-		ai = yes
 		position = 5
 		required_missions = {
 			DADV_fungal_farm
@@ -170,6 +169,7 @@ DADV_2 = {
 		culture_group = dwarven
 		has_reform = dwarovar_adventurer_reform
 		capital_scope = { continent = serpentspine }
+		NOT = { has_country_flag = chose_generic_mt }
 	}
 	
 	DADV_defence_forces = {
@@ -294,6 +294,7 @@ DADV_3 = {
 		culture_group = dwarven
 		has_reform = dwarovar_adventurer_reform
 		capital_scope = { continent = serpentspine }
+		NOT = { has_country_flag = chose_generic_mt }
 	}
 	
 	DADV_a_hold_reclaimed = {
@@ -477,6 +478,7 @@ DADV_4 = {
 		culture_group = dwarven
 		has_reform = dwarovar_adventurer_reform
 		capital_scope = { continent = serpentspine }
+		NOT = { has_country_flag = chose_generic_mt }
 	}
 	
 	DADV_clear_the_way = {
@@ -607,11 +609,11 @@ DADV_5 = {
 		culture_group = dwarven
 		has_reform = dwarovar_adventurer_reform
 		capital_scope = { continent = serpentspine }
+		NOT = { has_country_flag = chose_generic_mt }
 	}
 	
 	DADV_diamonds_rubies = {
 		icon = mission_riches_of_golconda
-		ai = yes
 		position = 1
 		required_missions = {}
 		trigger = {
@@ -626,7 +628,6 @@ DADV_5 = {
 
 	DADV_gold_and_more = {
 		icon = mission_war_chest
-		ai = yes
 		position = 2
 		required_missions = {}
 		trigger = {
@@ -644,7 +645,6 @@ DADV_5 = {
 
 	DADV_hidden_in_the_mountain_store = {
 		icon = mission_settlers_north_america
-		ai = yes
 		position = 3
 		required_missions = {}
 		trigger = {

@@ -109,7 +109,6 @@ country_decisions = {
 			840 = {	#To North Citadel
 				move_capital_effect = yes
 			}
-			#TODO: Check if this culture exists
 			hidden_effect = {
 				every_owned_province = {
 					limit = {
@@ -133,9 +132,11 @@ country_decisions = {
 			change_primary_culture = dark_moon_elf
 			
 			#Minorities
-			add_permanent_province_modifier = {
-				name = half_elven_minority_integrated_large
-				duration = -1
+			capital_scope = {
+				add_permanent_province_modifier = {
+					name = half_elven_minority_integrated_large
+					duration = -1
+				}
 			}
 			
 			#Claims

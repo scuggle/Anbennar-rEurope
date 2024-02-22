@@ -1,110 +1,110 @@
 
 cot_human_min = {
-	trade_goods_size = 0.25
+	trade_goods_size = 0.1
 }
 cot_elf_min = {
-	trade_goods_size = 0.25
+	trade_goods_size = 0.1
 }
 cot_dwarf_min = {
-	trade_goods_size = 0.25
+	trade_goods_size = 0.1
 }
 cot_gnome_min = {
-	trade_goods_size = 0.25
+	trade_goods_size = 0.1
 }
 cot_halfling_min = {
-	trade_goods_size = 0.25
+	trade_goods_size = 0.1
 }
 cot_goblin_min = {
-	trade_goods_size = 0.25
+	trade_goods_size = 0.1
 }
 cot_orc_min = {
-	trade_goods_size = 0.25
+	trade_goods_size = 0.1
 }
 cot_horc_min = {
-	trade_goods_size = 0.25
+	trade_goods_size = 0.1
 }
 cot_helf_min = {
-	trade_goods_size = 0.25
+	trade_goods_size = 0.1
 }
 cot_kobold_min = {
-	trade_goods_size = 0.25
+	trade_goods_size = 0.1
 }
 cot_tiger_min = {
-	trade_goods_size = 0.25
+	trade_goods_size = 0.1
 }
 cot_centaur_min = {
-	trade_goods_size = 0.25
+	trade_goods_size = 0.1
 }
 cot_ogre_min = {
-	trade_goods_size = 0.25
+	trade_goods_size = 0.1
 }
 cot_troll_min = {
-	trade_goods_size = 0.25
+	trade_goods_size = 0.1
 }
 cot_gnoll_min = {
-	trade_goods_size = 0.25
+	trade_goods_size = 0.1
 }
 cot_harpy_min = {
-	trade_goods_size = 0.25
+	trade_goods_size = 0.1
 }
 cot_ruin_min = {
-	trade_goods_size = 0.25
+	trade_goods_size = 0.1
 }
 cot_hobgob_min = {
-	trade_goods_size = 0.25
+	trade_goods_size = 0.1
 }
 
 cot_human_min_small = {
-	trade_goods_size = 0.1
+	trade_goods_size = 0.05
 }
 cot_elf_min_small = {
-	trade_goods_size = 0.1
+	trade_goods_size = 0.05
 }
 cot_dwarf_min_small = {
-	trade_goods_size = 0.1
+	trade_goods_size = 0.05
 }
 cot_gnome_min_small = {
-	trade_goods_size = 0.1
+	trade_goods_size = 0.05
 }
 cot_halfling_min_small = {
-	trade_goods_size = 0.1
+	trade_goods_size = 0.05
 }
 cot_goblin_min_small = {
-	trade_goods_size = 0.1
+	trade_goods_size = 0.05
 }
 cot_orc_min_small = {
-	trade_goods_size = 0.1
+	trade_goods_size = 0.05
 }
 cot_horc_min_small = {
-	trade_goods_size = 0.1
+	trade_goods_size = 0.05
 }
 cot_helf_min_small = {
-	trade_goods_size = 0.1
+	trade_goods_size = 0.05
 }
 cot_kobold_min_small = {
-	trade_goods_size = 0.1
+	trade_goods_size = 0.05
 }
 cot_tiger_min_small = {
-	trade_goods_size = 0.1
+	trade_goods_size = 0.05
 }
 cot_centaur_min_small = {
-	trade_goods_size = 0.1
+	trade_goods_size = 0.05
 }
 cot_ogre_min_small = {
-	trade_goods_size = 0.1
+	trade_goods_size = 0.05
 }
 cot_troll_min_small = {
-	trade_goods_size = 0.1
+	trade_goods_size = 0.05
 }
 cot_gnoll_min_small = {
-	trade_goods_size = 0.1
+	trade_goods_size = 0.05
 }
 cot_harpy_min_small = {
-	trade_goods_size = 0.1
+	trade_goods_size = 0.05
 }
 cot_ruin_min_small = {
-	trade_goods_size = 0.1
+	trade_goods_size = 0.05
 }
 cot_hobgob_min_small = {
-	trade_goods_size = 0.1
+	trade_goods_size = 0.05
 }

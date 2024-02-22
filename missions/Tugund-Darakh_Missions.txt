@@ -5,6 +5,7 @@ world_tree_branch = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = I46
 	}
 	
@@ -193,6 +194,7 @@ emerald_council_branch = {
 	has_country_shield = yes
 	
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = I46
 	}
 	
@@ -339,6 +341,7 @@ war_for_deepwoods_branch = {
 	has_country_shield = yes
 
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = I46
 	}
 
@@ -480,6 +483,7 @@ dostanor_branch = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = I46
 	}
 	
@@ -559,6 +563,7 @@ reclamaition_branch = {
 	has_country_shield = yes
 	
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = I46
 	}
 	
@@ -841,6 +846,7 @@ development_branch = {
 	has_country_shield = yes
 	
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = I46
 	}
 	

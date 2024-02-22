@@ -5,6 +5,7 @@ neckcliffe_1 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A22
 	}
 	
@@ -316,6 +317,7 @@ neckcliffe_2 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A22
 	}
 	
@@ -724,6 +726,7 @@ neckcliffe_3 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A22
 	}
 	
@@ -1135,6 +1138,7 @@ neckcliffe_4 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A22
 	}
 	
@@ -1307,6 +1311,7 @@ neckcliffe_5 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A22
 	}
 	

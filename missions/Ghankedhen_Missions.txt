@@ -4,6 +4,7 @@ ghankedhen_education_branch_1 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 	primary_culture = ghankedhen
 	}
 	has_country_shield = yes
@@ -66,6 +67,7 @@ ghankedhen_education_branch_2 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = R74
 	}
 	has_country_shield = yes
@@ -129,6 +131,7 @@ ghankedhen_family_reform_1 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		primary_culture = ghankedhen
 	}
 	has_country_shield = yes
@@ -263,6 +266,7 @@ ghankedhen_family_reform_2 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = R74
 	}
 	has_country_shield = yes
@@ -357,6 +361,7 @@ ghankedhen_strong_family_1 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		primary_culture = ghankedhen
 	}
 	has_country_shield = yes
@@ -509,6 +514,7 @@ ghankedhen_strong_family_2 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = R74
 	}
 	has_country_shield = yes
@@ -654,6 +660,7 @@ ghankedhen_textiles_1 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		primary_culture = ghankedhen
 	}
 	has_country_shield = yes
@@ -752,6 +759,7 @@ ghankedhen_textiles_2 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = R74
 	}
 	has_country_shield = yes
@@ -890,6 +898,7 @@ ghankedhen_metalworking = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = R74
 	}
 	has_country_shield = yes

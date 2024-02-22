@@ -4,7 +4,8 @@ sugamber_1_missions = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { tag = A48 }
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = A48 }
 	
 	sugamber_lilac_wars_consolidate = {
 		icon = medici_bank_ledgers
@@ -445,7 +446,8 @@ sugamber_2_missions = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { tag = A48 }
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = A48 }
 	
 	sugamber_rose_party_allies = {
 		icon = mission_rb_war_of_the_roses
@@ -919,7 +921,8 @@ sugamber_3_missions = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { tag = A48 }
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = A48 }
 	
 	sugamber_ready_for_war = {
 		icon = mission_consolidate_the_state
@@ -1256,7 +1259,8 @@ sugamber_4_missions = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { tag = A48 }
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = A48 }
 	
 	sugamber_renaissance = {
 		icon = florentine_renaissance
@@ -1621,7 +1625,8 @@ sugamber_5_missions = {
 	generic = no
 	ai = yes 
 	has_country_shield = yes
-	potential = { tag = A48 }
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = A48 }
 	
 	sugamber_escandar_battlements = {
 		icon = mission_mountain_castle

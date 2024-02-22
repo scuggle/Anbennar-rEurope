@@ -83,7 +83,7 @@ verkal_gulan_hero_gate = {
 		}
 		country_modifiers = {
 			yearly_corruption = -0.05
-			inflation_reduction = -0.05
+			inflation_reduction = -0.025
 		}
 		on_upgraded = {
 		}
@@ -103,7 +103,7 @@ verkal_gulan_hero_gate = {
 		}
 		country_modifiers = {
 			yearly_corruption = -0.1
-			inflation_reduction = -0.1
+			inflation_reduction = -0.05
 		}
 		on_upgraded = {
 			define_advisor = {
@@ -132,7 +132,7 @@ verkal_gulan_hero_gate = {
 		}
 		country_modifiers = {
 			yearly_corruption = -0.15
-			inflation_reduction = -0.15
+			inflation_reduction = -0.075
 			monthly_gold_inflation_modifier = -0.5
 		}
 		on_upgraded = {
@@ -222,7 +222,7 @@ seghdihr_home_of_the_seg_band = {
 			months = 120
 		}
 		cost_to_upgrade = {
-			factor = 1000
+			factor = 800
 		}
 		province_modifiers = {
 			local_defensiveness = 0.1
@@ -240,7 +240,7 @@ seghdihr_home_of_the_seg_band = {
 			months = 240
 		}
 		cost_to_upgrade = {
-			factor = 3500
+			factor = 3700
 		}
 		province_modifiers = {
 			local_defensiveness = 0.2
@@ -497,8 +497,8 @@ gor_vazumbrog_the_vaulthold = {
 		area_modifier = {			
 		}
 		country_modifiers = {
-			fire_damage = 0.01
-			shock_damage = 0.01
+			fire_damage = 0.025
+			shock_damage = 0.025
 		}
 		on_upgraded = {
 		}
@@ -508,7 +508,7 @@ gor_vazumbrog_the_vaulthold = {
 			months = 240
 		}
 		cost_to_upgrade = {
-			factor = 3500
+			factor = 2500
 		}
 		province_modifiers = {
 			trade_value_modifier = 0.1
@@ -516,8 +516,8 @@ gor_vazumbrog_the_vaulthold = {
 		area_modifier = {			
 		}
 		country_modifiers = {
-			fire_damage = 0.02
-			shock_damage = 0.02
+			fire_damage = 0.05
+			shock_damage = 0.05
 			artificers_loyalty_modifier = 0.05
 			artificers_influence_modifier = 0.025
 		}
@@ -529,7 +529,7 @@ gor_vazumbrog_the_vaulthold = {
 			months = 480
 		}
 		cost_to_upgrade = {
-			factor = 7000
+			factor = 5000
 		}
 		province_modifiers = {
 			trade_value_modifier = 0.15
@@ -537,8 +537,8 @@ gor_vazumbrog_the_vaulthold = {
 		area_modifier = {		
 		}
 		country_modifiers = {
-			fire_damage = 0.04
-			shock_damage = 0.04
+			fire_damage = 0.075
+			shock_damage = 0.075
 			artificers_influence_modifier = 0.05
 			artificers_loyalty_modifier = 0.10
 		}
@@ -633,7 +633,7 @@ gor_ozumbrog_the_topaz_throne = {
 		area_modifier = {			
 		}
 		country_modifiers = {
-			manpower_in_culture_group_provinces = 0.04
+			manpower_in_culture_group_provinces = 0.1
 		}
 		on_upgraded = {
 		}
@@ -643,14 +643,14 @@ gor_ozumbrog_the_topaz_throne = {
 			months = 240
 		}
 		cost_to_upgrade = {
-			factor = 3500
+			factor = 2500
 		}
 		province_modifiers = {
 		}
 		area_modifier = {		
 		}
 		country_modifiers = {
-			manpower_in_culture_group_provinces = 0.08
+			manpower_in_culture_group_provinces = 0.15
 			ae_impact = -0.05
 		}
 		on_upgraded = {
@@ -668,7 +668,7 @@ gor_ozumbrog_the_topaz_throne = {
 		area_modifier = {		
 		}
 		country_modifiers = {
-			manpower_in_culture_group_provinces = 0.12
+			manpower_in_culture_group_provinces = 0.25
 			ae_impact = -0.1
 			national_focus_years = -5
 		}

@@ -6,6 +6,7 @@ command_warroom_3 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = R62
 	}
 	
@@ -38,6 +39,7 @@ command_xiadao_2 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = R62
 		has_country_flag = command_xiadao_campaign_activated_flag
 	}
@@ -90,6 +92,7 @@ command_xiadao_3 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = R62
 		has_country_flag = command_xiadao_campaign_activated_flag
 	}
@@ -182,6 +185,7 @@ command_xiadao_4 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = R62
 		has_country_flag = command_xiadao_campaign_activated_flag
 	}
@@ -247,6 +251,7 @@ command_shamakhad_3 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = R62
 		has_country_flag = command_shamakhad_campaign_activated_flag
 	}
@@ -379,6 +384,7 @@ command_shamakhad_4 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = R62
 		has_country_flag = command_shamakhad_campaign_activated_flag
 	}
@@ -440,6 +446,7 @@ command_bianfang_2 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = R62
 		has_country_flag = command_bianfang_campaign_activated_flag
 	}
@@ -526,6 +533,7 @@ command_bianfang_3 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = R62
 		has_country_flag = command_bianfang_campaign_activated_flag
 	}
@@ -637,6 +645,7 @@ command_bianfang_4 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = R62
 		has_country_flag = command_bianfang_campaign_activated_flag
 	}
@@ -674,6 +683,7 @@ command_ghavaanaj_2 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = R62
 		has_country_flag = command_ghavaanaj_campaign_activated_flag
 	}
@@ -697,9 +707,9 @@ command_ghavaanaj_2 = {
 		
 		effect = {
 			if = {
-				limit = { any_known_country = { has_reform = raja_reform } }
+				limit = { any_known_country = { has_government_attribute = is_raja } }
 				random_country = {
-					limit = { has_reform = raja_reform }
+					limit = { has_government_attribute = is_raja }
 					custom_tooltip = R62_lower_raj_cohesion_tt
 					country_event = { id = the_command.47 }
 				}
@@ -717,6 +727,7 @@ command_ghavaanaj_3 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = R62
 		has_country_flag = command_ghavaanaj_campaign_activated_flag
 	}
@@ -834,6 +845,7 @@ command_dhujat_2 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = R62
 		has_country_flag = command_dhujat_campaign_activated_flag
 	}
@@ -868,6 +880,7 @@ command_dhujat_3 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = R62
 		has_country_flag = command_dhujat_campaign_activated_flag
 	}
@@ -982,6 +995,7 @@ command_dhujat_4 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = R62
 		has_country_flag = command_dhujat_campaign_activated_flag
 	}
@@ -1061,6 +1075,7 @@ command_bhuvauri_2 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = R62
 		has_country_flag = command_bhuvauri_campaign_activated_flag
 	}
@@ -1141,6 +1156,7 @@ command_bhuvauri_3 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = R62
 		has_country_flag = command_bhuvauri_campaign_activated_flag
 	}
@@ -1218,6 +1234,7 @@ command_bhuvauri_4 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = R62
 		has_country_flag = command_bhuvauri_campaign_activated_flag
 	}
@@ -1252,6 +1269,7 @@ command_dhenbasana_2 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = R62
 		has_country_flag = command_dhenbasana_campaign_activated_flag
 	}
@@ -1288,6 +1306,7 @@ command_dhenbasana_3 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = R62
 		has_country_flag = command_dhenbasana_campaign_activated_flag
 	}
@@ -1446,6 +1465,7 @@ command_dhenbasana_4 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = R62
 		has_country_flag = command_dhenbasana_campaign_activated_flag
 	}
@@ -1508,6 +1528,7 @@ command_rakhadesh_2 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = R62
 		has_country_flag = command_rakhadesh_campaign_activated_flag
 	}
@@ -1620,6 +1641,7 @@ command_rakhadesh_3 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = R62
 		has_country_flag = command_rakhadesh_campaign_activated_flag
 	}
@@ -1689,6 +1711,7 @@ command_rakhadesh_4 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = R62
 		has_country_flag = command_rakhadesh_campaign_activated_flag
 	}
@@ -1749,6 +1772,7 @@ command_rahen_coast_3 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = R62
 		has_country_flag = command_rahen_coast_campaign_activated_flag
 	}
@@ -1885,6 +1909,7 @@ command_rahen_coast_4 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = R62
 		has_country_flag = command_rahen_coast_campaign_activated_flag
 	}
@@ -1975,6 +2000,7 @@ command_telebei_2 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = R62
 		has_country_flag = command_telebei_campaign_activated_flag
 	}
@@ -2011,6 +2037,7 @@ command_telebei_3 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = R62
 		has_country_flag = command_telebei_campaign_activated_flag
 	}
@@ -2139,6 +2166,7 @@ command_telebei_4 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = R62
 		has_country_flag = command_telebei_campaign_activated_flag
 	}
@@ -2202,6 +2230,7 @@ command_hukai_2 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = R62
 		has_country_flag = command_hukai_campaign_activated_flag
 	}
@@ -2256,6 +2285,7 @@ command_hukai_3 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = R62
 		has_country_flag = command_hukai_campaign_activated_flag
 	}
@@ -2374,6 +2404,7 @@ command_sikai_2 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = R62
 		has_country_flag = command_sikai_campaign_activated_flag
 	}
@@ -2412,6 +2443,7 @@ command_sikai_3 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = R62
 		has_country_flag = command_sikai_campaign_activated_flag
 	}
@@ -2535,6 +2567,7 @@ command_sikai_4 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = R62
 		has_country_flag = command_sikai_campaign_activated_flag
 	}
@@ -2574,6 +2607,7 @@ command_baihon_xinh_2 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = R62
 		has_country_flag = command_baihon_xinh_campaign_activated_flag
 	}
@@ -2585,6 +2619,7 @@ command_baihon_xinh_3 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = R62
 		has_country_flag = command_baihon_xinh_campaign_activated_flag
 	}
@@ -2604,7 +2639,7 @@ command_baihon_xinh_3 = {
 				4764  = { owner = { war_with = ROOT } }
 				controls = 5429 #Kheanupho
 				5429 = { owner = { war_with = ROOT } }
-				controls = 4701 #CÃ¢y Cam Sinh
+				controls = 4701 #Cây Cam Sinh
 				4701 = { owner = { war_with = ROOT } }
 				controls = 4697 #Pralung
 				4697 = { owner = { war_with = ROOT } }
@@ -2617,7 +2652,7 @@ command_baihon_xinh_3 = {
 				province_id = 4703 #Tuan Caoban
 				province_id = 4764 #Ma Hoang
 				province_id = 5429 #Kheanupho
-				province_id = 4701 #CÃ¢y Cam Sinh
+				province_id = 4701 #Cây Cam Sinh
 				province_id = 4697 #Pralung
 			}
 		}
@@ -2640,7 +2675,7 @@ command_baihon_xinh_3 = {
 				owns_or_subject_of = 4703 #Tuan Caoban
 				owns_or_subject_of = 4764 #Ma Hoang
 				owns_or_subject_of = 5429 #Kheanupho
-				owns_or_subject_of = 4701 #CÃ¢y Cam Sinh
+				owns_or_subject_of = 4701 #Cây Cam Sinh
 				owns_or_subject_of = 4697 #Pralung
 			}
 		}
@@ -2661,7 +2696,7 @@ command_baihon_xinh_3 = {
 			owns_or_subject_of = 4703 #Tuan Caoban
 			owns_or_subject_of = 4764 #Ma Hoang
 			owns_or_subject_of = 5429 #Kheanupho
-			owns_or_subject_of = 4701 #CÃ¢y Cam Sinh
+			owns_or_subject_of = 4701 #Cây Cam Sinh
 			owns_or_subject_of = 4697 #Pralung
 		}
 		
@@ -2677,6 +2712,7 @@ command_baihon_xinh_4 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = R62
 		has_country_flag = command_baihon_xinh_campaign_activated_flag
 	}
@@ -2711,6 +2747,7 @@ command_thidinkai_2 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = R62
 		has_country_flag = command_thidinkai_campaign_activated_flag
 	}
@@ -2766,6 +2803,7 @@ command_thidinkai_3 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = R62
 		has_country_flag = command_thidinkai_campaign_activated_flag
 	}
@@ -2866,6 +2904,7 @@ command_thidinkai_4 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = R62
 		has_country_flag = command_thidinkai_campaign_activated_flag
 	}
@@ -2914,6 +2953,7 @@ command_lupulan_2 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = R62
 		has_country_flag = command_lupulan_campaign_activated_flag
 	}
@@ -2998,6 +3038,7 @@ command_lupulan_3 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = R62
 		has_country_flag = command_lupulan_campaign_activated_flag
 	}
@@ -3176,6 +3217,7 @@ command_lupulan_4 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = R62
 		has_country_flag = command_lupulan_campaign_activated_flag
 	}
@@ -3247,6 +3289,7 @@ command_arawkelin_2 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = R62
 		has_country_flag = command_arawkelin_campaign_activated_flag
 	}
@@ -3322,12 +3365,13 @@ command_arawkelin_3 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = R62
 		has_country_flag = command_arawkelin_campaign_activated_flag
 	}
 	
 	R62_start_the_arawkelin_campaign = {
-		icon = french_indochina
+		icon = mission_haless_map
 		position = 2
 		required_missions = {
 			R62_the_war_room
@@ -3387,6 +3431,7 @@ command_arawkelin_4 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = R62
 		has_country_flag = command_arawkelin_campaign_activated_flag
 	}
@@ -3477,6 +3522,7 @@ command_yanszin_2 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = R62
 		has_country_flag = command_yanszin_campaign_activated_flag
 	}
@@ -3515,6 +3561,7 @@ command_yanszin_3 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = R62
 		has_country_flag = command_yanszin_campaign_activated_flag
 	}
@@ -3641,6 +3688,7 @@ command_yanszin_4 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = R62
 		has_country_flag = command_yanszin_campaign_activated_flag
 	}
@@ -3759,12 +3807,13 @@ command_xianjie_2 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = R62
 		has_country_flag = command_xianjie_campaign_activated_flag
 	}
 	
 	R62_study_the_blade = {
-		icon = mission_a_sword
+		icon = mission_silblaidd
 		position = 3
 		required_missions = {
 			R62_start_the_xianjie_campaign
@@ -3840,6 +3889,7 @@ command_xianjie_3 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = R62
 		has_country_flag = command_xianjie_campaign_activated_flag
 	}
@@ -3990,12 +4040,13 @@ command_xianjie_4 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = R62
 		has_country_flag = command_xianjie_campaign_activated_flag
 	}
 	
 	R62_the_strongest = {
-		icon = mission_sweat_fealty
+		icon = mission_approach_throne
 		position = 2
 		
 		provinces_to_highlight = {
@@ -4096,6 +4147,7 @@ command_zyujyut_2 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = R62
 		has_country_flag = command_zyujyut_campaign_activated_flag
 	}
@@ -4174,6 +4226,7 @@ command_zyujyut_3 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = R62
 		has_country_flag = command_zyujyut_campaign_activated_flag
 	}
@@ -4271,6 +4324,7 @@ command_zyujyut_4 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = R62
 		has_country_flag = command_zyujyut_campaign_activated_flag
 	}
@@ -4337,6 +4391,7 @@ command_tianlou_2 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = R62
 		has_country_flag = command_tianlou_campaign_activated_flag
 	}
@@ -4393,6 +4448,7 @@ command_tianlou_3 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = R62
 		has_country_flag = command_tianlou_campaign_activated_flag
 	}
@@ -4511,6 +4567,7 @@ command_tianlou_4 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = R62
 		has_country_flag = command_tianlou_campaign_activated_flag
 	}
@@ -4549,6 +4606,7 @@ command_jiantsiang_2 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = R62
 		has_country_flag = command_jiantsiang_campaign_activated_flag
 	}
@@ -4607,6 +4665,7 @@ command_jiantsiang_3 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = R62
 		has_country_flag = command_jiantsiang_campaign_activated_flag
 	}
@@ -4724,6 +4783,7 @@ command_jiantsiang_4 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = R62
 		has_country_flag = command_jiantsiang_campaign_activated_flag
 	}
@@ -4797,6 +4857,7 @@ command_tree_of_stone_2 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = R62
 		has_country_flag = command_tree_of_stone_campaign_activated_flag
 	}
@@ -4940,6 +5001,7 @@ command_tree_of_stone_3 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = R62
 		has_country_flag = command_tree_of_stone_campaign_activated_flag
 	}
@@ -5030,6 +5092,7 @@ command_tree_of_stone_4 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = R62
 		has_country_flag = command_tree_of_stone_campaign_activated_flag
 	}
@@ -5107,6 +5170,7 @@ command_azjakuma_2 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = R62
 		has_country_flag = command_azjakuma_campaign_activated_flag
 	}
@@ -5154,6 +5218,7 @@ command_azjakuma_3 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = R62
 		has_country_flag = command_azjakuma_campaign_activated_flag
 	}
@@ -5296,6 +5361,7 @@ command_azjakuma_4 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = R62
 		has_country_flag = command_azjakuma_campaign_activated_flag
 	}
@@ -5452,6 +5518,7 @@ command_1 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = R62
 	}
 	
@@ -5913,6 +5980,7 @@ command_2 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = R62
 	}
 	
@@ -6384,6 +6452,7 @@ command_3 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = R62
 	}
 	
@@ -6699,6 +6768,7 @@ command_3 = {
 						who = THIS
 					}
 					change_culture = kintonan
+					change_religion = godlost
 				}
 				random_owned_province = {
 					limit = {
@@ -6712,6 +6782,7 @@ command_3 = {
 						who = THIS
 					}
 					change_culture = kintonan
+					change_religion = godlost
 				}
 				random_owned_province = {
 					limit = {
@@ -6725,6 +6796,7 @@ command_3 = {
 						who = THIS
 					}
 					change_culture = kintonan
+					change_religion = godlost
 				}
 			}
 		}
@@ -6856,10 +6928,11 @@ command_3 = {
 						province_id = 4613 #Zhaoyun
 					}
 				}
-				add_permanent_province_modifier = {
+				add_province_modifier = {
 					name = command_kintonan_warcamp
 					duration = -1
 				}
+				set_province_flag = command_kintonan_warcamp
 				add_base_manpower = 2
 				
 				spawn_units_for = {
@@ -6896,10 +6969,11 @@ command_3 = {
 						province_id = 4613 #Zhaoyun
 					}
 				}
-				add_permanent_province_modifier = {
+				add_province_modifier = {
 					name = command_azepyanunin_warcamp
 					duration = -1
 				}
+				set_province_flag = command_azepyanunin_warcamp
 				add_base_manpower = 2
 				
 				spawn_units_for = {
@@ -6936,10 +7010,11 @@ command_3 = {
 						province_id = 4613 #Zhaoyun
 					}
 				}
-				add_permanent_province_modifier = {
+				add_province_modifier = {
 					name = command_ikaniwagain_warcamp
 					duration = -1
 				}
+				set_province_flag = command_ikaniwagain_warcamp
 				add_base_manpower = 2
 				
 				spawn_units_for = {
@@ -6994,7 +7069,7 @@ command_3 = {
 	}
 	
 	R62_the_burden_of_empire = {
-		icon = mission_rb_mediterranean_authority
+		icon = mission_haless_map
 		position = 18
 		
 		trigger = {
@@ -7107,11 +7182,29 @@ command_3 = {
 		}
 		
 		effect = {
+			custom_tooltip = R62_command_formation_tt
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						superregion = rahen_superregion
+						OR = {
+							culture = lion_command
+							culture = wolf_command
+							culture = boar_command
+						}
+						NOT = {
+							region = shamakhad_region
+						}
+					}
+						change_culture = tiger_command
+				} 
+			}
 			4504 = { #Rayavhatimana
-				add_permanent_province_modifier = {
+				add_province_modifier = {
 					name = command_tiger_warcamp
 					duration = -1
 				}
+				set_province_flag = command_tiger_warcamp
 				if = {
 					limit = {
 						ROOT = { has_estate_privilege = estate_tiger_command_management }
@@ -7309,7 +7402,10 @@ command_3 = {
 		trigger = {
 			num_of_owned_provinces_with = {
 				value = 350
-				culture_group = wuhyun
+				OR = {
+					culture_group = wuhyun
+					culture = honourbound_harimari
+				}
 				OR = {
 					superregion = rahen_superregion
 					superregion = yanshen_superregion
@@ -7355,8 +7451,16 @@ command_3 = {
 				superregion = yanshen_superregion
 				superregion = south_haless_superregion
 			}
-			culture_is_human = yes
-			NOT = { culture_group = wuhyun }
+			OR = {
+				culture_is_human = yes
+				culture_is_harimari = yes
+				culture_is_orcish = yes
+				culture_is_half_orcish = yes
+			}
+			NOT = {
+				culture_group = wuhyun
+				culture = honourbound_harimari
+			}
 		
 		}
 		
@@ -7373,11 +7477,12 @@ command_4 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = R62
 	}
 	
 	R62_cursed_temples = {
-		icon = mission_make_it_fall
+		icon = mission_burning_parthenon
 		position = 5
 		required_missions = {
 			R62_a_question_of_allegiance
@@ -7398,10 +7503,6 @@ command_4 = {
 			OR = {
 				alliance_with = Y01
 				Y01 = { is_subject_of = ROOT }
-			}
-			custom_trigger_tooltip = {
-				tooltip = not_restoring_temple_tooltip
-				NOT = { has_country_flag = currently_restoring_temple }
 			}
 		}
 		
@@ -7569,6 +7670,8 @@ command_4 = {
 					}
 				}
 				R81 = {
+					change_government = tribal
+					add_government_reform = dwarovar_squatter
 					set_capital = 4311
 					add_stability_or_adm_power = yes
 					set_government_rank = 2
@@ -7774,7 +7877,7 @@ command_4 = {
 					}
 					
 					if = {
-						limit = { NOT = { development = 6 } }
+						limit = { NOT = { development = 7 } }
 						change_culture = ROOT
 						change_religion = ROOT
 					}
@@ -7892,11 +7995,26 @@ command_4 = {
 		}
 		
 		effect = {
+			custom_tooltip = R62_command_formation_tt
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						superregion = south_haless_superregion
+						OR = {
+							culture = lion_command
+							culture = wolf_command
+							culture = boar_command
+						}
+					}
+						change_culture = elephant_command
+				}
+			}
 			4613 = { #Zhaoyun
-				add_permanent_province_modifier = {
+				add_province_modifier = {
 					name = command_elephant_warcamp
 					duration = -1
 				}
+				set_province_flag = command_elephant_warcamp
 				if = {
 					limit = {
 						ROOT = { has_estate_privilege = estate_elephant_command_management }
@@ -8099,6 +8217,7 @@ command_5 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = R62
 	}
 	
@@ -8212,7 +8331,7 @@ command_5 = {
 	}
 	
 	R62_end_raheni_magic = {
-		icon = mission_magisterium_breakthrought
+		icon = mission_magical_forest
 		position = 9
 		required_missions = {
 			R62_disarming_the_conquered
@@ -8320,7 +8439,7 @@ command_5 = {
 	}
 	
 	R62_expand_the_sunyanin = {
-		icon = mission_cannons_firing
+		icon = mission_sunyanin
 		position = 18
 		required_missions = {
 			R62_the_evolution_of_warfare
@@ -8373,11 +8492,26 @@ command_5 = {
 		}
 		
 		effect = {
+			custom_tooltip = R62_command_formation_tt
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						superregion = yanshen_superregion
+						OR = {
+							culture = lion_command
+							culture = wolf_command
+							culture = boar_command
+						}
+					}
+						change_culture = dragon_command
+				}
+			}
 			4952 = { #Chatzin
-				add_permanent_province_modifier = {
+				add_province_modifier = {
 					name = command_dragon_warcamp
 					duration = -1
 				}
+				set_province_flag = command_dragon_warcamp
 				if = {
 					limit = {
 						ROOT = { has_estate_privilege = estate_dragon_command_management }

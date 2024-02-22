@@ -15,6 +15,8 @@
  Qol_emergency_general_title:0 "§O-->§! Emergency general"
  Qol_emergency_general_desc:0 "Gain an emergency general with 30 tradition. This decisions will NOT be avialable for some time!"
  Qol_emergency_general_tooltip:0 "Not have a general"
+ Qol_parliament_seats_title:0 "§O-->§! Add seats to parliament"
+ Qol_parliament_seats_desc:0 "Add all available provinces to the parliament"
  Qol_enable_buildings_removal_interface_title:0 "§GEnable§! buildings management interface"
  Qol_enable_buildings_removal_interface_desc:0 "Enables options to clear buildings dependant on trade goods and the kind of building"
  Qol_buildings_removal_interface_tooltip:0 "Interface is not yet opened"

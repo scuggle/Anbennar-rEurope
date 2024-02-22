@@ -107,7 +107,7 @@ tianlou_jewel_of_yanshen = {
 		}
 		country_modifiers = {
 			prestige = 0.5
-			trade_efficiency = 0.1
+			trade_efficiency = 0.075
 			merchants = 1
 		}
 		on_upgraded = {
@@ -236,7 +236,7 @@ tianlou_xuezhefang_eunuch_academy = {
 			months = 480
 		}
 		cost_to_upgrade = {
-			factor = 5000
+			factor = 7000
 		}
 		province_modifiers = {
 			allowed_num_of_buildings = 1
@@ -601,7 +601,7 @@ yinquan_the_conquerors_hotspring = {
 			months = 120
 		}
 		cost_to_upgrade = {
-			factor = 1000
+			factor = 500
 		}
 		province_modifiers = {
 		}
@@ -620,7 +620,7 @@ yinquan_the_conquerors_hotspring = {
 			months = 240
 		}
 		cost_to_upgrade = {
-			factor = 2500
+			factor = 1500
 		}
 		province_modifiers = {
 			local_development_cost = -0.05

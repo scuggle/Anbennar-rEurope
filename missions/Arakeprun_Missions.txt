@@ -7,6 +7,7 @@ arakeprun1_missions = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    	NOT = { has_country_flag = chose_generic_mt }
 		tag = H01
 	}
 	
@@ -244,6 +245,7 @@ arakeprun2_missions = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    	NOT = { has_country_flag = chose_generic_mt }
 		tag = H01
 	} #These are triggers for the entire series
 	
@@ -338,6 +340,7 @@ arakeprun3_missions = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    	NOT = { has_country_flag = chose_generic_mt }
 		tag = H01
 	} #These are triggers for the entire series
 	
@@ -598,6 +601,7 @@ arakeprun4_missions = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    	NOT = { has_country_flag = chose_generic_mt }
 		tag = H01
 	} #These are triggers for the entire series
 	
@@ -764,6 +768,7 @@ arakeprun5_missions = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    	NOT = { has_country_flag = chose_generic_mt }
 		tag = H01
 	}
 	

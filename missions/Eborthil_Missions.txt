@@ -4,6 +4,7 @@ A47_cannor = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A47
 	}
 	has_country_shield = yes
@@ -199,12 +200,14 @@ A47_cannor = {
 		
 		effect = {
 			39 = {
+				hidden_effect = { remove_province_modifier = lion_toll }
 				add_province_modifier = {
-					name = eborthil_stonegaze_toll
+					name = eborthil_lion_toll
 					duration = -1
 				}
 			}
 			379 = {
+				hidden_effect = { remove_province_modifier = stonegaze_toll }
 				add_province_modifier = {
 					name = eborthil_stonegaze_toll
 					duration = -1
@@ -297,6 +300,7 @@ A47_akasik = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A47
 	}
 	has_country_shield = yes
@@ -518,6 +522,7 @@ A47_cash = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A47
 	}
 	has_country_shield = yes
@@ -757,6 +762,7 @@ A47_navy = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A47
 	}
 	has_country_shield = yes
@@ -918,7 +924,7 @@ A47_navy = {
 				add_center_of_trade_level = 1
 			}
 			496 = {
-				add_center_of_trade_level = 1
+				center_of_trade = 1
 			}
 			452 = {
 				add_province_modifier = {
@@ -1142,6 +1148,7 @@ A47_development = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A47
 	}
 	has_country_shield = yes
@@ -1280,9 +1287,11 @@ A47_development = {
 				NOT = { exists = F23 }
 				alliance_with = F23
 				is_rival = F23
-				has_opinion = {
-					who = F23
-					value = 100
+				F23 = {
+					has_opinion = {
+						who = ROOT
+						value = 100
+					}
 				}
 			}
 		}
@@ -1355,6 +1364,7 @@ A47_exploration = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A47
 	}
 	has_country_shield = yes
@@ -1429,6 +1439,7 @@ A47_aelantir = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A47
 	}
 	has_country_shield = yes
@@ -1641,6 +1652,7 @@ A47_western_aelantir = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A47
 	}
 	has_country_shield = yes
@@ -1776,6 +1788,7 @@ A47_heart = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A47
 	}
 	has_country_shield = yes

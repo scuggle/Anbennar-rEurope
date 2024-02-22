@@ -197,7 +197,7 @@ bianfang_huangpo_academy_of_war = {
 		area_modifier = {
 		}
 		country_modifiers = {
-			yearly_army_professionalism = 0.001
+			yearly_army_professionalism = 0.0025
 			land_attrition = -0.05
 		}
 		on_upgraded = {
@@ -217,7 +217,7 @@ bianfang_huangpo_academy_of_war = {
 		area_modifier = {
 		}
 		country_modifiers = {
-			yearly_army_professionalism = 0.002
+			yearly_army_professionalism = 0.005
 			land_attrition = -0.1
 		}
 		on_upgraded = {
@@ -247,7 +247,7 @@ bianfang_huangpo_academy_of_war = {
 		area_modifier = {
 		}
 		country_modifiers = {
-			yearly_army_professionalism = 0.003
+			yearly_army_professionalism = 0.005
 			land_attrition = -0.15
 			leader_land_manuever = 1
 		}

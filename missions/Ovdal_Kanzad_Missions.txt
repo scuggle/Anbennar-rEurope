@@ -6,6 +6,7 @@ ovdalkanzad_conquest_1 = {
 	has_country_shield = yes
 	
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H79
 	}
 	
@@ -220,6 +221,7 @@ ovdalkanzad_conquest_2 = {
 	has_country_shield = yes
 	
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H79
 	}
 	
@@ -474,6 +476,7 @@ ovdalkanzad_conquest_3 = {
 	has_country_shield = yes
 	
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H79
 	}
 	
@@ -694,6 +697,7 @@ ovdalkanzad_development = {
 	ai = yes 
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H79
 	}
 	
@@ -841,6 +845,7 @@ ovdalkanzad_artillery = {
 	has_country_shield = yes
 	
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H79
 	}
 	

@@ -62,7 +62,7 @@ country_decisions = {
 				}
 			}
 			if = {
-				limit = { has_reform = raja_reform }
+				limit = { has_government_attribute = is_raja }
 				add_government_reform = feudalism_reform
 				remove_country_modifier = raj_opened_senapti_ranks
 				remove_country_modifier = raj_closed_senapti_ranks
@@ -156,7 +156,7 @@ country_decisions = {
 				}
 			}
 			if = {
-				limit = { has_reform = raja_reform }
+				limit = { has_government_attribute = is_raja }
 				add_government_reform = feudalism_reform
 				remove_country_modifier = raj_opened_senapti_ranks
 				remove_country_modifier = raj_closed_senapti_ranks
@@ -644,6 +644,9 @@ country_decisions = {
 			}
 		}
 		allow = {
+			hidden_trigger = {
+				capital_scope = { superregion = rahen_superregion }
+			}
 			adm_tech = 10
 			is_at_war = no			
 			num_of_owned_provinces_with = {

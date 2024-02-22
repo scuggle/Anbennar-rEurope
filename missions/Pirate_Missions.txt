@@ -11,6 +11,7 @@ pirate_1 = {
 	}
 
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		has_dlc = "Golden Century"
 		has_reform = pirate_republic_reform
 		NOT = { map_setup = map_setup_random }
@@ -171,6 +172,7 @@ pirate_2 = {
 	}
 
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		has_dlc = "Golden Century"
 		has_reform = pirate_republic_reform
 		NOT = { map_setup = map_setup_random }
@@ -370,6 +372,7 @@ pirate_3 = {
 	}
 
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		has_reform = pirate_republic_reform
 	 NOT = { tag = A74 }
 	 NOT = { tag = G93 }
@@ -483,6 +486,7 @@ pirate_5 = {
 	}
 
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		has_reform = pirate_republic_reform
 	 NOT = { tag = A74 }
 	 NOT = { tag = G93 }

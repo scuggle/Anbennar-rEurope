@@ -191,7 +191,7 @@ kudet_kai_danon_dungcam_mercenary_guild = {
 			months = 240
 		}
 		cost_to_upgrade = {
-			factor = 2500
+			factor = 3500
 		}
 		province_modifiers = {
 			local_development_cost = -0.1
@@ -219,7 +219,7 @@ kudet_kai_danon_dungcam_mercenary_guild = {
 			months = 480
 		}
 		cost_to_upgrade = {
-			factor = 5000
+			factor = 7500
 		}
 		province_modifiers = {
 			local_development_cost = -0.15
@@ -297,7 +297,7 @@ chien_binhrung_nha_nuhoanha_temple = {
 			months = 120
 		}
 		cost_to_upgrade = {
-			factor = 1000
+			factor = 750
 		}
 		province_modifiers = {
 			local_development_cost = -0.05
@@ -318,7 +318,7 @@ chien_binhrung_nha_nuhoanha_temple = {
 			months = 240
 		}
 		cost_to_upgrade = {
-			factor = 2500
+			factor = 1500
 		}
 		province_modifiers = {
 			local_development_cost = -0.1
@@ -348,7 +348,7 @@ chien_binhrung_nha_nuhoanha_temple = {
 			months = 480
 		}
 		cost_to_upgrade = {
-			factor = 5000
+			factor = 3000
 		}
 		province_modifiers = {
 			local_development_cost = -0.15

@@ -4,6 +4,7 @@ G48_forge = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = G48
 	}
 	has_country_shield = yes
@@ -175,6 +176,7 @@ G48_misc = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = G48
 	}
 	has_country_shield = yes
@@ -299,6 +301,7 @@ G48_prospect = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = G48
 	}
 	has_country_shield = yes
@@ -400,6 +403,7 @@ G48_expansion1 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = G48
 	}
 	has_country_shield = yes
@@ -481,6 +485,7 @@ G48_expansion2 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = G48
 	}
 	has_country_shield = yes

@@ -3,6 +3,7 @@
 owner = R78
 controller = R78
 add_core = R78
+add_core = R85
 culture = shamadhan
 religion = high_philosophy
 

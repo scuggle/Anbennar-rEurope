@@ -4,6 +4,7 @@ G51_south = {
 	generic = no
 	ai = yes
 	potential = {
+    	NOT = { has_country_flag = chose_generic_mt }
 		tag = G51
 	}
 	has_country_shield = yes
@@ -177,6 +178,7 @@ G51_north = {
 	generic = no
 	ai = yes
 	potential = {
+    	NOT = { has_country_flag = chose_generic_mt }
 		tag = G51
 	}
 	has_country_shield = yes
@@ -300,6 +302,7 @@ G51_inflation = {
 	generic = no
 	ai = yes
 	potential = {
+    	NOT = { has_country_flag = chose_generic_mt }
 		tag = G51
 	}
 	has_country_shield = yes
@@ -368,6 +371,7 @@ G51_internal = {
 	generic = no
 	ai = yes
 	potential = {
+    	NOT = { has_country_flag = chose_generic_mt }
 		tag = G51
 	}
 	has_country_shield = yes
@@ -628,6 +632,7 @@ G51_trade = {
 	generic = no
 	ai = yes
 	potential = {
+    	NOT = { has_country_flag = chose_generic_mt }
 		tag = G51
 	}
 	has_country_shield = yes

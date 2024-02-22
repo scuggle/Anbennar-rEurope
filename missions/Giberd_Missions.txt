@@ -6,6 +6,7 @@ giberd_imperial = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A81
 	}
 	has_country_shield = yes
@@ -148,6 +149,7 @@ giberd_konwell_conquest = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A81
 	}
 	has_country_shield = yes
@@ -361,6 +363,7 @@ giberd_ryalanar_conquest = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A81
 	}
 	has_country_shield = yes
@@ -490,6 +493,7 @@ giberd_mercantile_shipping = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A81
 	}
 	has_country_shield = yes
@@ -657,6 +661,7 @@ giberd_artificer = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A81
 	}
 	has_country_shield = yes

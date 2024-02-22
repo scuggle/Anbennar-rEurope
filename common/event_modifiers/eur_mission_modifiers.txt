@@ -282,6 +282,79 @@ A98_pashainey_empire = {
 	max_absolutism_effect = 0.3
 }
 A98_empire_heart = {
-	global_allowed_num_of_manufactories = 1
+	allowed_num_of_manufactories = 1
+	local_development_cost = -0.05
+}
+########################
+#falahan modifiers
+########################
+fal_harpy_saphire_town_modifier = {
+	local_development_cost = -0.05
+	supply_limit_modifier = 0.5
+}
+fal_pirate_nest_modifier = {
+	hostile_fleet_attrition = 1
+	local_sailors_modifier = 0.25
+}
+fal_a_drift_wood_fleet_modifier = {
+	capture_ship_chance = 0.1
+}
+fal_plentiful_food_production_modifier = {
+	development_cost= -0.05
+	manpower_recovery_speed = 0.25
+}
+fal_harpy_raiding_contingent_modifier = {
+	local_hostile_attrition = 1
+}
+fal_major_raiding_modifier = {
+	manpower_recovery_speed = 0.20
+	global_manpower_modifier = 0.1
+}
+fal_getting_majorly_raided_modifier = {
+	local_manpower_modifier = -0.5
+	local_monthly_devastation = 0.2
+}
+fal_restoration_of_elizna_modifier = {
+	local_development_cost = -0.2
+	local_build_cost = -0.1
+}
+fal_swarm_formed_modifier = {
+	land_morale = 0.1
+	movement_speed = 0.05
+}
+tungr_naval_yards_modifier = {
+	local_ship_cost = -0.2
+	ship_recruit_speed = -0.5
+}
+fal_tungr_naval_yards_modifier = {
+	naval_maintenance_modifier = -0.05
+}
+fal_harpy_land_base_modifier = {
+	local_hostile_attrition = 1
+	province_trade_power_value = 5
+}
+fal_hold_digging_modifier = {
+	local_development_cost = -0.2
+}
+fal_growth_using_pillage_modifier = {
+	local_development_cost = -0.1
+	local_build_cost = -0.1
+}
+fal_plentiful_men_modifier = {
+	local_development_cost = -0.05
+	local_manpower_modifier = 0.2
+}
+fal_goblin_casino_modifier = {
+	local_tax_modifier = 0.2
+	local_unrest = 5
+}
+fal_copper_hulls_province_modifier = {
+	local_production_efficiency = -0.1
+}
+fal_copper_hulls_modifier = {
+	ship_durability = 0.075
+}
+fal_attractive_saphires_modifier = {
+	local_manpower_modifier = 0.2
 	development_cost = -0.05
 }

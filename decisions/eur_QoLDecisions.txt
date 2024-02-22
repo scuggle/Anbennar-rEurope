@@ -404,6 +404,34 @@ country_decisions = {
 			create_general = { tradition = 30 }
 		}
 	}
+
+	Qol_parliament_seats = {
+		potential = {
+			ai = no
+			has_country_flag = Qol_flag		
+			NOT = { has_country_flag = Qol_general_flag }	
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		allow = {
+			has_government_attribute = has_parliament
+			any_owned_province = {
+				has_seat_in_parliament = no
+			}
+		}
+		effect = {
+			ROOT = {
+				every_owned_province = {
+					limit = {
+						is_state = yes
+						has_seat_in_parliament = no
+					}
+					set_seat_in_parliament = yes
+				}
+			}
+		}
+	}
 	
 	Qol_enable_buildings_removal_interface = {
 		major = yes

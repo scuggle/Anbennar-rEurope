@@ -11,3 +11,15 @@ capital = 128 # Southroy
 
 1000.1.1 = { set_estate_privilege = estate_mages_organization_guilds }
 1000.1.1 = { set_estate_privilege = estate_artificers_organization_international_gommo }
+
+1442.3.5 = {
+	monarch = {
+		name = "Gilin"
+		dynasty = "of Southroy"
+		birth_date = 1422.9.1
+		adm = 6
+		dip = 3
+		mil = 2
+	}
+	add_ruler_personality = zealot_personality
+}

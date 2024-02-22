@@ -5,6 +5,7 @@ I89_1 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = I89
 	}
 	
@@ -227,6 +228,7 @@ I89_2 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = I89
 	}
 	
@@ -253,8 +255,7 @@ I89_2 = {
 		}
 		
 		effect = {
-			custom_tooltip = centaur_unlock_cb_tooltip
-			hidden_effect = { set_country_flag = centaur_special_cb }
+			add_mil_power = 50
 		}
 	}
 	
@@ -492,6 +493,7 @@ I89_3 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = I89
 	}
 	
@@ -536,12 +538,12 @@ I89_3 = {
 		position = 2
 		
 		provinces_to_highlight = {
-			region = ogre_mountains_region
+			region = ogre_valley_region
 			NOT = { country_or_subject_holds = ROOT }
 		}
 		
 		trigger = {
-			ogre_mountains_region = {
+			ogre_valley_region = {
 				type = all
 				country_or_subject_holds = ROOT
 			}
@@ -578,7 +580,7 @@ I89_3 = {
 		
 		effect = {
 			add_prestige = 15
-			invaders_pass_area  = {
+			nanshalen_area  = {
 				add_permanent_claim = ROOT
 			}
 		}
@@ -592,12 +594,12 @@ I89_3 = {
 		position = 5
 		
 		provinces_to_highlight = {
-			area = invaders_pass_area 
+			area = nanshalen_area 
 			NOT = { owned_by = ROOT }
 		}
 		
 		trigger = {
-			invaders_pass_area  = {
+			nanshalen_area  = {
 				type = all
 				owned_by = ROOT
 			}
@@ -605,7 +607,7 @@ I89_3 = {
 		
 		effect = {
 			add_prestige = 15
-			nephevis_tears_area  = {
+			misharallen_area  = {
 				add_permanent_claim = ROOT
 			}
 			firanyalen_area  = {
@@ -651,6 +653,7 @@ I89_4 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = I89
 	}
 	
@@ -883,6 +886,7 @@ I89_5 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = I89
 	}
 	
@@ -1038,6 +1042,7 @@ I89_battle_1 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = I89
 	}
 	
@@ -1086,6 +1091,7 @@ I89_battle_2 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = I89
 	}
 	
@@ -1134,6 +1140,7 @@ I89_battle_3 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = I89
 	}
 	
@@ -1182,6 +1189,7 @@ I89_battle_4 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = I89
 	}
 	
@@ -1230,6 +1238,7 @@ I89_battle_5 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = I89
 	}
 	

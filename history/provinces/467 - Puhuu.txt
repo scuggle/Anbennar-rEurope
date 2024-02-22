@@ -1,13 +1,10 @@
 
 #467 - Borisoglebsk
 
-#owner = U01
-#controller = U01
-#add_core = U01
-owner = U04
-controller = U04
-add_core = U04
-culture = kheteratan
+owner = U01
+controller = U01
+add_core = U01
+culture = hapremiti
 religion = aakhetist
 
 hre = no

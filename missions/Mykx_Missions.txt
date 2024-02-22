@@ -4,6 +4,7 @@ mykx_1 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = G93
 	}
 	has_country_shield = yes
@@ -371,6 +372,7 @@ mykx_2 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = G93
 	}
 	has_country_shield = yes
@@ -474,7 +476,7 @@ mykx_2 = {
 		
 		effect = {
 			if = {
-				limit = { any_owned_province = { culture = arbarani } }
+				limit = { any_owned_province = { culture = crownsman } }
 				country_event = { id = mykx.1 }
 			}
 			else = {
@@ -569,6 +571,7 @@ mykx_3 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = G93
 	}
 	has_country_shield = yes
@@ -750,6 +753,7 @@ mykx_4 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = G93
 	}
 	has_country_shield = yes
@@ -952,6 +956,7 @@ mykx_5 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = G93
 	}
 	has_country_shield = yes
@@ -1054,6 +1059,7 @@ mykx_1_B = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = G93
 		has_country_flag = mykx_feast_had_flag
 	}
@@ -1344,6 +1350,7 @@ mykx_2_B = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = G93
 		has_country_flag = mykx_feast_had_flag
 	}
@@ -1632,7 +1639,7 @@ mykx_2_B = {
 				province_id = 1263
 				province_id = 1292
 				province_id = 1294
-				province_id = 1322
+				province_id = 1324
 			}
 		}
 		
@@ -1657,7 +1664,7 @@ mykx_2_B = {
 						share = 0.25
 					}
 				}
-				1322 = {
+				1324 = {
 					has_privateer_share_in_trade_node = {
 						who = ROOT
 						share = 0.25
@@ -1691,6 +1698,7 @@ mykx_3_B = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = G93
 		has_country_flag = mykx_feast_had_flag
 	}
@@ -1986,6 +1994,7 @@ mykx_4_B = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = G93
 		has_country_flag = mykx_feast_had_flag
 	}
@@ -2179,6 +2188,7 @@ mykx_5_B = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = G93
 		has_country_flag = mykx_feast_had_flag
 	}

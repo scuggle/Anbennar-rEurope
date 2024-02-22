@@ -4,6 +4,7 @@ snecboth1_missions = {
 	generic = no
 	ai = yes 
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		primary_culture = snecboth
 		NOT = { tag = H21 }
 		NOT = { tag = H16 }
@@ -72,6 +73,7 @@ snecboth2_missions = {
 	generic = no
 	ai = yes 
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		primary_culture = snecboth
 		NOT = { tag = H21 }
 		NOT = { tag = H16 }
@@ -123,6 +125,7 @@ snecboth3_missions = {
 	generic = no
 	ai = yes 
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		primary_culture = snecboth
 		NOT = { tag = H21 }
 		NOT = { tag = H16 }
@@ -321,6 +324,7 @@ snecboth4_missions = {
 	generic = no
 	ai = yes 
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		primary_culture = snecboth
 		NOT = { tag = H21 }
 		NOT = { tag = H16 }
@@ -517,6 +521,7 @@ snecboth5_missions = {
 	generic = no
 	ai = yes 
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		primary_culture = snecboth
 		NOT = { tag = H21 }
 		NOT = { tag = H16 }

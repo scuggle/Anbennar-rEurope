@@ -2768,6 +2768,19 @@ country_event = {
 		apply_foresight_spell = yes
 		if = {
 			limit = {
+				OR = {
+					capital_scope = { superregion = rahen_superregion }
+					capital_scope = { superregion = south_haless_superregion }
+					capital_scope = { superregion = yanshen_superregion }
+				}
+				NOT = {
+					has_country_flag = tughayasa_quest_foresight_casted
+				}
+			}
+			set_country_flag = tughayasa_quest_foresight_casted
+		}
+		if = {
+			limit = {
 				has_ruler_flag = nang_patron
 				has_ruler_flag = summer_waves_patron
 				NOT = { has_ruler_flag = divination_3 }
@@ -8052,6 +8065,8 @@ country_event = {
 				NOT = { adm_power = 5 }
 				NOT = { mil_power = 5 }
 				has_ruler_modifier = magic_drain_cooldown
+				has_ruler_modifier = varamhar_blessed_of_surael
+				has_country_flag = necromancy_disallowed
 			}
 		}
 		if = { limit = { has_ruler_modifier = magic_drain_cooldown }
@@ -8062,6 +8077,12 @@ country_event = {
 		}
 		if = { limit = { NOT = { mil_power = 5 } }
 			custom_tooltip = magic_need_5_mil_tt
+		}
+		if = { limit = { has_ruler_modifier = varamhar_blessed_of_surael }
+			custom_tooltip = varamhar_unable_to_perform_necromancy_tt
+		}
+		if = { limit = { has_country_flag = necromancy_disallowed }
+			custom_tooltip = tooltip_unable_to_perform_necromancy
 		}
 
 		set_country_flag = necromancy_menu
@@ -8089,6 +8110,8 @@ country_event = {
 			dip_power = 15
 			mil_power = 15
 			NOT = { has_ruler_modifier = magic_undead_cooldown }
+			NOT = { has_ruler_modifier = varamhar_blessed_of_surael }
+			NOT = { has_country_flag = necromancy_disallowed }
 		}
 		ai_chance = {
 			factor = 25
@@ -8201,6 +8224,8 @@ country_event = {
 				NOT = { dip_power = 15 }
 				NOT = { mil_power = 15 }
 				has_ruler_modifier = magic_undead_cooldown
+				has_ruler_modifier = varamhar_blessed_of_surael
+				has_country_flag = necromancy_disallowed
 			}
 		}
 		if = { limit = { has_ruler_modifier = magic_undead_cooldown }
@@ -8214,6 +8239,12 @@ country_event = {
 		}
 		if = { limit = { NOT = { mil_power = 15 } }
 			custom_tooltip = magic_need_15_mil_tt
+		}
+		if = { limit = { has_ruler_modifier = varamhar_blessed_of_surael }
+			custom_tooltip = varamhar_unable_to_perform_necromancy_tt
+		}
+		if = { limit = { has_country_flag = necromancy_disallowed }
+			custom_tooltip = tooltip_unable_to_perform_necromancy
 		}
 
 		set_country_flag = necromancy_menu
@@ -8262,6 +8293,8 @@ country_event = {
 			dip_power = 15
 			mil_power = 15
 			NOT = { has_ruler_modifier = magic_undead_cooldown }
+			NOT = { has_ruler_modifier = varamhar_blessed_of_surael }
+			NOT = { has_country_flag = necromancy_disallowed }
 		}
 		ai_chance = {
 			factor = 25
@@ -8382,6 +8415,8 @@ country_event = {
 				NOT = { dip_power = 15 }
 				NOT = { mil_power = 15 }
 				has_ruler_modifier = magic_undead_cooldown
+				has_ruler_modifier = varamhar_blessed_of_surael
+				has_country_flag = necromancy_disallowed
 			}
 		}
 		if = { limit = { has_ruler_modifier = magic_undead_cooldown }
@@ -8395,6 +8430,12 @@ country_event = {
 		}
 		if = { limit = { NOT = { mil_power = 15 } }
 			custom_tooltip = magic_need_15_mil_tt
+		}
+		if = { limit = { has_ruler_modifier = varamhar_blessed_of_surael }
+			custom_tooltip = varamhar_unable_to_perform_necromancy_tt
+		}
+		if = { limit = { has_country_flag = necromancy_disallowed }
+			custom_tooltip = tooltip_unable_to_perform_necromancy
 		}
 
 		set_country_flag = necromancy_menu
@@ -8453,6 +8494,8 @@ country_event = {
 			mil_power = 300
 			is_lesser_in_union = no
 			NOT = { has_country_flag = gemradcurt_immariel_rules }
+			NOT = { has_ruler_modifier = varamhar_blessed_of_surael }
+			NOT = { has_country_flag = necromancy_disallowed }
 		}
 		ai_chance = {
 			factor = 50
@@ -8519,6 +8562,8 @@ country_event = {
 				NOT = { mil_power = 300 }
 				is_lesser_in_union = yes
 				has_country_flag = gemradcurt_immariel_rules
+				has_ruler_modifier = varamhar_blessed_of_surael
+				has_country_flag = necromancy_disallowed
 			}
 		}
 		if = { limit = { has_ruler_flag = is_a_lich }
@@ -8548,6 +8593,12 @@ country_event = {
 			}
 			if = { limit = { NOT = { mil_power = 300 } }
 				custom_tooltip = magic_need_300_mil_tt
+			}
+			if = { limit = { has_ruler_modifier = varamhar_blessed_of_surael }
+				custom_tooltip = varamhar_unable_to_perform_necromancy_tt
+			}
+			if = { limit = { has_country_flag = necromancy_disallowed }
+				custom_tooltip = tooltip_unable_to_perform_necromancy
 			}
 		}
 
@@ -9124,7 +9175,7 @@ country_event = {
 		custom_tooltip = magic_enhance_effect_1_tt
 
 		custom_tooltip = magic_enhance_desc_tt
-	}
+	}	
 
 	#2 - Rite of Conception I
 	option = {	#available
@@ -9133,6 +9184,12 @@ country_event = {
 			has_ruler_flag = transmutation_2
 			has_ruler_flag = abjuration_1
 			NOT = { has_ruler_flag = transmutation_3 }
+			NOT = {
+				OR = {
+					has_country_flag = tughayasa_reward_primary
+					has_country_flag = tughayasa_reward
+				}
+			}
 			adm_power = 100
 			NOT = { government = theocracy }
 			NOT = { has_adventurer_reform = yes }
@@ -9198,7 +9255,7 @@ country_event = {
 					}
 					40 = { }
 					5 = { kill_ruler = yes }
-					5 = { remove_consort = yes }
+					5 = { remove_consort_effect = yes }
 				}
 			}
 		}
@@ -9216,7 +9273,7 @@ country_event = {
 					}
 					60 = { }
 					5 = { kill_ruler = yes }
-					10 = { remove_consort = yes }
+					10 = { remove_consort_effect = yes }
 				}
 			}
 		}
@@ -9295,7 +9352,7 @@ country_event = {
 						}
 						40 = { }
 						5 = { kill_ruler = yes }
-						5 = { remove_consort = yes }
+						5 = { remove_consort_effect = yes }
 					}
 				}
 			}
@@ -9313,7 +9370,7 @@ country_event = {
 						}
 						60 = { }
 						5 = { kill_ruler = yes }
-						10 = { remove_consort = yes }
+						10 = { remove_consort_effect = yes }
 					}
 				}
 			}
@@ -9401,7 +9458,7 @@ country_event = {
 						}
 						40 = { }
 						5 = { kill_ruler = yes }
-						5 = { remove_consort = yes }
+						5 = { remove_consort_effect = yes }
 					}
 				}
 			}
@@ -9419,7 +9476,7 @@ country_event = {
 						}
 						60 = { }
 						5 = { kill_ruler = yes }
-						10 = { remove_consort = yes }
+						10 = { remove_consort_effect = yes }
 					}
 				}
 			}
@@ -9862,8 +9919,16 @@ country_event = {
 	option = {	#available
 		name = magic_ruler.8.i
 		trigger = {
-			has_ruler_flag = transmutation_3
-			has_ruler_flag = abjuration_1
+			OR = {
+				AND = {
+					has_ruler_flag = transmutation_3
+					has_ruler_flag = abjuration_1
+				}
+				OR = {
+					has_country_flag = tughayasa_reward_primary
+					has_country_flag = tughayasa_reward
+				}
+			}
 			adm_power = 100
 			NOT = { government = theocracy }
 			NOT = { has_adventurer_reform = yes }
@@ -9892,7 +9957,25 @@ country_event = {
 
 		add_adm_power = -100
 
-		if = { limit = { has_consort = no }
+		if = {
+			limit = {
+				OR = {
+					has_country_flag = tughayasa_reward_primary
+					has_country_flag = tughayasa_reward
+				}
+			}
+			custom_tooltip = magic_estate_rite_of_conception_tooltip_tt
+			tooltip = {
+				define_heir = {
+					dynasty = ROOT
+					claim = 100
+					no_consort_with_heir = yes
+					hidden = yes
+				}
+				set_heir_mage_effect = yes
+			}
+		}
+		else_if = { limit = { has_consort = no }
 			set_country_flag = spell_3
 			tooltip = {
 				random_list = {
@@ -9927,7 +10010,7 @@ country_event = {
 						set_heir_mage_effect = yes
 					}
 					30 = { }
-					5 = { remove_consort = yes }
+					5 = { remove_consort_effect = yes }
 				}
 			}
 		}
@@ -9945,7 +10028,7 @@ country_event = {
 					}
 					40 = { }
 					5 = { kill_ruler = yes }
-					5 = { remove_consort = yes }
+					5 = { remove_consort_effect = yes }
 				}
 			}
 		}
@@ -9962,8 +10045,14 @@ country_event = {
 		trigger = {
 			ai = no
 			OR = {
-				NOT = { has_ruler_flag = transmutation_3 }
-				NOT = { has_ruler_flag = abjuration_1 }
+				AND = {
+					has_ruler_flag = transmutation_3
+					has_ruler_flag = abjuration_1
+				}
+				OR = {
+					has_country_flag = tughayasa_reward_primary
+					has_country_flag = tughayasa_reward
+				}
 			}
 		}
 		if = { limit = { NOT = { has_ruler_flag = transmutation_3 } }
@@ -9981,8 +10070,24 @@ country_event = {
 
 		tooltip = {
 			add_adm_power = -100
-
-			if = { limit = { has_consort = no }
+			if = {
+				limit = {
+					OR = {
+						has_country_flag = tughayasa_reward_primary
+						has_country_flag = tughayasa_reward
+					}
+				}
+				tooltip = {
+					define_heir = {
+						dynasty = ROOT
+						claim = 100
+						no_consort_with_heir = yes
+						hidden = yes
+					}
+					set_heir_mage_effect = yes
+					}
+				}
+			else_if = { limit = { has_consort = no }
 				set_country_flag = spell_3
 				tooltip = {
 					random_list = {
@@ -10017,7 +10122,7 @@ country_event = {
 							set_heir_mage_effect = yes
 						}
 						30 = { }
-						5 = { remove_consort = yes }
+						5 = { remove_consort_effect = yes }
 					}
 				}
 			}
@@ -10035,7 +10140,7 @@ country_event = {
 						}
 						40 = { }
 						5 = { kill_ruler = yes }
-						5 = { remove_consort = yes }
+						5 = { remove_consort_effect = yes }
 					}
 				}
 			}
@@ -10047,8 +10152,16 @@ country_event = {
 		name = magic_ruler.8.ix
 		trigger = {
 			ai = no
-			has_ruler_flag = transmutation_3
-			has_ruler_flag = abjuration_1
+			OR = {
+				AND = {
+					has_ruler_flag = transmutation_3
+					has_ruler_flag = abjuration_1
+				}
+				OR = {
+					has_country_flag = tughayasa_reward_primary
+					has_country_flag = tughayasa_reward
+				}
+			}
 			OR = {
 				NOT = { adm_power = 100 }
 				government = theocracy
@@ -10086,8 +10199,24 @@ country_event = {
 
 		tooltip = {
 			add_adm_power = -100
-
-			if = { limit = { has_consort = no }
+			if = {
+				limit = {
+					OR = {
+						has_country_flag = tughayasa_reward_primary
+						has_country_flag = tughayasa_reward
+					}
+				}
+				tooltip = {
+					define_heir = {
+						dynasty = ROOT
+						claim = 100
+						no_consort_with_heir = yes
+						hidden = yes
+					}
+					set_heir_mage_effect = yes
+				}
+			}
+			else_if = { limit = { has_consort = no }
 				set_country_flag = spell_3
 				tooltip = {
 					random_list = {
@@ -10122,7 +10251,7 @@ country_event = {
 							set_heir_mage_effect = yes
 						}
 						30 = { }
-						5 = { remove_consort = yes }
+						5 = { remove_consort_effect = yes }
 					}
 				}
 			}
@@ -10140,7 +10269,7 @@ country_event = {
 						}
 						40 = { }
 						5 = { kill_ruler = yes }
-						5 = { remove_consort = yes }
+						5 = { remove_consort_effect = yes }
 					}
 				}
 			}
@@ -10531,6 +10660,10 @@ country_event = {
 		ai_chance = { factor = 50 }
 		goto = ward_province_1
 
+		trigger = {
+			has_saved_event_target = ward_province_1
+		}
+
 		magic_casted_spell = yes
 		add_ruler_modifier = { name = magic_ward_cooldown duration = 30 hidden = yes }
 
@@ -10590,6 +10723,10 @@ country_event = {
 		name = magic_ruler.10.b
 		ai_chance = { factor = 50 }
 		goto = ward_province_2
+
+		trigger = {
+			has_saved_event_target = ward_province_2
+		}
 
 		magic_casted_spell = yes
 		add_ruler_modifier = { name = magic_ward_cooldown duration = 30 hidden = yes }
@@ -10651,6 +10788,10 @@ country_event = {
 		ai_chance = { factor = 50 }
 		goto = ward_province_3
 
+		trigger = {
+			has_saved_event_target = ward_province_3
+		}
+
 		magic_casted_spell = yes
 		add_ruler_modifier = { name = magic_ward_cooldown duration = 30 hidden = yes }
 
@@ -10710,6 +10851,10 @@ country_event = {
 		name = magic_ruler.10.e
 		ai_chance = { factor = 50 }
 		goto = ward_province_4
+
+		trigger = {
+			has_saved_event_target = ward_province_4
+		}
 
 		magic_casted_spell = yes
 		add_ruler_modifier = { name = magic_ward_cooldown duration = 30 hidden = yes }
@@ -11202,33 +11347,35 @@ country_event = {
 				has_ruler_flag = winter_everfrost_patron
 			}
 			tooltip = {
-				33 = {
-					add_adm_power = 40
-				}
-				33 = {
-					add_dip_power = 40
-				}
-				33 = {
-					add_mil_power = 40
+				random_list = {
+					1 = {
+						add_adm_power = 40
+					}
+					1 = {
+						add_dip_power = 40
+					}
+					1 = {
+						add_mil_power = 40
+					}
 				}
 			}
+			custom_tooltip = magic_booster_by_patron_tt
 		}
 		else = {
 			tooltip = {
 				random_list = {
-					33 = {
+					1 = {
 						add_adm_power = 30
 					}
-					33 = {
+					1 = {
 						add_dip_power = 30
 					}
-					33 = {
+					1 = {
 						add_mil_power = 30
 					}
 				}
 			}
 		}
-		custom_tooltip = magic_booster_by_patron_tt
 		hidden_effect = { country_event = { id = magic_ruler.14 } }
 	}
 
@@ -11270,7 +11417,7 @@ country_event = {
 		tooltip = {
 			random = {
 				chance = 25
-				remove_consort = yes
+				remove_consort_effect = yes
 			}
 		}
 		hidden_effect = { country_event = { id = magic_ruler.15 } }
@@ -11281,33 +11428,35 @@ country_event = {
 				has_ruler_flag = winter_everfrost_patron
 			}
 			tooltip = {
-				33 = {
-					add_adm_power = 30
-				}
-				33 = {
-					add_dip_power = 30
-				}
-				33 = {
-					add_mil_power = 30
+				random_list = {
+					1 = {
+						add_adm_power = 30
+					}
+					1 = {
+						add_dip_power = 30
+					}
+					1 = {
+						add_mil_power = 30
+					}
 				}
 			}
+			custom_tooltip = magic_booster_by_patron_tt
 		}
 		else = {
 			tooltip = {
 				random_list = {
-					33 = {
+					1 = {
 						add_adm_power = 20
 					}
-					33 = {
+					1 = {
 						add_dip_power = 20
 					}
-					33 = {
+					1 = {
 						add_mil_power = 20
 					}
 				}
 			}
 		}
-		custom_tooltip = magic_booster_by_patron_tt
 		hidden_effect = { country_event = { id = magic_ruler.14 } }
 	}
 
@@ -11351,33 +11500,35 @@ country_event = {
 				has_ruler_flag = winter_everfrost_patron
 			}
 			tooltip = {
-				33 = {
-					add_adm_power = 30
-				}
-				33 = {
-					add_dip_power = 30
-				}
-				33 = {
-					add_mil_power = 30
+				random_list = {
+					1 = {
+						add_adm_power = 30
+					}
+					1 = {
+						add_dip_power = 30
+					}
+					1 = {
+						add_mil_power = 30
+					}
 				}
 			}
+			custom_tooltip = magic_booster_by_patron_tt
 		}
 		else = {
 			tooltip = {
 				random_list = {
-					33 = {
+					1 = {
 						add_adm_power = 20
 					}
-					33 = {
+					1 = {
 						add_dip_power = 20
 					}
-					33 = {
+					1 = {
 						add_mil_power = 20
 					}
 				}
 			}
 		}
-		custom_tooltip = magic_booster_by_patron_tt
 		hidden_effect = { country_event = { id = magic_ruler.14 } }
 	}
 
@@ -11444,33 +11595,35 @@ country_event = {
 				has_ruler_flag = winter_everfrost_patron
 			}
 			tooltip = {
-				33 = {
-					add_adm_power = 70
-				}
-				33 = {
-					add_dip_power = 70
-				}
-				33 = {
-					add_mil_power = 70
+				random_list = {
+					1 = {
+						add_adm_power = 70
+					}
+					1 = {
+						add_dip_power = 70
+					}
+					1 = {
+						add_mil_power = 70
+					}
 				}
 			}
+			custom_tooltip = magic_booster_by_patron_tt
 		}
 		else = {
 			tooltip = {
 				random_list = {
-					33 = {
+					1 = {
 						add_adm_power = 50
 					}
-					33 = {
+					1 = {
 						add_dip_power = 50
 					}
-					33 = {
+					1 = {
 						add_mil_power = 50
 					}
 				}
 			}
 		}
-		custom_tooltip = magic_booster_by_patron_tt
 		hidden_effect = { country_event = { id = magic_ruler.14 } }
 	}
 
@@ -11577,7 +11730,7 @@ country_event = {
 			kill_heir = { allow_new_heir = no }
 		}
 		else_if = { limit = { has_country_flag = spell_5 }
-			remove_consort = yes
+			remove_consort_effect = yes
 		}
 		else_if = { limit = { has_country_flag = spell_6 }
 			kill_advisor = random
@@ -12696,6 +12849,12 @@ country_event = {
 		trigger = {
 			has_ruler_flag = transmutation_3
 			has_country_flag = spell_1
+			NOT = {
+				OR = {
+					has_country_flag = tughayasa_reward_primary
+					has_country_flag = tughayasa_reward
+				}
+			}
 		}
 		ai_chance = {
 			factor = 65
@@ -12725,6 +12884,12 @@ country_event = {
 		trigger = {
 			NOT = { has_ruler_flag = transmutation_3 }
 			has_country_flag = spell_1
+			NOT = {
+				OR = {
+					has_country_flag = tughayasa_reward_primary
+					has_country_flag = tughayasa_reward
+				}
+			}
 		}
 		ai_chance = {
 			factor = 50
@@ -12754,6 +12919,12 @@ country_event = {
 		trigger = {
 			has_ruler_flag = transmutation_3
 			has_country_flag = spell_2
+			NOT = {
+				OR = {
+					has_country_flag = tughayasa_reward_primary
+					has_country_flag = tughayasa_reward
+				}
+			}
 		}
 		ai_chance = {
 			factor = 50
@@ -12783,6 +12954,12 @@ country_event = {
 		trigger = {
 			NOT = { has_ruler_flag = transmutation_3 }
 			has_country_flag = spell_2
+			NOT = {
+				OR = {
+					has_country_flag = tughayasa_reward_primary
+					has_country_flag = tughayasa_reward
+				}
+			}
 		}
 		ai_chance = {
 			factor = 25
@@ -12812,6 +12989,12 @@ country_event = {
 		trigger = {
 			has_ruler_flag = transmutation_3
 			has_country_flag = spell_3
+			NOT = {
+				OR = {
+					has_country_flag = tughayasa_reward_primary
+					has_country_flag = tughayasa_reward
+				}
+			}
 		}
 		ai_chance = {
 			factor = 45
@@ -12841,6 +13024,43 @@ country_event = {
 		trigger = {
 			NOT = { has_ruler_flag = transmutation_3 }
 			has_country_flag = spell_3
+			NOT = {
+				OR = {
+					has_country_flag = tughayasa_reward_primary
+					has_country_flag = tughayasa_reward
+				}
+			}
+		}
+		ai_chance = {
+			factor = 25
+		}
+
+		if = { limit = { has_ruler_flag = boy_child }
+			define_heir = {
+				dynasty = ROOT
+				claim = 100
+				no_consort_with_heir = yes
+				hidden = yes
+			}
+		}
+		else = {
+			define_heir = {
+				dynasty = ROOT
+				claim = 100
+				no_consort_with_heir = yes
+				hidden = yes
+				female = yes
+			}
+		}
+		set_heir_mage_effect = yes
+	}
+	option = {
+		name = magic_ruler.14.a
+		trigger = {
+			OR = {
+				has_country_flag = tughayasa_reward_primary
+				has_country_flag = tughayasa_reward
+			}
 		}
 		ai_chance = {
 			factor = 25
@@ -12872,6 +13092,12 @@ country_event = {
 		trigger = {
 			has_ruler_flag = transmutation_3
 			has_country_flag = spell_1
+			NOT = {
+				OR = {
+					has_country_flag = tughayasa_reward_primary
+					has_country_flag = tughayasa_reward
+				}
+			}
 		}
 		ai_chance = {
 			factor = 30
@@ -12882,6 +13108,12 @@ country_event = {
 		trigger = {
 			NOT = { has_ruler_flag = transmutation_3 }
 			has_country_flag = spell_1
+			NOT = {
+				OR = {
+					has_country_flag = tughayasa_reward_primary
+					has_country_flag = tughayasa_reward
+				}
+			}
 		}
 		ai_chance = {
 			factor = 40
@@ -12892,6 +13124,12 @@ country_event = {
 		trigger = {
 			has_ruler_flag = transmutation_3
 			has_country_flag = spell_2
+			NOT = {
+				OR = {
+					has_country_flag = tughayasa_reward_primary
+					has_country_flag = tughayasa_reward
+				}
+			}
 		}
 		ai_chance = {
 			factor = 40
@@ -12902,6 +13140,12 @@ country_event = {
 		trigger = {
 			NOT = { has_ruler_flag = transmutation_3 }
 			has_country_flag = spell_2
+			NOT = {
+				OR = {
+					has_country_flag = tughayasa_reward_primary
+					has_country_flag = tughayasa_reward
+				}
+			}
 		}
 		ai_chance = {
 			factor = 60
@@ -12912,6 +13156,12 @@ country_event = {
 		trigger = {
 			has_ruler_flag = transmutation_3
 			has_country_flag = spell_3
+			NOT = {
+				OR = {
+					has_country_flag = tughayasa_reward_primary
+					has_country_flag = tughayasa_reward
+				}
+			}
 		}
 		ai_chance = {
 			factor = 50
@@ -12922,6 +13172,12 @@ country_event = {
 		trigger = {
 			NOT = { has_ruler_flag = transmutation_3 }
 			has_country_flag = spell_3
+			NOT = {
+				OR = {
+					has_country_flag = tughayasa_reward_primary
+					has_country_flag = tughayasa_reward
+				}
+			}
 		}
 		ai_chance = {
 			factor = 70
@@ -12934,6 +13190,12 @@ country_event = {
 		trigger = {
 			has_ruler_flag = transmutation_3
 			has_country_flag = spell_1
+			NOT = {
+				OR = {
+					has_country_flag = tughayasa_reward_primary
+					has_country_flag = tughayasa_reward
+				}
+			}
 		}
 		ai_chance = {
 			factor = 0
@@ -12947,6 +13209,12 @@ country_event = {
 				AND = {
 					has_ruler_flag = transmutation_3
 					has_country_flag = spell_1
+				}
+			}
+			NOT = {
+				OR = {
+					has_country_flag = tughayasa_reward_primary
+					has_country_flag = tughayasa_reward
 				}
 			}
 		}
@@ -12964,22 +13232,34 @@ country_event = {
 				has_ruler_flag = transmutation_3
 				has_country_flag = spell_1
 			}
+			NOT = {
+				OR = {
+					has_country_flag = tughayasa_reward_primary
+					has_country_flag = tughayasa_reward
+				}
+			}
 		}
 		ai_chance = {
 			factor = 5
 		}
-		remove_consort = yes
+		remove_consort_effect = yes
 	}
 	option = {
 		name = magic_ruler.14.a
 		trigger = {
 			NOT = { has_ruler_flag = transmutation_3 }
 			has_country_flag = spell_2
+			NOT = {
+				OR = {
+					has_country_flag = tughayasa_reward_primary
+					has_country_flag = tughayasa_reward
+				}
+			}
 		}
 		ai_chance = {
 			factor = 10
 		}
-		remove_consort = yes
+		remove_consort_effect = yes
 	}
 
 	after = {
@@ -13382,249 +13662,40 @@ country_event = {
 	}
 }
 
-# On New Ruler - Initialization
+#Initialize magic schools
 country_event = {
-	id =  magic_ruler.102
-	title =  magic_ruler.102.t
+	id = magic_ruler.102
+	title = magic_ruler.102.t
 	desc =  magic_ruler.102.d
 	picture = WAR_OF_THE_ROSES_eventPicture
 
-	#fire_only_once = yes
+	hidden = yes
 	is_triggered_only = yes
 
-	hidden = yes
-
 	trigger = {
-		ruler_has_mage_personality = yes
-
-		#If you dont have any level 1 spells then this will fire
-		NOT = { has_ruler_flag = abjuration_1 }
-		NOT = { has_ruler_flag = conjuration_1 }
-		NOT = { has_ruler_flag = divination_1 }
-		NOT = { has_ruler_flag = enchantment_1 }
-		NOT = { has_ruler_flag = evocation_1 }
-		NOT = { has_ruler_flag = illusion_1 }
-		NOT = { has_ruler_flag = necromancy_1 }
-		NOT = { has_ruler_flag = transmutation_1 }
-	}
-
-	immediate = {
-		hidden_effect = {
-			clear_witch_king_points = yes
-			set_variable = {
-				which = ruler_study_experience
-				value = 0
-			}
+		OR = {
+			has_ruler_flag = heir_consort_mage_personality
+			ruler_has_personality = mage_personality
 		}
 	}
 
 	option = {
 		name = magic_ruler.102.a
-
-		magic_ruler_give_random_spell_school = yes
-
 		if = {
 			limit = {
-				ruler_has_personality = scholar_personality
+				has_ruler_flag = heir_consort_mage_personality
 			}
-			magic_ruler_give_random_spell_school = yes
-		}
-
-		if = {
-			limit = {
-				OR = {
-					has_reform = magocracy_reform
-					has_reform = magisterium_reform
-				}
-			}
-			magic_ruler_give_random_spell_school = yes
-		}
-
-		if = {
-			limit = {
-				has_reform = oracular_order_reform # Oracle Order in Haless
-			}
-			oracle_ruler_give_random_divination_spell_school = yes
-		}
-
-		if = {
-			limit = {
-				OR = {
-					consort_culture = sun_elf
-					consort_culture = moon_elf
-					consort_culture = cliff_gnome
-					consort_culture = creek_gnome
-					consort_culture = imperial_gnome
-				}
-			}
-			magic_ruler_give_random_spell_school = yes
-		}
-
-		if = {
-			limit = {
-				OR = {
-					adm = 6
-					dip = 6
-					mil = 6
-				}
-			}
-			magic_ruler_give_random_spell_school = yes
-		}
-
-
-		if = {
-			limit = {
-				adm = 3
-			}
-			magic_ruler_give_random_adm_school = yes
+			add_ruler_personality = mage_personality
+			clr_ruler_flag = heir_consort_mage_personality
 		}
 		if = {
 			limit = {
-				dip = 3
+				NOT = { has_ruler_flag = initialized_magic_flags }
 			}
-			magic_ruler_give_random_dip_school = yes
-		}
-		if = {
-			limit = {
-				mil = 3
-			}
-			magic_ruler_give_random_mil_school = yes
-		}
-
-		if = {
-			limit = {
-				ruler_age = 30
-			}
-			magic_ruler_give_random_spell_school = yes
-		}
-
-		if = {
-			limit = {
-				ruler_age = 40
-			}
-			magic_ruler_give_random_spell_school = yes
-		}
-
-		if = {
-			limit = {
-				ruler_age = 50
-			}
-			magic_ruler_give_random_spell_school = yes
-		}
-
-		if = {
-			limit = {
-				ruler_age = 60
-			}
-			magic_ruler_give_random_spell_school = yes
-		}
-
-		# Guaranteed levels
-
-		if = {
-			limit = { has_country_flag = add_abjuration_1_point }
-			magic_study_level_up_abjuration = yes
-		}
-		if = {
-			limit = { has_country_flag = add_conjuration_1_point }
-			magic_study_level_up_conjuration = yes
-		}
-		if = {
-			limit = { has_country_flag = add_divination_1_point }
-			magic_study_level_up_divination = yes
-		}
-		if = {
-			limit = { has_country_flag = add_enchantment_1_point }
-			magic_study_level_up_enchantment = yes
-		}
-		if = {
-			limit = { has_country_flag = add_evocation_1_point }
-			magic_study_level_up_evocation = yes
-		}
-		if = {
-			limit = { has_country_flag = add_illusion_1_point }
-			magic_study_level_up_illusion = yes
-		}
-		if = {
-			limit = { has_country_flag = add_necromancy_1_point }
-			magic_study_level_up_necromancy = yes
-		}
-		if = {
-			limit = { has_country_flag = add_transmutation_1_point }
-			magic_study_level_up_transmutation = yes
-		}
-
-		# Acolytes Dominions
-		if = {
-			limit = { is_subject_of_type = acolyte_dominion }
-			magic_ruler_give_random_spell_school = yes
-			magic_ruler_give_random_spell_school = yes
-			magic_ruler_give_random_spell_school = yes
-			magic_ruler_give_random_spell_school = yes
-			magic_ruler_give_random_spell_school = yes
-			if = {
-				limit = { overlord = { acolyte_dominion = 7 } }
-				magic_ruler_give_random_spell_school = yes
-				magic_ruler_give_random_spell_school = yes
-				magic_ruler_give_random_spell_school = yes
-				magic_ruler_give_random_spell_school = yes
-				magic_ruler_give_random_spell_school = yes
-				magic_ruler_give_random_spell_school = yes
-
-			}
-			else_if = {
-				limit = { overlord = { acolyte_dominion = 6 } }
-				magic_ruler_give_random_spell_school = yes
-				magic_ruler_give_random_spell_school = yes
-				magic_ruler_give_random_spell_school = yes
-				magic_ruler_give_random_spell_school = yes
-				magic_ruler_give_random_spell_school = yes
-			}
-			else_if = {
-				limit = { overlord = { acolyte_dominion = 5 } }
-				magic_ruler_give_random_spell_school = yes
-				magic_ruler_give_random_spell_school = yes
-				magic_ruler_give_random_spell_school = yes
-				magic_ruler_give_random_spell_school = yes
-			}
-			else_if = {
-				limit = { overlord = { acolyte_dominion = 4 } }
-				magic_ruler_give_random_spell_school = yes
-				magic_ruler_give_random_spell_school = yes
-				magic_ruler_give_random_spell_school = yes
-			}
-			else_if = {
-				limit = { overlord = { acolyte_dominion = 3 } }
-				magic_ruler_give_random_spell_school = yes
-				magic_ruler_give_random_spell_school = yes
-			}
-			else_if = {
-				limit = { overlord = { acolyte_dominion = 2 } }
-				magic_ruler_give_random_spell_school = yes
-			}
-
-			#Khet Mandate
-			if = {
-				limit = {
-					is_emperor_of_china = yes
-					empire_of_china_reform_passed = taste_magic_reform
-				}
-				magic_ruler_give_random_spell_school = yes
-			}
-
-			#Tower of Muhaqaar
-			if = {
-				limit = { 
-					owns = 5483
-					5483 = { has_great_project = { type = tower_of_muhaqaar tier = 3 } }
-					religion_group = khetist
-					}
-				magic_ruler_give_random_spell_school = yes
-				}
-				
-			}
+			magic_ruler_initialize_schools = yes
 		}
 	}
+}
 
 # Powerful Mage Heir
 country_event = {
@@ -13649,6 +13720,7 @@ country_event = {
 		has_consort = yes
 		NOT = { ruler_is_immortal = yes }
 		NOT = { ruler_age = 60 }
+		NOT = { has_country_flag = command_slave_state_flag } # Hopefully should block brorcs from getting mage rulers
 	}
 
 	mean_time_to_happen = {
@@ -13723,6 +13795,8 @@ country_event = {
 
 		NOT = { ruler_has_personality = incorruptible_personality }
 		NOT = { ruler_has_personality = kind_hearted_personality }
+		NOT = { has_country_flag = anti_homunculus_cheese } #Anti homunculus cheese with magical heir
+		NOT = { has_country_flag = command_slave_state_flag } # Hopefully should block brorcs from getting mage rulers
 	}
 
 	mean_time_to_happen = {
@@ -13742,6 +13816,12 @@ country_event = {
 				ruler_has_personality = naive_personality
 				ruler_has_personality = silver_tongue_personality
 			}
+		}
+	}
+
+	immediate = { #Anti homunculus cheese with magical heir
+		hidden_effect = {
+			set_country_flag = anti_homunculus_cheese
 		}
 	}
 
@@ -13782,6 +13862,12 @@ country_event = {
 		}
 
 		increase_legitimacy_medium_effect = yes
+	}
+
+	after = { #Anti homunculus cheese with magical heir
+		hidden_effect = {
+			clr_country_flag = anti_homunculus_cheese
+		}
 	}
 }
 
@@ -14027,6 +14113,9 @@ country_event = {
 		}
 
 		NOT = { heir_age = 16 }
+		NOT = { has_country_flag = anti_homunculus_cheese } #Anti homunculus cheese with magical heir
+		NOT = { has_country_flag = command_slave_state_flag } # Hopefully should block brorcs from getting mage rulers
+		# NOT = { has_country_flag = banned_magic } # not sure about this one
 	}
 
 	mean_time_to_happen = {
@@ -14052,6 +14141,17 @@ country_event = {
 		modifier = {
 			factor = 0.5
 			current_age = age_of_absolutism
+		}
+		modifier = {
+			factor = 0.9
+			is_emperor_of_china = yes
+			empire_of_china_reform_passed = taste_magic_reform
+		}
+	}
+
+	immediate = { #Anti homunculus cheese with magical heir
+		hidden_effect = {
+			set_country_flag = anti_homunculus_cheese
 		}
 	}
 
@@ -14114,28 +14214,9 @@ country_event = {
 		remove_heir = {  }
 	}
 
-}
-
-country_event = {
-	id = magic_ruler.109
-	title = magic_ruler.109.t
-	desc =  magic_ruler.109.d
-	picture = WAR_OF_THE_ROSES_eventPicture
-
-	hidden = yes
-	is_triggered_only = yes
-
-	option = {
-		name = magic_ruler.109.a
-		if = {
-			limit = {
-				has_ruler_flag = heir_consort_mage_personality
-			}
-			add_ruler_personality = mage_personality
-		}
-		country_event = {
-			id = magic_ruler.102
-			days = 45
+	after = { #Anti homunculus cheese with magical heir
+		hidden_effect = {
+			clr_country_flag = anti_homunculus_cheese
 		}
 	}
 }

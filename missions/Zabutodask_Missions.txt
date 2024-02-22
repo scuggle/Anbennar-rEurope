@@ -5,7 +5,9 @@ J53_1 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = J53 #Zabutodask
+		NOT = { has_country_modifier = lake_federation_member }
 	}
 	has_country_shield = yes
 	
@@ -310,7 +312,9 @@ J53_2 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = J53 #Zabutodask
+		NOT = { has_country_modifier = lake_federation_member }
 	}
 	has_country_shield = yes
 	
@@ -592,7 +596,7 @@ J53_2 = {
 				shock = 4
 				manuever = 2
 				siege = 4
-				name = "ThrÃ»r Earthstriker"
+				name = "Thrûr Earthstriker"
 			}
 	    }
 	}
@@ -651,6 +655,7 @@ JXX_3 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = J49
 			tag = J50
@@ -658,6 +663,7 @@ JXX_3 = {
 			tag = J52
 			tag = J53 #Zabutodask
 		}
+		NOT = { has_country_modifier = lake_federation_member }
 	}
 	has_country_shield = yes
 	
@@ -667,9 +673,12 @@ JXX_3 = {
 		position = 1
 		
 		trigger = {
-			custom_trigger_tooltip = {
-				tooltip = JXX_won_splinter_war
-				has_global_flag = lake_federation_disbanded
+			OR = {
+				custom_trigger_tooltip = {
+					tooltip = JXX_won_splinter_war
+					has_global_flag = lake_federation_disbanded
+				}
+				exists = J33
 			}
 		}
 		
@@ -687,7 +696,9 @@ J53_3 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = J53 #Zabutodask
+		NOT = { has_country_modifier = lake_federation_member }
 	}
 	has_country_shield = yes
 	
@@ -735,7 +746,7 @@ J53_3 = {
 				limit = { NOT = { dip = 6 } }
 				add_dip_power = -100
 			}
-			change_primary_culture = orachav
+			primary_and_ruler_culture_change = { race = human new_culture = orachav }
 			domn_filaenan_area = {
 				limit = { NOT = { religion = yudunyovi } }
 				change_religion = kodave_followers
@@ -963,7 +974,7 @@ J53_3 = {
 				limit = { NOT = { is_core = ROOT } }
 				add_claim = ROOT
 			}
-			ogre_mountains_region = {
+			ogre_valley_region = {
 				limit = { NOT = { is_core = ROOT } }
 				add_claim = ROOT
 			}
@@ -1245,7 +1256,9 @@ J53_4 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = J53 #Zabutodask
+		NOT = { has_country_modifier = lake_federation_member }
 	}
 	has_country_shield = yes
 	
@@ -1534,7 +1547,9 @@ J53_5 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = J53 #Zabutodask
+		NOT = { has_country_modifier = lake_federation_member }
 	}
 	has_country_shield = yes
 	

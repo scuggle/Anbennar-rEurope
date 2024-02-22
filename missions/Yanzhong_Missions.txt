@@ -5,6 +5,7 @@ yanzhong_1 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Y08
 	}
 
@@ -96,6 +97,7 @@ yanzhong_2 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Y08
 	}
 	
@@ -286,6 +288,7 @@ yanzhong_3 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Y08
 	}
 	
@@ -379,6 +382,7 @@ yanzhong_5_blank = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Y08
 	}
 

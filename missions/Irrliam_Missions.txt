@@ -4,6 +4,7 @@ irrliam_coastal_expansion = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = F37
 			AND = {
@@ -228,7 +229,7 @@ irrliam_coastal_expansion = {
 					months = 360
 				}
 			}
-			magairous_area = {
+			zagnabad_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
@@ -309,6 +310,7 @@ irrliam_river_expansion = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = F37
 			AND = {
@@ -604,6 +606,7 @@ irrliam_big_development = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = F37
 			AND = {
@@ -816,6 +819,7 @@ irrliam_small_development = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = F37
 			AND = {
@@ -1093,6 +1097,7 @@ irrliam_trade = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = F37
 			AND = {

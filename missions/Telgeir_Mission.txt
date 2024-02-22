@@ -6,6 +6,7 @@ telgeir_column_1 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A62
 	}
 	has_country_shield = yes
@@ -299,6 +300,7 @@ telgeir_column_2 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A62
 	}
 	has_country_shield = yes
@@ -349,6 +351,7 @@ telgeir_column_2_dlc = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A62
 		has_dlc = "Cradle of Civilization"
 	}
@@ -379,6 +382,7 @@ telgeir_column_2_part_2 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A62
 	}
 	has_country_shield = yes
@@ -508,6 +512,7 @@ telgeir_column_3 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A62
 	}
 	has_country_shield = yes
@@ -865,6 +870,7 @@ telgeir_development = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A62
 	}
 	has_country_shield = yes
@@ -1078,6 +1084,7 @@ telgeir_dwarf = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A62
 	}
 	has_country_shield = yes
@@ -1137,6 +1144,7 @@ telgeir_europe_hre = {
 	ai = yes
 	
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A62
 	}
 	has_country_shield = no
@@ -1206,6 +1214,7 @@ telgeir_europe_hre_ban = {
 	ai = yes
 	
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A62
 	}
 	has_country_shield = no

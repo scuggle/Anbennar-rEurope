@@ -6,6 +6,7 @@ busilar_1 = {
 	has_country_shield = yes
 	
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A29
 	}
 	
@@ -161,6 +162,7 @@ busilar_2 = {
 	has_country_shield = yes
 	
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A29
 	}
 	
@@ -325,6 +327,7 @@ busilar_3 = {
 	has_country_shield = yes
 	
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A29
 	}
 	
@@ -630,6 +633,7 @@ busilar_4 = {
 	has_country_shield = yes
 	
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A29
 	}
 	
@@ -988,6 +992,7 @@ busilar_5 = {
 	has_country_shield = yes
 	
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A29
 	}
 	

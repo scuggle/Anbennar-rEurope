@@ -58,7 +58,7 @@ atlantis = {
 		}
 		country_modifiers = {
 			administrative_efficiency = 0.025
-			naval_forcelimit_modifier = 0.1
+			naval_forcelimit_modifier = 0.05
 		}
 		on_upgraded = {
 		}
@@ -86,7 +86,7 @@ atlantis = {
 			months = 480
 		}
 		cost_to_upgrade = {
-			factor = 5000
+			factor = 6000
 		}
 		province_modifiers = {
 		}
@@ -188,7 +188,7 @@ malacnar_city_of_warriors = {
 			province_trade_power_value = 5
 		}
 		area_modifier = {
-			local_manpower_modifier = 0.2
+			local_manpower_modifier = 0.15
 		}
 		country_modifiers = {
 			army_tradition_from_battle = 0.5
@@ -220,7 +220,7 @@ malacnar_city_of_warriors = {
 			province_trade_power_value = 10
 		}
 		area_modifier = {
-			local_manpower_modifier = 0.33
+			local_manpower_modifier = 0.2
 		}
 		country_modifiers = {
 			army_tradition_from_battle = 1
@@ -304,6 +304,7 @@ vels_bacar_scol_mecynn = {
 			local_development_cost = -0.05
 		}
 		area_modifier = {
+			local_manpower_modifier = 0.05
 		}
 		country_modifiers = {
 			shock_damage = 0.025
@@ -322,6 +323,7 @@ vels_bacar_scol_mecynn = {
 			local_development_cost = -0.1
 		}
 		area_modifier = {
+			local_manpower_modifier = 0.1
 		}
 		country_modifiers = {
 			shock_damage = 0.05
@@ -342,6 +344,7 @@ vels_bacar_scol_mecynn = {
 			allowed_num_of_buildings = 1
 		}
 		area_modifier = {
+			local_manpower_modifier = 0.15
 		}
 		country_modifiers = {
 			shock_damage = 0.10
@@ -425,7 +428,7 @@ grebniesth_hedge_gardens = {
 			local_unrest = -1
 		}
 		country_modifiers = {
-			prestige = 0.1
+			prestige = 0.25
 			reinforce_speed = 0.05
 		}
 		on_upgraded = {
@@ -445,7 +448,7 @@ grebniesth_hedge_gardens = {
 			local_unrest = -3
 		}
 		country_modifiers = {
-			prestige = 0.25
+			prestige = 0.5
 			reinforce_speed = 0.1
 		}
 		on_upgraded = {
@@ -552,7 +555,7 @@ stanyrhrada_golden_dome = {
 			months = 240
 		}
 		cost_to_upgrade = {
-			factor = 2500
+			factor = 2000
 		}
 		province_modifiers = {
 			local_defensiveness = 0.2
@@ -644,14 +647,14 @@ ixazulcucua_leechfathers_maw = {
 			factor = 1000
 		}
 		province_modifiers = {
-			local_development_cost = -0.05
+			local_development_cost = -0.075
 			local_tax_modifier = 0.1
 		}
 		area_modifier = {
 			local_unrest = -1
 		}
 		country_modifiers = {
-			tolerance_own = 0.5
+			tolerance_own = 1
 		}
 		on_upgraded = {
 		}
@@ -664,14 +667,14 @@ ixazulcucua_leechfathers_maw = {
 			factor = 2500
 		}
 		province_modifiers = {
-			local_development_cost = -0.1
+			local_development_cost = -0.15
 			local_tax_modifier = 0.2
 		}
 		area_modifier = {
 			local_unrest = -2
 		}
 		country_modifiers = {
-			tolerance_own = 1
+			tolerance_own = 1.5
 			global_missionary_strength = 0.01
 			missionaries = 1
 		}
@@ -690,14 +693,14 @@ ixazulcucua_leechfathers_maw = {
 			factor = 5000
 		}
 		province_modifiers = {
-			local_development_cost = -0.15
+			local_development_cost = -0.25
 			local_tax_modifier = 0.3
 		}
 		area_modifier = {
 			local_unrest = -3
 		}
 		country_modifiers = {
-			tolerance_own = 1.5
+			tolerance_own = 2
 			global_missionary_strength = 0.02
 			harsh_treatment_cost = -0.2
 		}
@@ -788,7 +791,7 @@ orenkoraim_nakar_koraim = {
 			months = 240
 		}
 		cost_to_upgrade = {
-			factor = 2500
+			factor = 3000
 		}
 		province_modifiers = {
 			local_development_cost = -0.15
@@ -908,7 +911,7 @@ gift_of_spring = {
 			months = 120
 		}
 		cost_to_upgrade = {
-			factor = 1000
+			factor = 2500
 		}
 		province_modifiers = {
 		}
@@ -927,7 +930,7 @@ gift_of_spring = {
 			months = 240
 		}
 		cost_to_upgrade = {
-			factor = 2500
+			factor = 5000
 		}
 		province_modifiers = {
 		}
@@ -946,7 +949,7 @@ gift_of_spring = {
 			months = 480
 		}
 		cost_to_upgrade = {
-			factor = 5000
+			factor = 10000
 		}
 		province_modifiers = {
 		}
@@ -1046,7 +1049,7 @@ gift_of_summer = {
 		}
 		country_modifiers = {
 			global_trade_power = 0.1
-			trade_steering = 0.1
+			trade_steering = 0.05
 		}
 		on_upgraded = {
 		}
@@ -1064,7 +1067,7 @@ gift_of_summer = {
 		}
 		country_modifiers = {
 			global_trade_power = 0.1
-			trade_steering = 0.2
+			trade_steering = 0.1
 		}
 		on_upgraded = {
 		}
@@ -1082,7 +1085,7 @@ gift_of_summer = {
 		}
 		country_modifiers = {
 			global_trade_power = 0.15
-			trade_steering = 0.33
+			trade_steering = 0.2
 		}
 		on_upgraded = {
 		}

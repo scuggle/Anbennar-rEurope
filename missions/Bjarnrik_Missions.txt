@@ -6,6 +6,7 @@ bjarnrik1_missions = {
 	has_country_shield = yes
 	
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Z08
 	}
 	
@@ -415,11 +416,12 @@ bjarnrik2_missions = {
 	has_country_shield = yes
 	
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Z08
 	}
 	
 	bjarnrik_bear_over_murtrhol = {
-		icon = mission_sweat_fealty
+		icon = mission_approach_throne
 		required_missions = { bjarnrik_defeat_obrtrol }
 		position = 2
 		
@@ -866,6 +868,7 @@ bjarnrik3_missions = {
 	has_country_shield = yes
 	
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Z08
 	}
 	
@@ -1209,6 +1212,7 @@ bjarnrik4_missions = {
 	has_country_shield = yes
 	
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Z08
 	}
 	
@@ -1647,6 +1651,7 @@ bjarnrik5_missions = {
 	has_country_shield = yes
 	
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Z08
 	}
 	

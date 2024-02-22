@@ -6,6 +6,7 @@ ibevar_1 = {
 	has_country_shield = yes
 	
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A32
 	}
 	
@@ -119,6 +120,7 @@ ibevar_2 = {
 	has_country_shield = yes
 	
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A32
 	}
 	
@@ -370,6 +372,7 @@ ibevar_3 = {
 	has_country_shield = yes
 	
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A32
 	}
 	
@@ -705,6 +708,7 @@ ibevar_4 = {
 	has_country_shield = yes
 	
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A32
 	}
 	
@@ -770,8 +774,30 @@ ibevar_4 = {
 		
 		effect = {
 			custom_tooltip = ibevar_new_faith_tooltip
-			hidden_effect = { set_country_flag = ibevar_new_faith }
-			country_event = { id = regent_court.2 }
+			hidden_effect = {
+				set_country_flag = upgraded_munas
+				if = {
+					limit = { has_country_flag = munas_order_picked }
+					every_owned_province = {
+						if = {
+							limit = { holy_order = munas_order }
+							add_permanent_province_modifier = {
+								name = corinite_munas_upgraded
+								duration = -1
+							}
+						}
+					}
+					clr_country_flag = corinite_dip_order_picked
+					country_event = {
+						id = corinite.301
+						days = 7
+					}
+				}
+			}
+			if = {
+				limit = { religion = regent_court }
+				country_event = { id = regent_court.2 }
+			}
 		}
 	}
 	
@@ -958,6 +984,7 @@ ibevar_5 = {
 	has_country_shield = yes
 	
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A32
 	}
 	

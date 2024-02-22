@@ -6,6 +6,7 @@ grombar_vrorenmarch = {
 	has_country_shield = yes
 	
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = Z18
 			tag = Z50
@@ -148,6 +149,7 @@ grombar_goblins = {
 	has_country_shield = yes
 	
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = Z18
 			tag = Z50
@@ -200,6 +202,7 @@ grombar_religion = {
 	has_country_shield = yes
 	
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = Z18
 			tag = Z50
@@ -252,6 +255,7 @@ grombar_half_orc_missions_1 = {
 	has_country_shield = yes
 	
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Z50
 		has_country_flag = half_orc_grombar
 	}
@@ -667,6 +671,7 @@ grombar_orc_missions_1 = {
 	has_country_shield = yes
 	
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Z50
 		has_country_flag = orc_grombar
 	}
@@ -1144,6 +1149,7 @@ grombar_diplomatic_missions = {
 	has_country_shield = yes
 	
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Z50
 	}
 	
@@ -1380,6 +1386,7 @@ grombar_main_branch = {
 	has_country_shield = yes
 	
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = Z18
 			tag = Z50
@@ -1588,6 +1595,7 @@ grombar_2 = {
 	has_country_shield = yes
 	
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Z50
 	}
 	
@@ -1977,6 +1985,7 @@ grombar_economic_branch_3 = {
 	has_country_shield = yes
 	
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Z50
 	}
 	
@@ -2099,6 +2108,7 @@ grombar_development_of_bal_vroren = {
 	has_country_shield = yes
 	
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = Z18
 			tag = Z50
@@ -2143,6 +2153,7 @@ grombar_colonization_1 = {
 	has_country_shield = yes
 	
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = Z18
 			tag = Z50
@@ -2208,6 +2219,7 @@ grombar_colonization_2 = {
 	has_country_shield = yes
 	
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Z50
 	}
 	
@@ -2526,6 +2538,7 @@ grombar_conquest_of_celmaldor = {
 	has_country_shield = yes
 	
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Z50
 	}
 	
@@ -2630,6 +2643,7 @@ grombar_economic_branch = {
 	has_country_shield = yes
 	
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Z50
 	}
 	
@@ -2760,6 +2774,7 @@ grombar_giants_tears = {
 	has_country_shield = yes
 	
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = Z18
 			tag = Z50
@@ -2811,6 +2826,7 @@ grombar_conquest_of_gerudia_2 = {
 	has_country_shield = yes
 	
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = Z18
 			tag = Z50
@@ -2909,6 +2925,7 @@ grombar_conquest_of_gerudia_3 = {
 	has_country_shield = yes
 	
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Z50
 	}
 	
@@ -3033,6 +3050,7 @@ grombar_economic_branch_2 = {
 	has_country_shield = yes
 	
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Z50
 	}
 	
@@ -3135,6 +3153,7 @@ grombar_conquest_of_gerudia_1 = {
 	has_country_shield = yes
 	
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = Z18
 			tag = Z50
@@ -3245,6 +3264,7 @@ grombar_naval_missions_3 = {
 	has_country_shield = yes
 	
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = Z18
 			tag = Z50
@@ -3276,6 +3296,7 @@ grombar_naval_missions_2 = {
 	has_country_shield = yes
 	
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Z50
 	}
 	
@@ -3343,6 +3364,7 @@ grombar_half_orc_missions_3 = {
 	has_country_shield = yes
 	
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		has_country_flag = half_orc_grombar
 		tag = Z50
 	}
@@ -3452,6 +3474,7 @@ grombar_orc_missions_2 = {
 	has_country_shield = yes
 	
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		has_country_flag = orc_grombar
 		tag = Z50
 	}

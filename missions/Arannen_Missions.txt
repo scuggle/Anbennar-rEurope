@@ -4,6 +4,7 @@ A72_north = {
 	generic = no
 	ai = yes
 	potential = {
+    	NOT = { has_country_flag = chose_generic_mt }
 		tag = A72
 	}
 	has_country_shield = yes
@@ -254,6 +255,7 @@ A72_south = {
 	generic = no
 	ai = yes
 	potential = {
+    	NOT = { has_country_flag = chose_generic_mt }
 		tag = A72
 	}
 	has_country_shield = yes
@@ -561,6 +563,7 @@ A72_busilar = {
 	generic = no
 	ai = yes
 	potential = {
+    	NOT = { has_country_flag = chose_generic_mt }
 		tag = A72
 	}
 	has_country_shield = yes
@@ -700,6 +703,7 @@ A72_development = {
 	generic = no
 	ai = yes
 	potential = {
+    	NOT = { has_country_flag = chose_generic_mt }
 		tag = A72
 	}
 	has_country_shield = yes
@@ -1021,6 +1025,7 @@ A72_daravan = {
 	generic = no
 	ai = yes
 	potential = {
+    	NOT = { has_country_flag = chose_generic_mt }
 		tag = A72
 	}
 	has_country_shield = yes

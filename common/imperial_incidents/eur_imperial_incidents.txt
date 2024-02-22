@@ -1,0 +1,124 @@
+incident_cestirande_lilac_wars = {
+	event = flavor_cestirande.11
+	default_option = 1
+	
+	can_stop = {
+		OR = {
+			NOT = { exists = A98 }
+			A31 = { is_part_of_hre = no }
+			A31 = { is_elector = no }
+			A45 = { is_part_of_hre = no }
+			A45 = { is_elector = no }
+		}
+	}
+
+	0 = { # reject claims
+		factor = 1
+		modifier = {
+			factor = 5
+			OR = {
+				ai_attitude = {
+					who = A98
+					attitude = attitude_rivalry
+				}
+				ai_attitude = {
+					who = A98
+					attitude = attitude_hostile
+				}
+				ai_attitude = {
+					who = A98
+					attitude = attitude_threatened
+				}
+				ai_attitude = {
+					who = A98
+					attitude = attitude_outraged
+				}
+				ai_attitude = {
+					who = A98
+					attitude = attitude_rebellious
+				}
+			}
+		}
+		modifier = {
+			factor = 3
+			NOT = {
+				has_opinion = {
+					who = A98
+					value = -4
+				}
+			}
+		}
+		modifier = {
+			factor = 0
+			tag = A98
+		}
+	}
+
+	1 = { # acknowledge claim
+		factor = 1
+		modifier = {
+			factor = 2
+			OR = {
+				ai_attitude = {
+					who = A98
+					attitude = attitude_disloyal
+				}
+				has_opinion = {
+					who = A98
+					value = 15
+				}
+			}
+			NOT = {
+				has_opinion = {
+					who = A98
+					value = 35
+				}
+			}
+		}
+		modifier = {
+			factor = 0
+			tag = A31
+		}
+		modifier = {
+			factor = 0
+			tag = A45
+		}
+	}
+
+	2 = { # enforce claim.
+		factor = 1
+		modifier = {
+			factor = 5
+			OR = {
+				has_opinion = {
+					who = A98
+					value = 35
+				}				
+				ai_attitude = {
+					who = A98
+					attitude = attitude_friendly
+				}
+				ai_attitude = {
+					who = A98
+					attitude = attitude_loyal
+				}
+				ai_attitude = {
+					who = A98
+					attitude = attitude_allied
+				}
+			}
+		}
+		modifier = {
+			factor = 10
+			tag = A98
+		}
+		modifier = {
+			factor = 0
+			tag = A31
+		}
+		modifier = {
+			factor = 0
+			tag = A45
+		}
+	}
+}

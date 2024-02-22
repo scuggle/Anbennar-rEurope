@@ -5,6 +5,7 @@ nimscodd_1 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = A06
 			tag = A79
@@ -203,6 +204,7 @@ hierarchy_1 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A79
 	}
 	
@@ -502,6 +504,7 @@ nimscodd_2 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = A06
 			tag = A79
@@ -766,6 +769,7 @@ hierarchy_2 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A79
 	}
 	
@@ -1098,6 +1102,7 @@ nimscodd_3 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = A06
 			tag = A79
@@ -1312,6 +1317,7 @@ hierarchy_3 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A79
 	}
 	
@@ -1672,6 +1678,7 @@ nimscodd_4a = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = A06
 			tag = A79
@@ -1721,6 +1728,7 @@ hierarchy_4a = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A79
 	}
 	
@@ -1758,6 +1766,7 @@ nimscodd_4b = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = A06
 			tag = A79
@@ -1880,6 +1889,7 @@ hierarchy_4b = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A79
 	}
 	
@@ -2204,6 +2214,7 @@ nimscodd_5 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = A06
 			tag = A79
@@ -2254,6 +2265,7 @@ hierarchy_5 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A79
 	}
 	

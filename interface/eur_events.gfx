@@ -1,0 +1,6 @@
+spriteTypes = {
+	spriteType = {
+		name = "ECLIPSE_eventPicture"
+		texturefile = "gfx/event_pictures/ECLIPSE_eventPicture.dds"
+	}
+}

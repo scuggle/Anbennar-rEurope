@@ -4,6 +4,7 @@ unguldavor_religious_missions = {
     generic = no
     ai = yes
     potential = {
+    NOT = { has_country_flag = chose_generic_mt }
         tag = Z52
     }
     has_country_shield = yes
@@ -58,6 +59,7 @@ unguldavor_north_citadel = {
     generic = no
     ai = yes
     potential = {
+    NOT = { has_country_flag = chose_generic_mt }
         tag = Z52
     }
     has_country_shield = yes
@@ -98,6 +100,7 @@ unguldavor_tech_missions = {
     generic = no
     ai = yes
     potential = {
+    NOT = { has_country_flag = chose_generic_mt }
         tag = Z52
     }
     has_country_shield = yes
@@ -129,6 +132,7 @@ unguldavor_khozrugan = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Z52
 		NOT = { map_setup = map_setup_random }
 	}
@@ -165,6 +169,7 @@ unguldavor_castonath_and_escann = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Z52
 		NOT = { map_setup = map_setup_random }
 	}
@@ -338,7 +343,7 @@ unguldavor_castonath_and_escann = {
 			castonath_area = {
 				type = all
 				owned_by = ROOT
-				has_building = university
+				has_manufactory_trigger = yes
 			}
 			833 = {
 				development = 50
@@ -507,6 +512,7 @@ unguldavor_general = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Z52
 		NOT = { map_setup = map_setup_random }
 	}
@@ -583,6 +589,7 @@ unguldavor_economic_tree = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Z52
 		NOT = { map_setup = map_setup_random }
 	}
@@ -673,6 +680,7 @@ unguldavor_steel_hill = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Z52
 		NOT = { map_setup = map_setup_random }
 	}

@@ -2,7 +2,8 @@ feiten_missions_1_early = {
 	slot = 1
 	generic = no
 	ai = no
-	potential = { tag = event_target:feiten_or_was_feiten_target }
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = event_target:feiten_or_was_feiten_target }
 	has_country_shield = yes
 	
 	feiten_port_facilities = {
@@ -280,6 +281,7 @@ feiten_missions_1_established = {
 	generic = no
 	ai = no
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = event_target:feiten_or_was_feiten_target
 		has_country_flag = feiten_part_two_unlocked
 	}
@@ -457,6 +459,7 @@ feiten_missions_1_world = {
 	generic = no
 	ai = no
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = event_target:feiten_or_was_feiten_target
 		has_country_flag = feiten_part_three_unlocked
 	}
@@ -627,6 +630,7 @@ feiten_missions_1_last = {
 	generic = no
 	ai = no
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = event_target:feiten_or_was_feiten_target
 		has_country_flag = feiten_part_four_unlocked
 	}
@@ -863,7 +867,8 @@ feiten_missions_2_early = {
 	slot = 2
 	generic = no
 	ai = no
-	potential = { tag = event_target:feiten_or_was_feiten_target }
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = event_target:feiten_or_was_feiten_target }
 	has_country_shield = yes
 	
 	feiten_integrate_cuihiok = {
@@ -875,14 +880,14 @@ feiten_missions_2_early = {
 			province_id = 4884 # Cuihiok
 			OR = {
 				NOT = { has_tax_building_trigger = yes }
-				local_autonomy = 25
+				local_autonomy = 30
 			}
 		}
 		
 		trigger = {
 			4884 = {
 				has_tax_building_trigger = yes
-				NOT = { local_autonomy = 25 }
+				NOT = { local_autonomy = 30 }
 			}
 		}
 		
@@ -1001,14 +1006,16 @@ feiten_missions_2_early = {
 					}
 				}
 				every_subject_country = {
-					limit = {
-						trade_goods = tea
-						has_production_building_trigger = yes
-						has_trade_building_trigger = yes
-					}
-					add_permanent_province_modifier = {
-						name = feiten_local_trade_monopoly
-						duration = 10950
+					every_owned_province = {
+						limit = {
+							trade_goods = tea
+							has_production_building_trigger = yes
+							has_trade_building_trigger = yes
+						}
+						add_permanent_province_modifier = {
+							name = feiten_local_trade_monopoly
+							duration = 10950
+						}
 					}
 				}
 			}
@@ -1021,6 +1028,7 @@ feiten_missions_2_established = {
 	generic = no
 	ai = no
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = event_target:feiten_or_was_feiten_target
 		has_country_flag = feiten_part_two_unlocked
 	}
@@ -1275,6 +1283,7 @@ feiten_missions_2_world = {
 	generic = no
 	ai = no
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = event_target:feiten_or_was_feiten_target
 		has_country_flag = feiten_part_three_unlocked
 	}
@@ -1401,6 +1410,7 @@ feiten_missions_2_last = {
 	generic = no
 	ai = no
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = event_target:feiten_or_was_feiten_target
 		has_country_flag = feiten_part_four_unlocked
 	}
@@ -1596,7 +1606,8 @@ feiten_missions_3_early = {
 	slot = 3
 	generic = no
 	ai = no
-	potential = { tag = event_target:feiten_or_was_feiten_target }
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = event_target:feiten_or_was_feiten_target }
 	has_country_shield = yes
 	
 	feiten_incite_the_rebellious_cub = {
@@ -1624,7 +1635,8 @@ feiten_missions_3_early = {
 					}
 				}
 			}
-			else = {
+			else_if = {
+				limit = { Y21 = { is_free_or_tributary_trigger = yes } }
 				reverse_has_opinion = {
 					who = Y24
 					value = 200
@@ -1632,6 +1644,20 @@ feiten_missions_3_early = {
 				has_spy_network_in = {
 					who = Y21
 					value = 50
+				}
+			}
+			else = {
+				reverse_has_opinion = {
+					who = Y24
+					value = 200
+				}
+				Y21 = {
+					overlord = {
+						has_spy_network_from = {
+						who = ROOT
+						value = 50
+						}
+					}
 				}
 			}
 			is_subject = no
@@ -1675,7 +1701,7 @@ feiten_missions_3_early = {
 	}
 	
 	feiten_under_our_wing = {
-		icon = mission_sweat_fealty
+		icon = mission_approach_throne
 		position = 2
 		required_missions = {
 			feiten_incite_the_rebellious_cub
@@ -1795,7 +1821,7 @@ feiten_missions_3_early = {
 		}
 
 		provinces_to_highlight = {
-			province_id = 4871
+			province_id = 1372
 			NOT = {
 				trade_share = {
 					country = ROOT
@@ -1807,7 +1833,7 @@ feiten_missions_3_early = {
 		trigger = {
 			republican_tradition = 95
 			stability = 1
-			4871 = { # Tianlou
+			1372 = { # Tianlou
 				trade_share = {
 					country = ROOT
 					share = 20
@@ -1845,6 +1871,7 @@ feiten_missions_3_established = {
 	generic = no
 	ai = no
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = event_target:feiten_or_was_feiten_target
 		has_country_flag = feiten_part_two_unlocked
 	}
@@ -1991,6 +2018,7 @@ feiten_missions_3_established = {
 		
 		effect = {
 			add_republican_tradition_excess_to_mana_effect = { VAL = 20 }
+			hidden_effect = { show_ambient_object = Jellyfish_Tianlou }
 		}
 	}
 	
@@ -2130,6 +2158,7 @@ feiten_missions_3_established = {
 			add_mil_power = 50
 			custom_tooltip = new_missions_revealed_tt
 			hidden_effect = { swap_non_generic_missions = yes }
+			hidden_effect = { apply_sprite_pack = Airship_sprite_pack }
 		}
 	}
 }
@@ -2139,6 +2168,7 @@ feiten_missions_3_world = {
 	generic = no
 	ai = no
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = event_target:feiten_or_was_feiten_target
 		has_country_flag = feiten_part_three_unlocked
 	}
@@ -2343,6 +2373,7 @@ feiten_missions_3_world = {
 					key = "Arrival of the Shuimu"
 				}
 			}
+		hidden_effect = { show_ambient_object = Jellyfish_Rahen }
 		}
 	}
 	
@@ -2467,6 +2498,7 @@ feiten_missions_3_world = {
 		
 		effect = {
 			country_event = { id = flavor_feiten.207 }
+			hidden_effect = { show_ambient_object = Jellyfish_Cannor }
 		}
 	}
 	
@@ -2508,6 +2540,11 @@ feiten_missions_3_world = {
 				country_event = { id = flavor_feiten.300 days = 730 random = 365 }
 				country_event = { id = flavor_feiten.301 days = 1825 random = 730 }
 				country_event = { id = flavor_feiten.302 days = 3650 }
+				show_ambient_object = Airship_1
+				show_ambient_object = Airship_2
+				show_ambient_object = Airship_anchored_1
+				show_ambient_object = Airship_anchored_2
+				hide_ambient_object = Jellyfish_gone
 			}
 			set_country_flag = feiten_lightning_shuimu_unlocked
 			unlock_merc_company = {
@@ -2532,6 +2569,7 @@ feiten_missions_3_last = {
 	generic = no
 	ai = no
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = event_target:feiten_or_was_feiten_target
 		has_country_flag = feiten_part_four_unlocked
 	}
@@ -2934,7 +2972,8 @@ feiten_missions_4_early = {
 	slot = 4
 	generic = no
 	ai = no
-	potential = { tag = event_target:feiten_or_was_feiten_target }
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = event_target:feiten_or_was_feiten_target }
 	has_country_shield = yes
 	
 	feiten_white_gold = {
@@ -3088,7 +3127,7 @@ feiten_missions_4_early = {
 		}
 		
 		effect = {
-			4871 = {
+			1372 = {
 				add_trade_modifier = {
 					who = ROOT
 					duration = -1
@@ -3185,6 +3224,7 @@ feiten_missions_4_established = {
 	generic = no
 	ai = no
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = event_target:feiten_or_was_feiten_target
 		has_country_flag = feiten_part_two_unlocked
 	}
@@ -3288,6 +3328,7 @@ feiten_missions_4_established = {
 				days = 30
 			}
 			set_country_flag = supporting_artificers
+			hidden_effect = { apply_sprite_pack = Balloon_sprite_pack }
 		}
 	}
 	
@@ -3337,6 +3378,7 @@ feiten_missions_4_world = {
 	generic = no
 	ai = no
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = event_target:feiten_or_was_feiten_target
 		has_country_flag = feiten_part_three_unlocked
 	}
@@ -3355,18 +3397,23 @@ feiten_missions_4_world = {
 		
 		trigger = {
 			has_discovered = 5226 # Zurkanrek
-			5226 = {
-				owner = {
-					OR = {
-						has_spy_network_from = {
-							who = ROOT
-							value = 50
-						}
-						has_opinion = {
-							who = ROOT
-							value = 150
+			OR = {
+				5226 = {
+					owner = {
+						OR = {
+							has_spy_network_from = {
+								who = ROOT
+								value = 50
+							}
+							has_opinion = {
+								who = ROOT
+								value = 150
+							}
 						}
 					}
+				}
+				5226 = {
+					owned_by = ROOT
 				}
 			}
 		}
@@ -3475,7 +3522,7 @@ feiten_missions_4_world = {
 		provinces_to_highlight = {
 			OR = {
 				province_id = 4990
-				province_id = 5356
+				province_id = 1374
 				province_id = 5202
 			}
 			NOT = { is_strongest_trade_power = ROOT }
@@ -3483,7 +3530,7 @@ feiten_missions_4_world = {
 		
 		trigger = {
 			4990 = { is_strongest_trade_power = ROOT }
-			5356 = { is_strongest_trade_power = ROOT }
+			1374 = { is_strongest_trade_power = ROOT }
 			5202 = { is_strongest_trade_power = ROOT }
 		}
 		
@@ -3640,6 +3687,7 @@ feiten_missions_4_last = {
 	generic = no
 	ai = no
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = event_target:feiten_or_was_feiten_target
 		has_country_flag = feiten_part_four_unlocked
 	}
@@ -3751,13 +3799,9 @@ feiten_missions_4_last = {
 				has_country_flag = feiten_invention_porcelain_caged_firebirds
 				has_country_flag = feiten_invention_steel_rudders
 			}
-			custom_trigger_tooltip = {
-				# Both the vanilla/default and the one I made sucks
-				tooltip = feiten_coal_production
-				trade_goods_produced_amount = {
-					trade_goods = coal
-					amount = 5
-				}
+			trade_goods_produced_amount = {
+				trade_goods = coal
+				amount = 5
 			}
 			jellyfish_coast_provinces = {
 				type = all
@@ -3806,7 +3850,8 @@ feiten_missions_5_early = {
 	slot = 5
 	generic = no
 	ai = no
-	potential = { tag = event_target:feiten_or_was_feiten_target }
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = event_target:feiten_or_was_feiten_target }
 	has_country_shield = yes
 	
 	feiten_state_whaling_expeditions = {
@@ -3914,6 +3959,7 @@ feiten_missions_5_established = {
 	generic = no
 	ai = no
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = event_target:feiten_or_was_feiten_target
 		has_country_flag = feiten_part_two_unlocked
 	}
@@ -4031,6 +4077,7 @@ feiten_missions_5_world = {
 	generic = no
 	ai = no
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = event_target:feiten_or_was_feiten_target
 		has_country_flag = feiten_part_three_unlocked
 	}
@@ -4098,8 +4145,7 @@ feiten_missions_5_world = {
 					who = ROOT
 				}
 				OR = {
-					# Uncomment + change to Triarchy's tag once they're added
-					# tag = TRI
+					tag = U31 #Triarchy
 					culture_group = gnomish
 					has_reform = technocracy_republic_reform
 					check_variable = {
@@ -4127,8 +4173,7 @@ feiten_missions_5_world = {
 						who = ROOT
 					}
 					OR = {
-						# Uncomment + change to Triarchy's tag once they're added
-						# tag = TRI
+						tag = U31 #Triarchy
 						culture_group = gnomish
 						has_reform = technocracy_republic_reform
 						check_variable = {
@@ -4220,7 +4265,7 @@ feiten_missions_5_world = {
 	}
 	
 	feiten_field_demonstration = {
-		icon = mission_in_the_name_of_the_fallen
+		icon = mission_burning_castle
 		position = 20
 		required_missions = {
 			feiten_earning_gommos_respect
@@ -4260,6 +4305,7 @@ feiten_missions_5_last = {
 	generic = no
 	ai = no
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = event_target:feiten_or_was_feiten_target
 		has_country_flag = feiten_part_four_unlocked
 	}
@@ -4276,7 +4322,11 @@ feiten_missions_5_last = {
 			province_group = jellyfish_coast_provinces
 			OR = {
 				NOT = { has_building = university }
-				NOT = { enlightenment = 100 }
+				AND = {
+					NOT = { enlightenment = 100 }
+					NOT = { has_province_modifier = feiten_shuimu_engineering_workshop }
+					NOT = { has_province_modifier = feiten_shuimu_engineering_workshop_no_tech_cost }
+				}
 			}
 		}
 		
@@ -4285,10 +4335,8 @@ feiten_missions_5_last = {
 				type = all
 				has_building = university
 				OR = {
-					has_local_modifier_value = {
-						which = local_institution_spread
-						value = 0.5
-					}
+					has_province_modifier = feiten_shuimu_engineering_workshop
+					has_province_modifier = feiten_shuimu_engineering_workshop_no_tech_cost
 					enlightenment = 100
 				}
 			}

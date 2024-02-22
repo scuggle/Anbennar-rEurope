@@ -6,6 +6,7 @@ H85_truedagger_column_1 = {
 	ai = yes
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H85
 	}
 	has_country_shield = yes
@@ -55,7 +56,7 @@ H85_truedagger_column_1 = {
 	}
 
 	H85_eternal_loyalty = {
-		icon = mission_sweat_fealty
+		icon = mission_approach_throne
 		position = 15
 		required_missions = {
 			H85_find_their_homes
@@ -142,6 +143,7 @@ H85_truedagger_column_2 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H85
 	}
 	has_country_shield = yes
@@ -819,6 +821,7 @@ H85_truedagger_column_3 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H85
 	}
 	has_country_shield = yes
@@ -1430,6 +1433,7 @@ H85_truedagger_column_4 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H85
 	}
 	has_country_shield = yes
@@ -2113,6 +2117,7 @@ H85_truedagger_column_5 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H85
 	}
 	has_country_shield = yes

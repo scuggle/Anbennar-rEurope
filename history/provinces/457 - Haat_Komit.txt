@@ -1,13 +1,11 @@
 
 #457 - Tashkent
 
-#owner = U01
-#controller = U01
-#add_core = U01
-owner = U10
-controller = U10
-add_core = U10
-culture = kheteratan
+owner = U01
+controller = U01
+add_core = U01
+add_core = L28
+culture = korosheshi
 religion = elikhetist
 
 hre = no

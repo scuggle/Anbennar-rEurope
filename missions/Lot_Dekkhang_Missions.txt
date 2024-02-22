@@ -3,6 +3,7 @@ lot_dekkhang_1 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Y58
 	}
 	has_country_shield = yes
@@ -430,6 +431,7 @@ lot_dekkhang_2 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Y58
 	}
 	has_country_shield = yes
@@ -821,6 +823,7 @@ lot_dekkhang_3 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Y58
 	}
 	has_country_shield = yes
@@ -1240,6 +1243,7 @@ lot_dekkhang_4 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Y58
 	}
 	has_country_shield = yes
@@ -1378,7 +1382,7 @@ lot_dekkhang_4 = {
 			add_treasury = -50
 			random_hired_mercenary_company = {
 				limit = { template = merc_dishonoured }
-				kill_mercenary_leader = yes
+				kill_mercenary_leader = THIS
 				add_company_manpower = -0.25
 			}
 			4941 = { remove_province_modifier = y58_unregistered_dishonoured_mercs }
@@ -1552,6 +1556,7 @@ lot_dekkhang_5 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Y58
 	}
 	has_country_shield = yes

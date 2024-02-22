@@ -3,7 +3,8 @@ gemradcurt_2_1 = {
 	generic = no
 	ai = yes
 	has_country_shield = yes
-	potential = { tag = H16 } 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = H16 } 
 
 	gemradcurt_dead_trial_at_darblath = {
 		icon = mission_necromancy
@@ -184,7 +185,8 @@ gemradcurt_3_1 = {
 	generic = no
 	ai = yes
 	has_country_shield = yes
-	potential = { tag = H16 } 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = H16 } 
 
 	gemradcurt_unite_the_winter = {
 		icon = mission_missive
@@ -305,9 +307,11 @@ gemradcurt_3_1 = {
 			tamharcroc_area = { add_permanent_claim = ROOT }
 
 			if = {
-				limit = {  
-					H18 = { vassal_of = ROOT }
-					H17 = { vassal_of = ROOT }
+				limit = {
+					OR = {
+						H18 = { vassal_of = ROOT }
+						H17 = { vassal_of = ROOT }
+					}
 				}
 
 				country_event = {
@@ -440,7 +444,7 @@ gemradcurt_3_1 = {
 	}
 
 	gemradcurt_the_long_night = {
-		icon = mission_make_it_fall
+		icon = mission_magy
 		position = 6
 		required_missions = {
 			gemradcurt_the_instruments_of_life
@@ -474,7 +478,8 @@ gemradcurt_4_1 = {
 	generic = no
 	ai = yes
 	has_country_shield = yes
-	potential = { tag = H16 } 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = H16 } 
 
 	gemradcurt_winter_alone = {
 		icon = mission_alone_in_the_forest
@@ -627,7 +632,8 @@ gemradcurt_4_1_eordand = {
 	generic = no
 	ai = yes
 	has_country_shield = yes
-	potential = { 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } 
 		tag = H16
 		NOT = { has_country_flag = gemradcurt_immariel_rules } 
 	} 
@@ -655,7 +661,8 @@ gemradcurt_1_2 = {
 	generic = no
 	ai = yes
 	has_country_shield = yes
-	potential = { 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } 
 		tag = H16 
 		has_country_flag = gemradcurt_red_winter_done
 	} 
@@ -712,16 +719,18 @@ gemradcurt_1_2 = {
 		icon = mission_frozen_star
 		position = 9
 		required_missions = { gemradcurt_spring_and_summer } 
-		provinces_to_highlight = {  } 
+		provinces_to_highlight = { 
+			superregion = eordand_superregion
+				is_city = yes
+				NOT = { religion = winter_court }
+		}
 
 		trigger = {  
 			eordand_superregion = {
 				type = all
 				OR = {
 					religion = winter_court
-					religion = raeldaeriach
-					religion = no_religion
-					region = domandrod_region
+					is_city = no
 				}
 			}
 
@@ -1033,7 +1042,8 @@ gemradcurt_2_2 = {
 	generic = no
 	ai = yes
 	has_country_shield = yes
-	potential = { 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } 
 		tag = H16 
 		has_country_flag = gemradcurt_red_winter_done
 	} 
@@ -1546,7 +1556,8 @@ gemradcurt_3_2 = {
 	generic = no
 	ai = yes
 	has_country_shield = yes
-	potential = { 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } 
 		tag = H16 
 		has_country_flag = gemradcurt_red_winter_done
 	} 
@@ -1643,7 +1654,7 @@ gemradcurt_3_2 = {
 	}
 
 	gemradcurt_cold_command = {
-		icon = mission_thirsting_queen
+		icon = mission_thirsting_queen_2
 		position = 10
 		required_missions = { gemradcurt_public_relations } 
 		provinces_to_highlight = {  } 
@@ -2095,7 +2106,8 @@ gemradcurt_4_2 = {
 	generic = no
 	ai = yes
 	has_country_shield = yes
-	potential = { 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } 
 		tag = H16 
 		has_country_flag = gemradcurt_red_winter_done
 	} 
@@ -2271,7 +2283,7 @@ gemradcurt_4_2 = {
 					type = all
 					OR = {
 						owned_by = ROOT
-						province_id = 1487
+						province_id = 2821
 					}
 				}
 				
@@ -2515,7 +2527,7 @@ gemradcurt_4_2 = {
 					share = 80
 				}
 			}
-			1517 = { #Sella
+			1583 = { #Sella
 				trade_share = {
 					country = ROOT
 					share = 10
@@ -2539,7 +2551,8 @@ gemradcurt_5_2 = {
 	generic = no
 	ai = yes
 	has_country_shield = yes
-	potential = { 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } 
 		tag = H16 
 		has_country_flag = gemradcurt_red_winter_done
 	} 

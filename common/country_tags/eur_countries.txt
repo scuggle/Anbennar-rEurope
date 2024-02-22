@@ -23,8 +23,7 @@ X21 = "countries/Wabensoyo.txt"
 #RIP Southroy
 X23 = "countries/Triarchy.txt"
 X24 = "countries/Northern_League.txt"
-
-M01 = "countries/Griffon_Empire.txt"
+X25 = "countries/Griffon_Empire.txt"
 
 ##COT##
 

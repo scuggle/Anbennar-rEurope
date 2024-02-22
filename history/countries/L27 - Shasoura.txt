@@ -3,34 +3,10 @@ setup_vision = yes
 government = monarchy
 add_government_reform = autocracy_reform
 government_rank = 1
-primary_culture = shasoura
+primary_culture = shasouran
 religion = elikhetist
 technology_group = tech_salahadesi
 
 capital = 493
 
 1000.1.1 = { set_estate_privilege = estate_mages_organization_state }
-
-1376.3.12 = {
-	monarch = {
-		name = "Aakh I"
-		dynasty = "Desha"
-		birth_date = 1366.3.12
-		adm = 3
-		dip = 2
-		mil = 2
-	}
-}
-
-1423.6.10 = {
-	heir = {
-		name = "Askhan"
-		monarch_name = "Askh II"
-		dynasty = "Desha"
-		birth_date = 1423.6.10
-		claim = 80
-		adm = 3
-		dip = 3
-		mil = 4
-	}
-}

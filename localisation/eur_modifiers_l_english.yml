@@ -1,8 +1,13 @@
 ﻿l_english:
  crusade_evil: "Crusade against Evil"
  crusade_evil_desc: "Kill it before it lays eggs!"
+ marine_ideas_stronger_marines_buff: "Stronger Marines"
+ marine_ideas_stronger_marines_buff_desc: "Space Marines"
+ new_world_nerf: "New World Nerf"
+ new_world_nerf_desc: "Devving is OP in the new world. Cope and Seethe"
 
- eur_privateer_debuff:0 "Privateer Debuff"
+ eur_balancing_modifier:0 "Balancing Modifier"
+ eur_spy_buff:0 "Spy Buff"
 
 #Idea set crap
  cot_human_min:0 "Human Minority Workers"
@@ -89,3 +94,10 @@
  eur_changes.1109.t:0 "Corins Blessing Festival"
  eur_changes.1109.desc:0 ""
  eur_changes.1109.a:0 "Celebrate"
+ eur_changes.2.t:0 "Chaingrasper Ascendent"
+ eur_changes.2.d:0 "tbd"
+ eur_changes.2.a:0 "We will take everything we can get."
+ eur_changes.3.t:0 "Generic MT Choice"
+ eur_changes.3.d:0 "This choice is irrevocable"
+ eur_changes.3.a:0 "Keep Original MT"
+ eur_changes.3.b:0 "Get Generic MT"

@@ -100,7 +100,7 @@ neckcliffe_the_imperial_dockyard = {
 			months = 240
 		}
 		cost_to_upgrade = {
-			factor = 2500
+			factor = 3500
 		}
 		province_modifiers = {
 			local_ship_repair = 0.25
@@ -133,7 +133,7 @@ neckcliffe_the_imperial_dockyard = {
 			months = 480
 		}
 		cost_to_upgrade = {
-			factor = 5000
+			factor = 7000
 		}
 		province_modifiers = {
 			local_ship_repair = 0.5

@@ -1,126 +1,126 @@
 #This file is for the temporary effects granted by some monuments. If you are looking for the actual monuments themselves, they are in great_projects.
-kozenad_brothel_new_ladies_of_the_opal_calling {
+kozenad_brothel_new_ladies_of_the_opal_calling = {
 	global_unrest = -2
 	local_tax_modifier = 0.33
 	local_development_cost = -0.2
 }
 
-er_natvir_railyard_rail_ride {
+er_natvir_railyard_rail_ride = {
 	movement_speed = 0.1
 	envoy_travel_time = -0.2
 	idea_cost = -0.05
 }
 
-gor_vazumbrog_the_vaulthold_secrets {
+gor_vazumbrog_the_vaulthold_secrets = {
 	all_power_cost = -0.05
 	country_military_power = 1
 	country_diplomatic_power = 1
 	country_admin_power = 1
 }
 
-verkal_skomdihr_warding_gate_extra_firepower {
+verkal_skomdihr_warding_gate_extra_firepower = {
 	fire_damage = 0.1
 }
 
-amlharaz_assembly_hold_council {
+amlharaz_assembly_hold_council = {
 	diplomatic_reputation = 1
 	reduced_liberty_desire_on_same_continent = 20
 }
 
-verkal_dromak_mage_academy_mages_summon_large_damestear_meteor {
+verkal_dromak_mage_academy_mages_summon_large_damestear_meteor = {
 	trade_goods_size = 1
 }
 
-orlazam_food_silos_shrimp_fried_rice {
+orlazam_food_silos_shrimp_fried_rice = {
 	land_attrition = -0.15
 }
 
-ramvault_mines_rise_of_the_rams {
+ramvault_mines_rise_of_the_rams = {
 	cavalry_power = 0.15
 }
 
-emerald_spire_magnificence_of_the_emerald_spire {
+emerald_spire_magnificence_of_the_emerald_spire = {
 	diplomatic_reputation = 1
 	unjustified_demands = -0.33
 }
 
-sedadhum_mithril_plated_soldiers {
+sedadhum_mithril_plated_soldiers = {
 	infantry_shock = 0.2
 	shock_damage_received = -0.1
 }
 
-sedadhum_discovery_of_mithril {
+sedadhum_discovery_of_mithril = {
 	trade_goods_size_modifier = 0.15
 }
 
-haraz_orldhum_nobles_pleased_with_hold_improvements {
+haraz_orldhum_nobles_pleased_with_hold_improvements = {
 	nobles_loyalty_modifier = 0.1
 	nobles_influence_modifier = 0.05
 	stability_cost_modifier = -0.15
 }
 
-ovdal_az_an_display_of_state_power {
+ovdal_az_an_display_of_state_power = {
 	global_autonomy = -0.1
 	diplomatic_reputation = 1
 }
 
-marrhold_tatake_tatake {
+marrhold_tatake_tatake = {
 	shock_damage = 0.1
 	shock_damage_received = -0.1
 }
 
-tuwad_dhumakon_gardens_prosperity {
+tuwad_dhumakon_gardens_prosperity = {
 	global_prosperity_growth = 1
 	global_monthly_devastation = -0.1
 	development_cost = -0.1
 }
 
-khugdihr_bank_generous_interest_rates {
+khugdihr_bank_generous_interest_rates = {
 	interest = -0.25
 }
 
-earthseed_missionaries {
+earthseed_missionaries = {
 	missionaries = 1
 	global_missionary_strength = 0.02
 	church_loyalty_modifier = 0.15
 }
 
-ovdal_kanzad_cannon_foundry_experimental_artillery {
+ovdal_kanzad_cannon_foundry_experimental_artillery = {
 	backrow_artillery_damage = 0.1
 	siege_ability = 0.15
 	artillery_levels_available_vs_fort = 1
 }
 
-arg_ordstun_great_clast_shafts_development (
+arg_ordstun_great_clast_shafts_development = {
 	development_cost = -0.1
 }
 
-ovdal_lodhum_tunnel_of_love_colonizing_the_serpentspine {
+ovdal_lodhum_tunnel_of_love_colonizing_the_serpentspine = {
 	colonists = 1
 	colonist_placement_chance = 0.05
 }
 
-grozumdhir_green_gate_friendlier_relations {
+grozumdhir_green_gate_friendlier_relations = {
 	improve_relation_modifier = 0.25
 	promote_culture_cost = -0.5
 }
 
-kronium_throne_one_throne_to_rule_them_all {
+kronium_throne_one_throne_to_rule_them_all = {
 	core_creation = -0.1
 	prestige = 0.5
 }
 
-seghdihr_home_of_the_seg_band_warriors_of_the_segbandal {
+seghdihr_home_of_the_seg_band_warriors_of_the_segbandal = {
 	mercenary_discipline = 0.05
 	fire_damage = 0.05
 }
 
-verkal_ozovar_phokhao_citadel_its_simple_gentlemen {
+verkal_ozovar_phokhao_citadel_its_simple_gentlemen = {
 	diplomatic_annexation_cost = -0.1
 	diplomatic_reputation = 1
 }
 
-ovdal_tungr_port_hold_ship_durability {
+ovdal_tungr_port_hold_ship_durability = {
 	heavy_ship_power = 0.05
 	ship_durability = 0.1
 }

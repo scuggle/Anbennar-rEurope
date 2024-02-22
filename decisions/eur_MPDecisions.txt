@@ -58,13 +58,7 @@ country_decisions = {
 			escann_superregion= {
 				discover_country = ROOT
 			}
-			northern_expanse_superregion= {
-				discover_country = ROOT
-			}
 			forbidden_lands_superregion= {
-				discover_country = ROOT
-			}
-			north_haless_superregion= {
 				discover_country = ROOT
 			}
 			rahen_superregion= {
@@ -88,7 +82,16 @@ country_decisions = {
 			deepwoods_portal_superregion= {
 				discover_country = ROOT
 			}
-			east_indies_superregion= {
+			fangaula_superregion = {
+				discover_country = ROOT
+			}
+			west_sarhal_superregion = {
+				discover_country = ROOT
+			}
+			east_sarhal_superregion = {
+				discover_country = ROOT
+			}
+			south_sarhal_superregion = {
 				discover_country = ROOT
 			}
 			north_aelantir_coast_area = {
@@ -185,6 +188,14 @@ country_decisions = {
 			num_of_subjects = 1
 			any_subject_country = {
 				NOT = { has_country_flag = has_overriden_color_flag }
+				NOT = {
+					OR = {
+						is_subject_of_type = colony
+						is_subject_of_type = crown_colony
+						is_subject_of_type = private_enterprise
+						is_subject_of_type = self_governing_colony
+					}
+				}
 			}
 		}
 		provinces_to_highlight = {
@@ -194,6 +205,16 @@ country_decisions = {
 		}
 		effect = {
 			every_subject_country = {
+				limit = {
+					NOT = {
+						OR = {
+							is_subject_of_type = colony
+							is_subject_of_type = crown_colony
+							is_subject_of_type = private_enterprise
+							is_subject_of_type = self_governing_colony
+						}
+					}
+				}
 				change_country_color = {
 					country = overlord
 				}
@@ -212,6 +233,14 @@ country_decisions = {
 			num_of_subjects = 1
 			any_subject_country = {
 				has_country_flag = has_overriden_color_flag
+				NOT = {
+					OR = {
+						is_subject_of_type = colony
+						is_subject_of_type = crown_colony
+						is_subject_of_type = private_enterprise
+						is_subject_of_type = self_governing_colony
+					}
+				}
 			}
 		}
 		provinces_to_highlight = {
@@ -221,9 +250,96 @@ country_decisions = {
 		}
 		effect = {
 			every_subject_country = {
+				limit = {
+					NOT = {
+						OR = {
+							is_subject_of_type = colony
+							is_subject_of_type = crown_colony
+							is_subject_of_type = private_enterprise
+							is_subject_of_type = self_governing_colony
+						}
+					}
+				}
 				restore_country_color = yes 
 				clr_country_flag = has_overriden_color_flag
 			}
+		}
+	}
+	
+	restore_own_color = {
+		major = yes
+		color = {
+			90 0 0
+		}
+		potential = {
+			has_country_flag = has_overriden_color_flag
+		}
+		provinces_to_highlight = {
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			restore_country_color = yes 
+			clr_country_flag = has_overriden_color_flag
+		}
+		ai_will_do = {
+			factor = 1.0
+			modifier = {
+				factor = 0
+				is_subject = yes
+			}
+		}
+	}
+
+	set_generic_mt = {
+		major = yes
+		color = {
+			90 0 0
+		}
+		potential = {
+			NOT = { is_year = 1445 }
+			NOT = { has_country_flag = chose_generic_mt }
+			NOT = { 
+				capital_scope = {
+					province_is_valid_for_escanni_wars = yes
+				}
+			}
+		}
+		allow = {
+			NOT = { is_year = 1445 }
+		}
+		effect = {
+			set_country_flag = chose_generic_mt
+			swap_non_generic_missions = yes
+
+			FROM = {
+				hidden_effect = {
+					play_sound = "decision"
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	invest_splendor = {
+		major = yes
+		color = {
+			90 0 0
+		}
+		potential = {
+			ai = no
+		}
+		allow = {
+			splendor = 800
+		}
+		effect = {
+			add_adm_power = 50
+			add_dip_power = 50
+			add_mil_power = 50
+			add_splendor = -800
 		}
 	}
 }	

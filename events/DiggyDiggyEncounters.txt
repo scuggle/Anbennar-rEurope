@@ -728,7 +728,7 @@ province_event = {
 	option = {
 		name = diggy_encounter.0.a
 		ai_chance = {
-			factor = 300
+			factor = 100
 		}
 		trigger = {
 			owner = {
@@ -744,7 +744,7 @@ province_event = {
 	option = {
 		name = diggy_encounter.0.a
 		ai_chance = {
-			factor = 300
+			factor = 100
 		}
 		trigger = {
 			owner = {
@@ -760,7 +760,7 @@ province_event = {
 	option = {
 		name = diggy_encounter.0.a
 		ai_chance = {
-			factor = 300
+			factor = 100
 		}
 		trigger = {
 			owner = {
@@ -776,7 +776,7 @@ province_event = {
 	option = {
 		name = diggy_encounter.0.a
 		ai_chance = {
-			factor = 300
+			factor = 100
 		}
 		trigger = {
 			owner = {
@@ -792,7 +792,7 @@ province_event = {
 	option = {
 		name = diggy_encounter.0.a
 		ai_chance = {
-			factor = 300
+			factor = 100
 		}
 		trigger = {
 			owner = {
@@ -808,7 +808,7 @@ province_event = {
 	option = {
 		name = diggy_encounter.0.a
 		ai_chance = {
-			factor = 300
+			factor = 100
 		}
 		trigger = {
 			owner = {
@@ -824,7 +824,7 @@ province_event = {
 	option = {
 		name = diggy_encounter.0.a
 		ai_chance = {
-			factor = 300
+			factor = 100
 		}
 		trigger = {
 			owner = {
@@ -840,7 +840,7 @@ province_event = {
 	option = {
 		name = diggy_encounter.0.a
 		ai_chance = {
-			factor = 300
+			factor = 100
 		}
 		trigger = {
 			owner = {
@@ -856,7 +856,7 @@ province_event = {
 	option = {
 		name = diggy_encounter.0.a
 		ai_chance = {
-			factor = 300
+			factor = 100
 		}
 		trigger = {
 			owner = {
@@ -872,7 +872,7 @@ province_event = {
 	option = {
 		name = diggy_encounter.0.a
 		ai_chance = {
-			factor = 300
+			factor = 100
 		}
 		trigger = {
 			owner = {
@@ -888,7 +888,7 @@ province_event = {
 	option = {
 		name = diggy_encounter.0.a
 		ai_chance = {
-			factor = 300
+			factor = 100
 		}
 		trigger = {
 			owner = {
@@ -904,7 +904,7 @@ province_event = {
 	option = {
 		name = diggy_encounter.0.a
 		ai_chance = {
-			factor = 300
+			factor = 100
 		}
 		trigger = {
 			owner = {
@@ -920,7 +920,7 @@ province_event = {
 	option = {
 		name = diggy_encounter.0.a
 		ai_chance = {
-			factor = 300
+			factor = 100
 		}
 		trigger = {
 			owner = {
@@ -1071,6 +1071,7 @@ province_event = {
 	option = {
         name = diggy_encounter.10.b
         ai_chance = { factor = 100 }
+		highlight = yes
 		trigger = {
 			#Smoll races
 			OR = {
@@ -2544,7 +2545,7 @@ province_event = {
 		}
 		change_party_morale = { remove_tooltip = yes loss = 0.5 }
 		change_party_effectiveness = { add_tooltip = yes add = 5 }
-		change_party_manpower = { remove_tooltip = yes loss = 1 }
+		change_party_manpower = { remove_tooltip = yes loss = 25 }
 	}
 	
 	# No more alcool for everyone
@@ -9806,7 +9807,7 @@ province_event = {
 	id = diggy_encounter.487
 	title = diggy_encounter.487.t
 	desc = diggy_encounter.487.d
-	picture = DARK_EXPEDITION_eventPicture
+	picture = FUNGRUM_eventPicture
 	
 	is_triggered_only = yes
 	
@@ -10413,7 +10414,7 @@ province_event = {
 	}
 	
 	option = {
-		name = allclan_encounter_success.a
+		name = diggy_encounter.494.a
 		ai_chance = {
 			factor = 100
 		}
@@ -10541,7 +10542,7 @@ province_event = {
 	}
 	
 	option = {
-		name = allclan_encounter_failure.a
+		name = diggy_encounter.495.a
 		ai_chance = {
 			factor = 100
 		}

@@ -6,6 +6,7 @@ landshark_1 = {
 	ai = yes 
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
         Or = {
             tag = U11
             AND = {
@@ -210,6 +211,7 @@ landshark_2 = {
 	ai = yes 
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
         Or = {
             tag = U11
             AND = {
@@ -400,7 +402,7 @@ landshark_2 = {
 				name = landshark_bahari_import
 				duration = 7300
 			}
-			magairous_area = {
+			zagnabad_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }
@@ -466,6 +468,7 @@ landshark_3 = {
 	ai = yes 
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
         Or = {
             tag = U11
             AND = {
@@ -727,6 +730,7 @@ landshark_4 = {
 	ai = yes 
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
         Or = {
             tag = U11
             AND = {
@@ -977,6 +981,7 @@ landshark_5 = {
 	ai = yes 
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
         OR = {
             tag = U11
             AND = {

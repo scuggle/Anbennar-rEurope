@@ -4,6 +4,7 @@ G46_north = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = G46
 	}
 	has_country_shield = yes
@@ -131,6 +132,7 @@ G46_south = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = G46
 	}
 	has_country_shield = yes
@@ -240,6 +242,7 @@ G46_army = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = G46
 	}
 	has_country_shield = yes
@@ -379,6 +382,7 @@ G46_internal = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = G46
 	}
 	has_country_shield = yes
@@ -559,12 +563,13 @@ G46_subjects = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = G46
 	}
 	has_country_shield = yes
 	
 	G46_reassert_control = {
-		icon = mission_sweat_fealty
+		icon = mission_approach_throne
 		required_missions = { }
 		position = 1
 		

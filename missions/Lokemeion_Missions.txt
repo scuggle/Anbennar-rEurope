@@ -4,6 +4,7 @@ G49_internal = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = G49
 	}
 	has_country_shield = yes
@@ -141,6 +142,7 @@ G49_expansion = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = G49
 	}
 	has_country_shield = yes
@@ -320,6 +322,7 @@ G49_west = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = G49
 	}
 	has_country_shield = yes
@@ -391,6 +394,7 @@ G49_library = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = G49
 	}
 	has_country_shield = yes
@@ -524,6 +528,7 @@ G49_east = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = G49
 	}
 	has_country_shield = yes

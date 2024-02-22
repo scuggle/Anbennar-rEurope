@@ -5,6 +5,7 @@ daengun_intro_left = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Y93
 		NOT = { has_country_flag = daengun_part_2 }
 	}
@@ -98,6 +99,7 @@ daengun_intro_center = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Y93
 		NOT = { has_country_flag = daengun_part_2 }
 	}
@@ -159,6 +161,7 @@ daengun_intro_right = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Y93
 		NOT = { has_country_flag = daengun_part_2 }
 	}

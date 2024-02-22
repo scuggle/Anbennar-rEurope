@@ -4,6 +4,7 @@ A16_branch_1 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A16
 		NOT = { map_setup = map_setup_random }
 	}
@@ -111,7 +112,7 @@ A16_branch_1 = {
 	}
 	
 	A16_find_sponsors = {
-		icon = mission_sweat_fealty
+		icon = mission_approach_throne
 		required_missions = {
 			A16_trading_rights
 		}
@@ -194,6 +195,7 @@ A16_branch_2 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A16
 		NOT = { map_setup = map_setup_random }
 	}
@@ -541,6 +543,7 @@ A16_branch_3 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A16
 		NOT = { map_setup = map_setup_random }
 	}
@@ -964,6 +967,7 @@ A16_branch_4 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A16
 		NOT = { map_setup = map_setup_random }
 	}
@@ -1190,22 +1194,18 @@ A16_branch_4 = {
 				AND = {
 					province_id = 88
 					NOT = { has_manufactory_trigger = yes }
-					country_or_subject_holds = ROOT
-				}
-				AND = {
-					province_id = 101
-					NOT = { has_building = university }
+					NOT = { country_or_subject_holds = ROOT }
+					NOT = { base_production = 12 }
 				}
 			}
 		}
 		
 		trigger = {
-			owns_or_subject_of = 88
 			88 = {
+				country_or_subject_holds = ROOT
 				has_manufactory_trigger = yes
-			}
-			101 = {
-				has_building = university
+				has_production_building_trigger = yes
+				base_production = 12
 			}
 		}
 		
@@ -1296,12 +1296,12 @@ A16_branch_4 = {
 		position = 9
 		
 		provinces_to_highlight = {
-			province_id = 101
+			province_id = 1292
 			NOT = { is_strongest_trade_power = ROOT }
 		}
 		
 		trigger = {
-			101 = {
+			1292 = {
 				is_strongest_trade_power = ROOT
 			}
 		}
@@ -1434,6 +1434,7 @@ A16_branch_5 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A16
 		NOT = { map_setup = map_setup_random }
 	}

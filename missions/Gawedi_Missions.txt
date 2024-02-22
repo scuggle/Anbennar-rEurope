@@ -5,6 +5,7 @@ gawed_column_1 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A13
 	}
 	has_country_shield = yes
@@ -253,6 +254,7 @@ gawed_column_2 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A13
 	}
 	has_country_shield = yes
@@ -586,6 +588,7 @@ gawed_column_3 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A13
 	}
 	has_country_shield = yes
@@ -895,6 +898,7 @@ gawed_column_4 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A13
 	}
 	has_country_shield = yes
@@ -1180,7 +1184,7 @@ gawed_column_4 = {
 	}
 	
 	gawed_the_gawedi_empire = {
-		icon = mission_sweat_fealty
+		icon = mission_approach_throne
 		required_missions = {  }
 		position = 7
 		
@@ -1323,6 +1327,7 @@ gawed_column_5 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A13
 	}
 	has_country_shield = yes

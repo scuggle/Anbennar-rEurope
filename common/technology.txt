@@ -340,7 +340,7 @@ groups = {
 		}
 	}
 	tech_wood_elf = {
-		start_level = 2
+		start_level = 3
 		start_cost_modifier = 0
 		nation_designer_cost = {
 			trigger = {
@@ -412,7 +412,7 @@ groups = {
 	}
 	#Kobolds
 	tech_kobold = {
-		start_level = 2
+		start_level = 3
 		start_cost_modifier = 0.75
 		nation_designer_cost = {
 			trigger = {
@@ -429,7 +429,7 @@ groups = {
 		}
 	}
 	tech_darkscale_kobold = {
-		start_level = 2
+		start_level = 3
 		start_cost_modifier = 0.75
 		nation_designer_cost = {
 			trigger = {
@@ -497,7 +497,7 @@ groups = {
 			value = 75
 		}
 	}
-	tech_feng_harpy = {
+	tech_pezarangi_harpy = {
 		start_level = 3
 		start_cost_modifier = 0.75
 		nation_designer_cost = {
@@ -568,7 +568,7 @@ groups = {
 	}
 	#Goblins
 	tech_goblin = {
-		start_level = 2
+		start_level = 3
 		start_cost_modifier = 0.75
 		nation_designer_cost = {
 			trigger = {
@@ -585,7 +585,7 @@ groups = {
 		}
 	}
 	tech_exodus_goblin = {
-		start_level = 2
+		start_level = 3
 		start_cost_modifier = 0.75
 		nation_designer_cost = {
 			trigger = {
@@ -602,7 +602,7 @@ groups = {
 		}
 	}
 	tech_cave_goblin = {
-		start_level = 2
+		start_level = 3
 		start_cost_modifier = 0.75
 		nation_designer_cost = {
 			trigger = {
@@ -742,14 +742,14 @@ groups = {
 		start_cost_modifier = 0.75
 	}
 
-	#Placeholder
-	tech_placeholder = {
+	#Spirit Mil
+	tech_spirit = {
 		start_level = 3
 		start_cost_modifier = 0.40
 	}
 
-	#Tanizu
-	tech_tanizu = {
+	#Inyaswarosa
+	tech_inyaswarosa = {
 		start_level = 3
 		start_cost_modifier = 0
 	}
@@ -767,7 +767,7 @@ groups = {
 	}
 	# Forest Goblins
 	tech_forest_goblin = {
-		start_level = 2
+		start_level = 3
 		start_cost_modifier = 0.75
 		nation_designer_cost = {
 			trigger = {
@@ -792,7 +792,7 @@ groups = {
 	
 	#Eastern Cave Goblins (For Tree of Stone and Jade Mines Goblins)
 	tech_east_cave_goblin = {
-		start_level = 2
+		start_level = 3
 		start_cost_modifier = 0.75
 		nation_designer_unit_type = tech_cave_goblin
 		nation_designer_cost = {

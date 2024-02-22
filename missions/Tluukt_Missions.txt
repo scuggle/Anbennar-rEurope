@@ -6,6 +6,7 @@ tluukt_1 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = F28
 	}
  	has_country_shield = yes
@@ -338,7 +339,7 @@ tluukt_1 = {
 			add_dip_power = -100
 			if = {
 				limit = { F27 = { alliance_with = ROOT } }
-				#Event: Tluukt and Harpylen plot a partition
+				#Event: Tluukt and Ayarallen plot a partition
 				tooltip = {
 					F27 = {
 						add_country_modifier = { name = tluukt_preparing_war duration = 1825 }
@@ -554,7 +555,7 @@ tluukt_1 = {
 			#Event: Azka-Evran Falls
 			country_event = { id = flavour_tluukt.12 }
 			tungr_mountains_area = { add_permanent_claim = ROOT }
-			magairous_area = { add_permanent_claim = ROOT }
+			zagnabad_area = { add_permanent_claim = ROOT }
 		}
 	}
 }
@@ -564,6 +565,7 @@ tluukt_2 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = F28
 	}
  	has_country_shield = yes
@@ -712,6 +714,10 @@ tluukt_2 = {
 		}
 		
 		effect = {
+			hidden_effect = {
+				outer_drolas_area = { add_core = F32 } 
+				inner_drolas_area = { add_core = F32 } 
+			}
 			if = { #default expectation, drolakand exists as a subject of some sort
 				limit = {
 					F32 = { is_subject = yes }
@@ -1073,7 +1079,7 @@ tluukt_2 = {
 					who = F27
 					value = -40
 				}
-				harpylen_area = { add_permanent_claim = ROOT }
+				siffiraeri_area = { add_permanent_claim = ROOT }
 				kuzak_area = { add_permanent_claim = ROOT }
 				anzabad_area = { add_permanent_claim = ROOT }
 				anzarzax_area = { add_permanent_claim = ROOT }	
@@ -1084,7 +1090,7 @@ tluukt_2 = {
 			}
 			else = {
 				add_prestige = 15
-				harpylen_area = { add_permanent_claim = ROOT }
+				siffiraeri_area = { add_permanent_claim = ROOT }
 				kuzak_area = { add_permanent_claim = ROOT }
 			}
 		}
@@ -1174,6 +1180,7 @@ tluukt_3 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = F28
 	}
  	has_country_shield = yes
@@ -1425,6 +1432,7 @@ tluukt_4 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = F28
 	}
  	has_country_shield = yes
@@ -1691,6 +1699,7 @@ tluukt_4e = {
 	generic = yes
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = F28
 	}
  	has_country_shield = yes
@@ -1766,6 +1775,7 @@ tluukt_3j = {
 	generic = yes
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = F28
 		has_country_flag = tluukt_jaddari
 	}
@@ -1960,6 +1970,7 @@ tluukt_4j = {
 	generic = yes
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = F28
 		has_country_flag = tluukt_jaddari
 	}
@@ -2022,26 +2033,36 @@ tluukt_4j = {
 		}
 		
 		trigger = {
-			dip_power = 200
-			treasury = 250
-			army_strength = {
-				who = U20
-				value = 2
-			}
-			is_in_deficit = no
-			is_at_war = no
-			U20 = {
-				is_at_war = no
-				OR = {
-					is_subject = no
-					is_subject_of = ROOT
-				}
-			}
 			jikarzax_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
 			grixek_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
-			jikarzax_area = { num_of_units_in_province = { who = ROOT amount = 10 } }
-			grixek_area = { num_of_units_in_province = { who = ROOT amount = 10 } }
+			OR = {
+				AND = {
+					dip_power = 200
+					treasury = 250
+					army_strength = {
+						who = U20
+						value = 2
+					}
+					is_in_deficit = no
+					is_at_war = no
+					U20 = {
+						is_at_war = no
+						OR = {
+							is_subject = no
+							is_subject_of = ROOT
+						}
+					}
+					
+					jikarzax_area = { num_of_units_in_province = { who = ROOT amount = 10 } }
+					grixek_area = { num_of_units_in_province = { who = ROOT amount = 10 } }
+				}
+				AND = {
+					NOT = { exists = U20 }
+					azka_sur_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
+				}
+			}
 		}
+		
 		
 		effect = {
 			#Event: A Dark Bargain
@@ -2055,6 +2076,7 @@ tluukt_5j = {
 	generic = yes
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = F28
 		has_country_flag = tluukt_jaddari
 	}
@@ -2304,6 +2326,7 @@ tluukt_5j_siadanlen = {
 	generic = yes
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = F28
 		has_country_flag = tluukt_jaddari
 		NOT = { has_country_flag = tluukt_kogzokka }
@@ -2376,6 +2399,7 @@ tluukt_5j_kogzokka = {
 	generic = yes
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = F28
 		has_country_flag = tluukt_jaddari
 		has_country_flag = tluukt_kogzokka
@@ -2474,6 +2498,7 @@ tluukt_3z = {
 	generic = yes
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = F28
 		has_country_flag = tluukt_zokka
 	}
@@ -2611,6 +2636,7 @@ tluukt_4z = {
 	generic = yes
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = F28
 		has_country_flag = tluukt_zokka
 	}
@@ -2746,6 +2772,7 @@ tluukt_5z = {
 	generic = yes
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = F28
 		has_country_flag = tluukt_zokka
 	}
@@ -3123,6 +3150,7 @@ tluukt_4s = {
 	generic = yes
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = F28
 		has_country_flag = tluukt_stale
 	}
@@ -3162,6 +3190,7 @@ tluukt_5s = {
 	generic = yes
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = F28
 		has_country_flag = tluukt_stale
 	}
@@ -3326,6 +3355,7 @@ tluukt_1b = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = F28
 		#has_country_flag = tluukt_reformed
 	}
@@ -3480,6 +3510,7 @@ tluukt_2b = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = F28
 		#has_country_flag = tluukt_reformed
 	}
@@ -3799,6 +3830,7 @@ tluukt_3b = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = F28
 		#has_country_flag = tluukt_reformed
 	}
@@ -4296,6 +4328,7 @@ tluukt_4b = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = F28
 		#has_country_flag = tluukt_reformed
 	}
@@ -4820,6 +4853,7 @@ tluukt_5b = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = F28
 		#has_country_flag = tluukt_reformed
 	}

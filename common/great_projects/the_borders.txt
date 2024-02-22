@@ -80,7 +80,7 @@ sorncell_deepwater_harbor = {
 			months = 120
 		}
 		cost_to_upgrade = {
-			factor = 1000
+			factor = 2000
 		}
 		province_modifiers = {
 			local_development_cost = -0.05
@@ -101,7 +101,7 @@ sorncell_deepwater_harbor = {
 			months = 240
 		}
 		cost_to_upgrade = {
-			factor = 2500
+			factor = 4500
 		}
 		province_modifiers = {
 			local_development_cost = -0.1
@@ -124,7 +124,7 @@ sorncell_deepwater_harbor = {
 			months = 480
 		}
 		cost_to_upgrade = {
-			factor = 5000
+			factor = 9000
 		}
 		province_modifiers = {
 			local_development_cost = -0.15

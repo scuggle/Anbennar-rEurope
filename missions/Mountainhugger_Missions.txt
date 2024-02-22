@@ -5,6 +5,7 @@ mountainhugger_1 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = U14
 			AND = {
@@ -259,6 +260,7 @@ mountainhugger_2 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = U14
 			AND = {
@@ -507,7 +509,7 @@ mountainhugger_2 = {
 				type = mission_rewards_power_projection
 				amount = 20
 			}
-			magairous_area = {
+			zagnabad_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }
@@ -544,6 +546,7 @@ mountainhugger_3 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = U14
 			AND = {
@@ -721,7 +724,7 @@ mountainhugger_3 = {
 				AND = {
 					NOT = { owned_by = ROOT }
 					OR = {
-						area = magairous_area
+						area = zagnabad_area
 						area = aqatbahar_area
 						area = fajabahar_area
 						area = azka_evran_area
@@ -743,7 +746,7 @@ mountainhugger_3 = {
 		}
 
 		trigger = {
-			magairous_area = {
+			zagnabad_area = {
 				type = all
 				owned_by = ROOT
 				is_core = ROOT
@@ -797,6 +800,7 @@ mountainhugger_4 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = U14
 			AND = {
@@ -1043,6 +1047,7 @@ mountainhugger_5 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = U14
 			AND = {

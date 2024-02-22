@@ -1,10 +1,11 @@
 
 #470 - Bayuly
 
-owner = U03
-controller = U03
-add_core = U03
-culture = kheteratan
+owner = U02
+controller = U02
+add_core = U01
+add_core = U02
+culture = hapremiti
 religion = nirakhetist
 
 hre = no

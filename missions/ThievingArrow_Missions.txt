@@ -4,6 +4,7 @@ g_thieving_arrow_column_4 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H87
 	}
 	has_country_shield = yes
@@ -145,7 +146,7 @@ g_thieving_arrow_column_4 = {
 		}
 	}
 	g_the_masters_of_serpentreach = {
-		icon = mission_sweat_fealty
+		icon = mission_approach_throne
 		position = 5
 		required_missions = {
 			g_hunting_blackbeard
@@ -177,6 +178,7 @@ g_thieving_arrow_deepwoods_column_4 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H87
 		#has_country_modifier = cave_goblin_thieving_arrow
 	}

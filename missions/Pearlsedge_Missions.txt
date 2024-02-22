@@ -4,6 +4,7 @@ A11_wine_missions_slot = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A11
 		
 	}
@@ -156,6 +157,7 @@ A11_trade_missions_slot = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A11
 	}
 	has_country_shield = yes
@@ -341,6 +343,7 @@ A11_diplomacy_missions_slot = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A11
 	}
 	has_country_shield = yes
@@ -535,6 +538,7 @@ A33_army_missions_slot = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A11
 	}
 	has_country_shield = yes
@@ -742,6 +746,7 @@ A33_imperial_missions_slot = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A11
 	}
 	has_country_shield = yes

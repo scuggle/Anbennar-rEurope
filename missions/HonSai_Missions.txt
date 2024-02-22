@@ -8,6 +8,7 @@ HonSai_1 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Y66
 	}
 
@@ -545,6 +546,7 @@ HonSai_2 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Y66
 	}
 
@@ -944,6 +946,7 @@ HonSai_3 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Y66
 	}
 
@@ -1408,6 +1411,7 @@ HonSai_4 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Y66
 	}
 
@@ -1740,6 +1744,7 @@ HonSai_5 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Y66
 	}
 

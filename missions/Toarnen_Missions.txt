@@ -4,6 +4,7 @@ toarnen_column_1 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A57
 	}
 	has_country_shield = yes
@@ -398,6 +399,7 @@ toarnen_column_two = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A57
 	}
 	has_country_shield = yes
@@ -705,7 +707,7 @@ toarnen_column_two = {
 	}
 	
 	A57_the_defender_of_the_east = {
-		icon = mission_sweat_fealty
+		icon = mission_approach_throne
 		required_missions = { 
 			A57_renew_lilac_war_alliances
 			A57_reorganize_celliande
@@ -871,6 +873,7 @@ toarnen_column_three = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A57
 	}
 	has_country_shield = yes
@@ -991,7 +994,7 @@ toarnen_column_three = {
 		effect = {
 			add_dip_power = -100
 			add_prestige = 15
-			change_primary_culture = roilsardi
+			primary_and_ruler_culture_change = { race = human new_culture = roilsardi }
 			add_country_modifier = {
 				name = A57_promote_roilsardi_schooling
 				duration = 3650
@@ -1463,6 +1466,7 @@ toarnen_column_four = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A57
 	}
 	has_country_shield = yes
@@ -1789,6 +1793,7 @@ toarnen_column_five = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A57
 	}
 	has_country_shield = yes

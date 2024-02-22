@@ -3,7 +3,8 @@ cestirande_1_missions = {
 	generic = no
 	ai = yes
 	has_country_shield = yes
-	potential = { tag = A98 } 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = A98 } 
 
 	A98_knight_estates = {
 		icon = mission_eastern_european_city
@@ -122,7 +123,8 @@ cestirande_2_missions = {
 	generic = no
 	ai = yes
 	has_country_shield = yes
-	potential = { tag = A98 } 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = A98 } 
 
 	A98_revitilize_capital = {
 		icon = mission_early_game_buildings
@@ -377,7 +379,8 @@ cestirande_3_missions = {
 	generic = no
 	ai = yes
 	has_country_shield = yes
-	potential = { tag = A98 } 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = A98 } 
 
 	A98_an_old_rivalry = {
 		icon = mission_confrontation
@@ -634,7 +637,8 @@ cestirande_4_missions = {
 	generic = no
 	ai = yes
 	has_country_shield = yes
-	potential = { tag = A98 } 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = A98 } 
 
 	A98_relations_with_emperor = {
 		icon = mission_alliances
@@ -795,7 +799,8 @@ cestirande_5_missions = {
 	generic = no
 	ai = yes
 	has_country_shield = yes
-	potential = { tag = A98 } 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } tag = A98 } 
 
 	A98_reform_the_order = {
 		icon = mission_court_education

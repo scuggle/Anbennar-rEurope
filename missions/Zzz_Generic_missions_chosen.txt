@@ -1,0 +1,1325 @@
+
+twisting_missions = {
+	slot = 3
+	ai = yes
+	generic = no
+	has_country_shield = yes
+	potential = {
+		has_country_flag = chose_generic_mt
+	}
+
+
+	conquest_1 = {
+		icon = mission_unite_home_region
+		position = 1
+		required_missions = {  } 
+		trigger = { manpower_percentage = 0.85 }
+		effect = {
+			add_prestige = 15
+				capital_scope = {
+					region = {
+						add_claim = ROOT
+					}
+				}
+			add_country_modifier = {
+				name = "conquest_1_mission"
+				duration = 9125
+			}
+		}
+	}
+	conquest_2 = {
+		icon = mission_unite_home_region
+		position = 2
+		required_missions = { expansion_1 trade_1 conquest_1 } 
+		trigger = { manpower_percentage = 0.85 }
+		effect = {
+			add_prestige = 20
+			add_country_modifier = {
+				name = "conquest_1_mission"
+				duration = 9125
+			}
+		}
+	}
+	conquest_3 = {
+		icon = mission_unite_home_region
+		position = 3
+		required_missions = { expansion_2 trade_2 conquest_2 } 
+		trigger = {
+			NOT = {
+				overextension_percentage = 0.05 
+			}
+		}
+		effect = {
+			add_prestige = 25
+			capital_scope = {
+				region = {
+					add_permanent_claim = ROOT
+				}
+			}
+			add_country_modifier = {
+				name = "conquest_1_mission"
+				duration = 9125
+			}
+		}
+	}
+	conquest_4 = {
+		icon = mission_unite_home_region
+		position = 4
+		required_missions = { expansion_3 trade_3 conquest_3 } 
+		trigger = { 
+			NOT = {
+				overextension_percentage = 0.05 
+			} 
+		}
+		effect = {
+			add_prestige = 30
+			add_country_modifier = {
+				name = "conquest_1_mission"
+				duration = 9125
+			}
+		}
+	}
+	conquest_5 = {
+		icon = mission_unite_home_region
+		position = 5
+		required_missions = { expansion_4 trade_4 conquest_4 } 
+		trigger = { 
+			capital_scope = {
+				region_for_scope_province = {
+					type = all
+					owned_by = ROOT
+				}
+			}
+		}
+		effect = {
+			capital_scope = {
+				region = {
+					change_culture = ROOT
+				}
+			}
+			add_country_modifier = {
+				name = "conquest_1_mission"
+				duration = 9125
+			}
+		}
+	}
+}
+
+expansion_missions = {
+	slot = 2
+	generic = no
+	has_country_shield = yes
+	potential = {
+		has_country_flag = chose_generic_mt
+	}
+
+
+	expansion_1 = {
+		icon = mission_conquer_50_development
+		position = 1
+		required_missions = {  }
+		trigger = { grown_by_development = 50 }
+		effect = {
+			add_adm_power = 50
+			random_province = {
+				limit = {
+					owned_by = ROOT
+					NOT = {
+						has_province_modifier = national_focus_tellum_1
+					}
+				}
+				add_province_modifier = {
+					name = "national_focus_tellum_1"
+					duration = 1825
+				}
+			}
+			add_country_modifier = {
+				name = "expansion_1_mission"
+				duration = 9125
+			}
+		}
+	}
+	expansion_2 = {
+		icon = mission_conquer_50_development
+		position = 2
+		required_missions = { expansion_1 }
+		trigger = { grown_by_development = 100 }
+		effect = {
+			add_adm_power = 50
+			random_province = {
+				limit = {
+					owned_by = ROOT
+					NOT = {
+						has_province_modifier = national_focus_tellum_1
+					}
+				}
+				add_province_modifier = {
+					name = "national_focus_tellum_1"
+					duration = 1825
+				}
+			}
+			add_country_modifier = {
+				name = "expansion_1_mission"
+				duration = 9125
+			}
+		}
+	}
+	expansion_3 = {
+		icon = mission_conquer_50_development
+		position = 3
+		required_missions = { expansion_2 }
+		trigger = { grown_by_development = 250 }
+		effect = {
+			add_adm_power = 50
+			random_province = {
+				limit = {
+					owned_by = ROOT
+					NOT = {
+						has_province_modifier = national_focus_tellum_1
+					}
+				}
+				add_province_modifier = {
+					name = "national_focus_tellum_1"
+					duration = 1825
+				}
+			}
+			add_country_modifier = {
+				name = "expansion_1_mission"
+				duration = 9125
+			}
+		}
+	}
+	expansion_4 = {
+		icon = mission_conquer_50_development
+		position = 4
+		required_missions = { expansion_3 }
+		trigger = { grown_by_development = 500 }
+		effect = {
+			add_adm_power = 50
+			random_province = {
+				limit = {
+					owned_by = ROOT
+					NOT = {
+						has_province_modifier = national_focus_tellum_1
+					}
+				}
+				add_province_modifier = {
+					name = "national_focus_tellum_1"
+					duration = 1825
+				}
+			}
+			add_country_modifier = {
+				name = "expansion_1_mission"
+				duration = 9125
+			}
+		}
+	}
+	expansion_5 = {
+		icon = mission_conquer_50_development
+		position = 5
+		required_missions = { expansion_4 }
+		trigger = { grown_by_development = 1000 }
+		effect = {
+			country_event = {
+    			id = mutagen.2
+    			days = 15
+    			random = 5
+    			tooltip = MUTAGEN_2_TOOLTIP
+			}
+		}
+	}
+	ascendancy_1 = {
+		icon = mission_empire
+		position = 6
+		required_missions = {  } 
+		trigger = { is_year = 1620 government_rank = 3 }
+		effect = {
+			add_adm_power = 50
+			add_dip_power = 50
+			add_mil_power = 50
+		}
+	}
+	army_1 = {
+		icon = mission_assemble_an_army
+		position = 8
+		required_missions = {  }
+		trigger = { army_size = 15 }
+		effect = {
+			add_mil_power = 50
+			create_general = { tradition = 80 }
+			add_country_modifier = {
+				name = "army_1_mission"
+				duration = 9125
+			}
+		}
+	}
+	army_2 = {
+		icon = mission_assemble_an_army
+		position = 9
+		required_missions = { army_1 }
+		trigger = { land_forcelimit = 50 }
+		effect = {
+			add_mil_power = 50
+			create_general = { tradition = 80 }
+			add_country_modifier = {
+				name = "army_1_mission"
+				duration = 9125
+			}
+		}
+	}
+	army_3 = {
+		icon = mission_assemble_an_army
+		position = 10
+		required_missions = { army_2 }
+		trigger = { land_forcelimit = 100 }
+		effect = {
+			add_mil_power = 50
+			create_general = { tradition = 80 }
+			add_country_modifier = {
+				name = "army_1_mission"
+				duration = 9125
+			}
+		}
+	}
+	army_4 = {
+		icon = mission_assemble_an_army
+		position = 11
+		required_missions = { army_3 }
+		trigger = { land_forcelimit = 150
+		army_professionalism = 0.25 
+		}
+		effect = {
+			add_mil_power = 50
+			create_general = { tradition = 100 }
+			add_country_modifier = {
+				name = "army_1_mission"
+				duration = 9125 
+			}
+		}
+	}
+	army_5 = {
+		icon = mission_assemble_an_army
+		position = 12
+		required_missions = { army_4 }
+		trigger = { land_forcelimit = 250
+		army_professionalism = 0.5 
+		}
+		effect = {
+			country_event = { 
+    			id = mutagen.1
+    			days = 15
+    			random = 5
+    			tooltip = MUTAGEN_1_TOOLTIP
+			}
+		}
+	}
+}
+
+economic_missions = {
+	slot = 4
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		has_country_flag = chose_generic_mt
+	}
+
+
+	trade_1 = {
+		icon = mission_high_income
+		position = 1
+		required_missions = {  } 
+		trigger = { share_of_starting_income = 1.5 }
+		effect = {
+			add_dip_power = 50
+			add_country_modifier = {
+				name = "trade_1_mission"
+				duration = 9125
+			}
+		}
+	}
+	trade_2 = {
+		icon = mission_high_income
+		position = 2
+		required_missions = { trade_1 } 
+		trigger = { 
+			share_of_starting_income = 5	
+		}
+		effect = {
+			add_dip_power = 50
+			add_years_of_income = 1
+			add_country_modifier = {
+				name = "trade_1_mission"
+				duration = 9125
+			}
+		}
+	}
+	trade_3 = {
+		icon = mission_high_income
+		position = 3
+		required_missions = { trade_2 } 
+		trigger = { 
+			current_income_balance = 75
+			NOT = {
+				subsidised_percent_amount = { 
+					value = 0.1
+				}
+			}
+ 		}
+		effect = {
+			add_dip_power = 50
+			add_years_of_income = 1
+			add_country_modifier = {
+				name = "trade_1_mission"
+				duration = 9125
+			}
+		}
+	}
+	trade_4 = {
+		icon = mission_high_income
+		position = 4
+		required_missions = { trade_3 } 
+		trigger = { 
+			current_income_balance = 150
+			NOT = {
+				subsidised_percent_amount = { 
+					value = 0.1
+				}
+			}
+ 		}
+		effect = {
+			add_dip_power = 50
+			add_years_of_income = 1
+			add_country_modifier = {
+				name = "trade_1_mission"
+				duration = 9125
+			}
+		}
+	}
+	trade_5 = {
+		icon = mission_high_income
+		position = 5
+		required_missions = { trade_4 } 
+		trigger = {
+			home_trade_node = {
+				trade_share = {
+					country = ROOT
+					share = 75
+				}
+			}
+			current_income_balance = 250
+			NOT = {
+				subsidised_percent_amount = { 
+					value = 0.1
+				}
+			}
+		}
+		effect = {
+			country_event = { 
+    			id = mutagen.3
+    			days = 15
+    			random = 5
+    			tooltip = MUTAGEN_3_TOOLTIP
+			}
+		}
+	}
+	ascendancy_2 = {
+		icon = mission_empire
+		position = 6
+		required_missions = {  } 
+		trigger = { 
+			is_year = 1620 
+			OR = {
+				has_had_golden_age = yes
+				in_golden_age = yes
+ 			}
+		}
+		effect = {
+			add_adm_power = 50
+			add_dip_power = 50
+			add_mil_power = 50
+		}
+	}
+	economic_1 = {
+		icon = mission_early_game_buildings
+		position = 8
+		required_missions = {  }
+		trigger = {
+			temple = 5
+			marketplace = 1
+		}
+		effect = {
+			add_adm_power = 50
+			define_advisor = {
+    			type = artist
+    			skill = 1
+    			discount = yes
+			}
+			define_advisor = {
+    			type = trader
+    			skill = 1
+    			discount = yes
+			}
+			add_country_modifier = {
+				name = "economic_1_mission"
+				duration = 9125
+			}
+		}
+	}
+	economic_2 = {
+		icon = mission_early_game_buildings
+		position = 9
+		required_missions = { economic_1 }
+		trigger = {
+			workshop = 10
+		}
+		effect = {
+			add_adm_power = 50
+			define_advisor = {
+    			type = theologian
+    			skill = 1
+    			discount = yes
+			}
+			define_advisor = {
+    			type = army_organiser
+    			skill = 1
+    			discount = yes
+			}
+			add_country_modifier = {
+				name = "economic_1_mission"
+				duration = 9125
+			}
+		}
+	}
+	economic_3 = {
+		icon = mission_early_game_buildings
+		position = 10
+		required_missions = { economic_2 }
+		trigger = {
+			barracks = 15
+		}
+		effect = {
+			add_adm_power = 50
+			define_advisor = {
+    			type = recruitmaster
+    			skill = 1
+    			discount = yes
+			}
+			define_advisor = {
+    			type = spymaster
+    			skill = 1
+    			discount = yes
+			}
+			add_country_modifier = {
+				name = "economic_1_mission"
+				duration = 9125
+			}
+		}
+	}
+	economic_4 = {
+		icon = mission_early_game_buildings
+		position = 11
+		required_missions = { economic_3 }
+		trigger = {
+			calc_true_if = {
+				desc = build_manufactories_mission_tooltip
+				all_owned_province = {
+					OR = {
+						has_building = mills
+						has_building = farm_estate
+						has_building = tradecompany
+						has_building = plantations
+						has_building = textile
+						has_building = weapons
+						has_building = wharf
+						has_building = furnace
+					}
+				}
+				amount = 20
+			}
+		}
+		effect = {
+			add_adm_power = 50
+			define_advisor = {
+    			type = statesman
+    			skill = 1
+    			discount = yes
+			}
+			define_advisor = {
+    			type = natural_scientist
+    			skill = 1
+    			discount = yes
+			}
+			add_country_modifier = {
+				name = "economic_1_mission"
+				duration = 9125
+			}
+		}
+	}
+	economic_5 = {
+		icon = mission_early_game_buildings
+		position = 12
+		required_missions = { economic_4 }
+		trigger = {
+			university = 30
+		}
+		effect = {
+			country_event = { 
+    			id = mutagen.4
+    			days = 15
+    			random = 5
+    			tooltip = MUTAGEN_4_TOOLTIP
+			}
+		}
+	}
+}
+
+trade_missions = {
+	slot = 3
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+	    NOT = { 
+		has_country_flag = front_lines_tellum_flag 
+		has_country_flag = support_tellum_flag
+		has_country_flag = artificers_tellum_flag
+		has_country_flag = economic_tellum_flag
+		has_country_flag = trade_tellum_flag
+		}
+		has_country_flag = chose_generic_mt
+	}
+
+
+	towards_a_new_future_1 = {
+		icon = bavarian_cultural_dominance
+		position = 7
+		required_missions = { ascendancy_1 ascendancy_2 }
+		trigger = {  }
+		effect = {
+			country_event = { 
+    			id = towards_future.1
+				days = 1
+			}
+		}	
+	}
+}
+
+twisting_missions_goverment = {
+	slot = 3
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		has_country_flag = chose_generic_mt
+	}
+
+
+	government_1 = {
+		icon = give_him_back_his_legions
+		position = 8
+		required_missions = {  } 
+		trigger = { legitimacy_equivalent = 100 }
+		effect = {
+			change_government_reform_progress = 25
+			capital_scope = {
+				hidden_effect = {
+					if = {
+						limit = { 
+							has_terrain = dwarven_hold 
+							AND = { culture_group = dwarven }
+						}
+						add_province_modifier = {
+							name = "rebuilding_efforts_tellum"
+							duration = 365
+						}
+					}	
+				}
+				hidden_effect = {
+					if = {
+						limit = { has_terrain = city_terrain }
+						change_culture = ROOT
+						change_religion = ROOT
+						add_province_modifier = {
+							name = "prosperous_capital_tellum"
+							duration = 27375
+						}
+					}
+				}
+
+				hidden_effect = {
+					if = {
+						limit = { 
+							has_terrain = dwarven_hold 
+							NOT = { culture_group = dwarven }
+						}
+						add_province_modifier = {
+							name = "conquered_hold_tellum"
+							duration = 365
+						}
+					}
+				}
+				hidden_effect = {
+					if = {
+						limit = { has_terrain = desert }
+						change_culture = ROOT
+						change_religion = ROOT
+						add_province_modifier = {
+							name = "oasis_capital_tellum"
+							duration = 27375
+						}
+					}
+				}
+				hidden_effect = {
+					if = {
+						limit = { has_terrain = glacier }
+						add_base_tax = 1
+						add_base_production = 1
+						add_base_manpower = 1
+						change_culture = ROOT
+						change_religion = ROOT
+						add_province_modifier = {
+							name = "oasis_capital_tellum"
+							duration = 27375
+						}
+					}
+				}
+				hidden_effect = {
+					if = {
+						limit = { has_terrain = coastline }
+						add_base_tax = 1
+						add_base_production = 1
+						add_base_manpower = 1
+						change_culture = ROOT
+						change_religion = ROOT
+						add_province_modifier = {
+							name = "port_capital_tellum"
+							duration = 27375
+						}
+					}
+				}
+				hidden_effect = {
+					if = {
+						limit = { has_terrain = coastal_desert }
+						add_base_tax = 1
+						add_base_production = 1
+						add_base_manpower = 1
+						change_culture = ROOT
+						change_religion = ROOT
+						add_province_modifier = {
+							name = "port_capital_tellum"
+							duration = 27375
+						}
+					}
+				}
+				hidden_effect = {
+					if = {
+						limit = { has_terrain = woods }
+						add_base_tax = 1
+						add_base_production = 1
+						add_base_manpower = 1
+						change_culture = ROOT
+						change_religion = ROOT
+						add_province_modifier = {
+							name = "natural_capital_tellum"
+							duration = 27375
+						}
+					}
+				}
+				hidden_effect = {
+					if = {
+						limit = { has_terrain = jungle }
+						add_base_tax = 1
+						add_base_production = 1
+						add_base_manpower = 1
+						change_culture = ROOT
+						change_religion = ROOT
+						add_province_modifier = {
+							name = "natural_capital_tellum"
+							duration = 27375
+						}
+					}
+				}
+				hidden_effect = {
+					if = {
+						limit = { has_terrain = ancient_forest }
+						add_base_tax = 1
+						add_base_production = 1
+						add_base_manpower = 1
+						change_culture = ROOT
+						change_religion = ROOT
+						add_province_modifier = {
+							name = "natural_capital_tellum"
+							duration = 27375
+						}
+					}
+				}
+				hidden_effect = {
+					if = {
+						limit = { has_terrain = gladeway }
+						add_base_tax = 1
+						add_base_production = 1
+						add_base_manpower = 1
+						change_culture = ROOT
+						change_religion = ROOT
+						add_province_modifier = {
+							name = "natural_capital_tellum"
+							duration = 27375
+						}
+					}
+				}	
+				hidden_effect = {
+					if = {
+						limit = { has_terrain = hills }
+						add_base_tax = 1
+						add_base_production = 1
+						add_base_manpower = 1
+						change_culture = ROOT
+						change_religion = ROOT
+						add_province_modifier = {
+							name = "fortress_capital_tellum"
+							duration = 27375
+						}
+					}
+				}
+				hidden_effect = {
+					if = {
+						limit = { has_terrain = mountain }
+						add_base_tax = 1
+						add_base_production = 1
+						add_base_manpower = 1
+						change_culture = ROOT
+						change_religion = ROOT
+						add_province_modifier = {
+							name = "fortress_capital_tellum"
+							duration = 27375
+						}
+					}
+				}
+				hidden_effect = {
+					if = {
+						limit = { has_terrain = forest }
+						add_base_tax = 1
+						add_base_production = 1
+						add_base_manpower = 1
+						change_culture = ROOT
+						change_religion = ROOT
+						add_province_modifier = {
+							name = "natural_capital_tellum"
+							duration = 27375
+						}
+					}
+				}
+				area = {
+					limit = { owned_by = ROOT }
+					add_province_modifier = {
+						name = "expansion_1_capital"
+						duration = 9125
+					}
+				}
+			}
+			add_country_modifier = {
+				name = "government_1_mission"
+				duration = 9125
+			}
+		}
+	}
+	government_2 = {
+		icon = give_him_back_his_legions
+		position = 9
+		required_missions = { army_1 economic_1 government_1 } 
+		trigger = { 
+			if = {
+				limit = {
+					is_tribal = yes
+				}
+				reform_level = 2
+			} else = {
+				reform_level = 3
+			}
+			capital_scope = {
+				if = {
+					limit = {
+						has_terrain = dwarven_hold
+					}
+					development = 40
+				}
+				else = {
+					development = 20
+				}
+ 			}
+		}
+		effect = {
+			change_innovativeness = 3
+			change_government_reform_progress = 25
+			capital_scope = {
+				add_province_modifier = {
+					name = "capital_management_1"
+					duration = -1
+				}
+			}
+			add_country_modifier = {
+				name = "government_1_mission"
+				duration = 9125
+			}
+		}
+	}
+	government_3 = {
+		icon = give_him_back_his_legions
+		position = 10
+		required_missions = { army_2 economic_2 government_2 } 
+		trigger = { 
+			if = {
+				limit = {
+					is_tribal = yes
+				}
+				reform_level = 4
+			} else = {
+				reform_level = 5
+			}
+			capital_scope = {
+				if = {
+					limit = {
+						has_terrain = dwarven_hold
+					}
+					development = 60
+				}
+				else = {
+					development = 30
+				}
+ 			}
+		}
+		effect = {
+			change_innovativeness = 3
+			change_government_reform_progress = 25
+			capital_scope = {
+				add_province_modifier = {
+					name = "capital_management_2"
+					duration = -1
+				}
+				remove_province_modifier = capital_management_1
+			}
+			add_country_modifier = {
+				name = "government_1_mission"
+				duration = 9125
+			}
+		}
+	}
+	government_4 = {
+		icon = give_him_back_his_legions
+		position = 11
+		required_missions = { army_3 economic_3 government_3 } 
+		trigger = { 
+			if = {
+				limit = {
+					is_tribal = yes
+				}
+				reform_level = 5
+			} else = {
+				reform_level = 7
+			}
+			capital_scope = {
+				if = {
+					limit = {
+						has_terrain = dwarven_hold
+					}
+					development = 85
+				}
+				else = {
+					development = 35
+				}
+ 			}
+		}
+		effect = {
+			change_government_reform_progress = 25
+			change_innovativeness = 3
+			capital_scope = {
+				add_province_modifier = {
+					name = "capital_management_3"
+					duration = -1
+				}
+				remove_province_modifier = capital_management_2
+			}
+			add_country_modifier = {
+				name = "government_1_mission"
+				duration = 9125
+			}
+		}
+	}
+	government_5 = {
+		icon = give_him_back_his_legions
+		position = 12
+		required_missions = { army_4 economic_4 government_4 } 
+		trigger = { 
+			if = {
+				limit = {
+					is_tribal = yes
+				}
+				reform_level = 6
+			} else = {
+				reform_level = 9
+			}
+			capital_scope = {
+				if = {
+					limit = {
+						has_terrain = dwarven_hold
+					}
+					development = 110
+				}
+				else = {
+					development = 40
+				}
+ 			}
+		}
+		effect = {
+			change_innovativeness = 3
+			change_government_reform_progress = 25
+			add_country_modifier = {
+				name = "government_1_mission"
+				duration = 9125
+			}
+			change_adm = 1
+			change_dip = 1
+			change_mil = 1
+		}
+	}
+}
+
+front_lines_tellum_missions = {
+	slot = 3
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+	   has_country_flag = front_lines_tellum_flag
+	   has_country_flag = chose_generic_mt
+	}
+
+
+	front_lines_1 = {
+		icon = mission_swear_fealty_knight
+		position = 13
+		required_missions = {  }
+		trigger = { 
+			army_size = 500 
+			custom_trigger_tooltip = {
+				tooltip = cot_front_lines_tt
+			}
+			has_country_flag = front_lines_tellum_flag
+		}
+		effect = {
+			add_country_modifier = { 
+    			name = front_lines_tellumm_1
+    			duration = -1  
+			}
+		}
+	}
+	front_lines_2 = {
+		icon = mission_swear_fealty_knight
+		position = 14
+		required_missions = { 
+			front_lines_1 
+		}
+		trigger = { army_professionalism = 0.75 }
+		effect = {
+			add_country_modifier = { 
+    			name = front_lines_tellumm_2
+    			duration = -1  
+			}
+		}
+	}
+	front_lines_3 = {
+		icon = mission_swear_fealty_knight
+		position = 15
+		required_missions = { 
+			front_lines_2 
+		}
+		trigger = { 
+			treasury = 25000
+		}
+		effect = {
+			add_treasury = -25000
+			add_country_modifier = { 
+    			name = front_lines_tellumm_3
+    			duration = -1  
+			}
+		}
+	}
+}
+
+support_tellum_missions = {
+	slot = 3
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+	   has_country_flag = support_tellum_flag
+	   has_country_flag = chose_generic_mt
+	}
+
+
+	support_tellum_1 = {
+		icon = mission_runeforged_cannons
+		position = 13
+		required_missions = {  }
+		trigger = { 
+			army_size = 500
+			custom_trigger_tooltip = {
+				tooltip = cot_support_tt
+				has_country_flag = support_tellum_flag
+			}
+		}
+		effect = {
+			add_country_modifier = { 
+    			name = support_tellumm_1
+    			duration = -1  
+			}
+		}
+	}
+	support_tellum_2 = {
+		icon = mission_runeforged_cannons
+		position = 14
+		required_missions = { support_tellum_1 }
+		trigger = { army_professionalism = 0.75 }
+		effect = {
+				add_country_modifier = { 
+    				name = support_tellumm_2
+    				duration = -1  
+				}
+			}
+		}
+	support_tellum_3 = {
+		icon = mission_runeforged_cannons
+		position = 15
+		required_missions = { support_tellum_2 }
+		trigger = { treasury = 25000 }
+		effect = {
+			add_treasury = -25000
+			add_country_modifier = { 
+    			name = support_tellumm_3
+    			duration = -1  
+			}
+		}
+	}
+}
+
+artificers_tellum_missions = {
+	slot = 3
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+	   has_country_flag = artificers_tellum_flag
+	   has_country_flag = chose_generic_mt
+	}
+
+
+	artificers_tellum_1 = {
+		icon = mission_early_modern_university
+		position = 13
+		required_missions = {  }
+		trigger = { 
+			innovativeness = 35
+			custom_trigger_tooltip = {
+				tooltip = cot_artifice_tt
+				has_country_flag = artificers_tellum_flag
+			}	
+		}
+		effect = {
+			random_province = {
+				limit = {
+					owned_by = ROOT
+				}
+				change_trade_goods = precursor_relics
+				set_province_flag = permanent_precursor_relics
+			}
+			random_province = {
+				limit = {
+					owned_by = ROOT
+				}
+				change_trade_goods = precursor_relics
+				set_province_flag = permanent_precursor_relics
+			}
+			random_province = {
+				limit = {
+					owned_by = ROOT
+				}
+				change_trade_goods = precursor_relics
+				set_province_flag = permanent_precursor_relics
+			}
+		}
+	}
+	artificers_tellum_2 = {
+		icon = mission_early_modern_university
+		position = 14
+		required_missions = { artificers_tellum_1 }
+		trigger = { innovativeness = 70 }
+		effect = {
+			add_country_modifier = { 
+    			name = artificers_tellumm_2
+    			duration = -1  
+			}
+		}
+	}
+	artificers_tellum_3 = {
+		icon = mission_early_modern_university
+		position = 15
+		required_missions = { artificers_tellum_2 }
+		trigger = { treasury = 25000 } 
+		effect = {
+			add_treasury = -25000
+			add_country_modifier = { 
+    			name = artificers_tellumm_3
+    			duration = -1  
+			}
+		}
+	}
+}
+
+economic_tellum_missions = {
+	slot = 3
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+	   has_country_flag = economic_tellum_flag
+	   has_country_flag = chose_generic_mt
+	}
+
+
+	economic_tellum_1 = {
+		icon = mission_rb_hanseatic_east
+		position = 13
+		required_missions = {  }
+		trigger = { 
+			custom_trigger_tooltip = {
+				tooltip = cot_economic_tt
+				has_country_flag = economic_tellum_flag
+			}	
+			any_owned_province = {
+				exclude_from_progress = {
+					is_core = ROOT
+					controlled_by = owner
+				}
+				development_discounting_tribal = 50
+			}
+		}
+		effect = {
+			add_country_modifier = { 
+    			name = economic_tellumm_1
+    			duration = -1  
+			}
+		}
+	}
+	economic_tellum_2 = {
+		icon = mission_rb_hanseatic_east
+		position = 14
+		required_missions = { economic_tellum_1 }
+		trigger = { monthly_income = 500 }
+		effect = {
+			add_country_modifier = { 
+    			name = economic_tellumm_2
+    			duration = -1  
+			}
+		}
+	}
+	economic_tellum_3 = {
+		icon = mission_rb_hanseatic_east
+		position = 15
+		required_missions = { economic_tellum_2 }
+		trigger = { treasury = 25000 } 
+		effect = {
+			add_treasury = -25000
+			add_country_modifier = { 
+    			name = economic_tellumm_3
+    			duration = -1  
+			}
+		}
+	}
+}
+
+trade_tellum_missions = {
+	slot = 3
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+	   has_country_flag = trade_tellum_flag
+	   has_country_flag = chose_generic_mt
+	}
+
+
+	trade_tellum_1 = {
+		icon = mission_colonize_the_west
+		position = 13
+		required_missions = {  }
+		trigger = { 
+			monthly_income = 700
+			trade_income_percentage = 0.45
+			custom_trigger_tooltip = {
+				tooltip = cot_trade_tt
+				has_country_flag = trade_tellum_flag
+			}
+		}
+		effect = {
+			add_country_modifier = { 
+    			name = trade_tellumm_1
+    			duration = -1  
+			}
+		}
+	}
+	trade_tellum_2 = {
+		icon = mission_colonize_the_west
+		position = 14
+		required_missions = { trade_tellum_1 }
+		trigger = { 
+			home_trade_node = {
+				trade_share = {
+					country = ROOT
+					share = 90
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = { 
+    			name = trade_tellumm_2
+    			duration = -1  
+			}
+		}
+	}
+	trade_tellum_3 = {
+		icon = mission_colonize_the_west
+		position = 15
+		required_missions = { trade_tellum_2 }
+		trigger = { 
+			treasury = 25000 
+		} 
+		effect = {
+		add_treasury = -25000
+			add_country_modifier = { 
+    			name = trade_tellumm_3
+    			duration = -1  
+			}
+		}
+	}
+}
+
+placeholder_missions_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		has_country_flag = chose_generic_mt
+	}
+}
+
+placeholder_missions_2 = {
+	slot = 5
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		has_country_flag = chose_generic_mt
+	}
+}

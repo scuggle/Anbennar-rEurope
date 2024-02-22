@@ -1,0 +1,267 @@
+namespace = falahan_flavour_event
+country_event = {
+	id = falahan_flavour_event.1
+	title = falahan_flavour_event.1.t 
+	desc = falahan_flavour_event.1.d 
+	picture = no
+	trigger = {
+		has_country_flag = fal_at_gates_of_serpentspine_flag
+		NOt = { has_discovered = 2942 has_discovered = 2943 }	#shazstundihr and argrod 3
+	}
+	mean_time_to_happen = {
+		years = 50
+		modifier = {
+			factor = 0.5
+			high_tolerance_goblin_race_trigger = yes
+		}
+	}
+	option = {		#go on expedition
+		name = falahan_flavour_event.1.a 
+		add_treasury = -500
+		shazstundihr_area = {
+			discover_country = ROOT
+		}
+		argrod_6_8_area = {
+			discover_country = ROOT
+		}
+	}
+	option = {		#hire a goblin
+		name = falahan_flavour_event.1.b 
+		trigger = {
+			high_tolerance_goblin_race_trigger = yes
+		}
+		define_conquistador = {
+			fire = 4
+			shock = 2
+			manuever = 5
+			siege = 2
+		}
+		add_treasury = -1000
+	}
+	option = {		#don't go
+		name = falahan_flavour_event.1.c 
+			
+	}
+}
+province_event = {
+	id = falahan_flavour_event.2 
+	title = falahan_flavour_event.2.t 
+	desc = falahan_flavour_event.2.d 
+	picture = no
+	trigger = {
+		has_province_modifier = fal_harpy_saphire_town_modifier
+		NOT = { has_province_modifier = fal_attractive_saphires_modifier }
+	}
+	mean_time_to_happen = {
+		years = 100
+	}
+	option = {	#congratulate them
+		name = falahan_flavour_event.2.a 
+		add_province_modifier = {
+			name = fal_attractive_saphires_modifier	#modifier giving 20% manpower modifier, -5% dev cost
+			duration = 3650	#10 years
+		}
+	}
+	option = {	#take saphires
+		name = falahan_flavour_event.2.b
+		owner = {
+			add_prestige = 5
+			add_years_of_income = 0.25
+		}
+		add_unrest = 5
+	}
+}
+country_event = {
+	id = falahan_flavour_event.3 
+	title = falahan_flavour_event.3.t 
+	desc = falahan_flavour_event.3.d
+	picture = no
+	trigger = {
+		has_province_modifier = fal_a_drift_wood_fleet_modifier
+		NOT = { navy_size_percentage = 1 }
+	}
+	mean_time_to_happen = {
+		years = 20
+		modifier = {
+			factor = 2
+			navy_size_percentage = 0.5
+		}
+		modifier = {
+			factor = 2
+			navy_size_percentage = 0.75
+		}
+		modifier = {
+			factor = 0.5
+			inner_drolas_area = {
+				type = all 
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			outer_drolas_area = {
+				type = all 
+				owned_by = ROOT
+				is_core = ROOT
+			}
+		}
+		modifier = {
+			factor = 0.75
+			num_of_owned_provinces_with = {
+				value = 50
+				has_port = yes
+			}
+		}
+		modifier = {
+			factor = 0.5
+			NOT = {  navy_size_percentage = 0.1 }
+		}
+	}
+	option = {
+		name = falahan_flavour_event.3.a 
+		random_owned_province = {
+		limit = { has_port = yes }
+			ROOT = {
+				light_ship = PREV
+			}
+		}			
+	}
+	option = {
+		name = falahan_flavour_event.3.b 
+		random_owned_province = {
+		limit = { has_port = yes }
+			ROOT = {
+				transport = PREV
+			}
+		}			
+	}
+}
+country_event = {		#scammed by goblins event
+	id = falahan_flavour_event.4
+	title = falahan_flavour_event.4.t 
+	desc = falahan_flavour_event.4.d 
+	picture = no 
+	trigger = {
+		tag = X20
+		OR = {
+			high_tolerance_goblin_race_trigger = yes
+			num_of_owned_provinces_with = {
+				value = 10 
+				OR = {
+					has_goblin_minority_trigger = yes 
+					has_goblin_majority_trigger = yes
+				}
+			}
+		}
+		any_owned_province = {
+			OR = {
+				has_goblin_majority_trigger = yes
+				has_goblin_minority_trigger = yes
+			}
+		}
+	}
+	mean_time_to_happen = {
+		years = 80
+	}
+	option = {		#act harshly
+		name = falahan_flavour_event.4.a 
+		random_owned_province = {
+			limit = {
+				OR = {
+					has_goblin_majority_trigger = yes 
+					has_goblin_minority_trigger = yes
+				}
+			}
+			add_unrest = 5
+		}
+		small_decrease_of_goblin_tolerance_effect = yes
+	}
+	option = {
+		name = falahan_flavour_event.4.b 
+		add_years_of_income = -0.083
+		small_increase_of_goblin_tolerance_effect = yes
+	}
+}
+country_event = {	#gambling win
+	id = falahan_flavour_event.5
+	title = falahan_flavour_event.5.t 
+	desc = falahan_flavour_event.5.d 
+	picture = no 
+	trigger = {
+			has_country_flag = shaz_gambling_flag
+		}
+	mean_time_to_happen = {
+		days = 8
+		modifier = {
+			factor = 0.875
+			has_country_flag = shaz_fairness_enforced_flag
+		}
+		modifier = {
+			factor = 0.5
+			max_tolerance_goblin_race_trigger = yes
+		}
+	}
+	immediate = {
+		hidden_effect = {
+			clr_country_flag = shaz_gambling_flag
+			set_country_flag = shaz_cooldown_flag
+		}
+	}
+	option = {
+		name = falahan_flavour_event.5.a 
+		add_treasury = 200	
+	}
+}
+country_event = {	#gambling loss
+	id = falahan_flavour_event.6
+	title = falahan_flavour_event.6.t 
+	desc = falahan_flavour_event.6.d 
+	picture = no 
+	trigger = {
+		has_country_flag = shaz_gambling_flag
+	}
+	mean_time_to_happen = {
+		days = 7
+		modifier = {
+			factor = 0.5
+			low_tolerance_goblin_race_trigger = yes
+		}
+	}
+	immediate = {
+		hidden_effect = {
+			clr_country_flag = shaz_gambling_flag
+			set_country_flag = shaz_cooldown_flag
+		}
+	}
+	option = {
+		name = falahan_flavour_event.6.a 
+	}
+}
+country_event = {
+	id = falahan_flavour_event.7
+		title = falahan_flavour_event.7.t 
+		desc = falahan_flavour_event.7.d 
+		picture = no 
+	trigger = {
+		has_country_flag = shaz_cooldown_flag
+	}
+	mean_time_to_happen = {
+		years = 20
+		modifier = {
+			factor = 0.5
+			max_tolerance_goblin_race_trigger = yes
+		}
+		modifier = {
+			factor = 2
+			low_tolerance_goblin_race_trigger = yes
+		}
+		modifier = {
+			factor = 1.5
+			has_country_flag = shaz_fairness_enforced_flag
+		}
+	}
+	option = {
+		name = falahan_flavour_event.7.a 
+		hidden_effect = {
+			clr_country_flag = shaz_cooldown_flag
+		}
+	}
+}

@@ -19,6 +19,7 @@ hiderion_branch_azkare = { #Hiderion improvement branch
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = Y86
 			AND = {
@@ -113,6 +114,7 @@ khao_elnak_branch_azkare = { #Khao Elnak Conquest Branch/Lady Mya Satae
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = Y86
 			AND = {
@@ -217,6 +219,7 @@ ngoen_branch_azkare = { #Lo Ngoen conquest/ The Lord Rama Buakae/Guardian of the
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = Y86
 			AND = {
@@ -401,6 +404,7 @@ ngoen_branch_azkare = { #Lo Ngoen conquest/ The Lord Rama Buakae/Guardian of the
 			}
 			hidden_effect = { azkare_parliament_setup = yes }
 			add_government_reform = azkare_court
+			set_country_flag = azkare_guardian_of_the_townships_completed_flag
 		}
 	}
 }
@@ -411,6 +415,7 @@ thirabnir_branch_azkare = { #Thirabnir vassalization/The Brothers
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = Y86
 			AND = {
@@ -551,6 +556,7 @@ economy_branch_azkare = { #Develop Azkare/townships
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = Y86
 			AND = {
@@ -713,6 +719,7 @@ citadel_azkare = { #Improve the Citadel
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = Y86
 			AND = {
@@ -791,6 +798,7 @@ restore_reputation_azkare = { #Sending the Call, improve elf reputation
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = Y86
 			AND = {
@@ -956,7 +964,7 @@ restore_reputation_azkare = { #Sending the Call, improve elf reputation
 	}
 	
 	azkare_sending_the_call = {
-		icon = mission_embrace_our_destiny
+		icon = mission_new_dawn
 		position = 6
 		required_missions = {
 			azkare_jaerels_values
@@ -1163,6 +1171,7 @@ arawkelin_adm_azkare = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = Y86
 			AND = {
@@ -1375,6 +1384,7 @@ arawkelin_dip_azkare = { #Arawkelin dip mission
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = Y86
 			AND = {
@@ -1564,6 +1574,7 @@ arawkelin_mil_azkare = { #Arawkelin mil mission
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = Y86
 			AND = {
@@ -1675,6 +1686,7 @@ rainforest_azkare = { #Rainforest and ringlet isles
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = Y86
 			AND = {
@@ -1782,6 +1794,7 @@ bomdan_azkare = { #Conquer bomdan
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = Y86
 			AND = {
@@ -2248,6 +2261,7 @@ baihon_xinh_azkare = { #Conquer Baihon Xinh
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = Y86
 			AND = {
@@ -2603,6 +2617,7 @@ east_thidinkai_azkare = { #Conquer east thidinkai
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = Y86
 			AND = {
@@ -3119,6 +3134,7 @@ military_1_azkare = { #Improve Military, preperations for Jaerelic Legions
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = Y86
 			AND = {
@@ -3612,6 +3628,7 @@ connect_the_continent_azkare = { #Golden Highway, Major ports
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Y00
 	}
 	
@@ -4274,6 +4291,7 @@ improve_economy_azkare = { #Improve Haless's economy, protect the little man
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Y00
 	}
 	
@@ -5067,6 +5085,7 @@ public_view_azkare = { #Improve the standing of SE and Elves, radiant campaigns,
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Y00
 	}
 	
@@ -6059,6 +6078,7 @@ academies_azkare = { #Academies, Convocationary guard, command conquest, develop
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Y00
 	}
 	
@@ -6391,7 +6411,7 @@ academies_azkare = { #Academies, Convocationary guard, command conquest, develop
 	}
 	
 	azkare_destroy_the_command = {
-		icon = mission_in_the_name_of_the_fallen
+		icon = mission_burning_castle
 		position = 24
 		required_missions = {
 			azkare_source_of_the_yan
@@ -6763,6 +6783,7 @@ legions_azkare = { #Jaerelic legions, conquer Yanshen, Develop rahen
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = Y00
 	}
 	

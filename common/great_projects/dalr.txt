@@ -76,6 +76,7 @@ bjarnrik_staple_port_of_konungrhavn = {
 		}
 		province_modifiers = {
 			local_development_cost = -0.05
+			province_trade_power_value = 5
 		}
 		area_modifier = {
 		}
@@ -95,7 +96,7 @@ bjarnrik_staple_port_of_konungrhavn = {
 		}
 		province_modifiers = {
 			local_development_cost = -0.1
-			province_trade_power_value = 5
+			province_trade_power_value = 10
 		}
 		area_modifier = {
 		}
@@ -116,7 +117,7 @@ bjarnrik_staple_port_of_konungrhavn = {
 		}
 		province_modifiers = {
 			local_development_cost = -0.15
-			province_trade_power_value = 10
+			province_trade_power_value = 15
 		}
 		area_modifier = {
 		}

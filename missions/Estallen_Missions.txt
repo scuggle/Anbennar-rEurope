@@ -4,6 +4,7 @@ A93_silk_missions_slot = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A93
 		
 	}
@@ -158,6 +159,7 @@ A93_western_missions_slot = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A93
 		
 	}
@@ -244,6 +246,7 @@ A93_central_missions_slot = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A93
 		
 	}
@@ -467,6 +470,7 @@ A93_diplomacy_missions_slot = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = A93
 		
 	}

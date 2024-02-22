@@ -3,6 +3,7 @@ greysheep_coastal_expansion = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = U13
 			AND = {
@@ -234,6 +235,7 @@ greysheep_hill_expansion = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = U13
 			AND = {
@@ -413,6 +415,7 @@ greysheep_sheep_branch = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = U13
 			AND = {
@@ -654,6 +657,7 @@ greysheep_development = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = U13
 			AND = {
@@ -857,6 +861,7 @@ greysheep_fashion = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = U13
 			AND = {

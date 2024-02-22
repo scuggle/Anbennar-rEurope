@@ -14,8 +14,8 @@ hessian_militarization_mechanic = {
 			scaled_modifier = {
 				modifier = {
 					mercenary_discipline = 0.05
-					mercenary_manpower = 0.15
-					monthly_hessian_militarization = -0.25
+					mercenary_manpower = 0.1
+					monthly_hessian_militarization = -0.5
 				}
 			}
 			base_monthly_growth = -0.25

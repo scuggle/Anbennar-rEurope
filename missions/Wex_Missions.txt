@@ -5,6 +5,7 @@ wex_slot_1 = {
 	ai = yes
 	potential = {
 		tag = A30
+		NOT = { has_country_flag = chose_generic_mt }
 	}
 	has_country_shield = yes
 	
@@ -203,6 +204,7 @@ wex_slot_2 = {
 	ai = yes
 	potential = {
 		tag = A30
+		NOT = { has_country_flag = chose_generic_mt }
 	}
 	has_country_shield = yes
 	
@@ -376,6 +378,7 @@ wex_slot_3 = {
 	ai = yes
 	potential = {
 		tag = A30
+		NOT = { has_country_flag = chose_generic_mt }
 	}
 	has_country_shield = yes
 	
@@ -600,7 +603,7 @@ wex_slot_3 = {
 	}
 	
 	A30_industrial_expertise = {
-		icon = mission_sweat_fealty
+		icon = mission_approach_throne
 		required_missions = { }
 		position = 10
 		
@@ -670,6 +673,7 @@ wex_slot_4 = {
 	ai = yes
 	potential = {
 		tag = A30
+		NOT = { has_country_flag = chose_generic_mt }
 	}
 	has_country_shield = yes
 	
@@ -840,6 +844,7 @@ wex_slot_5 = {
 	ai = yes
 	potential = {
 		tag = A30
+		NOT = { has_country_flag = chose_generic_mt }
 	}
 	has_country_shield = yes
 	

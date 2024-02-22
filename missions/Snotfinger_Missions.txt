@@ -3,6 +3,7 @@ H89_column_1 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H89
 	}
 	has_country_shield = yes
@@ -251,12 +252,15 @@ H89_column_1 = {
 				value = 25
 			}
 			any_country = {
-				war_with = ROOT
-				has_been_insulted_by_root = yes
-				ROOT = {
-					war_score_against = {
-						who = PREV
-						value = 75
+				custom_trigger_tooltip = {
+					tooltip = H89_adding_injury_to_insult_tt
+					war_with = ROOT
+					has_been_insulted_by_root = yes
+					ROOT = {
+						war_score_against = {
+							who = PREV
+							value = 75
+						}
 					}
 				}
 			}
@@ -278,6 +282,7 @@ H89_column_2 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H89
 	}
 	has_country_shield = yes
@@ -326,8 +331,7 @@ H89_column_2 = {
 			}
 		}
 		trigger = {
-			any_known_country = {
-				is_rival = ROOT
+			any_rival_country = {
 				has_opinion_modifier = {
 					who = ROOT
 					modifier = scornfully_insulted
@@ -522,6 +526,7 @@ H89_column_3 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H89
 	}
 	has_country_shield = yes
@@ -865,6 +870,7 @@ H89_column_4 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H89
 	}
 	has_country_shield = yes
@@ -980,7 +986,12 @@ H89_column_4 = {
 				}
 			}
 			2898 = {
-				has_building = workshop
+				if = {
+					limit = {
+						NOT = { trade_goods = gold }
+					}
+					has_building = workshop
+				}
 				num_of_times_expanded_infrastructure = 1
 			}
 		}
@@ -1104,6 +1115,7 @@ H89_column_5 = {
 	generic = no
 	ai = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H89
 	}
 	has_country_shield = yes

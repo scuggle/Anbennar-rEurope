@@ -8,6 +8,7 @@
 # 	ai = yes
 # 	has_country_shield = yes
 # 	potential = {
+#    NOT = { has_country_flag = chose_generic_mt }
 # 		OR = {
 # 			tag = Z18
 # 			tag = Z50
@@ -231,6 +232,7 @@
 # 	ai = yes
 # 	has_country_shield = yes
 # 	potential = {
+#    NOT = { has_country_flag = chose_generic_mt }
 # 		OR = {
 # 			tag = Z18
 # 			tag = Z50
@@ -286,6 +288,7 @@
 # 	ai = yes
 # 	has_country_shield = yes
 # 	potential = {
+#    NOT = { has_country_flag = chose_generic_mt }
 # 		OR = {
 # 			tag = Z18
 # 			tag = Z50
@@ -346,6 +349,7 @@
 # 	ai = yes
 # 	has_country_shield = yes
 # 	potential = {
+#    NOT = { has_country_flag = chose_generic_mt }
 # 		OR = {
 # 			tag = Z18
 # 			tag = Z50
@@ -407,6 +411,7 @@
 # 	ai = yes
 # 	has_country_shield = yes
 # 	potential = {
+#    NOT = { has_country_flag = chose_generic_mt }
 # 		OR = {
 # 			tag = Z18
 # 			tag = Z50
@@ -467,6 +472,7 @@
 # 	ai = yes
 # 	has_country_shield = yes
 # 	potential = {
+#    NOT = { has_country_flag = chose_generic_mt }
 # 		OR = {
 # 			tag = Z18
 # 			tag = Z50
@@ -527,6 +533,7 @@
 # 	ai = yes
 # 	has_country_shield = yes
 # 	potential = {
+#    NOT = { has_country_flag = chose_generic_mt }
 # 		OR = {
 # 			tag = Z18
 # 			tag = Z50
@@ -593,6 +600,7 @@
 # 	ai = yes
 # 	has_country_shield = yes
 # 	potential = {
+#    NOT = { has_country_flag = chose_generic_mt }
 # 		OR = {
 # 			tag = Z18
 # 			tag = Z50
@@ -729,6 +737,7 @@
 # 	ai = yes
 # 	has_country_shield = yes
 # 	potential = {
+#    NOT = { has_country_flag = chose_generic_mt }
 # 		OR = {
 # 			tag = Z18
 # 			tag = Z50
@@ -774,6 +783,7 @@
 # 	ai = yes
 # 	has_country_shield = yes
 # 	potential = {
+#    NOT = { has_country_flag = chose_generic_mt }
 # 		OR = {
 # 			tag = Z18
 # 			tag = Z50
@@ -839,6 +849,7 @@
 # 	ai = yes
 # 	has_country_shield = yes
 # 	potential = {
+#    NOT = { has_country_flag = chose_generic_mt }
 # 		OR = {
 # 			tag = Z18
 # 			tag = Z50
@@ -899,6 +910,7 @@
 # 	ai = yes
 # 	has_country_shield = yes
 # 	potential = {
+#    NOT = { has_country_flag = chose_generic_mt }
 # 		OR = {
 # 			tag = Z18
 # 			tag = Z50
@@ -957,6 +969,7 @@
 # 	ai = yes
 # 	has_country_shield = yes
 # 	potential = {
+#    NOT = { has_country_flag = chose_generic_mt }
 # 		OR = {
 # 			tag = Z18
 # 			tag = Z50
@@ -1014,6 +1027,7 @@
 # 	ai = yes
 # 	has_country_shield = yes
 # 	potential = {
+#    NOT = { has_country_flag = chose_generic_mt }
 # 		OR = {
 # 			tag = Z18
 # 			tag = Z50
@@ -1071,6 +1085,7 @@
 # 	ai = yes
 # 	has_country_shield = yes
 # 	potential = {
+#    NOT = { has_country_flag = chose_generic_mt }
 # 		OR = {
 # 			tag = Z18
 # 			tag = Z50
@@ -1149,6 +1164,7 @@
 # 	ai = yes
 # 	has_country_shield = yes
 # 	potential = {
+#    NOT = { has_country_flag = chose_generic_mt }
 # 		OR = {
 # 			tag = Z18
 # 			tag = Z50
@@ -1230,6 +1246,7 @@
 # 	ai = yes
 # 	has_country_shield = yes
 # 	potential = {
+#    NOT = { has_country_flag = chose_generic_mt }
 # 		OR = {
 # 			tag = Z18
 # 			tag = Z50
@@ -1275,6 +1292,7 @@
 # 	ai = yes
 # 	has_country_shield = yes
 # 	potential = {
+#    NOT = { has_country_flag = chose_generic_mt }
 # 		OR = {
 # 			tag = Z18
 # 			tag = Z50
@@ -1320,6 +1338,7 @@
 # 	ai = yes
 # 	has_country_shield = yes
 # 	potential = {
+#    NOT = { has_country_flag = chose_generic_mt }
 # 		OR = {
 # 			tag = Z18
 # 			tag = Z50
@@ -1453,6 +1472,7 @@
 # 	ai = yes
 # 	has_country_shield = yes
 # 	potential = {
+#    NOT = { has_country_flag = chose_generic_mt }
 # 		OR = {
 # 			tag = Z18
 # 			tag = Z50
@@ -1531,6 +1551,7 @@
 # 	ai = yes
 # 	has_country_shield = yes
 # 	potential = {
+#    NOT = { has_country_flag = chose_generic_mt }
 # 		OR = {
 # 			tag = Z18
 # 			tag = Z50
@@ -1565,6 +1586,7 @@
 # 	ai = yes
 # 	has_country_shield = yes
 # 	potential = {
+#    NOT = { has_country_flag = chose_generic_mt }
 # 		OR = {
 # 			tag = Z18
 # 			tag = Z50
@@ -1599,6 +1621,7 @@
 # 	ai = yes
 # 	has_country_shield = yes
 # 	potential = {
+#    NOT = { has_country_flag = chose_generic_mt }
 # 		OR = {
 # 			tag = Z18
 # 			tag = Z50
@@ -1680,6 +1703,7 @@
 # 	ai = yes
 # 	has_country_shield = yes
 # 	potential = {
+#    NOT = { has_country_flag = chose_generic_mt }
 # 		OR = {
 # 			tag = Z18
 # 			tag = Z50
@@ -1714,6 +1738,7 @@
 # 	ai = yes
 # 	has_country_shield = yes
 # 	potential = {
+#    NOT = { has_country_flag = chose_generic_mt }
 # 		OR = {
 # 			tag = Z18
 # 			tag = Z50
@@ -1786,6 +1811,7 @@
 # 	ai = yes
 # 	has_country_shield = yes
 # 	potential = {
+#    NOT = { has_country_flag = chose_generic_mt }
 # 		OR = {
 # 			tag = Z18
 # 			tag = Z50
@@ -1819,6 +1845,7 @@
 # 	ai = yes
 # 	has_country_shield = yes
 # 	potential = {
+#    NOT = { has_country_flag = chose_generic_mt }
 # 		OR = {
 # 			tag = Z18
 # 			tag = Z50
@@ -1864,6 +1891,7 @@
 # 	ai = yes
 # 	has_country_shield = yes
 # 	potential = {
+#    NOT = { has_country_flag = chose_generic_mt }
 # 		OR = {
 # 			tag = Z18
 # 			tag = Z50
@@ -2034,6 +2062,7 @@
 # 	ai = yes
 # 	has_country_shield = yes
 # 	potential = {
+#    NOT = { has_country_flag = chose_generic_mt }
 # 		OR = {
 # 			tag = Z18
 # 			tag = Z50
@@ -2078,6 +2107,7 @@
 # 	ai = yes
 # 	has_country_shield = yes
 # 	potential = {
+#    NOT = { has_country_flag = chose_generic_mt }
 # 		OR = {
 # 			tag = Z18
 # 			tag = Z50
@@ -2123,6 +2153,7 @@
 # 	ai = yes
 # 	has_country_shield = yes
 # 	potential = {
+#    NOT = { has_country_flag = chose_generic_mt }
 # 		OR = {
 # 			tag = Z18
 # 			tag = Z50
@@ -2156,6 +2187,7 @@
 # 	ai = yes
 # 	has_country_shield = yes
 # 	potential = {
+#    NOT = { has_country_flag = chose_generic_mt }
 # 		OR = {
 # 			tag = Z18
 # 			tag = Z50
@@ -2365,6 +2397,7 @@
 # 	ai = yes
 # 	has_country_shield = yes
 # 	potential = {
+#    NOT = { has_country_flag = chose_generic_mt }
 # 		OR = {
 # 			tag = Z18
 # 			tag = Z50
@@ -2399,6 +2432,7 @@
 # 	ai = yes
 # 	has_country_shield = yes
 # 	potential = {
+#    NOT = { has_country_flag = chose_generic_mt }
 # 		OR = {
 # 			tag = Z18
 # 			tag = Z50
@@ -2455,6 +2489,7 @@
 # 	ai = yes
 # 	has_country_shield = yes
 # 	potential = {
+#    NOT = { has_country_flag = chose_generic_mt }
 # 		OR = {
 # 			tag = Z18
 # 			tag = Z50
@@ -2489,6 +2524,7 @@
 # 	ai = yes
 # 	has_country_shield = yes
 # 	potential = {
+#    NOT = { has_country_flag = chose_generic_mt }
 # 		OR = {
 # 			tag = Z18
 # 			tag = Z50

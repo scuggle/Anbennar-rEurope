@@ -5,6 +5,7 @@ A60_begin_ravenhill_group = {
 	generic = no
 	ai = yes
 	potential = {
+    	NOT = { has_country_flag = chose_generic_mt }
 		tag = A60 #Asheniande
 	}
 	has_country_shield = yes
@@ -197,13 +198,14 @@ A60_ravenhill_midgame_dev_group = {
 	generic = no
 	ai = yes
 	potential = {
+    	NOT = { has_country_flag = chose_generic_mt }
 		tag = A60 #Asheniande
 		
 	}
 	has_country_shield = yes
 	
 	A60_investigate_curse = {
-		icon = mission_magisterium_breakthrought
+		icon = mission_magical_forest
 		required_missions = { A60_folly_reclaimed }
 		position = 6
 		
@@ -557,6 +559,7 @@ A60_arannen_shenanigans_group = {
 	generic = no
 	ai = yes
 	potential = {
+    	NOT = { has_country_flag = chose_generic_mt }
 		tag = A60 #Asheniande
 	}
 	has_country_shield = yes
@@ -793,7 +796,7 @@ A60_arannen_shenanigans_group = {
 	}
 	
 	A60_under_our_wings = {
-		icon = mission_sweat_fealty
+		icon = mission_approach_throne
 		required_missions = { A60_eastern_march A60_flooded_coast }
 		position = 5
 		
@@ -846,6 +849,7 @@ A60_estate_dealings_group = {
 	generic = no
 	ai = yes
 	potential = {
+    	NOT = { has_country_flag = chose_generic_mt }
 		tag = A60 #Asheniande
 	}
 	has_country_shield = yes
@@ -946,6 +950,7 @@ A60_force_limit_group = {
 	generic = no
 	ai = yes
 	potential = {
+    	NOT = { has_country_flag = chose_generic_mt }
 		tag = A60 #Asheniande
 	}
 	has_country_shield = yes
@@ -1036,6 +1041,7 @@ A60_vampire_starting_group = {
 	generic = no
 	ai = yes
 	potential = {
+    	NOT = { has_country_flag = chose_generic_mt }
 		tag = A60 #Asheniande
 	}
 	has_country_shield = yes
@@ -1133,6 +1139,7 @@ A60_corvuria_union_group = {
 	generic = no
 	ai = yes
 	potential = {
+    	NOT = { has_country_flag = chose_generic_mt }
 		tag = A60 #Asheniande
 	}
 	has_country_shield = yes
@@ -1278,6 +1285,7 @@ A60_vampire_intermediate_group = {
 	generic = no
 	ai = yes
 	potential = {
+    	NOT = { has_country_flag = chose_generic_mt }
 		tag = A60 #Asheniande
 	}
 	has_country_shield = yes
@@ -1366,6 +1374,7 @@ A60_vampiric_empire_group = {
 	generic = no
 	ai = yes
 	potential = {
+    	NOT = { has_country_flag = chose_generic_mt }
 		tag = A60 #Asheniande
 	}
 	has_country_shield = yes
@@ -1499,6 +1508,7 @@ A60_lencenor_expansion = {
 	generic = no
 	ai = yes
 	potential = {
+    	NOT = { has_country_flag = chose_generic_mt }
 		tag = A60 #Asheniande
 	}
 	has_country_shield = yes
@@ -1576,6 +1586,7 @@ A60_wex_shenanigans_group = {
 	generic = no
 	ai = yes
 	potential = {
+    	NOT = { has_country_flag = chose_generic_mt }
 		tag = A60 #Asheniande
 	}
 	has_country_shield = yes
@@ -1744,6 +1755,7 @@ A60_development_small_chunk = {
 	generic = no
 	ai = yes
 	potential = {
+    	NOT = { has_country_flag = chose_generic_mt }
 		tag = A60 #Asheniande
 	}
 	has_country_shield = yes
@@ -1810,6 +1822,7 @@ A60_vampire_spreading_group = {
 	generic = no
 	ai = yes
 	potential = {
+    	NOT = { has_country_flag = chose_generic_mt }
 		tag = A60 #Asheniande
 	}
 	has_country_shield = yes
@@ -1896,6 +1909,7 @@ A60_development_chunk_one = {
 	generic = no
 	ai = yes
 	potential = {
+    	NOT = { has_country_flag = chose_generic_mt }
 		tag = A60 #Asheniande
 	}
 	has_country_shield = yes
@@ -2060,6 +2074,7 @@ A60_development_chunk_two = {
 	generic = no
 	ai = yes
 	potential = {
+    	NOT = { has_country_flag = chose_generic_mt }
 		tag = A60 #Asheniande
 		
 	}

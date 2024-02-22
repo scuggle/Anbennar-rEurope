@@ -5,7 +5,8 @@ lodhum_fake_2 = {
 	generic = no
 	ai = yes
 	has_country_shield = yes
-	potential = { 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } 
 		tag = H77 
 		NOT = { has_country_flag = lodhum_intro_full_complete }
 	}
@@ -15,7 +16,8 @@ lodhum_fake_4 = {
 	generic = no
 	ai = yes
 	has_country_shield = yes
-	potential = { 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } 
 		tag = H77 
 		NOT = { has_country_flag = lodhum_intro_full_complete }
 	}
@@ -26,7 +28,8 @@ lodhum_intro_part_1 = {
 	generic = no
 	ai = yes
 	has_country_shield = yes
-	potential = { 
+	potential = {
+    NOT = { has_country_flag = chose_generic_mt } 
 		tag = H77 
 		NOT = { has_country_flag = lodhum_intro_full_complete }
 	}
@@ -60,6 +63,7 @@ lodhum_intro_part_2 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H77
 		has_country_flag = lodhum_intro_1_complete
 	}
@@ -98,6 +102,7 @@ lodhum_intro_part_3 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H77
 		has_country_flag = lodhum_intro_1_complete
 		has_country_flag = lodhum_intro_2_complete
@@ -130,6 +135,7 @@ lodhum_intro_part_4 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		tag = H77
 		has_country_flag = lodhum_intro_1_complete
 		has_country_flag = lodhum_intro_2_complete
@@ -167,6 +173,7 @@ lodhum_start_1 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = H77
 			AND = {
@@ -301,6 +308,7 @@ lodhum_start_2 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = H77
 			AND = {
@@ -373,6 +381,7 @@ lodhum_start_3 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = H77
 			AND = {
@@ -496,6 +505,7 @@ lodhum_start_3b = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = H77
 			AND = {
@@ -600,6 +610,7 @@ lodhum_start_4 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = H77
 			AND = {
@@ -657,6 +668,7 @@ lodhum_start_4b = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = H77
 			AND = {
@@ -751,6 +763,7 @@ lodhum_start_5 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = H77
 			AND = {
@@ -975,6 +988,7 @@ lodhum_feywoods_branch_1 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = H77
 			AND = {
@@ -1420,6 +1434,7 @@ lodhum_feywoods_branch_2 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = H77
 			AND = {
@@ -1519,6 +1534,7 @@ lodhum_bulwar_branch_4 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = H77
 			AND = {
@@ -1627,6 +1643,7 @@ lodhum_bulwar_branch_5 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = H77
 			AND = {
@@ -1737,7 +1754,7 @@ lodhum_bulwar_branch_5 = {
 				custom_tooltip = lodhum_slaves_tooltip2
 				hidden_effect = {
 					every_owned_province = {
-						limit = { superregion = bulwar_superregion }
+						limit = { superregion = bulwar_superregion NOT = { OR = { area = gelkalis_area area = tungr_mountains_area area = medbahar_area area = crathanor_area area = reuyel_area } } }
 						ROOT = {
 							add_adm_power = 25
 							add_treasury = 20
@@ -1747,7 +1764,7 @@ lodhum_bulwar_branch_5 = {
 					}
 					#seperate so it also removes stuff you didn't conquer
 					every_core_province = {
-						limit = { superregion = bulwar_superregion }
+						limit = { superregion = bulwar_superregion NOT = { OR = { area = gelkalis_area area = tungr_mountains_area area = medbahar_area area = crathanor_area area = reuyel_area } } }
 						remove_core = ROOT
 					}
 				}
@@ -1813,7 +1830,7 @@ lodhum_bulwar_branch_5 = {
 		provinces_to_highlight = {
 			is_core = F26
 			NOT = { owned_by = F26 }
-			NOT = { area = invaders_pass_area }
+			NOT = { area = nanshalen_area }
 		}
 		#invaders pass is dealt with later
 		trigger = {
@@ -1822,7 +1839,7 @@ lodhum_bulwar_branch_5 = {
 				all_core_province = { 
 					OR = {
 						owned_by = F26 
-						area = invaders_pass_area
+						area = nanshalen_area
 					}
 				}
 			}
@@ -1851,6 +1868,7 @@ lodhum_part2_1 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = H77
 			AND = {
@@ -1941,6 +1959,7 @@ lodhum_part2_2 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = H77
 			AND = {
@@ -2139,6 +2158,7 @@ lodhum_part2_1b = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = H77
 			AND = {
@@ -2261,6 +2281,7 @@ lodhum_part2_2b = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = H77
 			AND = {
@@ -2407,6 +2428,7 @@ lodhum_part2_3 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = H77
 			AND = {
@@ -2470,6 +2492,7 @@ lodhum_part2_4 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = H77
 			AND = {
@@ -2598,6 +2621,7 @@ lodhum_part2_5 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = H77
 			AND = {
@@ -2632,7 +2656,7 @@ lodhum_part2_5 = {
 				}
 				add_dip_power = -200
 			}
-			#harpylen alive
+			#ayarallen alive
 			if = {
 				limit = { F27 = { exists = yes } }
 				#stop them from immediately dying
@@ -2651,11 +2675,11 @@ lodhum_part2_5 = {
 				}
 				create_guarantee = F27
 				F27 = {
-					add_opinion = { who = ROOT modifier = lodhum_harpylen_chance_opinion }
-					add_opinion = { who = F26 modifier = lodhum_harpylen_chance_opinion }
+					add_opinion = { who = ROOT modifier = lodhum_ayarallen_chance_opinion }
+					add_opinion = { who = F26 modifier = lodhum_ayarallen_chance_opinion }
 					hidden_effect = {
-						reverse_add_opinion = { who = ROOT modifier = lodhum_harpylen_chance_opinion }
-						reverse_add_opinion = { who = F26 modifier = lodhum_harpylen_chance_opinion }
+						reverse_add_opinion = { who = ROOT modifier = lodhum_ayarallen_chance_opinion }
+						reverse_add_opinion = { who = F26 modifier = lodhum_ayarallen_chance_opinion }
 					}
 					remove_historical_rival = F26
 				}
@@ -2681,11 +2705,11 @@ lodhum_part2_5 = {
 					remove_historical_rival = F27
 				}
 				F27 = {
-					add_opinion = { who = ROOT modifier = lodhum_harpylen_chance_opinion }
-					add_opinion = { who = F26 modifier = lodhum_harpylen_chance_opinion }
+					add_opinion = { who = ROOT modifier = lodhum_ayarallen_chance_opinion }
+					add_opinion = { who = F26 modifier = lodhum_ayarallen_chance_opinion }
 					hidden_effect = {
-						reverse_add_opinion = { who = ROOT modifier = lodhum_harpylen_chance_opinion }
-						reverse_add_opinion = { who = F26 modifier = lodhum_harpylen_chance_opinion }
+						reverse_add_opinion = { who = ROOT modifier = lodhum_ayarallen_chance_opinion }
+						reverse_add_opinion = { who = F26 modifier = lodhum_ayarallen_chance_opinion }
 						remove_ruler_personality = immortal_personality
 						change_primary_culture = firanyan_harpy
 						set_ruler_culture = firanyan_harpy
@@ -2698,7 +2722,7 @@ lodhum_part2_5 = {
 			}
 			#very ded
 			else = {
-				harpylen_area = {
+				siffiraeri_area = {
 					limit = { NOT = { owned_by = F26 } }
 					add_core = ROOT 
 				}
@@ -2716,7 +2740,7 @@ lodhum_part2_5 = {
 
 		provinces_to_highlight = {
 			OR = {
-				#just highlight harpylen
+				#just highlight ayarallen
 				AND = {
 					exists = F27
 					owned_by = F27
@@ -2724,7 +2748,7 @@ lodhum_part2_5 = {
 				#stuff you should conquer
 				AND = {
 					NOT = { exists = F27 }
-					area = harpylen_area
+					area = siffiraeri_area
 					NOT = { owned_by = ROOT }
 					NOT = { owned_by = F26 }
 				}
@@ -2749,21 +2773,21 @@ lodhum_part2_5 = {
 				}
 			}
 			else = {
-				#harpylen
+				#Heunthume
 				660 = {
 					OR = {
 						owned_by = ROOT
 						owned_by = F26
 					}
 				}
-				#atmontna
+				#Lysinyalen
 				663 = {
 					OR = {
 						owned_by = ROOT
 						owned_by = F26
 					}
 				}
-				#Hydiranyalen
+				#Hytiranyalen
 				661 = {
 					OR = {
 						owned_by = ROOT
@@ -2887,7 +2911,7 @@ lodhum_part2_5 = {
 				add_treasury = 60
 				custom_tooltip = lodhum_monsters_tooltip2
 				hidden_effect = {
-					harpylen_area = {
+					siffiraeri_area = {
 						remove_core = ROOT
 						if = {
 							limit = { NOT = { province_id = 663 } }
@@ -3009,12 +3033,12 @@ lodhum_part2_5 = {
 					remove_core = F27  
 				}
 			}
-			#atmontna remove gelkalis core if controlled by harpylen
+			#Lysinyalen remove Gelkalis core if controlled by Ayarallen
 			if = {
 				limit = { 663 = { owned_by = F27 } }
 				663 = { remove_core = F26 }
 			}
-			#remove harpy cores in gelkalis
+			#remove harpy cores in Gelkalis
 			hidden_effect = { F26 = { every_owned_province = { remove_core = F27 } } }
 		}
 	}
@@ -3084,6 +3108,7 @@ lodhum_part3_1 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = H77
 			AND = {
@@ -3162,6 +3187,7 @@ lodhum_part3_2 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = H77
 			AND = {
@@ -3224,7 +3250,7 @@ lodhum_part3_2 = {
 					hidden_effect = { set_ai_personality = { personality = ai_militarist locked = yes } }
 				}
 				528 = { add_permanent_claim = F23 }
-				magairous_area = { add_permanent_claim = F23 }
+				zagnabad_area = { add_permanent_claim = F23 }
 			}
 			else = {
 				custom_tooltip = lodhum_copper_dwarves_tooltip
@@ -3267,7 +3293,7 @@ lodhum_part3_2 = {
 					}
 				}
 				528 = { add_permanent_claim = F23 }
-				magairous_area = { add_permanent_claim = F23 }
+				zagnabad_area = { add_permanent_claim = F23 }
 			}
 			custom_tooltip = lodhum_copper_dwarves_tooltip2
 		}
@@ -3283,14 +3309,14 @@ lodhum_part3_2 = {
 		provinces_to_highlight = {
 			OR = {
 				province_id = 528
-				area = magairous_area
+				area = zagnabad_area
 			}
 			NOT = { country_or_subject_holds = F23 }
 		}
 
 		trigger = {
 			528 = { country_or_subject_holds = F23 }
-			magairous_area = { 
+			zagnabad_area = { 
 				type = all 
 				country_or_subject_holds = F23
 			}
@@ -3381,6 +3407,7 @@ lodhum_part3_1b = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = H77
 			AND = {
@@ -3453,6 +3480,7 @@ lodhum_part3_2b = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = H77
 			AND = {
@@ -3556,6 +3584,7 @@ lodhum_part3_3 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = H77
 			AND = {
@@ -3850,6 +3879,7 @@ lodhum_part3_4 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = H77
 			AND = {
@@ -3980,6 +4010,7 @@ lodhum_part3_5 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = H77
 			AND = {
@@ -4176,6 +4207,7 @@ lodhum_part3_5b = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = H77
 			AND = {
@@ -4337,6 +4369,7 @@ lodhum_part3_4b = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = H77
 			AND = {
@@ -4373,6 +4406,7 @@ lodhum_part3_5c = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = H77
 			AND = {
@@ -4414,6 +4448,7 @@ lodhum_part4_1 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = H77
 			AND = {
@@ -4802,6 +4837,7 @@ lodhum_part4_2 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = H77
 			AND = {
@@ -4981,6 +5017,7 @@ lodhum_part4_3 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = H77
 			AND = {
@@ -5060,6 +5097,7 @@ lodhum_part4_4 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = H77
 			AND = {
@@ -5350,6 +5388,7 @@ lodhum_part4_5 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
+    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = H77
 			AND = {

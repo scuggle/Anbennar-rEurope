@@ -4,7 +4,7 @@ twisting_missions = {
 	generic = yes
 	has_country_shield = yes
 	potential = {
-	   	always = yes
+		NOT = { has_country_flag = chose_generic_mt }
 	}
 
 
@@ -111,7 +111,7 @@ expansion_missions = {
 	generic = yes
 	has_country_shield = yes
 	potential = {
-	   	always = yes
+		NOT = { has_country_flag = chose_generic_mt }
 	}
 
 
@@ -321,7 +321,7 @@ economic_missions = {
 	generic = yes
 	has_country_shield = yes
 	potential = {
-	   always = yes
+		NOT = { has_country_flag = chose_generic_mt }
 	}
 
 
@@ -586,6 +586,7 @@ trade_missions = {
 		has_country_flag = economic_tellum_flag
 		has_country_flag = trade_tellum_flag
 		}
+		NOT = { has_country_flag = chose_generic_mt }
 	}
 
 
@@ -608,7 +609,7 @@ twisting_missions_goverment = {
 	generic = yes
 	has_country_shield = yes
 	potential = {
-	   	always = yes
+		NOT = { has_country_flag = chose_generic_mt }
 	}
 
 
@@ -988,6 +989,7 @@ front_lines_tellum_missions = {
 	has_country_shield = yes
 	potential = {
 	   has_country_flag = front_lines_tellum_flag
+	   NOT = { has_country_flag = chose_generic_mt }
 	}
 
 
@@ -1048,6 +1050,7 @@ support_tellum_missions = {
 	has_country_shield = yes
 	potential = {
 	   has_country_flag = support_tellum_flag
+	   NOT = { has_country_flag = chose_generic_mt }
 	}
 
 
@@ -1102,6 +1105,7 @@ artificers_tellum_missions = {
 	has_country_shield = yes
 	potential = {
 	   has_country_flag = artificers_tellum_flag
+	   NOT = { has_country_flag = chose_generic_mt }
 	}
 
 
@@ -1131,13 +1135,7 @@ artificers_tellum_missions = {
 				change_trade_goods = precursor_relics
 				set_province_flag = permanent_precursor_relics
 			}
-			random_province = {
-				limit = {
-					owned_by = ROOT
-				}
-				change_trade_goods = precursor_relics
-				set_province_flag = permanent_precursor_relics
-			}
+			#removed one province
 		}
 	}
 	artificers_tellum_2 = {
@@ -1173,6 +1171,7 @@ economic_tellum_missions = {
 	has_country_shield = yes
 	potential = {
 	   has_country_flag = economic_tellum_flag
+	   NOT = { has_country_flag = chose_generic_mt }
 	}
 
 
@@ -1233,6 +1232,7 @@ trade_tellum_missions = {
 	has_country_shield = yes
 	potential = {
 	   has_country_flag = trade_tellum_flag
+	   NOT = { has_country_flag = chose_generic_mt }
 	}
 
 
