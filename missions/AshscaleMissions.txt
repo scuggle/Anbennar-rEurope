@@ -6,8 +6,8 @@ colonisation_efforts = {
 	potential = {
     	NOT = { has_country_flag = chose_generic_mt }
 		OR = {
-			tag = V01
-			was_tag = V01
+			tag = X26
+			was_tag = X26
 		}
 	}
 	has_country_shield = yes
@@ -62,8 +62,8 @@ dragon_forge_branch = {
 	potential = {
     	NOT = { has_country_flag = chose_generic_mt }
 		OR = {
-			tag = V01
-			was_tag = V01
+			tag = X26
+			was_tag = X26
 		}
 	}
 	has_country_shield = yes
@@ -200,8 +200,8 @@ becoming_a_country_branch = {
 	potential = {
     	NOT = { has_country_flag = chose_generic_mt }
 		OR = {
-			tag = V01
-			was_tag = V01
+			tag = X26
+			was_tag = X26
 		}
 	}
 	has_country_shield = yes
@@ -365,8 +365,8 @@ early_conquests = {
 	potential = {
     	NOT = { has_country_flag = chose_generic_mt }
 		OR = {
-			tag = V01
-			was_tag = V01
+			tag = X26
+			was_tag = X26
 		}
 	}
 	has_country_shield = yes
@@ -457,8 +457,8 @@ extras_branch = {
 	potential = {
     	NOT = { has_country_flag = chose_generic_mt }
 		OR = {
-			tag = V01
-			was_tag = V01
+			tag = X26
+			was_tag = X26
 		}
 	}
 	has_country_shield = yes
@@ -496,8 +496,8 @@ ordstun_branch = {
 	potential = {
     	NOT = { has_country_flag = chose_generic_mt }
 		OR = {
-			tag = V01
-			was_tag = V01
+			tag = X26
+			was_tag = X26
 		}
 		has_country_flag = ash_new_missions
 	}
@@ -587,8 +587,8 @@ lodhum_branch = {
 	potential = {
     	NOT = { has_country_flag = chose_generic_mt }
 		OR = {
-			tag = V01
-			was_tag = V01
+			tag = X26
+			was_tag = X26
 		}
 		has_country_flag = ash_new_missions
 	}
@@ -680,8 +680,8 @@ skomdihr_branch = {
 	potential = {
     	NOT = { has_country_flag = chose_generic_mt }
 		OR = {
-			tag = V01
-			was_tag = V01
+			tag = X26
+			was_tag = X26
 		}
 		has_country_flag = ash_new_missions
 	}
@@ -772,8 +772,8 @@ shazstun_branch = {
 	potential = {
     	NOT = { has_country_flag = chose_generic_mt }
 		OR = {
-			tag = V01
-			was_tag = V01
+			tag = X26
+			was_tag = X26
 		}
 		has_country_flag = ash_new_missions
 	}
@@ -865,8 +865,8 @@ orghelo_branch = {
 	potential = {
     	NOT = { has_country_flag = chose_generic_mt }
 		OR = {
-			tag = V01
-			was_tag = V01
+			tag = X26
+			was_tag = X26
 		}
 		has_country_flag = ash_new_missions
 	}
@@ -958,8 +958,8 @@ kobold_reach_branch = {
 	potential = {
     	NOT = { has_country_flag = chose_generic_mt }
 		OR = {
-			tag = V01
-			was_tag = V01
+			tag = X26
+			was_tag = X26
 		}
 		has_country_flag = ash_new_missions
 	}
@@ -1051,8 +1051,8 @@ inward_perfection_route = {
 	potential = {
     	NOT = { has_country_flag = chose_generic_mt }
 		OR = {
-			tag = V01
-			was_tag = V01
+			tag = X26
+			was_tag = X26
 		}
 		has_country_flag = ash_new_missions
 	}
@@ -1132,8 +1132,8 @@ religious_branch = {
 	potential = {
     	NOT = { has_country_flag = chose_generic_mt }
 		OR = {
-			tag = V01
-			was_tag = V01
+			tag = X26
+			was_tag = X26
 		}
 		has_country_flag = ash_new_missions
 	}

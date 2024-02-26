@@ -8,10 +8,9 @@ country_event = {
 	picture = SETTINGS_MAIN_eventPicture
 	
 	is_triggered_only = yes
-	
+
 	trigger = {
 		ai = no
-		tag = B17	#scuggle
 		NOT = { has_global_flag = settings_done }
 		NOT = { has_global_flag = settings_opened }
 	}

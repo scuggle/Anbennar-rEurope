@@ -1,10 +1,8 @@
-
 obrtrol_missiontree_1 = {
 	slot = 1
 	generic = no
 	ai = yes
 	potential = {
-    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = Z17
 			tag = Z74
@@ -244,7 +242,6 @@ obrtrol_missiontree_2 = {
 	generic = no
 	ai = yes
 	potential = {
-    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = Z17
 			tag = Z74
@@ -366,7 +363,6 @@ obrtrol_missiontree_3 = {
 	generic = no
 	ai = yes
 	potential = {
-    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = Z17
 			tag = Z74
@@ -677,7 +673,6 @@ obrtrol_missiontree_4 = {
 	generic = no
 	ai = yes
 	potential = {
-    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = Z17
 			tag = Z74
@@ -770,7 +765,6 @@ obrtrol_missiontree_5 = {
  	generic = no
  	ai = yes
 	potential = {
-    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = Z17
 			tag = Z74
@@ -1030,7 +1024,7 @@ obrtrol_missiontree_5 = {
  		}
 		
  		trigger = {
-			1286 = {
+			1289 = {
 				is_strongest_trade_power	= ROOT		
 			}
 			1477 = {
@@ -1098,7 +1092,6 @@ obrtrol_missiontree_1_b = {
  	generic = no
  	ai = yes
  	potential = {
-    NOT = { has_country_flag = chose_generic_mt }
 		tag = Z74
  	}
 	
@@ -1338,7 +1331,6 @@ obrtrol_missiontree_2_b = {
  	generic = no
  	ai = yes
  	potential = {
-    NOT = { has_country_flag = chose_generic_mt }
 		tag = Z74
  	}
 	
@@ -1454,7 +1446,10 @@ obrtrol_missiontree_2_b = {
 		position = 12
 		
 		provinces_to_highlight = {
-			region = gerudian_coast_region
+			OR = {
+				region = olavlund_region
+				region = gerudian_frontier_region
+			}
 			OR = {
 				NOT = { is_core = ROOT }
 				NOT = { is_prosperous = yes }
@@ -1464,7 +1459,12 @@ obrtrol_missiontree_2_b = {
 		trigger = {
 			custom_trigger_tooltip = {
 				tooltip = obrtrol_the_trumpets_of_mammoths_tooltip
-				gerudian_coast_region = {
+				olavlund_region = {
+					is_core = ROOT
+					is_prosperous = yes
+					type = all
+				}
+				gerudian_frontier_region = {
 					is_core = ROOT
 					is_prosperous = yes
 					type = all
@@ -1473,7 +1473,13 @@ obrtrol_missiontree_2_b = {
 		}
 		
 		effect = {
-			gerudian_coast_region = {
+			olavlund_region = {
+				add_province_modifier = {
+					name = "obrtrol_gerudian_coast_prosperity"
+					duration = -1
+				}
+ 			}
+			 gerudian_frontier_region = {
 				add_province_modifier = {
 					name = "obrtrol_gerudian_coast_prosperity"
 					duration = -1
@@ -1622,7 +1628,6 @@ obrtrol_missiontree_3_b = {
  	generic = no
  	ai = yes
  	potential = {
-    NOT = { has_country_flag = chose_generic_mt }
 		tag = Z74
  	}
 	
@@ -1824,7 +1829,6 @@ obrtrol_missiontree_4_b = {
 	generic = no
 	ai = yes
 	potential = {
-    NOT = { has_country_flag = chose_generic_mt }
 		tag = Z74
 	}
 	
@@ -2135,7 +2139,6 @@ obrtrol_missiontree_5_b = {
 	generic = no
 	ai = yes
 	potential = {
-    NOT = { has_country_flag = chose_generic_mt }
 		tag = Z74
 	}
 	

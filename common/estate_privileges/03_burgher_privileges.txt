@@ -1338,7 +1338,7 @@ estate_burghers_control_over_monetary_policy = {
 	}
 	benefits = {
 		inflation_reduction = 0.15
-		interest = -0.25
+		interest = -0.5
 		production_efficiency = 0.05
 	}
 	conditional_modifier = {
@@ -2700,7 +2700,7 @@ estate_burghers_promote_burgher_bookkeeping = {
 		trigger = { always = yes }
 		modifier = {
 			inflation_action_cost = -0.5
-			interest = -0.25
+			interest = -0.5
 			state_maintenance_modifier = -0.25
 		}
 	}

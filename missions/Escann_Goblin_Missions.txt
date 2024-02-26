@@ -4,7 +4,6 @@ EscannGob0 = {
 	generic = no
 	ai = yes
 	potential = {
-    NOT = { has_country_flag = chose_generic_mt }
 		culture_group = goblin
 		NOT = {
 			OR = {
@@ -141,7 +140,6 @@ EscannGob1 = {
 	generic = no
 	ai = yes
 	potential = {
-    NOT = { has_country_flag = chose_generic_mt }
 		culture_group = goblin
 		NOT = {
 			OR = {
@@ -304,7 +302,6 @@ EscannGob2 = {
 	generic = no
 	ai = yes
 	potential = {
-    NOT = { has_country_flag = chose_generic_mt }
 		culture_group = goblin
 		NOT = {
 			OR = {
@@ -513,7 +510,6 @@ EscannGob3 = {
 	generic = no
 	ai = yes
 	potential = {
-    NOT = { has_country_flag = chose_generic_mt }
 		culture_group = goblin
 		NOT = {
 			OR = {
@@ -633,7 +629,6 @@ EscannGob4 = {
 	generic = no
 	ai = yes
 	potential = {
-    NOT = { has_country_flag = chose_generic_mt }
 		culture_group = goblin
 		NOT = {
 			OR = {
@@ -774,12 +769,10 @@ EscannGob4 = {
 		}
 		trigger = {
 			OR = {
-				811 = { is_strongest_trade_power = ROOT }
+				808 = { is_strongest_trade_power = ROOT }
 				833 = { is_strongest_trade_power = ROOT }
-				785 = { is_strongest_trade_power = ROOT }
 				229 = { is_strongest_trade_power = ROOT }
-				872 = { is_strongest_trade_power = ROOT }
-				888 = { is_strongest_trade_power = ROOT }
+				880 = { is_strongest_trade_power = ROOT }
 			}
 		}
 		effect = {

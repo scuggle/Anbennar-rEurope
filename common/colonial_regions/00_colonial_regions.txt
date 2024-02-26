@@ -184,7 +184,13 @@ colonial_endralliande = {
 	}
 	names = {
 		trigger = {
-			tag = event_target:feiten_or_was_feiten_target	#Feiten
+			OR = {
+				tag = Y20				#Feiten
+				AND = {
+					tag = Z65			#Yanshen
+					was_tag = Y20
+				}
+			}
 		}
 		name = "COLONIAL_ENDRALLIANDE_Tuuiong"
 	}
@@ -497,7 +503,13 @@ colonial_noruin = {
 	}
 	names = {
 		trigger = {
-			tag = event_target:feiten_or_was_feiten_target	#Feiten
+			OR = {
+				tag = Y20				#Feiten
+				AND = {
+					tag = Z65			#Yanshen
+					was_tag = Y20
+				}
+			}
 		}
 		name = "COLONIAL_NORUIN_Limian"
 	}
@@ -696,7 +708,13 @@ colonial_soruin = {
 	}
 	names = {
 		trigger = {
-			tag = event_target:feiten_or_was_feiten_target	#Feiten
+			OR = {
+				tag = Y20				#Feiten
+				AND = {
+					tag = Z65			#Yanshen
+					was_tag = Y20
+				}
+			}
 		}
 		name = "COLONIAL_SORUIN_Simsu"
 	}
@@ -891,7 +909,13 @@ colonial_isles = {
 	}
 	names = {
 		trigger = {
-			tag = event_target:feiten_or_was_feiten_target	#Feiten
+			OR = {
+				tag = Y20				#Feiten
+				AND = {
+					tag = Z65			#Yanshen
+					was_tag = Y20
+				}
+			}
 		}
 		name = "COLONIAL_ISLES_Singlo"
 	}
@@ -1014,7 +1038,13 @@ colonial_leechden = {
 	}
 	names = {
 		trigger = {
-			tag = event_target:feiten_or_was_feiten_target	#Feiten
+			OR = {
+				tag = Y20				#Feiten
+				AND = {
+					tag = Z65			#Yanshen
+					was_tag = Y20
+				}
+			}
 		}
 		name = "COLONIAL_LEECHDEN_Huiling"
 	}
@@ -1154,7 +1184,13 @@ colonial_lai_peninsula = {
 	# Feiten - Beikdugang
 	names = {
 		trigger = {
-			tag = event_target:feiten_or_was_feiten_target	#Feiten
+			OR = {
+				tag = Y20				#Feiten
+				AND = {
+					tag = Z65			#Yanshen
+					was_tag = Y20
+				}
+			}
 		}
 		name = "COLONIAL_LAI_PENINSULA_Tshuiluan"
 	}
@@ -1275,7 +1311,13 @@ colonial_amadia = {
 	# Feiten - Beikdugang
 	names = {
 		trigger = {
-			tag = event_target:feiten_or_was_feiten_target	#Feiten
+			OR = {
+				tag = Y20				#Feiten
+				AND = {
+					tag = Z65			#Yanshen
+					was_tag = Y20
+				}
+			}
 		}
 		name = "COLONIAL_AMADIA_Gintsi"
 	}
@@ -1390,7 +1432,13 @@ colonial_kheionai = {
 	# Feiten - Beikdugang
 	names = {
 		trigger = {
-			tag = event_target:feiten_or_was_feiten_target	#Feiten
+			OR = {
+				tag = Y20				#Feiten
+				AND = {
+					tag = Z65			#Yanshen
+					was_tag = Y20
+				}
+			}
 		}
 		name = "COLONIAL_KHEIONAI_Biktsiu"
 	}
@@ -1513,7 +1561,13 @@ colonial_haraf = {
 	}
 	names = {
 		trigger = {
-			tag = event_target:feiten_or_was_feiten_target	#Feiten
+			OR = {
+				tag = Y20				#Feiten
+				AND = {
+					tag = Z65			#Yanshen
+					was_tag = Y20
+				}
+			}
 		}
 		name = "COLONIAL_HARAF_Bokguan"
 	}
@@ -1696,7 +1750,13 @@ colonial_upper_ynn = {
 	}
 	names = {
 		trigger = {
-			tag = event_target:feiten_or_was_feiten_target	#Feiten
+			OR = {
+				tag = Y20				#Feiten
+				AND = {
+					tag = Z65			#Yanshen
+					was_tag = Y20
+				}
+			}
 		}
 		name = "COLONIAL_UPPER_YNN_Tingkang"
 	}
@@ -1776,7 +1836,13 @@ colonial_lower_ynn = {
 	}
 	names = {
 		trigger = {
-			tag = event_target:feiten_or_was_feiten_target	#Feiten
+			OR = {
+				tag = Y20				#Feiten
+				AND = {
+					tag = Z65			#Yanshen
+					was_tag = Y20
+				}
+			}
 		}
 		name = "COLONIAL_LOWER_YNN_Phiklau"
 	}
@@ -1857,7 +1923,13 @@ colonial_expanse = {
 	}
 	names = {
 		trigger = {
-			tag = event_target:feiten_or_was_feiten_target	#Feiten
+			OR = {
+				tag = Y20				#Feiten
+				AND = {
+					tag = Z65			#Yanshen
+					was_tag = Y20
+				}
+			}
 		}
 		name = "COLONIAL_EXPANSE_Kuangyeh"
 	}
@@ -1992,7 +2064,13 @@ colonial_dalaire = {
 	# Feiten - Beikdugang
 	names = {
 		trigger = {
-			tag = event_target:feiten_or_was_feiten_target	#Feiten
+			OR = {
+				tag = Y20				#Feiten
+				AND = {
+					tag = Z65			#Yanshen
+					was_tag = Y20
+				}
+			}
 		}
 		name = "COLONIAL_DALAIRE_Thiathai"
 	}
@@ -2122,7 +2200,13 @@ colonial_broken_sea = {
 	}
 	names = {
 		trigger = {
-			tag = event_target:feiten_or_was_feiten_target	#Feiten
+			OR = {
+				tag = Y20				#Feiten
+				AND = {
+					tag = Z65			#Yanshen
+					was_tag = Y20
+				}
+			}
 		}
 		name = "COLONIAL_BROKEN_SEA_Thianti"
 	}
@@ -2238,7 +2322,13 @@ colonial_taychend = {
 	}
 	names = {
 		trigger = {
-			tag = event_target:feiten_or_was_feiten_target
+			OR = {
+				tag = Y20				#Feiten
+				AND = {
+					tag = Z65			#Yanshen
+					was_tag = Y20
+				}
+			}
 		}
 		name = "COLONIAL_TAYCHEND_Khimling"
 	}
@@ -2353,7 +2443,13 @@ colonial_eordand = {
 	}
 	names = {
 		trigger = {
-			tag = event_target:feiten_or_was_feiten_target	#Feiten
+			OR = {
+				tag = Y20				#Feiten
+				AND = {
+					tag = Z65			#Yanshen
+					was_tag = Y20
+				}
+			}
 		}
 		name = "COLONIAL_EORDAND_Tanting"
 	}

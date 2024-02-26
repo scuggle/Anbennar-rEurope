@@ -1,7 +1,7 @@
 
-owner = V01
-controller = V01
-add_core = V01
+owner = X26
+controller = X26
+add_core = X26
 is_city = yes
 culture = redscale_kobold
 religion = kobold_dragon_cult

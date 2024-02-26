@@ -6,7 +6,7 @@ country_decisions = {
 		potential = {
 			capital_scope = {
 				OR = {
-					region = gerudian_coast_region
+					region = gerudian_frontier_region
 					region = dalr_region
 					region = alenic_reach_region
 				}
@@ -47,7 +47,7 @@ country_decisions = {
 
             num_of_owned_provinces_with = {
 				value = 20
-				region = gerudian_coast_region
+				region = gerudian_frontier_region
 			}
 			num_of_owned_provinces_with = {
 				value = 20
@@ -77,7 +77,7 @@ country_decisions = {
 				set_government_rank = 3
 			}
 			
-			gerudian_coast_region = {
+			gerudian_frontier_region = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}

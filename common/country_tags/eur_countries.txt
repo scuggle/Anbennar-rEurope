@@ -1,4 +1,4 @@
-#rEuropeFormables
+#rEurope
 X01 = "countries/Gerudian_Empire.txt"
 X02 = "countries/Carneter.txt"
 X03 = "countries/Great_Xhaz.txt"
@@ -20,12 +20,8 @@ X18 = "countries/Silver Band.txt"
 X19 = "countries/Airgethil.txt"
 X20 = "countries/Falahen.txt"
 X21 = "countries/Wabensoyo.txt"
-#RIP Southroy
 X23 = "countries/Triarchy.txt"
 X24 = "countries/Northern_League.txt"
 X25 = "countries/Griffon_Empire.txt"
-
-##COT##
-
-V01 = "countries/Redscale_Expedition.txt"
-V02 = "countries/Zutarzex.txt"
+X26 = "countries/Redscale_Expedition.txt"
+X27 = "countries/Zutarzex.txt"

@@ -1,4 +1,3 @@
-# 
 # Why are there so many different blocks and even copies of missions? Because dynamic missions are cancer and I never want to do them again
 # add_nationalism is broken and only seems to add/remove unrest from its own pool (not the amount added when you conquer a province) - remind me to delete the add_unrest = -3 if Paradox ever fixes add_nationalism
 # the scripted trigger 'culture_is_human = yes' does NOT seem work when used in any trigger IN AN EFFECT BLOCK, it still works IN THE TRIGGER BLOCK, don't change unless this is fixed
@@ -8,7 +7,6 @@ castanor_1_missions_a = {
 	generic = no
 	ai = yes
 	potential = {
-    NOT = { has_country_flag = chose_generic_mt }
 		tag = B32
 		NOT = { has_disaster = castanor_succession_war }
 	}
@@ -306,7 +304,6 @@ castanor_1_missions_dostanorian = {
 	generic = no
 	ai = yes
 	potential = {
-    NOT = { has_country_flag = chose_generic_mt }
 		tag = B32
 		NOT = { has_disaster = castanor_succession_war }
 		has_country_flag = castanor_culture_missions_unlocked
@@ -416,7 +413,6 @@ castanor_1_missions_b = {
 	generic = no
 	ai = yes
 	potential = {
-    NOT = { has_country_flag = chose_generic_mt }
 		tag = B32
 		NOT = { has_disaster = castanor_succession_war }
 	}
@@ -899,7 +895,7 @@ castanor_1_missions_b = {
 			OR = {
 				OR = {
 					area = firanyalen_area
-					area = nanshalen_area
+					area = nansalen_area
 					area = ur_monkande_area
 					area = zagnabad_area
 				}
@@ -942,7 +938,7 @@ castanor_1_missions_b = {
 					}
 				}
 			}
-			nanshalen_area = { province_has_current_tech_fort_trigger = yes }
+			nansalen_area = { province_has_current_tech_fort_trigger = yes }
 		}
 		
 		effect = {
@@ -1116,7 +1112,6 @@ castanor_1_missions_businori = {
 	generic = no
 	ai = yes
 	potential = {
-    NOT = { has_country_flag = chose_generic_mt }
 		tag = B32
 		NOT = { has_disaster = castanor_succession_war }
 		has_country_flag = castanor_culture_missions_unlocked
@@ -1373,7 +1368,6 @@ castanor_1_missions_c = {
 	generic = no
 	ai = yes
 	potential = {
-    NOT = { has_country_flag = chose_generic_mt }
 		tag = B32
 		NOT = { has_disaster = castanor_succession_war }
 	}
@@ -1653,7 +1647,6 @@ castanor_1_missions_bulwari = {
 	generic = no
 	ai = yes
 	potential = {
-    NOT = { has_country_flag = chose_generic_mt }
 		tag = B32
 		NOT = { has_disaster = castanor_succession_war }
 		has_country_flag = castanor_culture_missions_unlocked
@@ -1970,7 +1963,6 @@ castanor_2_missions = {
 	generic = no
 	ai = yes
 	potential = {
-    NOT = { has_country_flag = chose_generic_mt }
 		tag = B32
 		NOT = { has_disaster = castanor_succession_war }
 	}
@@ -3219,7 +3211,6 @@ castanor_3_missions_a = {
 	generic = no
 	ai = yes
 	potential = {
-    NOT = { has_country_flag = chose_generic_mt }
 		tag = B32
 		NOT = { has_disaster = castanor_succession_war }
 	}
@@ -3897,7 +3888,6 @@ castanor_3_missions_pride_1 = {
 	generic = no
 	ai = yes
 	potential = {
-    NOT = { has_country_flag = chose_generic_mt }
 		tag = B32
 		NOT = { has_disaster = castanor_succession_war }
 		NOT = { has_country_modifier = castanor_pride_1_mod }
@@ -3935,7 +3925,6 @@ castanor_3_missions_pride_2 = {
 	generic = no
 	ai = yes
 	potential = {
-    NOT = { has_country_flag = chose_generic_mt }
 		tag = B32
 		NOT = { has_disaster = castanor_succession_war }
 		has_country_modifier = castanor_pride_1_mod
@@ -3971,7 +3960,6 @@ castanor_3_missions_pride_3 = {
 	generic = no
 	ai = yes
 	potential = {
-    NOT = { has_country_flag = chose_generic_mt }
 		tag = B32
 		NOT = { has_disaster = castanor_succession_war }
 		has_country_modifier = castanor_pride_2_mod
@@ -4007,7 +3995,6 @@ castanor_3_missions_pride_4 = {
 	generic = no
 	ai = yes
 	potential = {
-    NOT = { has_country_flag = chose_generic_mt }
 		tag = B32
 		NOT = { has_disaster = castanor_succession_war }
 		OR = {
@@ -4046,7 +4033,6 @@ castanor_3_missions_b =  {
 	generic = no
 	ai = yes
 	potential = {
-    NOT = { has_country_flag = chose_generic_mt }
 		tag = B32
 		NOT = { has_disaster = castanor_succession_war }
 	}	
@@ -4112,7 +4098,6 @@ castanor_3_missions_b_strong_centaurs = {
 	generic = no
 	ai = yes
 	potential = {
-    NOT = { has_country_flag = chose_generic_mt }
 		tag = B32
 		NOT = { has_disaster = castanor_succession_war }
 		has_country_flag = castanor_strong_centaurs
@@ -4234,7 +4219,6 @@ castanor_3_missions_b_strong_lake_fed = {
 	generic = no
 	ai = yes
 	potential = {
-    NOT = { has_country_flag = chose_generic_mt }
 		tag = B32
 		NOT = { has_disaster = castanor_succession_war }
 		has_country_flag = castanor_strong_lake_fed
@@ -4356,7 +4340,6 @@ castanor_3_missions_b_dominant_centaurs = {
 	generic = no
 	ai = yes
 	potential = {
-    NOT = { has_country_flag = chose_generic_mt }
 		tag = B32
 		NOT = { has_disaster = castanor_succession_war }
 		has_country_flag = castanor_dominant_centaurs
@@ -4482,7 +4465,6 @@ castanor_3_missions_b_pre_lakefed_contact = {
 	generic = no
 	ai = yes
 	potential = {
-    NOT = { has_country_flag = chose_generic_mt }
 		tag = B32
 		NOT = { has_disaster = castanor_succession_war }
 		NOT = { has_country_flag = castanor_strong_lake_fed }
@@ -4606,7 +4588,6 @@ castanor_3_missions_c = {
 	generic = no
 	ai = yes
 	potential = {
-    NOT = { has_country_flag = chose_generic_mt }
 		tag = B32
 		NOT = { has_disaster = castanor_succession_war }
 	}
@@ -4810,7 +4791,6 @@ castanor_3_missions_alenic = {
 	generic = no
 	ai = yes
 	potential = {
-    NOT = { has_country_flag = chose_generic_mt }
 		tag = B32
 		NOT = { has_disaster = castanor_succession_war }
 		has_country_flag = castanor_culture_missions_unlocked
@@ -5106,7 +5086,6 @@ castanor_3_missions_d = {
 	generic = no
 	ai = yes
 	potential = {
-    NOT = { has_country_flag = chose_generic_mt }
 		tag = B32
 		NOT = { has_disaster = castanor_succession_war }
 	}
@@ -5153,7 +5132,6 @@ castanor_3_missions_anbennarian = {
 	generic = no
 	ai = yes
 	potential = {
-    NOT = { has_country_flag = chose_generic_mt }
 		tag = B32
 		NOT = { has_disaster = castanor_succession_war }
 		has_country_flag = castanor_culture_missions_unlocked
@@ -5462,7 +5440,6 @@ castanor_3_missions_e = {
 	generic = no
 	ai = yes
 	potential = {
-    NOT = { has_country_flag = chose_generic_mt }
 		tag = B32
 		NOT = { has_disaster = castanor_succession_war }
 	}
@@ -5520,7 +5497,6 @@ castanor_3_missions_divenori = {
 	generic = no
 	ai = yes
 	potential = {
-    NOT = { has_country_flag = chose_generic_mt }
 		tag = B32
 		NOT = { has_disaster = castanor_succession_war }
 		has_country_flag = castanor_culture_missions_unlocked
@@ -5847,7 +5823,6 @@ castanor_3_missions_f = {
 	generic = no
 	ai = yes
 	potential = {
-    NOT = { has_country_flag = chose_generic_mt }
 		tag = B32
 		NOT = { has_disaster = castanor_succession_war }
 	}
@@ -6399,7 +6374,6 @@ castanor_4_missions = {
 	generic = no
 	ai = yes
 	potential = {
-    NOT = { has_country_flag = chose_generic_mt }
 		tag = B32
 		NOT = { has_disaster = castanor_succession_war }
 	}
@@ -6417,22 +6391,13 @@ castanor_4_missions = {
 					share = 50
 				}
 			}
-			872 = { # Upper Alen
+			880 = { # Marrhold
 				trade_share = {
 					country = ROOT
 					share = 50
 				}
 			}
-			888 = { # Marrhold
-				trade_share = {
-					country = ROOT
-					share = 50
-				}
-			}
-			811 = { # Marches
-				has_most_province_trade_power = ROOT
-			}
-			785 = { # Silvermere
+			808 = { # Marches
 				has_most_province_trade_power = ROOT
 			}
 			229 = { # Middle Alen
@@ -7652,7 +7617,6 @@ castanor_5_missions_a = {
 	generic = no
 	ai = yes
 	potential = {
-    NOT = { has_country_flag = chose_generic_mt }
 		tag = B32
 		NOT = { has_disaster = castanor_succession_war }
 	}
@@ -8017,7 +7981,6 @@ castanor_5_missions_escanni = {
 	generic = no
 	ai = yes
 	potential = {
-    NOT = { has_country_flag = chose_generic_mt }
 		tag = B32
 		NOT = { has_disaster = castanor_succession_war }
 		has_country_flag = castanor_culture_missions_unlocked
@@ -8168,7 +8131,6 @@ castanor_5_missions_b = {
 	generic = no
 	ai = yes
 	potential = {
-    NOT = { has_country_flag = chose_generic_mt }
 		tag = B32
 		NOT = { has_disaster = castanor_succession_war }
 	}
@@ -8210,7 +8172,6 @@ castanor_5_missions_FP_strong_centaurs_path = {
 	generic = no
 	ai = yes
 	potential = {
-    NOT = { has_country_flag = chose_generic_mt }
 		tag = B32
 		NOT = { has_disaster = castanor_succession_war }
 		has_country_flag = castanor_strong_centaurs
@@ -8380,7 +8341,7 @@ castanor_5_missions_FP_strong_centaurs_path = {
 					is_strongest_trade_power = J33
 				}
 			}
-			1286 = { # Vrorensbay
+			1289 = { # Vrorensbay
 				OR = {
 					is_strongest_trade_power = ROOT
 					is_strongest_trade_power = J33
@@ -8450,7 +8411,6 @@ castanor_5_missions_FP_strong_lake_fed_path = {
 	generic = no
 	ai = yes
 	potential = {
-    NOT = { has_country_flag = chose_generic_mt }
 		tag = B32
 		NOT = { has_disaster = castanor_succession_war }
 		has_country_flag = castanor_strong_lake_fed
@@ -8490,8 +8450,8 @@ castanor_5_missions_FP_strong_lake_fed_path = {
 						culture_group = triunic
 						capital_scope = {
 							OR = {
-								region = northern_isles_region
-								region = southern_isles_region
+								region = north_yarikhoi_region
+								region = south_yarikhoi_region
 							}
 						}
 					}
@@ -8500,8 +8460,8 @@ castanor_5_missions_FP_strong_lake_fed_path = {
 					culture_group = triunic
 					capital_scope = {
 						OR = {
-							region = northern_isles_region
-							region = southern_isles_region
+							region = north_yarikhoi_region
+							region = south_yarikhoi_region
 						}
 					}
 					has_opinion = {
@@ -8534,7 +8494,7 @@ castanor_5_missions_FP_strong_lake_fed_path = {
 						key = STRONG_MERCHANTS
 					}
 				}
-				1286 = { # Vrorensbay
+				1289 = { # Vrorensbay
 					add_trade_modifier = {
 						who = ROOT
 						duration = 5475
@@ -8654,7 +8614,7 @@ castanor_5_missions_FP_strong_lake_fed_path = {
 					is_strongest_trade_power = J33
 				}
 			}
-			1286 = { # Vrorensbay
+			1289 = { # Vrorensbay
 				OR = {
 					is_strongest_trade_power = ROOT
 					is_strongest_trade_power = J33
@@ -8736,7 +8696,6 @@ castanor_5_missions_FP_dominant_centaurs_path = {
 	generic = no
 	ai = yes
 	potential = {
-    NOT = { has_country_flag = chose_generic_mt }
 		tag = B32
 		NOT = { has_disaster = castanor_succession_war }
 		has_country_flag = castanor_dominant_centaurs
@@ -8833,18 +8792,18 @@ castanor_5_missions_FP_dominant_centaurs_path = {
 		required_missions = { castanor_purging_centaurs }
 		provinces_to_highlight = {
 			OR = {
-				region = northern_isles_region
-				region = southern_isles_region
+				region = north_yarikhoi_region
+				region = south_yarikhoi_region
 			} 
 			owner = { culture_is_human = no }
 		}
 		
 		trigger = {
-			northern_isles_region = {
+			north_yarikhoi_region = {
 				type = all
 				owner = { culture_is_human = yes }
 			}
-			southern_isles_region = {
+			south_yarikhoi_region = {
 				type = all
 				owner = { culture_is_human = yes }
 			}
@@ -8863,7 +8822,6 @@ castanor_5_missions_c = {
 	generic = no
 	ai = yes
 	potential = {
-    NOT = { has_country_flag = chose_generic_mt }
 		tag = B32
 		NOT = { has_disaster = castanor_succession_war }
 	}
@@ -8937,7 +8895,14 @@ castanor_5_missions_c = {
 		}
 		
 		effect = {
-			gerudian_coast_region = {
+			olavlund_region = {
+				limit = {
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					NOT = { is_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			gerudian_frontier_region = {
 				limit = {
 					NOT = { country_or_non_sovereign_subject_holds = ROOT }
 					NOT = { is_claim = ROOT }
@@ -8963,12 +8928,19 @@ castanor_5_missions_c = {
 		position = 19
 		required_missions = { castanor_fleet_to_rival_reavers }
 		provinces_to_highlight = {
-			region = gerudian_coast_region
+			OR = {
+				region = olavlund_region
+				region = gerudian_frontier_region
+			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		
 		trigger = {
-			gerudian_coast_region = {
+			olavlund_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			gerudian_frontier_region = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -9009,7 +8981,12 @@ castanor_5_missions_c = {
 				add_nationalism = -5
 				add_unrest = -3
 			}
-			gerudian_coast_region = {
+			olavlund_region = {
+				limit = { culture_is_human = yes }
+				add_nationalism = -5
+				add_unrest = -3
+			}
+			gerudian_frontier_region = {
 				limit = { culture_is_human = yes }
 				add_nationalism = -5
 				add_unrest = -3
@@ -9066,7 +9043,6 @@ castanor_5_missions_gerudian = {
 	generic = no
 	ai = yes
 	potential = {
-    NOT = { has_country_flag = chose_generic_mt }
 		tag = B32
 		NOT = { has_disaster = castanor_succession_war }
 		has_country_flag = castanor_culture_missions_unlocked
@@ -9354,7 +9330,6 @@ castanor_5_missions_d = {
 	generic = no
 	ai = yes
 	potential = {
-    NOT = { has_country_flag = chose_generic_mt }
 		tag = B32
 		NOT = { has_disaster = castanor_succession_war }
 	}
@@ -9610,7 +9585,6 @@ castanor_5_missions_lencori = {
 	generic = no
 	ai = yes
 	potential = {
-    NOT = { has_country_flag = chose_generic_mt }
 		tag = B32
 		NOT = { has_disaster = castanor_succession_war }
 		has_country_flag = castanor_culture_missions_unlocked
@@ -9902,7 +9876,6 @@ castanor_1_missions_succession_war = {
 	generic = no
 	ai = no
 	potential = {
-    NOT = { has_country_flag = chose_generic_mt }
 		tag = B32
 		has_disaster = castanor_succession_war
 	}
@@ -9986,7 +9959,6 @@ castanor_2_missions_succession_war = {
 	generic = no
 	ai = no
 	potential = {
-    NOT = { has_country_flag = chose_generic_mt }
 		tag = B32
 		has_disaster = castanor_succession_war
 	}
@@ -10085,7 +10057,6 @@ castanor_3_missions_succession_war = {
 	generic = no
 	ai = no
 	potential = {
-    NOT = { has_country_flag = chose_generic_mt }
 		tag = B32
 		has_disaster = castanor_succession_war
 	}
@@ -10211,7 +10182,6 @@ castanor_4_missions_succession_war = {
 	generic = no
 	ai = no
 	potential = {
-    NOT = { has_country_flag = chose_generic_mt }
 		tag = B32
 		has_disaster = castanor_succession_war
 	}
@@ -10301,7 +10271,6 @@ castanor_5_missions_succession_war = {
 	generic = no
 	ai = no
 	potential = {
-    NOT = { has_country_flag = chose_generic_mt }
 		tag = B32
 		has_disaster = castanor_succession_war
 	}
@@ -10357,7 +10326,6 @@ castanor_1_missions_succession_war_patrician = {
 	generic = no
 	ai = no
 	potential = {
-    NOT = { has_country_flag = chose_generic_mt }
 		tag = B61
 	}
 	has_country_shield = yes
@@ -10423,7 +10391,6 @@ castanor_2_missions_succession_war_patrician = {
 	generic = no
 	ai = no
 	potential = {
-    NOT = { has_country_flag = chose_generic_mt }
 		tag = B61
 	}
 	has_country_shield = yes
@@ -10513,7 +10480,6 @@ castanor_3_missions_succession_war_patrician = {
 	generic = no
 	ai = no
 	potential = {
-    NOT = { has_country_flag = chose_generic_mt }
 		tag = B61
 	}
 	has_country_shield = yes
@@ -10655,7 +10621,6 @@ castanor_4_missions_succession_war_patrician = {
 	generic = no
 	ai = no
 	potential = {
-    NOT = { has_country_flag = chose_generic_mt }
 		tag = B61
 	}
 	has_country_shield = yes
@@ -10782,7 +10747,6 @@ castanor_5_missions_succession_war_patrician = {
 	generic = no
 	ai = no
 	potential = {
-    NOT = { has_country_flag = chose_generic_mt }
 		tag = B61
 	}
 	has_country_shield = yes

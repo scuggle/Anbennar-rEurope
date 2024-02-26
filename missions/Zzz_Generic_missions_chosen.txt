@@ -1,5 +1,5 @@
 
-twisting_missions = {
+twisting_missionsNEW = {
 	slot = 3
 	ai = yes
 	generic = no
@@ -9,7 +9,7 @@ twisting_missions = {
 	}
 
 
-	conquest_1 = {
+	conquest_1NEW = {
 		icon = mission_unite_home_region
 		position = 1
 		required_missions = {  } 
@@ -27,10 +27,10 @@ twisting_missions = {
 			}
 		}
 	}
-	conquest_2 = {
+	conquest_2NEW = {
 		icon = mission_unite_home_region
 		position = 2
-		required_missions = { expansion_1 trade_1 conquest_1 } 
+		required_missions = { expansion_1NEW trade_1NEW conquest_1NEW } 
 		trigger = { manpower_percentage = 0.85 }
 		effect = {
 			add_prestige = 20
@@ -40,10 +40,10 @@ twisting_missions = {
 			}
 		}
 	}
-	conquest_3 = {
+	conquest_3NEW = {
 		icon = mission_unite_home_region
 		position = 3
-		required_missions = { expansion_2 trade_2 conquest_2 } 
+		required_missions = { expansion_2NEW trade_2NEW conquest_2NEW } 
 		trigger = {
 			NOT = {
 				overextension_percentage = 0.05 
@@ -62,10 +62,10 @@ twisting_missions = {
 			}
 		}
 	}
-	conquest_4 = {
+	conquest_4NEW = {
 		icon = mission_unite_home_region
 		position = 4
-		required_missions = { expansion_3 trade_3 conquest_3 } 
+		required_missions = { expansion_3NEW trade_3NEW conquest_3NEW } 
 		trigger = { 
 			NOT = {
 				overextension_percentage = 0.05 
@@ -79,10 +79,10 @@ twisting_missions = {
 			}
 		}
 	}
-	conquest_5 = {
+	conquest_5NEW = {
 		icon = mission_unite_home_region
 		position = 5
-		required_missions = { expansion_4 trade_4 conquest_4 } 
+		required_missions = { expansion_4NEW trade_4NEW conquest_4NEW } 
 		trigger = { 
 			capital_scope = {
 				region_for_scope_province = {
@@ -105,7 +105,7 @@ twisting_missions = {
 	}
 }
 
-expansion_missions = {
+expansion_missionsNEW = {
 	slot = 2
 	generic = no
 	has_country_shield = yes
@@ -114,7 +114,7 @@ expansion_missions = {
 	}
 
 
-	expansion_1 = {
+	expansion_1NEW = {
 		icon = mission_conquer_50_development
 		position = 1
 		required_missions = {  }
@@ -139,10 +139,10 @@ expansion_missions = {
 			}
 		}
 	}
-	expansion_2 = {
+	expansion_2NEW = {
 		icon = mission_conquer_50_development
 		position = 2
-		required_missions = { expansion_1 }
+		required_missions = { expansion_1NEW }
 		trigger = { grown_by_development = 100 }
 		effect = {
 			add_adm_power = 50
@@ -164,10 +164,10 @@ expansion_missions = {
 			}
 		}
 	}
-	expansion_3 = {
+	expansion_3NEW = {
 		icon = mission_conquer_50_development
 		position = 3
-		required_missions = { expansion_2 }
+		required_missions = { expansion_2NEW }
 		trigger = { grown_by_development = 250 }
 		effect = {
 			add_adm_power = 50
@@ -189,10 +189,10 @@ expansion_missions = {
 			}
 		}
 	}
-	expansion_4 = {
+	expansion_4NEW = {
 		icon = mission_conquer_50_development
 		position = 4
-		required_missions = { expansion_3 }
+		required_missions = { expansion_3NEW }
 		trigger = { grown_by_development = 500 }
 		effect = {
 			add_adm_power = 50
@@ -214,10 +214,10 @@ expansion_missions = {
 			}
 		}
 	}
-	expansion_5 = {
+	expansion_5NEW = {
 		icon = mission_conquer_50_development
 		position = 5
-		required_missions = { expansion_4 }
+		required_missions = { expansion_4NEW }
 		trigger = { grown_by_development = 1000 }
 		effect = {
 			country_event = {
@@ -228,7 +228,7 @@ expansion_missions = {
 			}
 		}
 	}
-	ascendancy_1 = {
+	ascendancy_1NEW = {
 		icon = mission_empire
 		position = 6
 		required_missions = {  } 
@@ -239,7 +239,7 @@ expansion_missions = {
 			add_mil_power = 50
 		}
 	}
-	army_1 = {
+	army_1NEW = {
 		icon = mission_assemble_an_army
 		position = 8
 		required_missions = {  }
@@ -253,10 +253,10 @@ expansion_missions = {
 			}
 		}
 	}
-	army_2 = {
+	army_2NEW = {
 		icon = mission_assemble_an_army
 		position = 9
-		required_missions = { army_1 }
+		required_missions = { army_1NEW }
 		trigger = { land_forcelimit = 50 }
 		effect = {
 			add_mil_power = 50
@@ -267,10 +267,10 @@ expansion_missions = {
 			}
 		}
 	}
-	army_3 = {
+	army_3NEW = {
 		icon = mission_assemble_an_army
 		position = 10
-		required_missions = { army_2 }
+		required_missions = { army_2NEW }
 		trigger = { land_forcelimit = 100 }
 		effect = {
 			add_mil_power = 50
@@ -281,10 +281,10 @@ expansion_missions = {
 			}
 		}
 	}
-	army_4 = {
+	army_4NEW = {
 		icon = mission_assemble_an_army
 		position = 11
-		required_missions = { army_3 }
+		required_missions = { army_3NEW }
 		trigger = { land_forcelimit = 150
 		army_professionalism = 0.25 
 		}
@@ -297,10 +297,10 @@ expansion_missions = {
 			}
 		}
 	}
-	army_5 = {
+	army_5NEW = {
 		icon = mission_assemble_an_army
 		position = 12
-		required_missions = { army_4 }
+		required_missions = { army_4NEW }
 		trigger = { land_forcelimit = 250
 		army_professionalism = 0.5 
 		}
@@ -315,7 +315,7 @@ expansion_missions = {
 	}
 }
 
-economic_missions = {
+economic_missionsNEW = {
 	slot = 4
 	generic = no
 	ai = yes
@@ -325,7 +325,7 @@ economic_missions = {
 	}
 
 
-	trade_1 = {
+	trade_1NEW = {
 		icon = mission_high_income
 		position = 1
 		required_missions = {  } 
@@ -338,10 +338,10 @@ economic_missions = {
 			}
 		}
 	}
-	trade_2 = {
+	trade_2NEW = {
 		icon = mission_high_income
 		position = 2
-		required_missions = { trade_1 } 
+		required_missions = { trade_1NEW } 
 		trigger = { 
 			share_of_starting_income = 5	
 		}
@@ -354,10 +354,10 @@ economic_missions = {
 			}
 		}
 	}
-	trade_3 = {
+	trade_3NEW = {
 		icon = mission_high_income
 		position = 3
-		required_missions = { trade_2 } 
+		required_missions = { trade_2NEW } 
 		trigger = { 
 			current_income_balance = 75
 			NOT = {
@@ -375,10 +375,10 @@ economic_missions = {
 			}
 		}
 	}
-	trade_4 = {
+	trade_4NEW = {
 		icon = mission_high_income
 		position = 4
-		required_missions = { trade_3 } 
+		required_missions = { trade_3NEW } 
 		trigger = { 
 			current_income_balance = 150
 			NOT = {
@@ -396,10 +396,10 @@ economic_missions = {
 			}
 		}
 	}
-	trade_5 = {
+	trade_5NEW = {
 		icon = mission_high_income
 		position = 5
-		required_missions = { trade_4 } 
+		required_missions = { trade_4NEW } 
 		trigger = {
 			home_trade_node = {
 				trade_share = {
@@ -423,7 +423,7 @@ economic_missions = {
 			}
 		}
 	}
-	ascendancy_2 = {
+	ascendancy_2NEW = {
 		icon = mission_empire
 		position = 6
 		required_missions = {  } 
@@ -440,7 +440,7 @@ economic_missions = {
 			add_mil_power = 50
 		}
 	}
-	economic_1 = {
+	economic_1NEW = {
 		icon = mission_early_game_buildings
 		position = 8
 		required_missions = {  }
@@ -466,10 +466,10 @@ economic_missions = {
 			}
 		}
 	}
-	economic_2 = {
+	economic_2NEW = {
 		icon = mission_early_game_buildings
 		position = 9
-		required_missions = { economic_1 }
+		required_missions = { economic_1NEW }
 		trigger = {
 			workshop = 10
 		}
@@ -491,10 +491,10 @@ economic_missions = {
 			}
 		}
 	}
-	economic_3 = {
+	economic_3NEW = {
 		icon = mission_early_game_buildings
 		position = 10
-		required_missions = { economic_2 }
+		required_missions = { economic_2NEW }
 		trigger = {
 			barracks = 15
 		}
@@ -516,10 +516,10 @@ economic_missions = {
 			}
 		}
 	}
-	economic_4 = {
+	economic_4NEW = {
 		icon = mission_early_game_buildings
 		position = 11
-		required_missions = { economic_3 }
+		required_missions = { economic_3NEW }
 		trigger = {
 			calc_true_if = {
 				desc = build_manufactories_mission_tooltip
@@ -556,10 +556,10 @@ economic_missions = {
 			}
 		}
 	}
-	economic_5 = {
+	economic_5NEW = {
 		icon = mission_early_game_buildings
 		position = 12
-		required_missions = { economic_4 }
+		required_missions = { economic_4NEW }
 		trigger = {
 			university = 30
 		}
@@ -574,7 +574,7 @@ economic_missions = {
 	}
 }
 
-trade_missions = {
+trade_missionsNEW = {
 	slot = 3
 	generic = no
 	ai = yes
@@ -591,10 +591,10 @@ trade_missions = {
 	}
 
 
-	towards_a_new_future_1 = {
+	towards_a_new_future_1NEW = {
 		icon = bavarian_cultural_dominance
 		position = 7
-		required_missions = { ascendancy_1 ascendancy_2 }
+		required_missions = { ascendancy_1NEW ascendancy_2NEW }
 		trigger = {  }
 		effect = {
 			country_event = { 
@@ -605,7 +605,7 @@ trade_missions = {
 	}
 }
 
-twisting_missions_goverment = {
+twisting_missions_govermentNEW = {
 	slot = 3
 	generic = no
 	ai = yes
@@ -615,7 +615,7 @@ twisting_missions_goverment = {
 	}
 
 
-	government_1 = {
+	government_1NEW = {
 		icon = give_him_back_his_legions
 		position = 8
 		required_missions = {  } 
@@ -824,10 +824,10 @@ twisting_missions_goverment = {
 			}
 		}
 	}
-	government_2 = {
+	government_2NEW = {
 		icon = give_him_back_his_legions
 		position = 9
-		required_missions = { army_1 economic_1 government_1 } 
+		required_missions = { army_1NEW economic_1NEW government_1NEW } 
 		trigger = { 
 			if = {
 				limit = {
@@ -864,10 +864,10 @@ twisting_missions_goverment = {
 			}
 		}
 	}
-	government_3 = {
+	government_3NEW = {
 		icon = give_him_back_his_legions
 		position = 10
-		required_missions = { army_2 economic_2 government_2 } 
+		required_missions = { army_2NEW economic_2NEW government_2NEW } 
 		trigger = { 
 			if = {
 				limit = {
@@ -905,10 +905,10 @@ twisting_missions_goverment = {
 			}
 		}
 	}
-	government_4 = {
+	government_4NEW = {
 		icon = give_him_back_his_legions
 		position = 11
-		required_missions = { army_3 economic_3 government_3 } 
+		required_missions = { army_3NEW economic_3NEW government_3NEW } 
 		trigger = { 
 			if = {
 				limit = {
@@ -946,10 +946,10 @@ twisting_missions_goverment = {
 			}
 		}
 	}
-	government_5 = {
+	government_5NEW = {
 		icon = give_him_back_his_legions
 		position = 12
-		required_missions = { army_4 economic_4 government_4 } 
+		required_missions = { army_4NEW economic_4NEW government_4NEW } 
 		trigger = { 
 			if = {
 				limit = {
@@ -985,7 +985,7 @@ twisting_missions_goverment = {
 	}
 }
 
-front_lines_tellum_missions = {
+front_lines_tellum_missionsNEW = {
 	slot = 3
 	generic = no
 	ai = yes
@@ -996,7 +996,7 @@ front_lines_tellum_missions = {
 	}
 
 
-	front_lines_1 = {
+	front_lines_1NEW = {
 		icon = mission_swear_fealty_knight
 		position = 13
 		required_missions = {  }
@@ -1014,11 +1014,11 @@ front_lines_tellum_missions = {
 			}
 		}
 	}
-	front_lines_2 = {
+	front_lines_2NEW = {
 		icon = mission_swear_fealty_knight
 		position = 14
 		required_missions = { 
-			front_lines_1 
+			front_lines_1NEW 
 		}
 		trigger = { army_professionalism = 0.75 }
 		effect = {
@@ -1028,11 +1028,11 @@ front_lines_tellum_missions = {
 			}
 		}
 	}
-	front_lines_3 = {
+	front_lines_3NEW = {
 		icon = mission_swear_fealty_knight
 		position = 15
 		required_missions = { 
-			front_lines_2 
+			front_lines_2NEW 
 		}
 		trigger = { 
 			treasury = 25000
@@ -1047,7 +1047,7 @@ front_lines_tellum_missions = {
 	}
 }
 
-support_tellum_missions = {
+support_tellum_missionsNEW = {
 	slot = 3
 	generic = no
 	ai = yes
@@ -1058,7 +1058,7 @@ support_tellum_missions = {
 	}
 
 
-	support_tellum_1 = {
+	support_tellum_1NEW = {
 		icon = mission_runeforged_cannons
 		position = 13
 		required_missions = {  }
@@ -1076,10 +1076,10 @@ support_tellum_missions = {
 			}
 		}
 	}
-	support_tellum_2 = {
+	support_tellum_2NEW = {
 		icon = mission_runeforged_cannons
 		position = 14
-		required_missions = { support_tellum_1 }
+		required_missions = { support_tellum_1NEW }
 		trigger = { army_professionalism = 0.75 }
 		effect = {
 				add_country_modifier = { 
@@ -1088,10 +1088,10 @@ support_tellum_missions = {
 				}
 			}
 		}
-	support_tellum_3 = {
+	support_tellum_3NEW = {
 		icon = mission_runeforged_cannons
 		position = 15
-		required_missions = { support_tellum_2 }
+		required_missions = { support_tellum_2NEW }
 		trigger = { treasury = 25000 }
 		effect = {
 			add_treasury = -25000
@@ -1103,7 +1103,7 @@ support_tellum_missions = {
 	}
 }
 
-artificers_tellum_missions = {
+artificers_tellum_missionsNEW = {
 	slot = 3
 	generic = no
 	ai = yes
@@ -1114,7 +1114,7 @@ artificers_tellum_missions = {
 	}
 
 
-	artificers_tellum_1 = {
+	artificers_tellum_1NEW = {
 		icon = mission_early_modern_university
 		position = 13
 		required_missions = {  }
@@ -1149,10 +1149,10 @@ artificers_tellum_missions = {
 			}
 		}
 	}
-	artificers_tellum_2 = {
+	artificers_tellum_2NEW = {
 		icon = mission_early_modern_university
 		position = 14
-		required_missions = { artificers_tellum_1 }
+		required_missions = { artificers_tellum_1NEW }
 		trigger = { innovativeness = 70 }
 		effect = {
 			add_country_modifier = { 
@@ -1161,10 +1161,10 @@ artificers_tellum_missions = {
 			}
 		}
 	}
-	artificers_tellum_3 = {
+	artificers_tellum_3NEW = {
 		icon = mission_early_modern_university
 		position = 15
-		required_missions = { artificers_tellum_2 }
+		required_missions = { artificers_tellum_2NEW }
 		trigger = { treasury = 25000 } 
 		effect = {
 			add_treasury = -25000
@@ -1176,7 +1176,7 @@ artificers_tellum_missions = {
 	}
 }
 
-economic_tellum_missions = {
+economic_tellum_missionsNEW = {
 	slot = 3
 	generic = no
 	ai = yes
@@ -1187,7 +1187,7 @@ economic_tellum_missions = {
 	}
 
 
-	economic_tellum_1 = {
+	economic_tellum_1NEW = {
 		icon = mission_rb_hanseatic_east
 		position = 13
 		required_missions = {  }
@@ -1211,10 +1211,10 @@ economic_tellum_missions = {
 			}
 		}
 	}
-	economic_tellum_2 = {
+	economic_tellum_2NEW = {
 		icon = mission_rb_hanseatic_east
 		position = 14
-		required_missions = { economic_tellum_1 }
+		required_missions = { economic_tellum_1NEW }
 		trigger = { monthly_income = 500 }
 		effect = {
 			add_country_modifier = { 
@@ -1223,10 +1223,10 @@ economic_tellum_missions = {
 			}
 		}
 	}
-	economic_tellum_3 = {
+	economic_tellum_3NEW = {
 		icon = mission_rb_hanseatic_east
 		position = 15
-		required_missions = { economic_tellum_2 }
+		required_missions = { economic_tellum_2NEW }
 		trigger = { treasury = 25000 } 
 		effect = {
 			add_treasury = -25000
@@ -1238,7 +1238,7 @@ economic_tellum_missions = {
 	}
 }
 
-trade_tellum_missions = {
+trade_tellum_missionsNEW = {
 	slot = 3
 	generic = no
 	ai = yes
@@ -1249,7 +1249,7 @@ trade_tellum_missions = {
 	}
 
 
-	trade_tellum_1 = {
+	trade_tellum_1NEW = {
 		icon = mission_colonize_the_west
 		position = 13
 		required_missions = {  }
@@ -1268,10 +1268,10 @@ trade_tellum_missions = {
 			}
 		}
 	}
-	trade_tellum_2 = {
+	trade_tellum_2NEW = {
 		icon = mission_colonize_the_west
 		position = 14
-		required_missions = { trade_tellum_1 }
+		required_missions = { trade_tellum_1NEW }
 		trigger = { 
 			home_trade_node = {
 				trade_share = {
@@ -1287,10 +1287,10 @@ trade_tellum_missions = {
 			}
 		}
 	}
-	trade_tellum_3 = {
+	trade_tellum_3NEW = {
 		icon = mission_colonize_the_west
 		position = 15
-		required_missions = { trade_tellum_2 }
+		required_missions = { trade_tellum_2NEW }
 		trigger = { 
 			treasury = 25000 
 		} 
@@ -1304,7 +1304,7 @@ trade_tellum_missions = {
 	}
 }
 
-placeholder_missions_1 = {
+placeholder_missions_1NEW = {
 	slot = 1
 	generic = no
 	ai = yes
@@ -1314,7 +1314,7 @@ placeholder_missions_1 = {
 	}
 }
 
-placeholder_missions_2 = {
+placeholder_missions_2NEW = {
 	slot = 5
 	generic = no
 	ai = yes

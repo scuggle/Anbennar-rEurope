@@ -128,6 +128,7 @@ konwell_1_institute = {
 		trigger = {
 			treasury = 1000
 			275 = {
+				owned_by = ROOT
 				development = 40
 				NOT = { has_construction = building }
 			}
@@ -220,6 +221,7 @@ konwell_2_institute = {
 		}
 		trigger = {
 			275 = {
+				owned_by = ROOT
 				development = 25
 			}
 		}
@@ -456,7 +458,10 @@ konwell_3_paper_dev = {
 			NOT = { base_production = 10 }
 		}
 		trigger = {
-			905 = { base_production = 10 }
+			905 = { 
+				base_production = 10
+				owned_by = root
+			 }
 			treasury = 300
 		}
 		effect = {
@@ -508,6 +513,7 @@ konwell_3_paper_dev = {
 		}
 		trigger = {
 			275 = {
+				owned_by = ROOT
 				printing_press = 100
 				has_production_building_trigger = yes
 			}

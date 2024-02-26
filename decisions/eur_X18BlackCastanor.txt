@@ -3,7 +3,10 @@ country_decisions = {
 	X18_form_nation = {
 		major = yes
 		potential = {
-			Tag = X18
+			OR = {
+				tag = X18
+				tag = X19
+			}
 			dynasty = "Silurion"
 			NOT = { has_country_flag = formed_black_castanor_flag }
 			#NOT = { exists = B34 } #Castanor doesn't exist
@@ -34,7 +37,7 @@ country_decisions = {
 				province_id = 747	#Venacvord
 				province_id = 755	#Wardenhall
 				province_id = 756	#Silvervord
-				province_id = 828	#Ár Urion
+				province_id = 828	#Ýr Urion
 				province_id = 829
 				province_id = 830
 				province_id = 837
@@ -76,7 +79,7 @@ country_decisions = {
 			owns_core_province = 747	#Venacvord
 			owns_core_province = 755	#Wardenhall
 			owns_core_province = 756	#Silvervord
-			owns_core_province = 828	#Ár Urion
+			owns_core_province = 828	#Ýr Urion
 			owns_core_province = 829
 			owns_core_province = 830
 			owns_core_province = 837
@@ -176,7 +179,9 @@ country_decisions = {
 			}
 			set_country_flag = formed_black_castanor_flag
 			clr_country_flag = knightly_order_adventurer
-			
+			country_event = {
+				id = eur_changes.3
+			}
 		}
 		ai_will_do = {
 			factor = 1

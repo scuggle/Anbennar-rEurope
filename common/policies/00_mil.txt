@@ -33,7 +33,7 @@ eur_gunpowder_revolution = {
     }
 
 	fire_damage = 0.075
-	max_general_fire = 1
+	general_fire = 1
 	
 	ai_will_do = {
 		factor = 0.8		
@@ -71,7 +71,7 @@ eur_traditional_tactics = {
     }
 
 	shock_damage = 0.075
-	max_general_shock = 1
+	general_shock = 1
 	
 	ai_will_do = {
 		factor = 0.8		
@@ -223,7 +223,7 @@ eur_war_theories = {
     }
 
 	discipline = 0.025
-	army_tradition = 1
+	army_tradition = 0.5
 	
 	ai_will_do = {
 		factor = 0.8		
@@ -487,7 +487,7 @@ eur_military_interventions= {
     }
 
 	prestige_from_land = 1
-	possible_condottieri = 1
+	possible_condottieri = 2
 	available_province_loot = 0.50
 	
 	ai_will_do = {

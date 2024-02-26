@@ -566,7 +566,7 @@ X13_ideas = {
 	free = yes		#will be added at load.
 	
 	X13_one = {
-		rajput_fraction = 0.15
+		allowed_rajput_fraction = 0.15
 	}
 	X13_two = {
 		infantry_fire = 0.15
@@ -654,7 +654,7 @@ X15_ideas = {
 	}
 	X15_two = {
 		innovativeness_gain = 1
-		rajput_fraction = 0.2
+		allowed_rajput_fraction = 0.2
 	}
 	X15_three = {
 		development_cost = -0.1
@@ -1058,49 +1058,6 @@ B46_ideas = {
 	}	
 }
 
-#Flung Head
-B44_ideas = {
-	start = {
-		all_power_cost = -0.025
-		technology_cost = 0.05					#	Quite Magocratic
-		monarch_lifespan = 5					#	Chiefs Bloodlain is magic and lives long
-	}
-
-	bonus = {
-		all_estate_loyalty_equilibrium = 0.05			# Rules strongly over estates
-	}
-
-	trigger = {
-		tag = B44
-	}
-	free = yes
-
-	B44_one = {
-		heir_chance = 0.5
-		monthly_heir_claim_increase = 0.05				# Magic is valued, makes new heirs until one is a mage
-	}
-	B44_two = {
-		prestige = 1									# Magic prowess respected even outside nation	
-	}
-	B44_three = {
-		siege_ability = 0.15							# Low level Mages help with siege
-	}
-	B44_four = {
-		caravan_power = 0.15							# Kick out unwelcome traders by force if necessary	
-		embargo_efficiency = 0.25
-	}
-	B44_five = {
-		land_morale = 0.1
-		shock_damage = 0.05								# Mages mixed into regular troopa	
-	}
-	B44_six = {
-		advisor_cost = -0.15							# Rules strongly over advisors
-	}
-	B44_seven = {
-		global_regiment_cost = -0.1						# Magic support lightens the need for good equipment for other troops, thus cheaper
-	}	
-}
-
 
 #Headwearer
 B45_ideas = {
@@ -1145,7 +1102,7 @@ B45_ideas = {
 }
 
 #COT Ashscale Formable
-V02_ideas = { #This is the formable for the country, the starting counrty has Kobold Ideas
+X27_ideas = { #This is the formable for the country, the starting counrty has Kobold Ideas
 	start = {
 		hostile_attrition = 2
 		fort_maintenance_modifier = -0.15
@@ -1157,32 +1114,32 @@ V02_ideas = { #This is the formable for the country, the starting counrty has Ko
 
 	trigger = {
 		OR = {
-			tag = V02
+			tag = X27
 		}	
 	}
 
 	free = yes
 
-	V02_1 = { #The Great Project
+	X27_1 = { #The Great Project
 		build_cost = -0.10
 	}
-	V02_2 = { #Serpentspine Undercities
+	X27_2 = { #Serpentspine Undercities
 		development_cost = -0.1
 	}
-	V02_3 = { #Shanty Garrison
+	X27_3 = { #Shanty Garrison
 		garrison_size = 0.33
 		global_garrison_growth = 0.5
 	}
-	V02_4 = { #Teeming Masses
+	X27_4 = { #Teeming Masses
 		shock_damage_received = -0.10
 	}
-	V02_5 = { #Breath of the Dragonforge
+	X27_5 = { #Breath of the Dragonforge
 		artillery_power = 0.10
 	}
-	V02_6 = { #Servants of the Mecha-Dragon
+	X27_6 = { #Servants of the Mecha-Dragon
 		special_unit_forcelimit = 0.15
 	}
-	V02_7 = { #Draconic Rule
+	X27_7 = { #Draconic Rule
 			legitimacy = 1
 			devotion = 1
 			republican_tradition = 0.3

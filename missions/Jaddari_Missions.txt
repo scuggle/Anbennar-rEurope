@@ -5,7 +5,6 @@ jaddari_westward = {
 	generic = no
 	ai = yes
 	potential = {
-    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = F46
 			AND = {
@@ -94,7 +93,7 @@ jaddari_westward = {
 		provinces_to_highlight = {
 			OR = {
 				area = kharfiraeri_area
-				area = nanshalen_area
+				area = nansalen_area
 				area = siffiraeri_area
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
@@ -105,7 +104,7 @@ jaddari_westward = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			nanshalen_area = {
+			nansalen_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -195,7 +194,6 @@ jaddari_westward_2 = {
 	generic = no
 	ai = yes
 	potential = {
-    NOT = { has_country_flag = chose_generic_mt }
 		tag = F51
 		was_tag = F46
 	}
@@ -871,7 +869,6 @@ jaddari_bulwar = {
 	generic = no
 	ai = yes
 	potential = {
-    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = F46
 			AND = {
@@ -1048,7 +1045,7 @@ jaddari_bulwar = {
 				}
 				add_permanent_claim = ROOT
 			}
-			nanshalen_area = {
+			nansalen_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
@@ -1301,7 +1298,6 @@ jaddari_bulwar_2 = {
 	generic = no
 	ai = yes
 	potential = {
-    NOT = { has_country_flag = chose_generic_mt }
 		tag = F51
 		was_tag = F46
 	}
@@ -1809,7 +1805,6 @@ jaddari_deioderan_2 = {
 	generic = no
 	ai = yes
 	potential = {
-    NOT = { has_country_flag = chose_generic_mt }
 		tag = F51
 		was_tag = F46
 		has_disaster = jaddari_deioderan
@@ -1954,7 +1949,6 @@ jaddari_bulwar_3 = {
 	generic = no
 	ai = yes
 	potential = {
-    NOT = { has_country_flag = chose_generic_mt }
 		tag = F51
 		was_tag = F46
 	}
@@ -2119,7 +2113,6 @@ jaddari_the_jadd = {
 	generic = no
 	ai = yes
 	potential = {
-    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = F46
 			AND = {
@@ -2311,7 +2304,6 @@ jaddari_the_jadd_2 = {
 	generic = no
 	ai = yes
 	potential = {
-    NOT = { has_country_flag = chose_generic_mt }
 		tag = F51
 		was_tag = F46
 	}
@@ -2584,7 +2576,6 @@ jaddari_the_jadd_3 = {
 	generic = no
 	ai = yes
 	potential = {
-    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = F46
 			AND = {
@@ -2709,7 +2700,6 @@ jaddari_the_jadd_4 = {
 	generic = no
 	ai = yes
 	potential = {
-    NOT = { has_country_flag = chose_generic_mt }
 		tag = F51
 		was_tag = F46
 	}
@@ -3292,7 +3282,6 @@ jaddari_diplomatic = {
 	generic = no
 	ai = yes
 	potential = {
-    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = F46
 			AND = {
@@ -3591,7 +3580,6 @@ jaddari_diplomatic_2 = {
 	generic = no
 	ai = yes
 	potential = {
-    NOT = { has_country_flag = chose_generic_mt }
 		tag = F51
 		was_tag = F46
 	}
@@ -3649,7 +3637,6 @@ jaddari_diplomatic_3 = {
 	generic = no
 	ai = yes
 	potential = {
-    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = F46
 			AND = {
@@ -3978,7 +3965,6 @@ jaddari_diplomatic_4 = {
 	generic = no
 	ai = yes
 	potential = {
-    NOT = { has_country_flag = chose_generic_mt }
 		tag = F51
 		was_tag = F46
 	}
@@ -4525,7 +4511,6 @@ jaddari_eastward = {
 	generic = no
 	ai = yes
 	potential = {
-    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = F46
 			AND = {
@@ -4715,7 +4700,6 @@ jaddari_eastward_2 = {
 	generic = no
 	ai = yes
 	potential = {
-    NOT = { has_country_flag = chose_generic_mt }
 		tag = F51
 		was_tag = F46
 	}
@@ -4803,7 +4787,6 @@ jaddari_eastward_3 = {
 	generic = no
 	ai = yes
 	potential = {
-    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = F46
 			AND = {
@@ -4856,7 +4839,6 @@ jaddari_eastward_4 = {
 	generic = no
 	ai = yes
 	potential = {
-    NOT = { has_country_flag = chose_generic_mt }
 		tag = F51
 		was_tag = F46
 	}
@@ -4887,7 +4869,6 @@ jaddari_eastward_5 = {
 	generic = no
 	ai = yes
 	potential = {
-    NOT = { has_country_flag = chose_generic_mt }
 		OR = {
 			tag = F46
 			AND = {
@@ -5179,7 +5160,6 @@ jaddari_eastward_6 = {
 	generic = no
 	ai = yes
 	potential = {
-    NOT = { has_country_flag = chose_generic_mt }
 		tag = F51
 		was_tag = F46
 	}
@@ -5599,7 +5579,6 @@ jaddari_deioderan_1 = {
 	generic = no
 	ai = yes
 	potential = {
-    NOT = { has_country_flag = chose_generic_mt }
 		tag = F51
 		was_tag = F46
 		has_disaster = jaddari_deioderan

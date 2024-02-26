@@ -5,6 +5,7 @@ country_decisions = {
 		color = { 33 64 96 }
 		major = yes
 		potential = {
+			ai = yes
 			capital_scope = { province_group = hold_province }
 		}
 		
@@ -152,6 +153,10 @@ country_decisions = {
 		color = { 33 64 96 }
 		major = yes
 		potential = {
+			ai = yes
+			NOT = {
+				has_country_modifier = diggy_cooldown
+			}
 			has_country_flag = owns_hold_province
 			any_owned_province = {
 				province_group = hold_province
@@ -181,6 +186,10 @@ country_decisions = {
 		}
 		
 		allow = {
+			ai = yes
+			NOT = {
+				has_country_modifier = diggy_cooldown
+			}
 			hidden_trigger = {
 				has_country_flag = owns_hold_province
 			}
@@ -238,6 +247,10 @@ country_decisions = {
 		effect = {
 			if = {
 				limit = { ai = yes }
+				add_country_modifier = {
+					name = diggy_cooldown
+					duration = 1825
+				}
 				if = {
 					limit = { culture = black_orc }
 					add_treasury = 100 #yes positive
@@ -933,6 +946,7 @@ country_decisions = {
 					culture_group = kobold
 					culture = black_orc
 					dwarovar_goblin_culture = yes
+					culture = cave_troll
 				}
 			}
 			else_if = {
@@ -941,6 +955,8 @@ country_decisions = {
 					culture = black_orc
 					dwarovar_goblin_culture = yes
 					culture_group = dwarven
+					culture = cave_troll
+					culture = silent_harimari
 				}
 			}
 			else_if = {
@@ -950,6 +966,8 @@ country_decisions = {
 					culture = black_orc
 					dwarovar_goblin_culture = yes
 					culture_group = dwarven
+					culture = cave_troll
+					culture = silent_harimari
 				}
 			}
 			is_city = yes
@@ -974,6 +992,7 @@ country_decisions = {
 						culture_group = kobold
 						culture = black_orc
 						dwarovar_goblin_culture = yes
+						culture = cave_troll
 					}
 				}
 				else_if = {
@@ -982,6 +1001,8 @@ country_decisions = {
 						culture = black_orc
 						dwarovar_goblin_culture = yes
 						culture_group = dwarven
+						culture = cave_troll
+						culture = silent_harimari
 					}
 				}
 				else_if = {
@@ -991,6 +1012,8 @@ country_decisions = {
 						culture = black_orc
 						dwarovar_goblin_culture = yes
 						culture_group = dwarven
+						culture = cave_troll
+						culture = silent_harimari
 					}
 				}
 				is_city = yes
@@ -1052,6 +1075,7 @@ country_decisions = {
 							culture_group = kobold
 							culture = black_orc
 							dwarovar_goblin_culture = yes
+							culture = cave_troll
 						}
 					}
 					else_if = {
@@ -1060,6 +1084,8 @@ country_decisions = {
 							culture = black_orc
 							dwarovar_goblin_culture = yes
 							culture_group = dwarven
+							culture = cave_troll
+							culture = silent_harimari
 						}
 					}
 					else_if = {
@@ -1069,6 +1095,8 @@ country_decisions = {
 							culture = black_orc
 							dwarovar_goblin_culture = yes
 							culture_group = dwarven
+							culture = cave_troll
+							culture = silent_harimari
 						}
 					}
 					is_city = yes
@@ -1089,6 +1117,12 @@ country_decisions = {
 		color = { 33 64 96 }
 		major = yes
 		potential = {
+			NOT = {
+				OR = {
+					tag = J32
+					tag = J48
+				}
+			}
 			NOT = { has_global_flag = serpent_vale_irrigation }
 			amldihr_area = {
 				type = all
@@ -1113,6 +1147,7 @@ country_decisions = {
 		allow = {
 			amldihr_area = {
 				type = all
+				owned_by = ROOT
 				is_city = yes
 			}
 			if = {
@@ -1299,6 +1334,9 @@ country_decisions = {
 		}
 		
 		allow = {
+			hidden_trigger = {
+				tag = I24
+			}
 			custom_trigger_tooltip = {
 				tooltip = almharaz_decision_tooltip
 				hold_province = {
@@ -1743,6 +1781,7 @@ country_decisions = {
 		}
 		
 		allow = {
+			hidden_trigger = { primary_culture = black_orc }
 			if = {
 				limit = { ai = yes }
 				treasury = 200

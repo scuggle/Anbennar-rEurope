@@ -40,7 +40,6 @@ province_event = {	#corinite missionary blessing
 		area = {add_province_modifier = {name = corinite_abrahamic_aspect_modifier duration = 3650}}
 	}
 }
-
 country_event = {
 	id = eur_changes.0
 	title = eur_changes.0.t
@@ -93,7 +92,7 @@ country_event = {
 	}
 }
 
-#EoA spy network buff
+#EoA spy network Buff
 country_event = {
 	id = eur_changes.4
 	title = eur_changes.4.t
@@ -119,6 +118,7 @@ country_event = {
 	}
 }
 
+#Chaingrasper Buff
 country_event = {
 	id = eur_changes.2
 	title = eur_changes.2.t
@@ -159,18 +159,14 @@ country_event = {
 	fire_only_once = yes
 
 	mean_time_to_happen = {
-		days = 30
+		days = 1
 	}
 
 	trigger = {
 		OR = {
-			has_country_flag = feudal_escann_kingdom
-			has_country_flag = orc_nation_formed
-			has_country_flag = adventurer_derived_government
-			AND = {
-				tag = Z34
-				was_tag = X18
-			}
+			has_country_modifier = legacy_of_adventurers_modifier
+			has_country_modifier = legacy_of_greentide_invaders_modifier
+			has_country_flag = formed_diggy_formable
 		}
 	}
 
@@ -178,7 +174,6 @@ country_event = {
 		name = eur_changes.3.a
 		ai_chance = { factor = 100 }
 		add_prestige = 10
-		add_prestige_or_monarch_power = yes
 	}
 
 	option = {
@@ -192,5 +187,35 @@ country_event = {
 					play_sound = "decision"
 				}
 			}
+	}
+}
+
+#Gelkalis is made an autonomous vassal
+country_event = {
+	id = eur_changes.5
+	title = eur_changes.5.t
+	desc = eur_changes.5.d
+	picture = DIPLOMACY_eventPicture
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	trigger = {
+		tag = F26
+		ai = no
+	}
+
+	option = {
+		name = eur_changes.5.a
+		grant_independence = yes
+		F21 = {
+			create_subject = {
+				subject_type = autonomous_vassal
+				subject = F26
+			}
+		}
 	}
 }

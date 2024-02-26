@@ -101,7 +101,10 @@ gelkalis_1 = {
 				}
 			}
 			if = {
-				limit = { ai = no }
+				limit = { 
+					ai = no
+					NOT = { has_country_flag = magic_artificery_artificery_only }
+				}
 				estate_loyalty = {
 					estate = estate_mages
 					loyalty = 50
@@ -768,7 +771,7 @@ gelkalis_2 = {
 		provinces_to_highlight = { province_id = 656 } 
 
 		trigger = {
-			656 = { #toiabazi
+			656 = { #Peruskam
 				base_production = 15
 				has_production_building_trigger = yes
 				has_manufactory_trigger = yes
@@ -779,10 +782,18 @@ gelkalis_2 = {
 				limit = { ai = no }
 				advisor = artist
 			}
-			has_estate = estate_artificers
-			any_owned_province = {
-				has_building = university
-				has_building = mage_tower
+			has_institution = manufactories
+			if = {
+				limit = { has_country_flag = magic_artificery_artificery_only }
+				any_owned_province = {
+					has_building = university
+				}
+			}
+			else = { 
+				any_owned_province = {
+					has_building = university
+					has_building = mage_tower
+				}
 			}
 		}
 
@@ -897,7 +908,7 @@ gelkalis_3 = {
 		effect = {
 			siffiraeri_area = { add_permanent_claim = ROOT }
 			kharfiraeri_area = { add_permanent_claim = ROOT }
-			nanshalen_area = { add_permanent_claim = ROOT }
+			nansalen_area = { add_permanent_claim = ROOT }
 			add_country_modifier = {
 				name = gelkalis_reclaimer_army
 				duration = 7300
@@ -1407,7 +1418,7 @@ gelkalis_4 = {
 			OR = {
 				area = siffiraeri_area
 				area = kharfiraeri_area
-				area = nanshalen_area
+				area = nansalen_area
 			}
 			NOT = { owned_by = ROOT }
 		} 
@@ -1421,7 +1432,7 @@ gelkalis_4 = {
  				type = all
 				owned_by = ROOT 
 			}
-			nanshalen_area = {
+			nansalen_area = {
  				type = all
 				owned_by = ROOT 
 			}
@@ -1731,7 +1742,7 @@ gelkalis_4 = {
 				owned_by = ROOT 
 				has_fort_building_trigger = yes
 			}
-			544 = { #jesdbar
+			544 = { #Yesdbar
 				owned_by = ROOT 
 				has_fort_building_trigger = yes
 			}

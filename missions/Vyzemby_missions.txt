@@ -292,7 +292,7 @@ vyzemby_2 = {
 	potential = {
     NOT = { has_country_flag = chose_generic_mt }
 		NOT = { primary_culture = amezatany }
-		culture_group = vyzemby
+		is_vyzemby_primary_culture = yes
 		
 	}
 	has_country_shield = yes
@@ -798,8 +798,8 @@ vyzemby_5 = {
 	generic = no
 	ai = yes
 	potential = {
-    NOT = { has_country_flag = chose_generic_mt }
-		culture_group = vyzemby
+    	NOT = { has_country_flag = chose_generic_mt }
+		is_vyzemby_primary_culture = yes
 		NOT = { primary_culture = mazava }
 	}
 	has_country_shield = yes
@@ -1104,8 +1104,8 @@ vyzemby_6 = {
 	generic = no
 	ai = yes
 	potential = {
-    NOT = { has_country_flag = chose_generic_mt }
-		culture_group = vyzemby
+    	NOT = { has_country_flag = chose_generic_mt }
+		is_vyzemby_primary_culture = yes
 	}
 	has_country_shield = yes
 	
@@ -1250,8 +1250,8 @@ vyzemby_7 = {
 	generic = no
 	ai = yes
 	potential = {
-    NOT = { has_country_flag = chose_generic_mt }
-		culture_group = vyzemby
+    	NOT = { has_country_flag = chose_generic_mt }
+		is_vyzemby_primary_culture = yes
 	}
 	has_country_shield = yes
 	
@@ -1300,8 +1300,8 @@ vyzemby_8 = {
 	generic = no
 	ai = yes
 	potential = {
-    NOT = { has_country_flag = chose_generic_mt }
-		culture_group = vyzemby
+    	NOT = { has_country_flag = chose_generic_mt }
+		is_vyzemby_primary_culture = yes
 	}
 	has_country_shield = yes
 	
@@ -1359,7 +1359,7 @@ vyzemby_9 = {
     NOT = { has_country_flag = chose_generic_mt }
 		NOT = { primary_culture = amezatany }
 		NOT = { primary_culture = mazava }
-		culture_group = vyzemby
+		is_vyzemby_primary_culture = yes
 	}
 	has_country_shield = yes
 	
