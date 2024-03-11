@@ -1067,7 +1067,7 @@ influence_ideas = { #benevolence #done
 	}
 	
 	integrated_elites = {
-		liberty_desire = -25
+		reduced_liberty_desire = -25
 	}
 	buffer_states = {
 		diplomatic_reputation = 2
@@ -1105,7 +1105,8 @@ the_great_game = { #The Great Game
 	category = DIP
 
 	bonus = {
-			free_dip_policy = 2
+			free_dip_policy = 1
+			possible_dip_policy = 1
 	}
 
 	tgg1 = {
