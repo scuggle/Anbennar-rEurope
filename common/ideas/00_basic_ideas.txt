@@ -1067,7 +1067,7 @@ influence_ideas = { #benevolence #done
 	}
 	
 	integrated_elites = {
-		reduced_liberty_desire = -25
+		reduced_liberty_desire = 25
 	}
 	buffer_states = {
 		diplomatic_reputation = 2
