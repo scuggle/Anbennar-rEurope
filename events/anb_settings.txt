@@ -10,7 +10,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		ai = no
+		tag = Z19
 		NOT = { has_global_flag = settings_done }
 		NOT = { has_global_flag = settings_opened }
 	}
