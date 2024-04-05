@@ -986,6 +986,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
+		ai = yes
 		has_unmatching_administration_to_primary_culture = yes
 		NOT = { has_country_flag = locked_racial_administration }
 		NOT = { has_country_flag = dukedal_lost }

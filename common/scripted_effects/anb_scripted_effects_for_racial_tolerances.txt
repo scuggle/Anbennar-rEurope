@@ -4953,33 +4953,33 @@ pop_menu_military_sorting_effect = {
 }
 
 pop_menu_military_change_mil_effects = {
-	pop_menu_military_change_mil_race = { RACE = centaur ORDER = $ORDER$ }
-	pop_menu_military_change_mil_race = { RACE = dwarven ORDER = $ORDER$ }
-	pop_menu_military_change_mil_race = { RACE = gnollish ORDER = $ORDER$ }
-	pop_menu_military_change_mil_race = { RACE = gnomish ORDER = $ORDER$ GNOMISH_ARTIFICERS = yes }
-	pop_menu_military_change_mil_race = { RACE = goblin ORDER = $ORDER$ }
-	pop_menu_military_change_mil_race = { RACE = halfling ORDER = $ORDER$ }
-	# pop_menu_military_change_mil_race = { RACE = half_elven ORDER = $ORDER$ }
-	pop_menu_military_change_mil_race = { RACE = half_orcish ORDER = $ORDER$ }
-	pop_menu_military_change_mil_race = { RACE = harimari ORDER = $ORDER$ }
-	pop_menu_military_change_mil_race = { RACE = harpy ORDER = $ORDER$ }
-	pop_menu_military_change_mil_race = { RACE = human ORDER = $ORDER$ }
-	pop_menu_military_change_mil_race = { RACE = kobold ORDER = $ORDER$ }
-	pop_menu_military_change_mil_race = { RACE = lizardfolk ORDER = $ORDER$ }
-	# pop_menu_military_change_mil_race = { RACE = mechanism ORDER = $ORDER$ }
-	pop_menu_military_change_mil_race = { RACE = ogre ORDER = $ORDER$ }
-	pop_menu_military_change_mil_race = { RACE = orcish ORDER = $ORDER$ }
-	pop_menu_military_change_mil_race = { RACE = ruinborn ORDER = $ORDER$ }
-	pop_menu_military_change_mil_race = { RACE = troll ORDER = $ORDER$ }
-	
-	if = { limit = { has_dlc = "Cradle of Civilization" }
-		pop_menu_military_change_mil_race = { RACE = hobgoblin ORDER = $ORDER$ }
-		pop_menu_military_change_mil_race = { RACE = elven ORDER = $ORDER$ }
-	}
-	else = {
-		pop_menu_military_change_mil_race = { RACE = hobgoblin ORDER = $ORDER$ NO_DLC_HOBGOBLIN = yes }
-		pop_menu_military_change_mil_race = { RACE = elven ORDER = $ORDER$ NO_DLC_ELVEN = yes }
-	}
+	#pop_menu_military_change_mil_race = { RACE = centaur ORDER = $ORDER$ }
+	#pop_menu_military_change_mil_race = { RACE = dwarven ORDER = $ORDER$ }
+	#pop_menu_military_change_mil_race = { RACE = gnollish ORDER = $ORDER$ }
+	#pop_menu_military_change_mil_race = { RACE = gnomish ORDER = $ORDER$ GNOMISH_ARTIFICERS = yes }
+	#pop_menu_military_change_mil_race = { RACE = goblin ORDER = $ORDER$ }
+	#pop_menu_military_change_mil_race = { RACE = halfling ORDER = $ORDER$ }
+	#pop_menu_military_change_mil_race = { RACE = half_elven ORDER = $ORDER$ }
+	#pop_menu_military_change_mil_race = { RACE = half_orcish ORDER = $ORDER$ }
+	#pop_menu_military_change_mil_race = { RACE = harimari ORDER = $ORDER$ }
+	#pop_menu_military_change_mil_race = { RACE = harpy ORDER = $ORDER$ }
+	#pop_menu_military_change_mil_race = { RACE = human ORDER = $ORDER$ }
+	#pop_menu_military_change_mil_race = { RACE = kobold ORDER = $ORDER$ }
+	#pop_menu_military_change_mil_race = { RACE = lizardfolk ORDER = $ORDER$ }
+	#pop_menu_military_change_mil_race = { RACE = mechanism ORDER = $ORDER$ }
+	#pop_menu_military_change_mil_race = { RACE = ogre ORDER = $ORDER$ }
+	#pop_menu_military_change_mil_race = { RACE = orcish ORDER = $ORDER$ }
+	#pop_menu_military_change_mil_race = { RACE = ruinborn ORDER = $ORDER$ }
+	#pop_menu_military_change_mil_race = { RACE = troll ORDER = $ORDER$ }
+	#
+	#if = { limit = { has_dlc = "Cradle of Civilization" }
+	#	pop_menu_military_change_mil_race = { RACE = hobgoblin ORDER = $ORDER$ }
+	#	pop_menu_military_change_mil_race = { RACE = elven ORDER = $ORDER$ }
+	#}
+	#else = {
+	#	pop_menu_military_change_mil_race = { RACE = hobgoblin ORDER = $ORDER$ NO_DLC_HOBGOBLIN = yes }
+	#	pop_menu_military_change_mil_race = { RACE = elven ORDER = $ORDER$ NO_DLC_ELVEN = yes }
+	#}
 }
 
 pop_menu_military_change_mil_race = {
