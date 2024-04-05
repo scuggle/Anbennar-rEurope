@@ -170,12 +170,12 @@ country_event = {
 				rahen_superregion = { destroy_province_permanently = yes }
 			}
 			if = { limit = { has_global_flag = delete_forbidden_plains_region }
-				ogre_mountains_region = { destroy_province_permanently = yes }
+				ogre_valley_region = { destroy_province_permanently = yes }
 				yyl_moista_region = { destroy_province_permanently = yes }
 				west_forbidden_plains_region = { destroy_province_permanently = yes }
 				serpent_gift_region = { destroy_province_permanently = yes }
 				east_forbidden_plains_region = { destroy_province_permanently = yes }
-				southern_isles_region = { destroy_province_permanently = yes }
+				south_yarikhoi_region = { destroy_province_permanently = yes }
 				nuzurbokh_region = { destroy_province_permanently = yes }
 				#northern_isles_region = { destroy_province_permanently = yes }
 				doykilraj_area = { destroy_province_permanently = yes }
