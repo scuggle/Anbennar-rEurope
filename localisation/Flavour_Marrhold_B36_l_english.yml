@@ -156,17 +156,17 @@
  marrhold_rags_to_riches_title:0 "From Rags to Riches"
  marrhold_rags_to_riches_desc:0 "Traditionally, us Marrodics have been seen as a fairly insular and rural people by the rest of Escann, keeping to our mountain at the edges of Cannor.\n\nThis shall be the case no longer; let us show the world the riches of our nation, not solely in wealth, but also in culture and folklore, and prove to them we no longer are unwashed people of the mountains, but instead conquerors and masters of our own fate."
 
- marrhold_steel_title:0 "Serpentspine Steel"
- marrhold_steel_desc:0 "One of the primary economic activities in Marrhold has always been metalworking, thanks to the large deposits of iron below our native hold. This ore is then used to create what is referred to as Serpentspine steel, a particularly resilient alloy, stronger than most variants and thus extremely apt to be used in weapons and armor.\n\nLuckily for us, the Greentide has created a large demand for swords… And also an enemy on which we can put them to good use."
-
  marrhold_our_pride_title:0 "Our Pride and Joy"
  marrhold_our_pride_desc:0 "When our people first settled this hold, they never guessed how important it would become to our survival. It was the main reason why we survived both the onslaught of the Sorcerer-King and the Greentide, becoming the namesake for our nation.\n\nWhilst still teeming with refugees, we shall expand the infrastructure of our hold further and ensure our fortress city doesn’t fall into disrepair."
 
- marrhold_lift_title:0 "We All Lift Together"
- marrhold_lift_desc:0 "As our realm expands, so does our population, and it’s becoming self-evident that we’ve outgrown the confines of our beloved hold. This, however, can’t stand. We must commence a national effort to expand and improve our hold and capital city, even if it's taxing on our coffers."
+ marrhold_steel_title:0 "Serpentspine Steel"
+ marrhold_steel_desc:0 "One of the primary economic activities in Marrhold has always been metalworking, thanks to the large deposits of iron below our native hold. This ore is then used to create what is referred to as Serpentspine steel, a particularly resilient alloy, stronger than most variants and thus extremely apt to be used in weapons and armor.\n\nLuckily for us, the Greentide has created a large demand for swords… And also an enemy on which we can put them to good use."
 
  marrhold_experts_title:0 "Hiring the Experts"
  marrhold_experts_desc:0 "Alright, we’ll admit it: the truth of the matter is that we have no idea how dwarven architecture works. Luckily for us, we do know people who do. In the past few centuries, there’s been several waves of dwarven migration who see our hold as a rather cozy alternative to return to one of their ancestral holds and not dealing with the dangers of the Dwarovar.\n\nWe shall approach the local dwarven mason’s guild, and offer them a job in restoring our beautiful hold."
+
+ marrhold_lift_title:0 "We All Lift Together"
+ marrhold_lift_desc:0 "As our realm expands, so does our population, and it’s becoming self-evident that we’ve outgrown the confines of our beloved hold. This, however, can’t stand. We must commence a national effort to expand and improve our hold and capital city, even if it's taxing on our coffers."
 
  marrhold_hole_title:0 "The Prettiest Hole in Escann"
  marrhold_hole_desc:0 "After massive investment, it has finally paid off. Our hold stands proud as not only a modern, booming city, but also a testament to both Marrodic ingenuity and dwarven expertise.\n\nNow able to house tens of thousands of people more than before, it’s clear the economy of our nation shall benefit greatly from this, and so will our national pride, as our capital city stands among the greatest of Escann!"
@@ -189,75 +189,7 @@
  marrhold_fallen_friend_title:0 "Fallen Friend Memorial"
  marrhold_fallen_friend_desc:0 "Castonath is not only historically relevant because of its status as capital of Castanor. It was also site of the pivotal battle in the Greentide, the Battle of Castonath, where Corin slayed Dookanson and crushed the Vanguard of the Greentide.\n\nAlso fighting there was our famous king Gryf ‘The Young’, a hero of the Greentide in his own right. He slayed dozens of orcs alongside the Griffon Knights that accompanied him, but ultimately lost his beloved griffon mount and friend, Seovol, in the process.\n\nLet us honour their sacrifice with a monument for all to see, so that their glory may never be forgotten."
 
- ge_integrating_griffon_companies_title:0 "Integrating the Companies"
- ge_integrating_griffon_companies_desc:0 ""
-
- ge_feather_academy_title:0 "The Strongest Feathers"
- ge_feather_academy_desc:0 ""
-
- ge_new_chief_of_army_title:0 "A New Chief of Army"
- ge_new_chief_of_army_desc:0 ""
-
- ge_cheap_iron_title:0 "A Griffon's Iron Talons"
- ge_cheap_iron_desc:0 ""
-
- ge_a_need_for_meat_title:0 "A Need for Meat"
- ge_a_need_for_meat_desc:0 ""
-
- ge_reap_profit_title:0 "Reap the Siphon's Profit"
- ge_reap_profit_desc:0 ""
-
- ge_from_ashes_title:0 "From The Ashes"
- ge_from_ashes_desc:0 ""
-
- ge_imperial_culture_title:0 "Imperial Culture"
- ge_imperial_culture_desc:0 ""
-
- ge_biggest_human_capital_title:0 "The Deepest Hole in Escann"
- ge_biggest_human_capital_desc:0 ""
-
- ge_the_new_death_ring_title:0 "The New Death Ring"
- ge_the_new_death_ring_desc:0 ""
-
- ge_an_empire_forged_title:0 "An Empire Forged"
- ge_an_empire_forged_desc:0 ""
-
- ge_inner_castanor_title:0 "Capture the White Walls"
- ge_inner_castanor_desc:0 ""
-
- ge_west_castanor_1_title:0 "The Southern Frontier"
- ge_west_castanor_1_desc:0 ""
-
- ge_west_castanor_finish_title:0 "Reach the Homelands"
- ge_west_castanor_finish_desc:0 ""
-
- ge_west_castanor_2_title:0 "The Western Frontier"
- ge_west_castanor_2_desc:0 ""
-
-
- unlock_merc_marrhold_griffon_knight_tt:0 "Unlock the mercenary company §YGriffon Knights§! to recruit"
- has_unlocked_merc_marrhold_griffon_knight:0 "Has unlocked the §YGriffon Knights§! mercenary company."
- unlock_merc_marrhold_griffon_bombardiers_tt:0 "Unlock the mercenary company §YGriffon Bombardiers§! to recruit"
- has_unlocked_merc_marrhold_griffon_bombardiers:0 "Has unlocked the §YGriffon Bombardiers§! mercenary company."
- unlock_merc_marrhold_steel_griffon_tt:0 "Unlock the mercenary company §YSteel Griffon§! to recruit. The §YSteel Griffons§! will replace the outdated §YGriffon Knights§! in our armies."
- has_unlocked_merc_marrhold_steel_griffon:0 "Has unlocked the §YSteel Griffon§! mercenary company."
- marrhold_griffon_sky_lancers_reward_tt:0 ""
- unlock_merc_marrhold_griffon_sky_lancers_tt:0 "Unlock the mercenary company §YGriffon Sky Lancers§! to recruit. These §YGriffon Sky Lancers§! will replace the heavy §YSteel Griffons§! in our armies."
- has_unlocked_merc_marrhold_griffon_sky_lancers:0 "Has unlocked the §YGriffon Sky Lancers§! mercenary company."
- unlock_merc_marrhold_griffon_survey_tt:0 "Unlock the mercenary company §YGriffon Survey Corps§! to recruit"
- has_unlocked_merc_marrhold_griffon_survey:0 "Has unlocked the §YGriffon Survey Corps§! mercenary company."
- marrhold_deepwoods_dev:0 "Every province in the Deepwoods producing Exotic Wood will gain 1 base tax and 3 base production"
- unlock_merc_marrhold_griffon_grenadiers_tt:0 "Unlock the mercenary company §YGriffon Grenadiers§! to recruit. The §YGriffon Grenadiers§! will replace the §YGriffon Survey Corps§! in our armies."
- has_unlocked_merc_marrhold_griffon_grenadiers:0 "Has unlocked the §YGriffon Grenadiers§! mercenary company."
- marrhold_hold_improvement_reward_tt:0 "We will start improving our Hold! This will add a provincial modifier that will help counteract the non-subterranean race malus in our capital."
- marrhold_hold_improvement_2_reward_tt:0 "We will continue improving our Hold. This will add a provincial modifier that will help counteract the non-subterranean race malus in our capital even further."
- marrhold_hold_improvement_3_reward_tt:0 "We will complete our Hold's improvements. This will add a provincial modifier that will help counteract the non-subterranean race malus in our capital completely. Isn't it pretty?"
- marrhold_syphon_reward_tt:0 "We will ensure trade keeps trickling down from the Dwarovar and into our coffers."
- marrhold_fallen_friend_reward_tt:0 "We will build a monument to conmemorate the fallen in the Battle of Castonath."
- griffon_lords_reform:0 "Griffon Lords"
- griffon_lords_reform_desc:0 "Ever since the times of King Marr and Ulric, the Griffon Prince, when our people first settled this land, our nobility has practised the art of griffon riding. Thus, raising griffons and using them as war mounts in battle became an extremely important tradition, and the nobles are expected to lead our people to battle atop these magnificent feathered beasts."
- griffon_empire_reform:0 "Griffon Empire"
- griffon_empire_reform_desc:0 "After innumerable conquests, Marrhold has now forged an empire of its own, not in small part due to the effort of their griffon riders, who by now are an instrumental part of the Marrodic army, which enjoys an unprecedented level of royal sponsorship. Every marrodic soldier aspires to one day prove themselves and become a griffon lord in their own right, something which has led to a never-ending improvement of their technique."
+ # Modifiers
  marrhold_reclamation:0 "Reclamation Day"
  desc_marrhold_reclamation:0 "This land is our land!"
  marrhold_griffon_heroes:0 "Griffon Riders of the Greentide"
@@ -342,25 +274,20 @@
  desc_human_hold_2:0 "Thanks to the efforts of their architech's guild, Marrhold has been further adapted to the needs of its human inhabitants"
  human_hold_3:0 "The Human Hold: III"
  desc_human_hold_3:0 "After an incredible amount of royal investment, Marrhold has been adapted to the needs of its human inhabitants to the point it has nothing to envy to any other dwarven hold"
+
+# Events
  flavor_marrhold.1.t:0 "Revenge"
  flavor_marrhold.1.d:0 "It was a shock to many when our beloved prince Gryf returned from the recent Battle of Castonath not only battered and bruised, but also alone, his trusted mount, the royal griffon Seovol, nowhere to be seen. During the thickest of the fighting, Seovol was struck by a volley of arrows, both rider and mount plummeting to the ground and quickly set upon by bloodthirsty orcs. It was then that the bloodied griffon rose up once more and charged the orcs in a bestial frenzy, trying to protect his master. Amidst the screams of pain of his dying mount, Gryf made his escape, swearing vengeance on the orcs that butchered his fallen friend.\n\nWhilst the prince still grieves Seovol, he has received reports of an orc chieftain of a nearby tribe who dares wear a cloak fashioned out of griffon feathers, an insult to our knights, our nation, and the prince's fallen friend. This provocation won't go unanswered!"
  flavor_marrhold.1.a:0 "Rally the griffon knights!"
+
  flavor_marrhold.2.t:0 "Justice"
  flavor_marrhold.2.d:0 "As [Root.Monarch.GetName] walks slowly towards the center of the square, the people watch in silence, the guards dividing the crowds from the plaza. An ancient Marrodic tradition, dating from the times from before the Dragonwake, was the King's duty to execute the enemy. Nowadays, the practice has fallen out of favour, but today was special. Bound by chains and weakened by days of imprisonment and torture, the greenskin chieftain could barely resist as he was forced to kneel by the guards. [Root.Monarch.GetName] prepared the heavy two-handed sword of the royal Marr family, ironically named "Feather", and gazed upon the crowd.\n\n"This barbarian! Who killed many of our fellow compatriots! Who dared adorn himself with the remains of our glorious griffons!" At this, the common folk erupted in a litany of shouts of rage. "Shall now be put down, by the authority given to me by the Gods!".\n\nThe beheading was swift and painless, and after a short while, the crowd dispersed, carrying on with their days. The monarch however stayed for a while longer, deep in thought, pondering about the future."
  flavor_marrhold.2.a:0 "Justice for Seovol!"
+
  flavor_marrhold.3.t:0 "Rebirth"
  flavor_marrhold.3.d:0 "As the evening sun sets on the royal palace in Marrhold, [Root.Monarch.GetName] finds [Root.Monarch.GetHerselfHimself] enjoying the orange-lit expanse with [Root.Monarch.GetHerHis] heir, [Root.Heir.GetName]. Spurred onwards by the serene sight of the growing, bustling city settling down for the night, [Root.Monarch.GetName] tells the [Root.Heir.GetTitle] about Escann before the greentide.\n\n"It was a place of chivalry. Conflicts were settled by champions in honorable duels. The nobles of the realm were respected and carried out their duties diligently." the monarch sighs as they continue, "Now Escann festers with the battlegrounds of bloodthirsty orcs and overambitious upstarts. We stand as the last true kingdom of Escann". [Root.Monarch.GetName] turns to the [Root.Heir.GetTitle], placing a hand on their shoulder. "You will soon do your part in Escann’s revival and restore the old order. The way Escann was meant to be."\n\nTurning to the doorway leading out of the small courtyard, the [Root.Monarch.GetTitle] gestures towards a liveried servant carrying an ornate wooden chest. The servant brings the chest over, revealing its precious cargo to [Root.Heir.GetName], a griffon egg. "This griffon egg comes from the royal stock, from the lineage of Seovol. Treat it well and make sure you're there when it hatches," the monarch begins to smile bemusedly "We wouldn’t want it to imprint on anyone else after all." The stunned heir looks incredulously at the priceless egg as the [Root.Monarch.GetTitle] turns back to look over the last rays of the setting sun.\n\n"Tomorrow will be a new beginning for us all"
  flavor_marrhold.3.a:0 "And one day, you shall pass on this legacy as well"
+
  flavor_marrhold.4.t:0 "Remembrance"
  flavor_marrhold.4.d:0 "The [Root.Monarch.GetTitle] groaned as their headache continued to pulse in protest of the noise of the city. Even though the ancient city had been retaken for quite a while now, the battle to restore the city to its glory days seemed endless. The patricians were tireless in their shameless pursuit of power, promising many boons in return if only [Root.Monarch.GetSheHe] would relinquish some monarchal rights. Even today, large sections of the city remained in ruin, home to beggars, thieves, and other vagabonds. "It’s in the next plaza over, only the finishing details remain." the gruff mason stated. Adûn the Mason was a renowned dwarf stoneworker, invaluable in expanding and restoring ancient Marrhold infrastructure. Even though he lacked deference, there was no one else who [Root.Monarch.GetName] would consider for this monument. As the small royal entourage led into the square, [Root.Monarch.GetName] took in the sight of the cloth-covered stone edifice.\n\n"Don’t worry about that." Adun grumbled, "It’s just for the weather and dust." Adun motioned for some of his assistants to pull down the drapery, revealing a magnificent sight. A defiant Gryf the Young half stood over his wounded mount Seovol as he held his famous sword, "Feather" towards some unseen foe. They bore the signs of hard-fought battles, their skin rent in areas and their engraved armor dented and scuffed. Around their feet lay more signs of their fighting, weapons and shields lying around in the trampled grass. The two heroes were not alone in their memorial. Around the base of the statue were the names of the knights and their griffons, with those who gave the ultimate sacrifice demarcated with the symbol of Nerat. The unveiling gave [Root.Monarch.GetName] pause, momentarily filled with emotion at the beautiful stonework immortalizing [Root.Monarch.GetHerHis] ancestor.\n\n"It’s… It’s beautiful." [Root.Monarch.GetName] choked out. "Thank ye, I think I need to touch up on some feath-- Wait, what are you doing?" Adun replied as he watched [Root.Monarch.GetName] walk up to the statue, momentarily pausing to remove their family ring, and placing it at the feet of [Root.Monarch.GetHerHis] forebear. "I promise that your sacrifices will be remembered." [Root.Monarch.GetName] said, directing a number of the entourage to stand guard at the monument until a permanent honor guard could be established."
  flavor_marrhold.4.a:0 "Their legacy will live on."
- flavor_griffon_empire.1.t:0 "An Empire Rise"
- flavor_griffon_empire.1.d:0 ""
- flavor_griffon_empire.1.a:0 "We've fought well until this point, but we shouldn't slack off!"
- flavor_griffon_empire.2.t:0 "Question of our culture"
- flavor_griffon_empire.2.d:0 ""
- flavor_griffon_empire.2.a:0 "Our new roots grew during the Greentide, with these great adventurers."
- flavor_griffon_empire.2.b:0 "We are Alenics, and our land will belong to only us."
- flavor_griffon_empire.3.t:0 "Unifier of Castanor"
- flavor_griffon_empire.3.d:0 ""
- flavor_griffon_empire.3.a:0 "Good, We've achieved our main goals"
