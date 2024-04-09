@@ -8,7 +8,7 @@ country_decisions = {
 				OR = {
 					region = gerudian_frontier_region
 					region = dalr_region
-					region = alenic_reach_region
+					region = olavlund_region
 				}
 			}
 			OR = {
