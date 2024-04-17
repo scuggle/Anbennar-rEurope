@@ -6,7 +6,7 @@ country_decisions = {
 		potential = {
 			capital_scope = {
 				OR = {
-					region = gerudian_frontier_region
+					region = alenic_reach_region
 					region = dalr_region
 					region = olavlund_region
 				}
