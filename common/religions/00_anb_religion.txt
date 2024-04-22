@@ -31,6 +31,7 @@ cannorian = {
 
 		personal_deity = yes
 		hre_religion = yes
+		allow_female_defenders_of_the_faith = yes
 
 		on_convert = {
 			change_religion = regent_court
@@ -953,6 +954,7 @@ faithless = {
 			possible_policy = 1
 		}
 		declare_war_in_regency = yes
+		allow_female_defenders_of_the_faith = yes
         heretic = { TAOIST }
 		uses_harmony = yes
 	}
@@ -969,6 +971,7 @@ faithless = {
 			discipline = 0.025
 		}
 		declare_war_in_regency = yes
+		allow_female_defenders_of_the_faith = yes
         heretic = { CHAOS_WORSHIPPERS }
 		personal_deity = yes
 
@@ -990,6 +993,7 @@ faithless = {
 		}
 
 		personal_deity = yes
+		allow_female_defenders_of_the_faith = yes
 
 		on_convert = {
 			change_religion = kheionism
@@ -1043,6 +1047,7 @@ faithless = {
 			add_prestige = -100
 		}
 
+		allow_female_defenders_of_the_faith = yes
 		declare_war_in_regency = yes
         heretic = { CHAOS_WORSHIPPERS }
 
@@ -1089,6 +1094,9 @@ khetist = {
 				duration = 3650
 			}
 		}
+
+		allow_female_defenders_of_the_faith = yes
+		declare_war_in_regency = yes
 
 		heretic = { KHET_SKEPTIC }
 
@@ -1328,6 +1336,9 @@ khetist = {
 				duration = 3650
 			}
 		}
+
+		allow_female_defenders_of_the_faith = yes
+		declare_war_in_regency = yes
 
 		heretic = { KHET_SKEPTIC }
 
@@ -1591,6 +1602,9 @@ khetist = {
 		}
 		aspects_name = ANGLICAN_ASPECTS
 
+		allow_female_defenders_of_the_faith = yes
+		declare_war_in_regency = yes
+
 		heretic = { DENIER }
 
 	}
@@ -1707,6 +1721,7 @@ gnollish = {
 			}
 		}
 
+		allow_female_defenders_of_the_faith = yes
 		declare_war_in_regency = yes
         heretic = { BAINIST }
 	}
@@ -1746,6 +1761,7 @@ gnollish = {
 			}
 		}
 		
+		allow_female_defenders_of_the_faith = yes
 		declare_war_in_regency = yes
         heretic = { WASTER }
 	}
@@ -1786,6 +1802,7 @@ dwarven = {
 			}
 		}
 
+		allow_female_defenders_of_the_faith = yes
 		declare_war_in_regency = yes
         heretic = { DEIST }
 
@@ -1828,6 +1845,7 @@ dwarven = {
 			#add_country_modifier = { name = conversion_zeal duration = 3650 }
 		}
 
+		allow_female_defenders_of_the_faith = yes
 		declare_war_in_regency = yes
         heretic = { DEIST }
 
@@ -2035,6 +2053,7 @@ dwarven = {
 			}
 		}
 
+		allow_female_defenders_of_the_faith = yes
 		declare_war_in_regency = yes
         heretic = { DEIST }
 		uses_isolationism = yes
@@ -2146,6 +2165,7 @@ elven = {
 			}
 		}
 
+		allow_female_defenders_of_the_faith = yes
 		declare_war_in_regency = yes
         heretic = { GUARDIAN }
 	}
@@ -2177,6 +2197,7 @@ elven = {
 			}
 		}
 
+		allow_female_defenders_of_the_faith = yes
 		declare_war_in_regency = yes
         heretic = { GUARDIAN }
 	}
@@ -2207,6 +2228,7 @@ elven = {
 			}
 		}
 
+		allow_female_defenders_of_the_faith = yes
 		declare_war_in_regency = yes
         heretic = { GUARDIAN }
 	}
@@ -2384,6 +2406,7 @@ gerudian = {
 			}
 		}
 
+		allow_female_defenders_of_the_faith = yes
 		declare_war_in_regency = yes
         heretic = { AWAKER }
 	}
@@ -2441,6 +2464,7 @@ orcish = {
 			}
 		}
 
+		allow_female_defenders_of_the_faith = yes
 		declare_war_in_regency = yes
         heretic = { DENIER }
 	}
@@ -2484,6 +2508,7 @@ orcish = {
 			}
 		}
 
+		allow_female_defenders_of_the_faith = yes
 		declare_war_in_regency = yes
         heretic = { DENIER }
 	}
@@ -2527,6 +2552,7 @@ orcish = {
 			}
 		}
 
+		allow_female_defenders_of_the_faith = yes
 		declare_war_in_regency = yes
         heretic = { DENIER }
 	}
@@ -2653,6 +2679,7 @@ dragon_cult = {
 			}
 		}
 
+		allow_female_defenders_of_the_faith = yes
 		declare_war_in_regency = yes
         heretic = { DENIER }
 	}
@@ -2681,6 +2708,7 @@ dragon_cult = {
 			}
 		}
 
+		allow_female_defenders_of_the_faith = yes
 		declare_war_in_regency = yes
         heretic = { YNN_DROZMA }
 	}
@@ -2717,6 +2745,7 @@ dragon_cult = {
 			}
 		}
 
+		allow_female_defenders_of_the_faith = yes
 		declare_war_in_regency = yes
         heretic = { DENIER }
 	}
@@ -2746,6 +2775,7 @@ goblin = {
 		}
 
 		fetishist_cult = yes
+		allow_female_defenders_of_the_faith = yes
 		declare_war_in_regency = yes
         heretic = { CHAOS_WORSHIPPERS }
 	}
@@ -2787,6 +2817,7 @@ harpy_cults = {
 		}
 		aspects_name = ANGLICAN_ASPECTS
 
+		allow_female_defenders_of_the_faith = yes
 		declare_war_in_regency = yes
         heretic = { PREY }
 	}
@@ -2831,6 +2862,7 @@ aelantiri = {
 			}
 		}
 
+		allow_female_defenders_of_the_faith = yes
 		declare_war_in_regency = yes
         heretic = { WEEPING_TREE }
 	}
@@ -2945,6 +2977,7 @@ aelantiri = {
 			local_missionary_strength = 0.02
 		}
 
+		allow_female_defenders_of_the_faith = yes
 		declare_war_in_regency = yes
         heretic = { BEAR_SPIRIT }
 	}
@@ -2976,6 +3009,7 @@ aelantiri = {
 				duration = 3650
 			}
 		}
+		allow_female_defenders_of_the_faith = yes
 		declare_war_in_regency = yes
         heretic = { }
 	}
@@ -3003,6 +3037,7 @@ aelantiri = {
 			}
 		}
 
+		allow_female_defenders_of_the_faith = yes
 		declare_war_in_regency = yes
         heretic = { BLACK_STONE_IDOLATER }
 
@@ -3030,6 +3065,7 @@ aelantiri = {
 				duration = 3650
 			}
 		}
+		allow_female_defenders_of_the_faith = yes
 		declare_war_in_regency = yes
         heretic = { LEH'OREALL }
 
@@ -3078,6 +3114,7 @@ cheshoshi_religion = {
 			}
 		}
 
+		allow_female_defenders_of_the_faith = yes
 		declare_war_in_regency = yes
         heretic = { RUINED_GODS }
 	}
@@ -3117,6 +3154,7 @@ harafic = {
 			}
 		}
 
+		allow_female_defenders_of_the_faith = yes
 		declare_war_in_regency = yes
         heretic = { BLANK_MASKS }
 	}
@@ -3162,6 +3200,7 @@ harafic = {
 				duration = 3650
 			}
 		}
+		allow_female_defenders_of_the_faith = yes
 		declare_war_in_regency = yes
         heretic = { DI'IIKUNAIL'NE }
 	}
@@ -3195,6 +3234,7 @@ harafic = {
 				duration = 3650
 			}
 		}
+		allow_female_defenders_of_the_faith = yes
 		declare_war_in_regency = yes
         heretic = { CH'OOKAIIN }
 	}
@@ -3226,6 +3266,7 @@ harafic = {
 				duration = 3650
 			}
 		}
+		allow_female_defenders_of_the_faith = yes
 		declare_war_in_regency = yes
         heretic = { EOTEPN }
 	}
@@ -3258,6 +3299,8 @@ harafic = {
 				duration = 3650
 			}
 		}
+		allow_female_defenders_of_the_faith = yes
+		declare_war_in_regency = yes
 		heretic = { DECUVIE_CULTISTS }
 	}
 
@@ -3305,6 +3348,7 @@ effelai = {
 			effelai_the_tumor
 		}
 
+		allow_female_defenders_of_the_faith = yes
 		declare_war_in_regency = yes
         heretic = {
 
@@ -3347,6 +3391,7 @@ effelai = {
 			effelai_the_tumor
 		}
 
+		allow_female_defenders_of_the_faith = yes
 		declare_war_in_regency = yes
         heretic = {
 
@@ -3381,6 +3426,7 @@ effelai = {
 			}
 		}
 
+		allow_female_defenders_of_the_faith = yes
 		declare_war_in_regency = yes
         heretic = {
 
@@ -3421,6 +3467,7 @@ effelai = {
 			effelai_the_tumor
 		}
 
+		allow_female_defenders_of_the_faith = yes
 		declare_war_in_regency = yes
         heretic = { SENIIBONA }
 
@@ -3454,6 +3501,7 @@ effelai = {
 			}
 		}
 
+		allow_female_defenders_of_the_faith = yes
 		declare_war_in_regency = yes
         heretic = {
 
@@ -3488,6 +3536,7 @@ effelai = {
 				duration = 3650
 			}
 		}
+		allow_female_defenders_of_the_faith = yes
 		declare_war_in_regency = yes
         heretic = {
 			LEECHMOTHER
@@ -3530,6 +3579,7 @@ taychendi = {
 			}
 		}
 
+		allow_female_defenders_of_the_faith = yes
 		declare_war_in_regency = yes
         heretic = { NOGOD }
 
@@ -3561,6 +3611,7 @@ taychendi = {
 			}
 		}
 
+		allow_female_defenders_of_the_faith = yes
 		declare_war_in_regency = yes
         heretic = { NOGOD }
 
@@ -3608,6 +3659,7 @@ ynnic = {
 		authority = yes
 		religious_reforms = yes
 		reform_tooltip = YRW_REFORM_TOOLTIP
+		allow_female_defenders_of_the_faith = yes
 		declare_war_in_regency = yes
         heretic = { YNN_DAMMIC_CULT }
 
@@ -3640,6 +3692,7 @@ ynnic = {
 		authority = yes
 		religious_reforms = yes
 		reform_tooltip = YRW_REFORM_TOOLTIP
+		allow_female_defenders_of_the_faith = yes
 		declare_war_in_regency = yes
         heretic = { YNN_DAMMIC_CULT }
 
@@ -3684,6 +3737,7 @@ ynnic = {
 			}
 		}
 
+		allow_female_defenders_of_the_faith = yes
 		declare_war_in_regency = yes
         heretic = { SCARIFICATION }
 
@@ -3726,6 +3780,7 @@ devandi = {
 			}
 		}
 
+		allow_female_defenders_of_the_faith = yes
 		declare_war_in_regency = yes
         heretic = { WAENAEALAZH }
 	}
@@ -3755,6 +3810,7 @@ devandi = {
 			}
 		}
 
+		allow_female_defenders_of_the_faith = yes
 		declare_war_in_regency = yes
         heretic = { SAERZAERN }
 	}
@@ -3809,6 +3865,7 @@ fey_religion = {
 		}
 		aspects_name = FEYCOURTRITUALS
 
+		allow_female_defenders_of_the_faith = yes
 		declare_war_in_regency = yes
         heretic = { CHAOS_WORSHIPPERS }
 	}
@@ -3837,6 +3894,9 @@ fey_religion = {
 				duration = 3650
 			}
 		}
+
+		allow_female_defenders_of_the_faith = yes
+		declare_war_in_regency = yes
 
 		#uses_piety = yes
 		heretic = {
@@ -3872,6 +3932,9 @@ fey_religion = {
 			}
 		}
 
+		allow_female_defenders_of_the_faith = yes
+		declare_war_in_regency = yes
+
 		#uses_piety = yes
 		heretic = {
 			LANNANSIT #FeyLover
@@ -3904,6 +3967,9 @@ fey_religion = {
 				duration = 3650
 			}
 		}
+
+		allow_female_defenders_of_the_faith = yes
+		declare_war_in_regency = yes
 
 		#uses_piety = yes
 		heretic = {
@@ -3938,6 +4004,9 @@ fey_religion = {
 			}
 		}
 
+		allow_female_defenders_of_the_faith = yes
+		declare_war_in_regency = yes
+
 		#uses_piety = yes
 		heretic = {
 			LANNANSIT #FeyLover
@@ -3971,6 +4040,9 @@ fey_religion = {
 			}
 		}
 
+		allow_female_defenders_of_the_faith = yes
+		declare_war_in_regency = yes
+
 		#uses_piety = yes
 		heretic = {
 			LANNANSIT #FeyLover
@@ -4002,6 +4074,7 @@ fey_religion = {
 			}
 		}
 		#uses_piety = yes
+		allow_female_defenders_of_the_faith = yes
 		declare_war_in_regency = yes
         heretic = { EVIL_SPIRIT DEMONWORSHIPPERS }
 	}
@@ -4030,6 +4103,7 @@ fey_religion = {
 			}
 		}
 
+		allow_female_defenders_of_the_faith = yes
 		declare_war_in_regency = yes
         heretic = { THE_FLAMETAKEN }
 
@@ -4055,6 +4129,10 @@ fey_religion = {
 				duration = 3650
 			}
 		}
+
+		allow_female_defenders_of_the_faith = yes
+		declare_war_in_regency = yes
+
 		#uses_piety = yes
 		heretic = { ROGUE_WARLOCK }
 	}
@@ -4554,6 +4632,7 @@ raheni = {
 			}
 		}
 
+		allow_female_defenders_of_the_faith = yes
 		declare_war_in_regency = yes
         heretic = { RAHENI_GODS }
 	}
@@ -4623,7 +4702,8 @@ raheni = {
 				custom_tooltip = CENTER_OF_REFORMATION_POSSIBLE
 			}
 		}
-    	declare_war_in_regency = yes
+    	allow_female_defenders_of_the_faith = yes
+		declare_war_in_regency = yes
 		heretic = { RAHENI_GODS }
 		date = 1500.1.1
 	}
@@ -4690,6 +4770,7 @@ halessi = {
 			}
 		}
 
+		allow_female_defenders_of_the_faith = yes
 		declare_war_in_regency = yes
         heretic = { FORBIDDEN_PATH }
 
@@ -4736,6 +4817,7 @@ halessi = {
 			}
 		}
 
+		allow_female_defenders_of_the_faith = yes
 		declare_war_in_regency = yes
         heretic = { ONI_DISSIDENTS }
 
@@ -4808,6 +4890,7 @@ halessi = {
 			huszien_special_mil_aspect
 		}
 
+		allow_female_defenders_of_the_faith = yes
 		declare_war_in_regency = yes
         heretic = { THE_SEALED_ONES }
 
@@ -5238,6 +5321,7 @@ halessi = {
 			}
 		}
 
+		allow_female_defenders_of_the_faith = yes
 		declare_war_in_regency = yes
         heretic = { DARK_SHAMANS }
 
@@ -5267,6 +5351,7 @@ halessi = {
 			}
 		}
 
+		allow_female_defenders_of_the_faith = yes
 		declare_war_in_regency = yes
         heretic = { FACE_STEALERS }
 	}
@@ -5301,6 +5386,7 @@ halessi = {
 			}
 		}
 
+		allow_female_defenders_of_the_faith = yes
 		declare_war_in_regency = yes
         heretic = { THE_ETERNAL_WORSHIP }
 	}
@@ -5334,6 +5420,7 @@ halessi = {
 			}
 		}
 
+		allow_female_defenders_of_the_faith = yes
 		declare_war_in_regency = yes
         heretic = { SERVANTS_OF_THE_ENTITY }
 	}
@@ -5364,6 +5451,9 @@ halessi = {
 			}
 		}
 
+		allow_female_defenders_of_the_faith = yes
+		declare_war_in_regency = yes
+
 		heretic = { godlost }
 	}
 
@@ -5389,6 +5479,9 @@ halessi = {
 				duration = 3650
 			}
 		}
+
+		allow_female_defenders_of_the_faith = yes
+		declare_war_in_regency = yes
 
 		heretic = { DARK_SHAMANS }
 
@@ -5434,6 +5527,7 @@ triunic_lake = {
 				duration = 3650
 			}
 		}
+		allow_female_defenders_of_the_faith = yes
 		declare_war_in_regency = yes
         heretic = { OGTOCHODSAKS }
 		harmonized_modifier = harmonized_kodave
@@ -5467,6 +5561,7 @@ triunic_lake = {
 				duration = 3650
 			}
 		}
+		allow_female_defenders_of_the_faith = yes
 		declare_war_in_regency = yes
         heretic = { OGTOCHODSAKS }
 		harmonized_modifier = harmonized_yukel
@@ -5499,6 +5594,7 @@ triunic_lake = {
 				duration = 3650
 			}
 		}
+		allow_female_defenders_of_the_faith = yes
 		declare_war_in_regency = yes
         heretic = { OGTOCHODSAKS }
 		harmonized_modifier = harmonized_enuuk
@@ -5566,7 +5662,8 @@ triunic_lake = {
 			#	custom_tooltip = CENTER_OF_REFORMATION_POSSIBLE
 			#}
 		}
-		declare_war_in_regency = yes		
+		allow_female_defenders_of_the_faith = yes
+		declare_war_in_regency = yes	
 		heretic = { OGTOCHODSAKS }
 		uses_harmony = yes
 		date = 1530.1.1
@@ -5605,6 +5702,7 @@ triunic_lake = {
 			}
 		}
 
+		allow_female_defenders_of_the_faith = yes
 		declare_war_in_regency = yes
         heretic = {
 
@@ -5638,6 +5736,7 @@ triunic_lake = {
 			}
 		}
 
+		allow_female_defenders_of_the_faith = yes
 		declare_war_in_regency = yes
         heretic = { CULT_SOITI }
 		harmonized_modifier = harmonized_yudunyovi
@@ -5684,6 +5783,7 @@ giantkin = {
 		}
 		
 		doom = yes
+		allow_female_defenders_of_the_faith = yes
 		declare_war_in_regency = yes
 		religious_reforms = yes
 		reform_tooltip = VULSHOR_REFORM_TOOLTIP
@@ -5723,11 +5823,11 @@ giantkin = {
 		}
 		
 		doom = yes
+		allow_female_defenders_of_the_faith = yes
 		declare_war_in_regency = yes
 		religious_reforms = yes
 		reform_tooltip = VULSHOR_REFORM_TOOLTIP
 
-		declare_war_in_regency = yes
         heretic = { CHAOS_WORSHIPPERS }
 	}
 
@@ -5772,6 +5872,7 @@ giantkin = {
 			}
 		}
 
+		allow_female_defenders_of_the_faith = yes
 		declare_war_in_regency = yes
         heretic = { CHAOS_WORSHIPPERS }
 	}
@@ -5797,6 +5898,9 @@ giantkin = {
 				duration = 3650
 			}
 		}
+
+		allow_female_defenders_of_the_faith = yes
+		declare_war_in_regency = yes
 
 		heretic = { CHAOS_WORSHIPPERS }
 
@@ -6237,6 +6341,7 @@ centaur_religion = {
 			}
 		}
 
+		allow_female_defenders_of_the_faith = yes
 		declare_war_in_regency = yes
         heretic = { CHAOS_WORSHIPPERS }
 	}
@@ -6274,6 +6379,7 @@ infernal_religion = {
 			}
 		}
 
+		allow_female_defenders_of_the_faith = yes
 		declare_war_in_regency = yes
         heretic = { AGRADOSIAN_ELECT DEMONWORSHIPPERS }
 	}
@@ -6312,6 +6418,7 @@ tanibic_religion = {
 			}
 		}
 
+		allow_female_defenders_of_the_faith = yes
 		declare_war_in_regency = yes
         heretic = { BEGGAISTS }
 	}
@@ -6350,6 +6457,7 @@ tanibic_religion = {
 			noukahi_international_storytellers
 		}
 
+		allow_female_defenders_of_the_faith = yes
 		declare_war_in_regency = yes
         heretic = { ZUVANISTS }
 	}
@@ -6373,6 +6481,9 @@ tanibic_religion = {
 				duration = 3650
 			}
 		}
+
+		allow_female_defenders_of_the_faith = yes
+		declare_war_in_regency = yes
 
 		heretic = { KAINISTS }
 		
@@ -6419,6 +6530,7 @@ tanibic_religion = {
 			}
 		}
 
+		allow_female_defenders_of_the_faith = yes
 		declare_war_in_regency = yes
         heretic = { FATHER_AKASIK }
 	}
@@ -6462,6 +6574,9 @@ hag_religion = {
 			}
 		}
 		religious_reforms = yes
+		allow_female_defenders_of_the_faith = yes
+		declare_war_in_regency = yes
+
 		reform_tooltip = NIGHT_COVEN_REFORM_TOOLTIP
 
 		heretic = { LOCAL_CULTS }
@@ -6501,6 +6616,9 @@ hag_religion = {
 				duration = 3650
 			}
 		}
+
+		allow_female_defenders_of_the_faith = yes
+		declare_war_in_regency = yes
 		
 		heretic = { LOCAL_CULTS }
 	}
@@ -6740,6 +6858,7 @@ lizardfolk_religion = {
 			}
 		}
 
+		allow_female_defenders_of_the_faith = yes
 		declare_war_in_regency = yes
         heretic = { STAR_GOD_WORSHIPPERS DRAGONBORN }
 	}
@@ -6765,6 +6884,7 @@ lizardfolk_religion = {
 			}
 		}
 
+		allow_female_defenders_of_the_faith = yes
 		declare_war_in_regency = yes
         heretic = { CURSED }
 	}
@@ -6834,6 +6954,7 @@ eltibhen_religion = {
 				duration = 3650
 			}
 		}
+		allow_female_defenders_of_the_faith = yes
 		declare_war_in_regency = yes
         heretic = { NOGOD }
 		
@@ -6865,6 +6986,7 @@ east_sarhal_religion = {
 			core_creation = -0.1
 		}
 		allow_female_defenders_of_the_faith = yes
+		declare_war_in_regency = yes
 		uses_anglican_power = yes				# Uses church power/aspect mechanics
 		aspects = {
 			organize_a_great_prayer
@@ -6945,6 +7067,9 @@ east_sarhal_religion = {
 			}
 		}
 
+		allow_female_defenders_of_the_faith = yes
+		declare_war_in_regency = yes
+
 		heretic = { DESPOLIERS }
 	}
 
@@ -6968,6 +7093,7 @@ east_sarhal_religion = {
 			}
 		}
 
+		allow_female_defenders_of_the_faith = yes
 		declare_war_in_regency = yes
         heretic = { STARPRAISERS }
 
@@ -6997,6 +7123,9 @@ east_sarhal_religion = {
 			}
 		}
 
+		allow_female_defenders_of_the_faith = yes
+		declare_war_in_regency = yes
+
 		heretic = { GENIE_CULTISTS }
 	}
 
@@ -7020,6 +7149,9 @@ east_sarhal_religion = {
 				duration = 3650
 			}
 		}
+
+		allow_female_defenders_of_the_faith = yes
+		declare_war_in_regency = yes
 
 		heretic = { GENIE_REVOKERS }
 	}
@@ -7056,9 +7188,12 @@ amadian_religion = {
 				duration = 3650
 			}
 		}
+
+		allow_female_defenders_of_the_faith = yes
+		declare_war_in_regency = yes
+
 		heretic = { VISAGE_DENIERS }
 		
 		harmonized_modifier = harmonized_rioqay_diu
-		crusade_name = HOLY_WAR
 	}
 }
