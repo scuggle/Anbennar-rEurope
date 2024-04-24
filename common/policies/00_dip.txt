@@ -277,7 +277,7 @@ eur_autonomy_act = {
 
 		}
     }
-	liberty_desire = -20
+	reduced_liberty_desire = 20
 	vassal_forcelimit_bonus = 0.25
 	vassal_income = 0.25
 	
